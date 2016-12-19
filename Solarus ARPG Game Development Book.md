@@ -2064,7 +2064,7 @@ game:stop_dialog("_dialog.test2")
 
 Save the project and playtest with F5. It should just appear. Press the "space bar" to get rid of the text.
 
-![chapter_7_value_playtest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_7_images/Chapter_7_value_playtest.png)
+![chapter_7_value_playtest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_7_images/chapter_7_value_playtest.png)
 
 Dialog pause: Yes and no:
 -
