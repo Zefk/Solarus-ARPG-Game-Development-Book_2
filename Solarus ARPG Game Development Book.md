@@ -1,4 +1,4 @@
-![Title page.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/lesson_images/Title%20page.png)
+![Title page.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Title%20page.png)
 
 
 ##Table of contents:
