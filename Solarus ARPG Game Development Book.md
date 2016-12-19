@@ -2028,7 +2028,7 @@ In the text section, add the `$v` in the text. This passed a variable into the d
 
 "I got the number $v."
 
-![chapter_7_Variable_pass.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_7_images/Chapter_7_Variable_pass.png)
+![chapter_7_Variable_pass.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_7_images/chapter_7_Variable_pass.png)
 
 Open your map script. map folder > right click > open script
 
@@ -2087,7 +2087,7 @@ In the text section:
                
                `$?No`
 	       
-![chapter_7_yes_no.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_7_images/Chapter_7_yes_no.png)
+![chapter_7_yes_no.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_7_images/chapter_7_yes_no.png)
 
 **Adding on_paused:**
 
