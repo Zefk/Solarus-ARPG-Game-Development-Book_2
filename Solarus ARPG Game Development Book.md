@@ -3,33 +3,24 @@
 
 ##Table of contents:
 [Reference I: RGB Color Reference](#reference-i-rgb-color-reference)
-<a name="#reference-i-rgb-color-reference"/>
 
 [Chapter 1: About Solarus, Basic History, Download Instructions, Shortcuts, and Documentation](#chapter-1-about-solarus-basic-history-download-instructions-shortcuts-and-documentation)
 
 [Chapter 2: Free Graphics, audio, scripts, and Basic Free License Information](#chapter-2-free-graphics-audio-scripts-and-basic-free-license-information)
-<a name="#chapter-2-free-graphics-audio-scripts-and-basic-free-license-information"/>
 
 [Chapter 3: Moving around the Solarus Editor](#chapter-3-moving-around-the-solarus-editor)
-<a name="#chapter-3-moving-around-the-solarus-editor"/>
 
 [Chapter 4: Using the Sprite editor](#chapter-4-using-the-sprite-editor)
-<a name="#chapter-4-using-the-sprite-editor"/>
 
 [Chapter 5: Using the Tileset editor](#chapter-5-using-the-tileset-editor)
-<a name="#chapter-5-using-the-tileset-editor"/>
 
 [Chapter 6: Very Basic Lua Scripting, Tutorial Point Lua PDF, ways to load script, and lua console](#chapter-6-very-basic-lua-scripting-tutorial-point-lua-pdf-ways-to-load-script-and-lua-console)
-<a name="#chapter-6-very-basic-lua-scripting-tutorial-point-lua-pdf-ways-to-load-script-and-lua-console"/>
 
 [Chapter 7: Setting up dialog and pause](#chapter-7-setting-up-dialog-and-pause)
-<a name="#chapter-7-setting-up-dialog-and-pause"/>
 
 [Chapter 8: Displaying an image, opacity, color fill, and font display](#chapter-8-displaying-an-image-opacity-color-fill-and-font-display)
-<a name="#chapter-8-displaying-an-image-opacity-color-fill-and-font-display"/>
 
 [Chapter 9: Key press, Mouse press, Image fade, and playing audio](#chapter-9-key-press-mouse-press-image-fade-and-playing-audio)
-<a name="#chapter-9-key-press-mouse-press-image-fade-and-playing-audio"/>
 
 **Chapter 10:** Timers and getting coordinates
 
