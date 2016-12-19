@@ -2742,7 +2742,7 @@ function sol.main:on_mouse_pressed(button,x,y)
     if (x > value and x < value) and (y > value and y < value) then
       -- something happens
     end
-  end - end of if button 
+  end -- end of if button 
 end -- end of mouse press function
 ```
 
