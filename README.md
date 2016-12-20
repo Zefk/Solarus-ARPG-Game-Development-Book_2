@@ -32,3 +32,5 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 - Stream, door, and stairs entities.
 
 - Seperator and a few custom entities.
+
+- [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
