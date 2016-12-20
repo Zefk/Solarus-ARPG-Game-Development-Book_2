@@ -21,6 +21,8 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 - Mouse control [fix](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/4) by Christopho
 
+- A couple of entities
+
 **Coming in the Future:**
 
 - [Window Video Options](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/7)
