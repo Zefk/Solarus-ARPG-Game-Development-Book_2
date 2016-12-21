@@ -3,21 +3,23 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 **Coming Next in a random order:**
 
-- Chapter 10
+Every with a '*' next to it is being worked on.
 
-- [Menus](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/8)
+- Chapter 10*
+
+- [Menus](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/8)*
 
 - Destination, teletransporter, and pickable entities.
 
-- [Blend modes](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/9)
+- [Blend modes](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/9)*
 
-- Mouse control [fix](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/4) by Christopho
+- Mouse control [fix](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/4) by Christopho*
 
 - Destructible, chest, and jumper entities.
 
-- [Window Video Options](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/7)
+- [Window Video Options](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/7)*
 
-- [Put operators and other things into a table format.](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/1)
+- [Put operators and other things into a table format.](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/1)*
 
 - Enemy, NPC, and Movable block entities.
 
