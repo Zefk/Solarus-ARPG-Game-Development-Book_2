@@ -3,8 +3,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 **Coming Next in a random order:**
 
-- [More lua](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/10)
-
 - [Expain Console Script Errors](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/2)
 
 - Chapter 10
