@@ -1013,6 +1013,35 @@ Lessons > Chapter_6 > Chapter_6_Lua_Quick_Basics
 
 For the basic lessons I recommend [ZeroBrane IDE](https://studio.zerobrane.com/) or you can skip to "ways to load scripts in Solarus."
 
+**Using ZeroBrane:**
+
+1.Install and open ZeroBrane.
+
+![Chapter_6_1_open_zero_brane.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_1_open_zero_brane.png)
+
+2.Open a lua file or add the following code and save it somewhere.
+
+```lua
+--Hello_Solarus.lua
+print("Hello Solarus!")
+```
+
+![Chapter_6_2_open_lua_file_save.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_2_open_lua_file_save.png)
+
+3.Click the first green arrow to compile and run the script. You can press F6 as well.
+
+![Chapter_6_3_run_F6.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_3_run_F6.png)
+
+4.When you run the script with F6. The console at the bottom will show the text.
+
+![Chapter_6_4_console.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_4_console.png)
+
+5.ZeroBrane has a bunch of free basic lessons. 
+
+![Chapter_6_5_free_lessons.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_5_free_lessons.png)
+
+That is all!
+
 **Whitespace:**
 
 Blank lines and spaces that are ignored.
@@ -1823,6 +1852,427 @@ print("The new name is now:"..reverse_text)
 
 --Calculate te length with #
 print ("The length is: "..#"Length")
+```
+**tonumber():**
+
+```lua
+--A string of numbers. These would need to be converted in order to do math.
+local string = "5678"
+
+local number = tonumber(string)
+
+print("End of tonumber(): "..number - 178)
+```
+
+----------------------------------------------------------------------
+
+**string.format():**
+
+```lua
+local number = 3300
+
+--converts varible 'number' into a string with 4 digits.
+--Digit about can be changed. %0(number)d EX: %09d
+local number_string = string.format("%07d", number)
+
+print("End of string.format(): "..number_string)
+```
+
+----------------------------------------------------------------------
+
+**string.len() or :len():**
+
+```lua
+local string = "What"
+
+print("The string length is: "..string.len(string))
+
+print("The string length is: "..string:len())
+```
+
+------------------------------------------------------------------------
+
+**string.reverse() or :reverse():**
+
+```lua
+local string = "Programming"
+
+print("Reversing programming: "..string.reverse(string))
+
+print("Reversing programming: "..string:reverse())
+```
+
+------------------------------------------------------------------------
+
+**string.sub() or :sub():**
+
+```lua
+--Print 7 until the end. "Print " = 6 characters (with space), so they are not included
+print(string.sub("Print seven characters", 7))
+
+--Print 7 until 9. "Print " = 6 characters (with space), so they are not included
+print(string.sub("Print seven characters", 7, 9))
+
+--Print -7 until the end. "Print " = 6 characters (with space), so they are not included
+print(string.sub("Print seven characters", -7))
+
+--Print -7 until -9. "Print " = 6 characters (with space), so they are not included
+print(string.sub("Print seven characters", 7, -9))
+```
+
+------------------------------------------------------------------------
+
+**string.gmatch(string, pattern) or string:gmatch(pattern):**
+
+```lua
+local word
+
+--"%a" is a "letters" character class. Check at the start of the programming lesson for all of them. The "+" means one or more words. Otherwise, without the plus...one will just get one letter per character.
+for word in string.gmatch("Hello Lua user", "%a+") do 
+   print("%a+: "..word)
+end
+
+for word in string.gmatch("Hello Lua user", "%a") do 
+   print("%a: "..word)
+end
+
+for word in string.gmatch("Hello Lua user", "%a*") do 
+   print("%a*: "..word)
+end
+
+for word in string.gmatch("Hello Lua user", "%a?") do 
+   print("%a?: "..word)
+end
+
+--[[
+Repetitions pattern Modifiers:
+
++	1 or more repetitions
+*	0 or more repetitions
+-	also 0 or more repetitions
+?	optional (0 or 1 occurrence)
+
+--]]
+
+--[[
+character pattern classes:
+
+.	all characters
+%a	letters
+%c	control characters
+%d	digits
+%l	lower case letters
+%p	punctuation characters
+%s	space characters
+%u	upper case letters
+%w	alphanumeric characters
+%x	hexadecimal digits
+%z	the character with representation 0
+--]]
+```
+
+------------------------------------------------------------------------
+
+**Clear table:**
+
+```lua
+--Makes a table with 2 and 5 in it.
+local vars = {"2", "5"}
+
+--prints the table above
+print("Table before clearing: "..vars[1]..vars[2])
+
+--clears the table and this makes vars[2] = nil
+vars = {}
+
+vars[1] = 6
+
+print("Table after clearing: "..vars[1],vars[2]) 
+```
+
+------------------------------------------------------------------------
+
+**Math/Arithmetic in an if statement:**
+
+```lua
+local test = 2
+local test2 = 1
+local limit = 5
+
+-- If variable 'test' added to variable 'test 2' are less than limit, then print, "Cannot go beyond limit!"
+if test + test2 < limit then
+  print("If/math:Cannot go beyond limit!")
+end
+
+
+local test = 4
+local test2 = 2
+local limit = 5
+
+-- If variable 'test' added to variable 'test 2' are greater than limit, then print, "Going beyond the limit!"
+if test + test2 > limit then
+  print("If/math:Going beyond the limit!")
+end
+```
+
+------------------------------------------------------------------------
+
+**Simple table.concat():**
+
+```lua
+local char ={}
+
+char[3] = "g"
+char[2] = "p"
+char[1] = "h"
+
+--adds the char in the table together.
+local foo = table.concat(char)
+
+print("Table concat: "..foo)
+```
+
+------------------------------------------------------------------------
+
+**table.concat() and table.insert():**
+
+```lua
+local multiple ={}
+local character_num = {}
+local character = {}
+local char = {}
+
+local j = 1
+
+multiple[1] = true
+
+
+for i = 1,15 do
+   char[i] = "q"
+   char[15] = "g"
+
+    --Variable j = 1 above and multiple[1] is true above, so it activates.
+    if multiple[j] == true then
+
+      --inserts 'q' into 'character_num' until char[15] because it equals 'g'
+      table.insert(character_num, char[i]) 
+ 
+      --concat combines each 'q' from the array table
+      character[i] = table.concat(character_num)
+
+      --print each character concat line
+      print("Concat insert: "..character[i])
+
+    end
+end
+```
+
+------------------------------------------------------------------------
+
+**table.sort:**
+
+```lua
+local test_table = {"b", "a", "c", "e", "d"}
+
+-- Sort the table from a to z.
+table.sort(test_table) 
+
+for i = 1,5 do
+   print(test_table[i])
+end
+
+print("")
+ 
+--sort the table from z to a.
+local test_table2 = {"b", "a", "c", "e", "d"}
+ 
+table.sort(test_table2, function(a, b) return a > b end) -- Sort our table, but this time lets make it sort backwards.
+
+for i = 1,5 do
+  print(test_table2[i])
+end
+
+print("")
+
+-- Randomly shuffles the table.
+table.sort(test_table2, function(a, b) return math.random(0,0) < 0 end) 
+
+for i = 1,5 do
+  print(test_table2[i])
+end
+
+print("")
+```
+
+------------------------------------------------------------------------
+
+**Defining a function:**
+
+```lua
+--[[
+scope_optional function name( arg1, arg2, arg3....., arg[num])
+      function_body
+return result_params_comma_separated
+end
+--]]
+ 
+ --If number1 is less number 2 then 1 will be added to number 2 
+ --local scope is optional. It will be global without it.
+local function increase(number1, number2)
+    
+    if number1 < number2 then
+      result = number2 + 1
+    end
+
+   --Result is what is printed.
+   return result; 
+end
+
+print ("The result: "..increase(2,3))
+
+print("")
+
+--You do not have to return it in this case.
+function thetruth()
+   print("You were a mutant!")
+end
+
+print(thetruth())
+```
+
+-----------------------------------------------------------------------
+
+**pairs() and ipairs():**
+
+```lua
+--for key, variable in pairs() (no particular order)
+--for key, variable in ipairs() (in order)
+--pairs() and ipairs() loop through a table
+
+local itemList = {
+	{bName = "Candy ", bCountry = "Gestra ", bType = "50HP"},
+	{bName = "Chocolate ", bCountry = "Fragrath ", bType = "100HP"},
+	{bName = "Sword ", bCountry = "Nerzarta ", bType = "90ATK"},
+	{bName = "Shield ", bCountry = "kelboax ", bType = "100DEF"},
+}
+
+local sort_func = function( a,b ) return a.bName < b.bName end
+table.sort( itemList, sort_func )
+
+for i, record in ipairs( itemList ) do
+	print(record.bName..record.bCountry..record.bType)
+end
+```
+
+------------------------------------------------------------------------
+
+**Assosciative table:**
+
+```lua
+--[[
+Sorting an Assosciative table - not possible.
+You can only sort a table of keys which has a number index
+]]
+
+Assosciative = {muffin = "strawberry", tree = "oak",
+        cake = "oreo", seed = "apple",
+        pie = "chocolate", fruit = "orange"}
+
+print ("\nMethod 1 - sort an array of keys")
+
+list = {}
+
+for name,value in pairs(Assosciative) do
+   list[#list+1] = name
+end
+      
+print ("****************by key")
+
+table.sort(list)
+
+for key=1,#list do
+   print (list[key] .. " is " .. Assosciative[list[key]])
+end
+      
+print ("****************by value")
+
+function byvalue(a,b)
+  return Assosciative[a] < Assosciative[b]
+end
+      
+table.sort(list,byvalue)
+
+for k=1,#list do
+   print (list[k] .. " is " .. Assosciative[list[k]])
+end
+
+print ("\nMethod 2 - create an array of pairs")
+
+arraypairs = {}
+
+for name,value in pairs(Assosciative) do
+   table.insert(arraypairs,{name=name, value=value})
+end
+
+table.sort(arraypairs,function(a,b) return a.name < b.name end)
+
+--The variable consisting of only an underscore "_" is commonly used as a placeholder when you want to ignore the variable
+for _,line in ipairs(arraypairs) do
+   print (line.name .. " is " .. line.value)
+end
+```
+
+------------------------------------------------------------------------
+
+**Error handling:**
+
+```lua
+--Common errors people make in lua
+
+--Forgetting do
+for rep = 1,3
+   print(rep)
+end
+
+--13_error_handling.lua:6: 'do' expected near 'print'
+
+
+--Forgetting to assign a number value to be. Be should equal at least zero.EX local b = 0
+local b
+
+local c = 5
+
+print(b + c)
+
+--13_error_handling.lua:20: attempt to perform arithmetic on local 'b' (a nil value)
+
+
+--This should be a single equal. "="
+local d == 5
+
+print(d)
+
+--13_error_handling.lua:25: unexpected symbol near '=='
+
+
+--For getting to add "then"
+local b = 5
+
+if b == 5
+  print(5)
+end
+
+--13_error_handling.lua:38: 'then' expected near 'print'
+
+---------------------------------------------------------------------------------
+
+--[[
+Some other common errors. That happen when people do not use tables and arrays.
+
+1. Function at line has more than 60 upvalues for local variables, arrays, & 200 Local Variables Limit
+
+2.Control structure too long near
+--]]
 ```
 
 **Tutorial Point Lua PDF:**
