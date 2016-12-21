@@ -968,13 +968,15 @@ return function while    end     then
 ```
 
 **Data Types:**
-```
-Number:	   Represents real numbers.
-String:	   Represents array of characters.
-Boolean:   True and false as values. Used for checking a condition.
-Nil:	   Has no data.
-Function:  A method and most of the time it does a task for you. EX: Drawing images.
-```
+
+|   Type:  |       About         |
+| ------|--------------------------------------|
+|Number: |Represents real numbers.
+|String: |Represents array of characters.
+|Boolean:|True and false as values. Used for checking a condition.
+|Nil:    |Has no data.
+|Function:  |A method and most of the time it does a task for you. EX: Drawing images.
+
 
 ```lua
 print(type(true))                ---> boolean
@@ -986,53 +988,86 @@ print(type(false))               ---> boolean
 print(type(type))                ---> function
 ```
 **Relational Operators:**
-```
-==	Checks if  they are equal.
-~=	Checks if they are not equal
->	Checks if one is greater than the other
-<	Checks if one is less than the other
->=	Checks if one is greater or equal to each other
-<=	Checks if one is less or equal to each other
-```
+
+|   Operator:  |       About         |
+| ------|--------------------------------------|
+|==	|Checks if  they are equal.
+|~=	|Checks if they are not equal
+|>	|Checks if one is greater than the other
+|<	|Checks if one is less than the other
+|>=	|Checks if one is greater or equal to each other
+|<=	|Checks if one is less or equal to each other
 
 **Logical Operators:**
-```
-and	If both are true, then it activates.
-or	If one of them are true, the it activates.
-not	If it is true, then it will be false.
-```
+
+|   Operator:  |       About         |
+| ------|--------------------------------------|
+|**and**|If both are true, then it activates.
+|**or**	|If one of them are true, the it activates.			   
+|**not**|If it is true, then it will be false.     
 
 **Arithmetic Operators:**
-```
-+	Adds                     Three + three = 6
--	Subtracts                Three - three = 0
-*	Multiplies               Three * three = 9
-/	Divides                  Three / three = 1
-%	Remainder                Three % five = 2
-^	Exponent                 three^2 = 9
--	Can act as a negative    -Three * three = -9
-```
+
+| Operator         | Math         |   Examples      |
+| ------|-------------------------| ----------------|
+|**+**	|Adds                     |Three + three = 6|
+|**-**	|Subtracts                |Three - three = 0|
+|*	|Multiplies               |Three * three = 9|
+|**/**	|Divides                  |Three / three = 1|
+|**%**	|Remainder                |Three % five = 2 |
+|**^**	|Exponent                 |three^2 = 9      |
+|**-**	|Can act as a negative    |-Three * three = -9|
+
 
 **Other Operators:**
-```
-..	Concatenates or combines text/string.	aa..5 = aa5
-#	Lenth of text/string. #"text" = 4
-```
+
+|Misc:|	About	|
+|
+|**..**	|Concatenates or combines text/string.	aa..5 = aa5
+|**#**	|Lenth of text/string. #"text" = 4
 
 **Escape Sequences:**
-```
-\n	New line
-\t	Tab
-\'	Single quotes
-\"	Double quotes
-\\	Backslash
-\b	Backspace
-\f	Formfeed
-\a	Bell
-\r	Carriage return
-\v	Vertical tab
-\[	Left square bracket
-\]	Right square bracket
+
+| Escape  | Task         |
+| ------|----------------|
+|**\n**	|New line     |
+|**\t**	|Tab	      |
+|**\'**	|Single quotes|
+|**\"**	|Double quotes|
+|**\\**	|Backslash    |
+|**\b**	|Backspace    |
+|**\f**	|Formfeed     |
+|**\a**	|Bell         |
+|**\r**	|Carriage return     |
+|**\v**	|Vertical tab        |
+|**\[**	|Left square bracket |
+|**\]**	|Right square bracket|
+
+**Repetitions Pattern Modifiers:**
+
+| Modifier | About         |
+| ------|----------------|
+|+|   1 or more repetitions
+|*|   0 or more repetitions
+|-|   also 0 or more repetitions
+|?|   optional (0 or 1 occurrence)
+
+
+**Character Pattern Classes:**
+
+| Pattern  | About         |
+| ------|----------------|
+|**.**|   all characters
+|**%a**|  letters
+|**%c**|  control characters
+|**%d**|  digits
+|**%l**|  lower case letters
+|**%p**|  punctuation characters
+|**%s**|  space characters
+|**%u**|  upper case letters
+|**%w**|  alphanumeric characters
+|**%x**|  hexadecimal digits
+|**%z**|  the character with representation 0
 ```
 
 **Comments:**
