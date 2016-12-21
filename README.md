@@ -19,8 +19,6 @@ Every with a '*' next to it is being worked on.
 
 - [Window Video Options](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/7)*
 
-- [Put operators and other things into a table format.](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/1)*
-
 - Enemy, NPC, and Movable block entities.
 
 - Switch, wall, and sensor entities.
