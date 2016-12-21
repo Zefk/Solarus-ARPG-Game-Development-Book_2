@@ -88,7 +88,7 @@ Source: http://www.rapidtables.com/web/color/RGB_Color.htm
 |medium sea green|(60,179,113)
 |light sea green	|(32,178,170)
 |dark slate gray|(47,79,79)
-|teal0,128,128)
+|teal|0,128,128)
 |dark cyan|(0,139,139)
 |aqua|(0,255,255)
 |cyan|(0,255,255)
