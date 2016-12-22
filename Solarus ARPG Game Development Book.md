@@ -183,8 +183,6 @@ Source: http://www.rapidtables.com/web/color/RGB_Color.htm
 |white smoke(|245,245,245)
 |white|(255,255,255)
 
-**END OF RGB REFERENCE LIST**
-
 #Chapter 1: About Solarus, Basic History, Download Instructions, Shortcuts, and Documentation
 
 **About:**
@@ -207,197 +205,56 @@ Scroll down to the bottom and choose the version that fits your OS. Ubuntu, Arch
 
 **Shortcuts:**
 
-New project
-
-CTRL + N
-
-Load project
-
-CTRL + L
-
-Close tab
-
-CTRL + F4
-
-Close all tabs
-
-CTRL + W
-
-Save project
-
-CTRL + S
-
-Save all
-
-CTRL + SHIFT + S
-
-Quest properties
-
-CTRL + P
-
-Undo
-
-CTRL + Z
-
-Redo
-
-CTRL + Y
-
-Cut
-
-CTRL + X
-
-Copy
-
-CTRL + C
-
-Paste
-
-CTRL + V
-
-Select all
-
-CTRL + A
-
-Find
-
-CTRL + F
-
-Show grid
-
-CTRL + G
-
-Show console
-
-F12
-
-Run quest
-
-F3
-
-Link to Documentation
-
-F1
-
-Edit tile details
-
-Enter or return key
-
-Resize tile
-
-R
-
-Tile up one layer
-
-SHIFT +
-
-Tile down one layer
-
-minus key (Next to +)
-
-Bring tile to back
-
-T
-
-Bring tile to front
-
-B
-
-Delete
-
-DEL
-
-Rename
-
-F2
-
-Show/hide Tile
-
-CTRL + E, CTRL + 1
-
-Show/hide Destination
-
-CTRL + E, CTRL + I
-
-Show/hide Teletransporter
-
-CTRL + E, CTRL + T
-
-Show/hide Pickable Treasure
-
-CTRL + E, CTRL + P
-
-Show/hide Destructible Object
-
-CTRL + E, CTRL + D
-
-Show/hide Chest
-
-CTRL + E, CTRL + C
-
-Show/hide Jumper
-
-CTRL + E, CTRL + J
-
-Show/hide Enemy
-
-CTRL + E, CTRL + E
-
-Show/hide NPC
-
-CTRL + E, CTRL + N
-
-Show/hide Block
-
-CTRL + E, CTRL + B
-
-Show/hide Dynamic Tile
-
-CTRL + E, CTRL + 2
-
-Show/hide Switch
-
-CTRL + E, CTRL + H
-
-Show/hide Wall
-
-CTRL + E, CTRL + W
-
-Show/hide Sensor
-
-CTRL + E, CTRL + S
-
-Show/hide Crystal
-
-CTRL + E, CTRL + L
-
-Show/hide Crystal Block
-
-CTRL + E, CTRL + K
-
-Show/hide Treasure
-
-CTRL + E, CTRL + U
-
-Show/hide Stream
-
-CTRL + E, CTRL + M
-
-Show/hide Door
-
-CTRL + E, CTRL + O
-
-Show/hide Stairs
-
-CTRL + E, CTRL + R
-
-Show/hide Seperator
-
-CTRL + E, CTRL + A
-
-Show/hide Custom Entity
-
-CTRL + E, CTRL + Y
+|Task|Shortcut|
+|---------|:----------:
+|New project | CTRL + N
+|Load project | CTRL + L
+|Close tab| CTRL + F4
+|Close all tabs| CTRL + W
+|Save project| CTRL + S
+|Save all| CTRL + SHIFT + S
+|Quest properties| CTRL + P
+|Undo| CTRL + Z
+|Redo| CTRL + Y
+|Cut| CTRL + X
+|Copy| CTRL + C
+|Paste| CTRL + V
+|Select all| CTRL + A
+|Find| CTRL + F
+|Show grid| CTRL + G
+|Show console| F12
+|Run quest| F3
+|Link to Documentation| F1
+|Edit tile details| Enter or return key
+|Resize tile| R
+|Tile up one layer| SHIFT +
+|Tile down one layer| minus key (-)
+|Bring tile to back| T
+|Bring tile to front| B
+|Delete| DEL
+|Rename| F2
+|Show/hide Tile| CTRL + E, CTRL + 1
+|Show/hide Destination| CTRL + E, CTRL + I
+|Show/hide Teletransporter| CTRL + E, CTRL + T
+|Show/hide Pickable Treasure| CTRL + E, CTRL + P
+|Show/hide Destructible Object| CTRL + E, CTRL + D
+|Show/hide Chest| CTRL + E, CTRL + C
+|Show/hide Jumper| CTRL + E, CTRL + J
+|Show/hide Enemy| CTRL + E, CTRL + E
+|Show/hide NPC| CTRL + E, CTRL + N
+|Show/hide Block| CTRL + E, CTRL + B
+|Show/hide Dynamic Tile| CTRL + E, CTRL + 2
+|Show/hide Switch| CTRL + E, CTRL + H
+|Show/hide Wall| CTRL + E, CTRL + W
+|Show/hide Sensor| CTRL + E, CTRL + S
+|Show/hide Crystal| CTRL + E, CTRL + L
+|Show/hide Crystal Block| CTRL + E, CTRL + K
+|Show/hide Treasure| CTRL + E, CTRL + U
+|Show/hide Stream |CTRL + E, CTRL + M
+|Show/hide Door| CTRL + E, CTRL + O
+|Show/hide Stairs| CTRL + E, CTRL + R
+|Show/hide Seperator| CTRL + E, CTRL + A
+|Show/hide Custom Entity| CTRL + E, CTRL + Y
 
 **Documentation:**
 
