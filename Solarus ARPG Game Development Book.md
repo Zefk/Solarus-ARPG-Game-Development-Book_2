@@ -2457,7 +2457,7 @@ The lesson file is located in the folder:
 
 lesson > chapter_7_Dialog.zip
 
-#Chapter 8: Displaying an image, opacity, color fill, and font display
+#Chapter 8: Displaying an image, opacity, color fill, blend modes, and font display
 
 **Preview:**
 
@@ -2485,8 +2485,28 @@ local surface_img = sol.surface.create()
 --Make the suface for the button image
 local button_img = sol.surface.create("button.png")
 
+--Make the suface for blend multiply
+local blend_multiply_img = sol.surface.create("blend.png")
+
+--Make the suface for blend add
+local blend_add_img = sol.surface.create("blend.png")
+
+--Make the suface for no blending
+local blend_none_img = sol.surface.create("blend.png")
+
+--Make the suface for blend
+local blend_green_img = sol.surface.create("green.png")
+
+--Make the suface for blend
+local blend_red_img = sol.surface.create("red.png")
+
+--Make the suface for blend
+local blend_blue_img = sol.surface.create("blue.png")
+
+local blend_test_img = sol.surface.create()
+
 --http://www.solarus-games.org/doc/latest/lua_api_text_surface.html
-local test_img = sol.text_surface.create({ -- name a local variable something and assign it to the sol.text_surface
+local text_img = sol.text_surface.create({ -- name a local variable something and assign it to the sol.text_surface
       font = "minecraftia", -- font name
       text = "what", -- text you want to show
       font_size = 50, -- font size obviously
@@ -2502,17 +2522,40 @@ function sol.main:on_draw(screen)
 --Drawing the variable surface (local test) on screen with coordinates (100,100) or x,y
   if image_sample == true then
 
-    --show the text "what" at (x,y) (100,100)
-    test_img:draw(screen,100,100)
+    --"multiply" blend mode.
+    blend_multiply_img:draw(screen,100,100)
+    blend_multiply_img:set_blend_mode("multiply")
 
-    --show or draw the button image
-    button_img:draw(screen)
+    --"add" blend mode.
+    blend_add_img:draw(screen,100,150)
+    blend_add_img:set_blend_mode("add")
+
+    --"none" blend mode.
+    blend_none_img:draw(screen,160,200)
+    blend_none_img:set_blend_mode("none")
 
     --show or draw the surface
     surface_img:draw(screen)
 
     --fill suface with a orange color
     surface_img:fill_color({245,68,0})
+
+   --"blend" blend mode.
+    blend_test_img:draw(screen)
+    blend_red_img:draw(surface_img,100,200)
+    blend_red_img:set_blend_mode("blend")
+
+    blend_green_img:draw(surface_img,100,200)
+    blend_green_img:set_blend_mode("blend")
+
+    blend_blue_img:draw(surface_img,100,200)
+    blend_blue_img:set_blend_mode("blend")
+
+    --show the text "what" at (x,y) (100,100)
+    text_img:draw(screen,100,100)
+
+    --show or draw the button image
+    button_img:draw(screen)
 
     --opacity to 50% semi-transparent
     surface_img:set_opacity(50)
@@ -2521,6 +2564,7 @@ function sol.main:on_draw(screen)
     if clear_pixels == true then
        --clear surface
        surface_img:clear()
+       blend_test_img:clear()
     end
   end -- end of if image_sample is true
 end --end of draw function
@@ -2536,6 +2580,7 @@ end
 function game:on_unpaused()
   clear_pixels = false
 end
+   
 ```
 
 **Download Sample:**
@@ -2669,6 +2714,75 @@ function game:on_unpaused()
   clear_pixels = false
 end
 ```
+**Blend Modes:**
+
+```lua
+surface:set_blend_mode(blend_mode)
+```
+
+|     mode(blend_modes)      |  About            |
+|-----------|:------------|
+|"none"| No blending.
+| "blend"(default)|  The suface is alpha-blended
+| "add"|The surface is colored and lightened.
+| "multiply"|Darken the surface without degrading the image
+
+
+**Examples:**
+
+```lua
+    --"multiply" blend mode.
+    blend_multiply_img:draw(screen,100,100)
+    blend_multiply_img:set_blend_mode("multiply")
+
+    --"add" blend mode.
+    blend_add_img:draw(screen,100,150)
+    blend_add_img:set_blend_mode("add")
+
+    --"none" blend mode.
+    blend_none_img:draw(screen,160,200)
+    blend_none_img:set_blend_mode("none")
+
+   --"blend" blend mode.
+    blend_red_img:draw(screen,100,200)
+    blend_red_img:set_blend_mode("blend")
+
+    blend_green_img:draw(screen,100,200)
+    blend_green_img:set_blend_mode("blend")
+
+    blend_blue_img:draw(screen,100,200)
+    blend_blue_img:set_blend_mode("blend")
+```
+
+**Drawing to a Surface:**
+
+I am not going mention this in the sample, the same way, but one can draw images to a single surface and remove them all at the same time.
+
+```lua
+local blend_test_img = sol.surface.create()
+
+-- A function for displaying images and fonts on screen.
+function sol.main:on_draw(screen) 
+   --"blend" blend mode.
+    blend_test_img:draw(screen)
+    blend_red_img:draw(blend_test_img,100,200)
+    blend_red_img:set_blend_mode("blend")
+
+    blend_green_img:draw(blend_test_img,100,200)
+    blend_green_img:set_blend_mode("blend")
+
+    blend_blue_img:draw(blend_test_img,100,200)
+    blend_blue_img:set_blend_mode("blend")
+
+    --if clear pixels is true
+    if clear_pixels == true then
+       --clear surface
+       blend_test_img:clear()
+    end
+end
+```
+
+The example shows that everything is being drawn on `blend_test_img` instead of the `screen`. All three of the images will vanish at the same when when `clear_pixels is true`.
 
 #Chapter 9: Key press, Mouse press, Image fade, and playing audio
 
