@@ -25,14 +25,14 @@
 **Chapter 10:** Timers and getting coordinates
 
 [Chapter 11: Map editor](#chapter-11-map-editor)
-<a name="#chapter-11-map-editor"/>
 
-**Chapter 12:** Entities
+**Chapter 12:** Menus and Window Options
 
-**Chapter 13:** Upgrading and Export Project
+**Chapter 13:** Entities
 
-[Chapter 14: Credits](#chapter-14-credits)
-<a name="#chapter-14-credits"/>
+**Chapter 14:** Upgrading and Export Project
+
+[Chapter 15: Credits](#chapter-15-credits)
 
 #Reference I: RGB Color Reference
 
@@ -3225,9 +3225,11 @@ One can select the remove layer number icon on the icon bar to make layer number
 
 ![Chapter_11_images/Chapter-11_19_show_hide_layers.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_11_images/Chapter-11_19_show_hide_layers.png)
 
-#Chapter 12: Entities
+#Chapter 12 Menus and Window Options
 
-#Chapter 13: Upgrading and Export Project
+#Chapter 13: Entities
+
+#Chapter 14: Upgrading and Export Project
 
 **Upgrading:**
 
