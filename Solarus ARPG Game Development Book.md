@@ -925,7 +925,7 @@ print(type(type))                ---> function
 |**%w**|  alphanumeric characters
 |**%x**|  hexadecimal digits
 |**%z**|  the character with representation 0
-```
+
 
 **Comments:**
 
