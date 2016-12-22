@@ -505,45 +505,28 @@ There are many entities for the map.
 
 TIP: NPC stats for non-player character.
 
-1.Destination       - The starting point.
-
-2.Teletransporter   - Where character appears on another map
-
-3.Pickable          - An item that is picked up, like a coin or ruppee.
-
-4.Destructible      - Something that can be destoryed
-
-5.Chest             - A container for items. You normally find chests in dungeons.
-
-6.Jumper            - This makes it so the player can jump over cliff edges and so on.
-
-7.Enemy             - A character that tries to harm and kill you.
-
-8.NPC               - A player that does not harm you and normally gives you advice or a quest.
-
-9.Moveable block    - A block the player can move around or push.
-
-10.Switch           - Once activated on something occurs. Ex: Flip a light switch and a light comes on.  
-
-11.Wall             - A custom wall. Maybe it can vanish.    
-
-12.Sensor           - Once stepped on something occurs. Ex: Step on a mine and boom!    
-
-13.Crystal  - The crystal is related to the crystal block. When it is hit, the crystal blocks go under ground or block the player's path.
-
-14.Crystal block    - Crystal blocks go under ground or block the player's path. 
-
-15.Shop             - A simple shop that can be set up.
-
-16.Stream           - A stream. Possibly can be used for current.  
-
-17.Door             - A door that can be opened and closed.       
-
-18.Stairs           - Used for a walking up stairs animation    
-
-19.Seperator        - Blocks the camera or player from seeing parts of the dungeon or room.   
-
-20.Custom Entity    - Make your own entity!
+|Entity      |              Description                   |
+|------------|:------------------------------------------|
+|Destination|        The starting point.
+|Teletransporter|    Where the character appears on another map
+|Pickable|           An item that is picked up, like a coin or ruppee.
+|Destructible|       Something that can be destoryed
+|Chest|              A container for items. You normally find chests in dungeons.
+|Jumper|             This makes it so the player can jump over cliff edges and so on.
+|Enemy|              A character that tries to harm or kill you.
+|NPC|                A player that does not harm you and normally gives you advice or a quest.
+|Moveable block|     A block the player can move around or push.
+|Switch|             Once activated on something occurs. Ex: Flip a light switch and a light comes on.  
+|Wall|               A custom wall. Maybe it can vanish.    
+|Sensor|             Once stepped on something occurs. Ex: Step on a mine and boom!    
+|Crystal|            The crystal is related to the crystal block. When it is hit, the crystal blocks go under ground or block the player's path.
+|Crystal block|      Crystal blocks go under ground or block the player's path. 
+|Shop |              A simple shop that can be set up.
+|Stream |            A stream. Possibly can be used for current.  
+|Door|               A door that can be opened and closed.       
+|Stairs|             Used for a walking up stairs animation    
+|Seperator |         Blocks the camera or player from seeing parts of the dungeon or room.   
+|Custom Entity|      Make your own entity!
 
 **Resource Manager List > Map Editor > Drag:**
 
@@ -808,22 +791,21 @@ Acceptable:`
 4. Case sensitive EX: She and she are different
 ```
 Examples of the acceptable identifiers:
-```
-`yodz         zata      abcd     number_five    z_456
 
- sefra34      _ten      x        f2359y2        SpiritBlast
- 
- ```
+||||||
+|---|:-------:|---------:|:-------:|:-----:|
+|yodz         |zata      |abcd     |number_five    |z_456
+|sefra34      |_ten      |x        |f2359y2        |SpiritBlast
 
 **Keywords:**
+
 Reserved words in Lua. You cannot name them as variables.
-```
-for    break    false    true    and    or    not    do
 
-in     else     elseif   local   if     nil   until  repeat
-
-return function while    end     then
-```
+|||||||||
+|---|:-------:|--------:|:-------:|:-----:|:-----:|:------:|-----|
+|for|    break|    false|    true |    and|     or|    not|    
+|in|     else|    elseif|   local|    if |    nil|     repeat|
+|return| function| while|    end  |   then| until|     do|
 
 **Data Types:**
 
