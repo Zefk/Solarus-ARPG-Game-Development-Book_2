@@ -3237,7 +3237,7 @@ One must follow the Solarus [migration guide](http://wiki.solarus-games.org/doku
 
 **Export Project:**
 
-#Chapter 14: Credits
+#Chapter 15: Credits
 
 Credits so far...I know there are more people involved in the Solarus project.
 
