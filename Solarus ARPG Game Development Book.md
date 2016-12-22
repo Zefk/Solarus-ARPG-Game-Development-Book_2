@@ -18,7 +18,7 @@
 
 [Chapter 7: Setting up dialog and pause](#chapter-7-setting-up-dialog-and-pause)
 
-[Chapter 8: Displaying an image, opacity, color fill, and font display](#chapter-8-displaying-an-image-opacity-color-fill-and-font-display)
+[Chapter 8: Displaying an image, opacity, color fill, blend modes, and font display](#chapter-8-displaying-an-image-opacity-color-fill-blend-modes-and-font-display)
 
 [Chapter 9: Key press, Mouse press, Image fade, and playing audio](#chapter-9-key-press-mouse-press-image-fade-and-playing-audio)
 
@@ -2463,7 +2463,7 @@ lesson > chapter_7_Dialog.zip
 
 I would like to show a preview before starting the lesson. This is everything you will be learning in this lesson.
 
-![Chapter_8_sample_preview.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_8_sample_preview.png)
+![Chapter_8_sample_preview.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_8_sample_preview_blend_updated.png)
 
 **Script for the lesson:**
 
