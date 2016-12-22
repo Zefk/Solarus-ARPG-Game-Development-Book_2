@@ -11,8 +11,6 @@ Every with a '*' next to it is being worked on.
 
 - Destination, teletransporter, and pickable entities.
 
-- [Blend modes](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/9)*
-
 - Mouse control [fix](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/4) by Christopho*
 
 - Destructible, chest, and jumper entities.
