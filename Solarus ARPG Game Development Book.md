@@ -794,6 +794,7 @@ When making a variable name there are some rules.
 Unacceptable:
 ```
 1. Punctuation characters: @#$%
+2. Cannon start with a number
 
 ```
 Acceptable:`
