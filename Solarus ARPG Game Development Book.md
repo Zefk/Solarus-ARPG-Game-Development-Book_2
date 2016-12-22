@@ -777,9 +777,12 @@ When making a variable name there are some rules.
 Unacceptable:
 ```
 1. Punctuation characters: @#$%
+
 2. Cannon start with a number
 
+3. No spaces between variables. EX: local the varaible (It should be: local the_varaible)
 ```
+
 Acceptable:`
 ```
 1. A - Z  EX: SHE
@@ -909,6 +912,43 @@ print(type(type))                ---> function
 |**%x**|  hexadecimal digits
 |**%z**|  the character with representation 0
 
+###Common Variable Naming Rules:
+
+This is not a Lua naming rule and one can completely ignore this 
+because everyone can program the way they want, but this 
+will help people read your code. This is standard in most programming languages.
+
+**Clear Variable Name:**
+
+Variable `yellow` is easier to understand than `var2`.
+
+**Variable Length:**
+
+The variable name can be of any length, but do not get make too long. One will have to type this name.
+
+```lua
+local the_bunny_crossed_the_road_at_street_number = 50
+
+--The street number that the bunny crosses the road on.
+local bunny_crossed = 50
+```
+
+**UPPERCASE vs lowercase Variables:**
+
+Constants are normall uppercased. This variable will always stay the same.
+
+```lua
+local SPEED = 50
+```
+
+Deciding on StudlyCaps vs. camelCase vs SCREAMING_CAPS is worth maybe 90 seconds discussion with a programming team one is working with, but I always see ALL_CAPS.
+
+Lowercase varibles are mostly normal variables.
+
+```lua
+local color = "yellow"
+color = "green"
+```
 
 **Comments:**
 
@@ -2012,6 +2052,20 @@ Some other common errors. That happen when people do not use tables and arrays.
 
 2.Control structure too long near
 --]]
+```
+
+**Declaring Multiple Variables On One Line:**
+
+```lua
+--One can use a comma to declare many variables at one time.
+local a,b,c,d = 5,6,7,8
+
+print(a)
+print(b)
+print(c)
+print(d)
+
+print(a + b + c + d)
 ```
 
 **Tutorial Point Lua PDF:**
