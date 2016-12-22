@@ -331,3 +331,14 @@ table.sort(arraypairs,function(a,b) return a.name < b.name end)
 for _,line in ipairs(arraypairs) do
    print (line.name .. " is " .. line.value)
 end
+
+--Declaring Multiple Variables
+--One can use a comma to declare many variables at one time.
+local a,b,c,d = 5,6,7,8
+
+print(a)
+print(b)
+print(c)
+print(d)
+
+print(a + b + c + d)
