@@ -3278,8 +3278,6 @@ One can select the remove layer number icon on the icon bar to make layer number
 
 #Chapter 16: Game Design Walkthrough
 
-#Game Design
-
 ##Enemy Types:
 
 |Enemy_Types|Description|
