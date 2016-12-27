@@ -30,9 +30,15 @@
 
 **Chapter 13:** Entities
 
-**Chapter 14:** Upgrading and Export Project
+**Chapter 14:** Game Types
 
-[Chapter 15: Credits](#chapter-15-credits)
+**Chapter 15:** Make a Chain Quest
+
+**Chapter 16:** Game Design Walkthrough
+
+**Chapter 17:** Upgrading and Export Project
+
+[Chapter 18: Credits](#chapter-18-credits)
 
 #Reference I: RGB Color Reference
 
@@ -3266,7 +3272,13 @@ One can select the remove layer number icon on the icon bar to make layer number
 
 #Chapter 13: Entities
 
-#Chapter 14: Upgrading and Export Project
+#Chapter 14: Game Types
+
+#Chapter 15: Make a Chain Quest
+
+#Chapter 16: Game Design Walkthrough
+
+#Chapter 17: Upgrading and Export Project
 
 **Upgrading:**
 
@@ -3274,7 +3286,7 @@ One must follow the Solarus [migration guide](http://wiki.solarus-games.org/doku
 
 **Export Project:**
 
-#Chapter 15: Credits
+#Chapter 18: Credits
 
 Credits so far...I know there are more people involved in the Solarus project.
 
