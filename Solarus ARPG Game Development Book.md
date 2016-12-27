@@ -3278,6 +3278,1277 @@ One can select the remove layer number icon on the icon bar to make layer number
 
 #Chapter 16: Game Design Walkthrough
 
+#Game Design
+
+##Enemy Types:
+
+|Enemy_Types|Description|
+|--------|:---------------------------------------------------------------|
+|Boss |A boss is the strongest enemy in a dungeon or any other location. They are difficult to beat and sometimes are cannot be beaten unless their weakness is found.
+|Miniboss| They are basically weak bosses. They are strong, but not really unbeatable. It is common to gain a weapon by defeating them and that allows the player to defeat the boss in that location.
+|Enemy | Simple to defeat. Should not take more that a few projectiles or sword hits to take down.
+
+##Enemy Attack Patterns:
+
+These attack patterns are normally used by all enemies. Some foes are only one of these types, but minibosses and bosses normally have more than one type.
+
+|Attack_Pattern|Description|
+|-------------|:----------------------------------------------------------|
+|-flation| This boss either gets bigger after each strike the player inflicts on it or smaller. The hero and boss become easier to hit when the boss inflates. When the boss deflates it takes a longer time to get to the hero and its small size might be hard to hit because it is not a big balloon.
+|Item| This boss is normally impossible to beat as long as he has his special item. (Staff, ring, etc)
+|Condition| This is a normal type of enemy. Requires one weapon to defeat it.
+|Multi-condition| This type of enemy is normally a boss. Sometimes the hero will have attack more than just the boss to do damage. For example, the hero will have to take out the bubbles, hit the enemy with an arrow, and strike it with the sword to make the enemy take damage.
+|Wack the Whistle|This enemy hides in a hole and comes out to attack.
+|Terrain| This type of enemy uses the terrain to attack the hero. For example, falling spikes or rocks. Also, it can spin the terrain or bump up the edges to make the hero go off balance.
+|Grab and throw| This type of enemy grabs and throws the hero.
+|One with Terrain| This type of enemy becomes one with the terrain. For example, an enemy can cover itself with water and attack. A good way to defeat it would to know the core out of the water.
+|The Phantom| A enemy that normally floats, becomes invisible, and hides in a shadow. An item is normally needed to see it or light basic to take damage.
+|The deflector| These enemies attacks must be deflected and bounced back at it so it will take damage. The enemy might be able to deflect it back too.
+|Projectile seeker| This enemy shoots projectiles and sometimes the projectile will follow the hero.
+|Hammer|This type of enemy rises in the air and slams down to the ground like a hammer.
+|Clone|This type of enemy can clone them self and the only way to defeat them is to take out the original.
+|limp-flation| This enemy either inflates its limps to make them bigger or ejects their like a hookshot. This type of enemy normally protects its limps, so it does not take damage.
+|Floor mover| This type of enemy works with the floors. It can change its location and bounce off the walls at a rapid pace. For example, they can bounce off the walls by bouncing, spinning, climbing, magic, flip, and blade.
+|The magician| The magician is similar to the Phantom, but it normally uses magic tricks. For example, runs into a mirror, teleport, strikes with magic, turns into objects, protects itself in a hat, and etc.
+|Dark hero| This is a dark version of the hero. Normally encountered in other world or dimensions.
+|Weapon| This type of enemy fight with weapons.
+|Distancer| This enemy normally hides on the ceiling, jumps on pillars, and/or flys at a distance so it does not take damage.
+|Duplicator| This type of enemy divides based on the damage that is being taken.
+|Color warning| This enemy display warnings that tells the hero what kind of attack it will use or how rapid it will be. It does not have to be colors to be honest.
+|Monster commander| This type of enemy can produce weaker enemies to attack the hero.
+|Suicide Bomber| This type of enemy kills itself to harm the hero in an explosion.
+|Time traveler| This enemy can restore its health by time traveling its body. A normal effect is that it gets distorted and weakened as it keeps doing it.
+|The eater| This type of enemy eats the hero for a type and spits the player out.
+|Damaged by terrain only| This enemy can only be harmed by something in the terrain. A special root or statue with special powers.
+|Drag down| This type of enemy drags the hero down. Normally resulting in going to a different floor.
+|Transformer| This enemy changes and gets stronger the more it is attacked.
+
+Check the following link for examples of bosses:
+
+http://zelda.wikia.com/wiki/Boss
+
+##Puzzles:
+
+Everyone knows that puzzles are very important in any RPG. The wonder of knowing what will happen when solving them or just the wanting to defeat the annoying bugger. 
+
+|Puzzle_Type|Description|
+|-------|:---------------|
+|Puzzles:| A puzzle is a game, problem, or toy that tests a person's ingenuity or knowledge. In a puzzle, one is required to put the pieces together in a logical way, in order to arrive at the correct solution of the puzzle. Many beings can tell puzzles, whether they are magical or not. 
+|Block Puzzle| The Block Puzzle involves moving shapes or plain blocks into a certain position, or the rearranging of blocks to form an image/picture. This may be to press a switch, to create a step which can be used to gain high ground, to put blocks color/colour order, move the block into a hole, etc. 
+|Return Puzzle|The most common puzzle is the return puzzle, a puzzle in which a player must depart from a room and return again with an extra item or key, making that room passable. This can be the case with dungeon rooms with multiple exits.
+|Enemy Puzzle|The Enemy Puzzle involves a room or area in which one or several enemies must be defeated to move on. There are three common forms. Enemy, miniboss, and boss.
+|Switch Puzzle|Switches in the form of levers and buttons are used quite often and many more types can be used. For example, crystals, organic organs, and other things can be used as switches. There is really no limit on the type of switch.
+|Lever:| Needs to be pushed or pulled. Some inaccessible levers require use of the Hookshot (pull), Seed/nut Shooter (push), or Bombs (for timing).
+|Button:| Many types exist, but can be broken down into the form of weight. The weight of a block might need to be removed from a button or weight might need to be put on it, sometimes there is an item to use if the player is not heavy enough to push it. The switches can have a timer on them, meaning the player might need to hurry or the switch will have to be stepped on again.
+|Target Puzzle:|The Target Puzzle is normally used to open a door or in some way to help the hero reach the next floor. For example, shooting an object above a door, with a projectile weapon, can open that door. The puzzle can be made more difficult in a few ways. For example, the target can be moving or the movement might be from a platform the player is standing on. Furthermore, other objects or enemies might be moving in the hero's way! Another example, can be to activate floating objects in a certain order to reach the next floor. Weapons used are normally slingshot, bow, crossbow, and gun.
+|Force of Nature Puzzles:|I have noticed that wind and other forces of nature can be used to make puzzles as well. The player or objects like a bomb can move to certain points and be shot around due to the forces, like wind or maybe even plant life.
+|Torch puzzle:|This might be considered a force of nature, but this deserves a whole puzzle of its own. The Torch Puzzle involves the lighting of one or more torches by fire in order to receive access to another room, treasure chest, or something similar. 
+|Riddle Puzzle:|This is normally a word based puzzle and can require doing a type of action or even wearing certain garment. Sometimes bad occurrences can happen for getting the answer wrong. The player or character can be hurt/killed, or be forced to fight a bunch of enemies. A lot of time there can be more deadly cases, but not many people do this anymore. The player's life force can decrease permanently, etc. For example, you could be cursed permanently or for a certain amount of time. The curse could have a good side too, and another riddle might be needed to break it! Do you want to?
+|Location Change Puzzle:|Locations can be used as puzzles. For example, the location might look exactly the same, no matter where the player goes. The player is not "always" teleporting to the same spot, but is going to a similar location. The Lost Woods in Zelda is a good example. Also, areas or dungeon rooms can switch in a different order. This might not always be a puzzle because it could be completely random. Another example, time can be used to follow a character in a location and if the player gets too far behind, then the player will not be able to pass the puzzle for getting to the next location.
+|Source:| https://en.wikipedia.org/wiki/Puzzle
+
+##Quest Types
+
+One must think of quest types in order to make a proper story. Meeting characters can involve rescue quests, etc. Also, do not think that quests types will make your game unique every time because many characters have something unique about them. It can be a weird personality flaw, a way of living or something different about their body, but we will get more into that later. Let us start with quest types!
+
+|Quest_Type|Description|
+|:------:|:-----|
+|Kill quests|The character must go out and kill a specific number of creature types, or a particular non-player character and the short way to say that is NPC. These kinds of quests involve bringing back evidence of success, such as trophies or something belonging to the being. (Staff, tusks, head, etc.)
+|Combo quests|The player will attack certain foes or structures with a combination of attacks until the necessary number of combos has been reached. Foes in these quests are normally either immortal or infinite in amount until the player character is victorious in which the foes would be eliminated or stop appearing.
+|Delivery quests|A quest type called the delivery quest or fetch-carry quest. This is a situation where the character is sent to deliver or obtain an item from one place to another. In certain cases the character might need to collect the object first instead of being handed the item to deliver when beginning the quest. These quests are created to be difficult by asking the character to journey through different or dangerous terrain, sometimes with a time limit.
+|Gather quests|Gather quests, also known as collection quests, call for a player character to collect a specific amount of items. These can either be gathered from a place or environment, or need the player to kill creatures to obtain the required items. The quest could also require the character to gather a number of different items. For example, to assemble a device.
+|Escort quests|The Escort quest is a combination of defeating creatures to protect a non-player character(s) all while investigating an area alongside that Non-player character (NPC). A normal escort quest would have the player defending a NPC as he, it (3rd,4th, etc gender), or she moves through a monster-infested area. Most of the time the quest will force the player to kill many monsters to ensure the well-being of the NPC. Escort quests can be beneficial, in making the player's pay attention to a particular spot in order to play out a scene or reveal a section of the plot. They can also be used to transport a character from one location to another, leading the player along a route or path. However, problems with this type of quest can occur if the artificial intelligence controlling the NPC causes them to behave in unexpected or unmanageable ways. Because many of them are often done wrong, they are very unpopular among the gaming community. 
+|Syntax quests|A phenomenon unique to text-based games, syntax quests depend on guessing the correct syntax to use to carry out a (typically simple) operation. For instance, arranging stone tablets in a certain order to make a picture or figuring out how to read the sentence and carrying out a certain action. It mostly involves arranging something in a certain order to figure out the meaning.
+|Hybrids|Parts of the above quest types can be put together to make more complex quests. For instance, a quest could need that the player locate the pieces needed to assemble a certain weapon or item (Gather Quest) and then use it to defeat a specific foe (Kill quest). Hybrid quests can also involve puzzles and riddles.
+|Quest chains|A quest chain is a group of quests that are completed in sequence they are also known as quest lines. Completion of each quest is a prerequisite to beginning the next quest in the chain. Quests usually heighten in toughness as a character goes further along the chain. The quests normally shows a single plotline in an order that explains the reason for the quests. Quest chains can also start with the opening or breadcrumb quests, in order to encourage characters to journey to a new area, where further elements of the quest chain are revealed. Through mechanisms like these, the setting of a particular location is explained to the player, with the plot or storyline being unveiled as the character progresses.
+|Source:| https://en.wikipedia.org/wiki/Quest_(video_gaming)
+
+##Map Design
+
+Map design can take up a lot of time. It is best to get quick ideas from generators. [Donjon Dungeon Generator](http://donjon.bin.sh/fantasy/dungeon/wallpaper.cgi)
+
+Telling you how to design your map is almost impossible because there is no right way, but I will give basic tips.
+
+|Tip|Description|
+|:-----:|:-----|
+|Cludder| Do not put to many objects on one map unless it is like a junk yard or something like that.
+|Duplicate objects| The same objects all over the place would look weird. The same flower pot appearing in a room 10 times would look unnatural.
+|Spacing| Try to keep decent space when making a map. For example, one want to get around the chair.
+|Larger Rooms| Small rooms are okay for houses, but in main locations they should be a bit more complex. For example, a square room after every door might get boring.
+|Outline| One should outline the map with basic tiles first because if one were to change things later after mapping it might look bad or a lot of things might need to be moved around. A complete map redesign can be needed in some cases when a change is decided.
+|Doors| Doors are always good to have because there is just that wonder of what is on the other side. Having the door locked is even better because it is like a forbidden special place.
+|Plant Life| Plant life (EX: Vines) around windows and other places can make map look natural and not so plain.
+|Stairs|Going up to another level of floor can be as exciting as opening a door. What is up there? A stairway that is blocked can be more interesting.
+|Hidden Floors| Finding hidden floors can make the hero feel special and enjoy exploring the map more.
+|World Name| The world having a name can help you with your map organization. You do not want to get lost in over 100 maps.
+|Challenging| Getting through a map too easily can be a drag! Make it at least a little tough or have some locations that can be seen, so the player will not want to leave the map as soon as possible.
+|Heal Spots|Having spots to rest and have a person there to give you information is good way to not make a player mad while playing the game.
+
+**Map Examples Legend:**
+
+Border:
+
+![map_design_donjon/legend/border.png)](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/border.png)
+
+Room:
+
+![map_design_donjon/legend/walk_way.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/walk_way.png)
+
+Down Stairs:
+
+![map_design_donjon/legend/down_stairs.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/down_stairs.png)
+
+Up Stairs:
+
+![map_design_donjon/legend/up_stairs.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/up_stairs.png)
+
+Closed Door:
+
+![map_design_donjon/legend/locked_door.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/locked_door.png)
+
+Monster door:
+
+![map_design_donjon/legend/monster_door.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/monster_door.png)
+
+No door way:
+
+![map_design_donjon/legend/no_door_way.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/no_door_way.png)
+
+One way in door:
+
+![map_design_donjon/legend/one_way_door.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/legend/one_way_door.png)
+
+
+**Map Examples:**
+
+![map_design_donjon/map_examples/Game_Design_1_Chapter_map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/map_examples/Game_Design_1_Chapter_map.png)
+
+![map_design_donjon/map_examples/Game_Design_2_Chapter_map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/map_examples/Game_Design_2_Chapter_map.png)
+
+![map_design_donjon/map_examples/Game_Design_3_Chapter_map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/map_examples/Game_Design_3_Chapter_map.png)
+
+![map_design_donjon/map_examples/Game_Design_4_Chapter_map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/map_examples/Game_Design_4_Chapter_map.png)
+
+![map_design_donjon/map_examples/Game_Design_5_Chapter_map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/map_examples/Game_Design_5_Chapter_map.png)
+
+##Sidescroller: Some Information
+
+Sidescrollers or Platformers are normally constant action and almost no dialog. The movement normally never stops and the player stomps on or fights enemies all the way. This type differs from an ARPG in many ways. An ARPG is normally based on exploration with a top-down view (under a 3/4 perspective) and a platformer is just a straight line most of the time. Sidescroller graphics are always a side camera view. Sidescrollers can be anything someone wants them to be though. Some people mix ARPG and sidescroller or make the sidescroller a journey instead of constant action.
+
+![Chapter_Game_design_Sidescroller_example_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Sidescroll_preview_images/Chapter_Game_design_Sidescroller_example_1.png)
+![Chapter_Game_design_Sidescroller_example_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Sidescroll_preview_images/Chapter_Game_design_Sidescroller_example_2.png)
+
+|Some Movements:|
+|:----|
+|Jump| 
+|Crouch|
+|Hover|
+|Run|
+|walk|
+|Look up|
+|Pound|
+
+|Random Feature Dump:|
+|:-----|
+|Bouncers|
+|objects that change speed on impact|
+|Floating objects|
+|Growing objects|
+|Giant falling objects that break tiles|
+|Locked doors|
+|Blockades|
+|Secret rooms and shortcuts|
+|Invisible sections that appear once touched.|
+|Objects that get bigger when touched|
+|Floating points|
+|Flying mode|
+|Digging mode|
+|Travel up wall mode|
+|Underwater mode|
+|Super mode. The ability to walk up walls and destroy enemies faster|
+|Animated backgrounds|
+|Checkpoints|
+|Falling walls|
+|Turning spikes|
+|Jumping enemies|
+|Giant creatures coming out of liquid like elements|
+|Balance beam|
+|Projectiles bouncing off walls|
+|Unlimited ammo|
+|Scrolling object to prevent the hero from going back the other direction.|
+|A wheel moving on wire|
+|Bridges that fall after a certain amount of time|
+|Enemies on pools to prevent one from jumping on them|
+|Platforms that are unusable after one use.|
+|Enemies that turn into balls|
+|Floating enemies that move in a zigzag pattern|
+|Enemies that make the screen wave and distort|
+|Rubbery platforms|
+|Rolling tubes|
+|Push back beam or spray|
+|Wave creature platforms|
+|Spiked platforms - they flip once a switch is hit|
+|Double spiked platforms - two platforms flip at the same time once a switch is hit|
+|Objects that pop and shoot out moving points|
+|Floating direction rocks|
+|A boss that shoots out enemies once hit and gets smaller each time.|
+|Flying creatures that fall once they are knocked on the head|
+|Falling stones|
+|Falling block game|
+|Allied creature|
+|Killer spinning spikes|
+|Projectile thrower and cannon shooters|
+|Projectile blocking throwers|
+|Elemental projectiles|
+|Projectile thieves|
+|Slot machine game|
+|Enemies that sleep when you look at them and awake you are not looking.|
+|Creatures that jump out- Boo!|
+|Stones that move up and down|
+|Flame wheels|
+|Spinning blocks|
+|Bubble attacks|
+|Enemies hiding behind bushes|
+|Enemies that drop bombs from the sky|
+|Absorb attacks|
+|Same enemies with shields|
+|Hiding stealthy enemy popping out from behind images|
+|Signs to help direct the player|
+|Object platforms the pop after you jump off them (Projectiles, bombs, etc)|
+|Screen scroll|
+|Flying rocket cannons|
+|90 degree platform|
+|Floating rock that changes directions depending on what it hits and how many times the player jumps on it|
+|Falling rolling spike enemies|
+|Sticky ceiling|
+|Chain ball that rises when the player hits the roller at the top of the chain|
+|spiked balls on walls|
+|Pushing object off ledges|
+|Fancy explosion defeat and elegant exit|
+|Muti jump on switch to activate it.|
+|Enemies that die when stomped on.|
+
+##Basic Story Making\Genre:
+
+Genre is the term for any category of entertainment. Pick the genre you like most. I will only being adding genre I like to the book, so check wiki for more and greater detail into ones I listed. I will add this to the github. https://en.wikipedia.org/wiki/List_of_genres
+
+|Genre|Description|
+|:------:|:-------|
+|Action Adventure|  Journeys to places and gets through obstacles along way. Normally fighting enemies, making an escape, and saving people.
+|Fantasy|  A fantasy story is about magic or supernatural forces. 
+|Horror|  A horror story is told to scare or frighten the people. Normally with suspense, shock and/or violence.
+|Mystery|  A mystery story is normally about someone attempting to solve a puzzle. 
+|Science fiction|  Centered around technology (computers and machines), universes space/time travel, aliens, and genetic manipulation. EX: Steampunk, cyberpunk, and clockpunk. Science fiction is mixed with it a lot in future eras or time travel.
+
+##The Plot:
+
+One has to know what the genre will be and what their hero or villain does. The hero does not always have to be the good guy and can do good or bad deeds in a story. 
+
+EX: The hero destroys a peaceful advanced alien race because their touch can make humans immortal, but result in a mutated virus that makes humans unable to breed.
+
+##Title:
+
+The title should be made around the time of the plot. Most of the time it describes the story in few words. It should be something related to the genre in order to help people know what the story is about.
+
+##Characters:
+
+Describe the hero, allies, and enemies.
+
+|Template:|
+|:-------|
+|Name:|
+|Nickname:|
+|Occupation:|
+|Gender:|
+|Clothing:|
+|Meeting:|
+|Description:|
+|Birth:|
+|BMC (Before Magic Common Era) or MC (Magic Common Era)|
+|Age:|
+|Race:|
+|Audio Theme:|
+|Fight Audio:|
+|Attacks:|
+|Hair Type:|
+|Hair Color:|
+|Eye color:|
+|Ear Type:|
+|Skin Color:|
+|Handwear:|
+|Accessory Type:|
+|Accessory Color:|
+|Class:|
+|Height:|
+|Facial hair:|
+|Mouth:|
+|Skin:|
+|Deformities:|
+|Special marks:|
+|Favorite food:|
+|Favorite Drink:|
+|Favorite Color:|
+|Personality:|
+|Associations:|
+
+##Goals:
+
+What are the characters trying to do? 
+
+1.Save a princess? 
+
+2.Get revenge on the creatures that ate her family? 
+
+3.Take over the world?
+
+
+##Story Flow & Outline:
+
+List the events that happen.
+
+Jetarf family was eaten -----> he kills one of the alien ---------> gets the alien spaceship remodeled --------> looks for a ship called, "@#$@#%@@@!.. word in alien tongue.” 
+
+There are many outline styles. More info: [Here](http://forum.solarus-games.org/index.php/topic,611.msg3430.html#msg3430)
+
+- Bubble outline
+- Cornell Note style
+- Box and arrow style
+- Common bullet Outlining
+
+##Names:
+
+|To Name:| 
+|:---|
+|Items|
+|Towns|
+|Shops/buildings|
+|Paths/roads|
+|Forests/jungles/mountains/islands|
+|Characters|
+|Worlds|
+|Main Quests |
+|Optional quests|
+
+##Some Fictional Beings:
+
+|Being|Description|
+|:-----------------|:----|
+|Dwarves| Short humanoid people. Normally strong and good at crafting weapons of any kind.
+|Elves| A humanoid race with long ears. They live for 1000s of ears, are good archers, and are skilled with magic.
+|Goblins| Known as short greedy ugly creatures. Many countries have conflicting information about them. Some smart, dumb, magic, etc.
+|Fairy| Small humanoid creatures that use magic and is very smart.
+|Vampire| A humanoid that is immortal. They suck human blood and have super strength. Normally their heart needs to be damaged in order to kill them, but I think losing their head will work too.
+|Dragon| A giant lizard with wings. Normally it will breath fire, but there are different types of dragons. EX: Ice dragon and plant Dragons. One can shoot ice and the other acid.
+|Demon| A being of darkness that is known for corrupting and harming humans.
+|Angel| A being of light that is supposed to watch over and protect humans.
+|Furries| Any human cross bread with an animal. EX: A human with cat ears and a tail.
+|Giants| Super tall beings that can squish a human like a bug, but they are not all that tall. They are taller than the tallest human though. Some are elemental humanoids. Rock giant, ice giant, lava giant, ect.
+|Werewolves| Half man and wolf. Turns into a wolfman at a full moon, but some can change at will.
+
+##Personality List:
+
+|Personality Traits:|
+|:----|
+|Dramatic|
+|Steady|
+|Artful|
+|Dreamy|
+|Irreligious|
+|Unhurried|
+|Firm|
+|Proud|
+|Challenging|
+|Maternal|
+|Sharing|
+|Soft|
+|Confidential|
+|Impressive|
+|Benevolent|
+|Dynamic|
+|Dominating|
+|Mystical|
+|Capable|
+|Precise|
+|Ambitious|
+|Steadfast|
+|Modern|
+|Stoic|
+|Aspiring|
+|Cheerful|
+|Masculine|
+|Secure|
+|Huried|
+|Flexible|
+|Insightful|
+|Genuine|
+|Stable|
+|Discreet|
+|Optimistic|
+|Idealistic|
+|Scholarly|
+|Questioning|
+|Contradictory|
+|Decisive|
+|Competitive|
+|Businesslike|
+|Gentle|
+|Invisible|
+|Active|
+|Irreverent|
+|Experimental|
+|Extraordinary|
+|Unpatriotic|
+|Leaderly|
+|Teacherly|
+|Curious|
+|Sophisticated|
+|Organized|
+|Solid|
+|Busy|
+|Obedient|
+|Sporting|
+|Strong|
+|knowledgeable|
+|Warm|
+|Responsive|
+|Self­conscious|
+|Stubborn|
+|Patient|
+|Many­sided|
+|Sarcastic|
+|Impressionable|
+|Inoffensive|
+|Private|
+|Honest|
+|Planful|
+|Soiid|
+|Big­thinking|
+|Empathetic|
+|Farsighted|
+|Friendly|
+|Reserved|
+|Unsentimental|
+|Religious|
+|Honorable|
+|Persuasive|
+|Subtle|
+|Predictable|
+|Complex|
+|Kind|
+|Preoccupied|
+|Folksy|
+|Studious|
+|Energetic|
+|Decent|
+|Witty|
+|Noncompetitive|
+|Tidy|
+|Imaginative|
+|Principled|
+|Intense|
+|Relaxed|
+|Balanced|
+|Tasteful|
+|Unchanging|
+|Good­natured|
+|Surprising|
+|Stern|
+|Sexy|
+|Sensual|
+|Playful|
+|Insouciant|
+|Deceptive|
+|Well­rounded|
+|Multi­leveled|
+|Sensitive|
+|Casual|
+|Considerate|
+|Incorruptible|
+|Sweet|
+|Chummy|
+|Sage|
+|Absentminded|
+|Patriotic|
+|Responsible|
+|Freethinking|
+|Skillful|
+|Sociable|
+|Logical|
+|Dutiful|
+|Breezy|
+|Fair|
+|Solitary|
+|Mellow|
+|Scrupulous|
+|Focused|
+|Accessible­|
+|Sober|
+|Daring|
+|Venturesome|
+|Constant|
+|Self­sufficent|
+|Tough|
+|Enthusiastic|
+|Passionate|
+|High­minded|
+|Well­bred|
+|Deep|
+|Prudent|
+|Progressive|
+|Wise|
+|Pure|
+|Thorough|
+|Forgiving|
+|Elegant|
+|Cultured|
+|Sentimental|
+|Innovative|
+|Loyal|
+|Conservative|
+|Practical|
+|Adaptable|
+|Courageous|
+|Courteous|
+|Brilliant|
+|Shrewd|
+|Youthful|
+|Soft|
+|Outspoken|
+|Strict|
+|Independent|
+|Spontaneous|
+|Peaceful|
+|Open|
+|Protective|
+|Popular|
+|Hypnotic|
+|Respectful|
+|Selfless|
+|Reflective|
+|Objective|
+|Impersonal|
+|Quiet|
+|Mature|
+|Exciting|
+|Old­fashined|
+|Charismatic|
+|Appreciative|
+|Modest|
+|Unpredicatable|
+|Intelligent|
+|Earthy|
+|Creative|
+|Formal|
+|Impassive|
+|Clever|
+|Agreeable|
+|Uncomplaining|
+|Admirable|
+|Unaggressive|
+|Understanding|
+|Glamorous|
+|Unreligious|
+|Faithful|
+|Clear­headed|
+|Effeminate|
+|Calm|
+|Original|
+|Emotional|
+|Romantic|
+|Attractive|
+|Winning|
+|Punctual|
+|Cute|
+|Perceptive|
+|Political|
+|Ordinary|
+|Confident|
+|Dedicated|
+|Clean|
+|Neutral|
+|Well­read|
+|Skeptical|
+|Healthy|
+|Lovable|
+|Alert|
+|Sympathetic|
+|Caring|
+|Driving|
+|Moralistic|
+|Rational|
+|Colorful|
+|Ascetic|
+|Pruposeful|
+|Trusting|
+|Enigmatic|
+|Amusing|
+|Compassionate|
+|Resourceful|
+|Smooth|
+|Sane|
+|Simple|
+|Adventurous|
+|Undemanding|
+|Humorous|
+|Hardworking|
+|Perfectionist|
+|Gracious|
+|Intuitive|
+|Serious|
+|Retiring|
+|Upright|
+|Restrained|
+|Generous|
+|Charming|
+|Unambitious|
+|Forecful|
+|Fun­loving|
+|Athletic|
+|Reliable|
+|Cooperative|
+|Humble|
+|Boyish|
+|Educated|
+|Efficient|
+|Uninhibited|
+|Crisp|
+|Determined|
+|Aggressive|
+|Stylish|
+|Physical|
+|Individualistic|
+|Disciplined|
+|Gallant|
+|Tolerant|
+|Observant|
+|Neat|
+|Realistic|
+|Dry|
+|Unceremonious|
+|High­spirited|
+|Helpful|
+
+
+|Negative Traits:|
+|:--------------|
+|Thoughtless|
+|Hidebound|
+|Angry|
+|Imprudent|
+|Vulnerable|
+|Easily Discouraged|
+|Mechanical|
+|Obnoxious|
+|Gullible|
+|Tense|
+|Fraudulent|
+|Deceitful|
+|Blunt|
+|Cautious|
+|Insecure|
+|Strong­willed|
+|Grim|
+|Crafty|
+|Scheming|
+|Greedy|
+|False|
+|Incurious|
+|Haughty|
+|Brutal|
+|Insincere|
+|Agonizing|
+|Brittle|
+|Forgetful|
+|Mealymouthed|
+|Unconvincing|
+|Resentful|
+|Repentant|
+|Extreme|
+|Erratic|
+|Irresponsible|
+|Confused|
+|High­handed|
+|Gloomy|
+|Delicate|
+|Dull|
+|Wishful|
+|Disturbing|
+|Suspicious|
+|Transparent|
+|Meddlesome|
+|Ridiculous|
+|Extravagant|
+|Hateful|
+|Inconsiderate|
+|Superstitious|
+|Uncreative|
+|Disloyal|
+|Foolish|
+|Paranoid|
+|Irrational|
+|Ignorant|
+|Troublesome|
+|Cowardly|
+|Uncaring|
+|Complaintive|
+|Inert|
+|Aimless|
+|Dependent|
+|Monstrous|
+|Argumentative|
+|Frightening|
+|Offhand|
+|Obvious|
+|Intolerant|
+|Indecisive|
+|Negativistic|
+|Calculating|
+|Clumsy|
+|Rowdy|
+|Opinionated|
+|Sordid|
+|Unhealthy|
+|Naive|
+|Unreflective|
+|Outrageous|
+|Repressed|
+|Weak|
+|Unprincipled|
+|Mannerless|
+|Cruel|
+|Expedient|
+|Cold|
+|Unrestrained|
+|Procrastinating|
+|Cynical|
+|Critical|
+|Dirty|
+|Softheaded|
+|Airy|
+|Willful|
+|Misguided|
+|Hesitant|
+|Criminal|
+|Impractical|
+|Narcissistic|
+|Destructive|
+|Ritualistic|
+|Obsessive|
+|Zany|
+|Crude|
+|Moody|
+|Prejudiced|
+|Fiery|
+|Thievish|
+|Fearful|
+|Small­thinking|
+|Overimaginative|
+|Demanding|
+|Lazy|
+|Insulting|
+|Devious|
+|Unimpressive|
+|Melancholic|
+|Distractible|
+|Ruined|
+|Disobedient|
+|Secretive|
+|Tactless|
+|Bizarre|
+|Uncharitable|
+|Escapist|
+|Submissive|
+|Sedentary|
+|Stupid|
+|Barbaric|
+|Bewildered|
+|Silly|
+|Excitable|
+|Faithless|
+|Envious|
+|Selfish|
+|Anxious|
+|Rigid|
+|Miserly|
+|Inhibited|
+|Abrupt|
+|Steely|
+|Difficult|
+|Colorless|
+|Sloppy|
+|Artificial|
+|Neglectful|
+|Single­minded|
+|Passive|
+|One­sided|
+|Possessive|
+|Treacherous|
+|Graceless|
+|Morbid|
+|Perverse|
+|Unimaginative|
+|Shy|
+|Mawkish|
+|Disorderly|
+|Predatory|
+|Tasteless|
+|Irritable|
+|Insensitive|
+|Disrespectful|
+|Ungrateful|
+|Uncooperative|
+|Messy|
+|Money­minded|
+|Unstable|
+|Odd|
+|Unappreciative|
+|Self­indulgent|
+|Flamboyant|
+|Asocial|
+|Assertive|
+|Malicious|
+|Unpolished|
+|Shortsighted|
+|Slow|
+|Stiff|
+|Oppressed|
+|Scornful|
+|Grand|
+|Unself­critical|
+|Fickle|
+|Desperate|
+|Fixed|
+|Weak­willed|
+|Dishonest|
+|Impatient|
+|Impulsive|
+|Sly|
+|Charmless|
+|Fawning|
+|Timid|
+|Disorganized|
+|Narrow|
+|Uncritical|
+|Sadistic|
+|Vague|
+|Undisciplined|
+|Unreliable|
+|Arrogantt|
+|Presumptuous|
+|Bland|
+|Mannered|
+|Mistaken|
+|Discouraging|
+|Narrow­minded|
+|Careless|
+|Childish|
+|Indulgent|
+|Venomous|
+|Power­hungry|
+|Coarse|
+|Unfriendly|
+|Hostile|
+|Opportunistic|
+|Trendy|
+|Petty|
+|Unlovable|
+|Regretful|
+|Shallow|
+|Superficial|
+|Crazy|
+|One­dimensional|
+|Miserable|
+|Unrealistic|
+
+
+|Hobbies:|
+|:-----|
+|Scrapbooking|
+|Dance|
+|Sculpting|
+|Genealogy|
+|Jewelry making|
+|Foreign language learning|
+|Crocheting|
+|Playing Musical Instruments|
+|Gaming (tabletop games and role­playing games)|
+|Lapidary|
+|Embroidery|
+|Cleaning|
+|Cosplaying|
+|Yo­yoing|
+|Puzzles|
+|Knitting|
+|Magic|
+|Cryptography|
+|Computer programming|
+|Drama|
+|Yoga|
+|Watching Movies|
+|Ping Pong|
+|RC cars|
+|Amateur radio|
+|Digital arts|
+|Web surfing|
+|Baton twirling|
+|Lego Building|
+|Sports|
+|Creative writing|
+|Cooking|
+|Leather crafting|
+|Gambling|
+|Quilting|
+|Origami|
+|Video gaming|
+|Coloring|
+|Juggling|
+|Sewing|
+|Homebrewing|
+|Drawing|
+|Painting|
+|Drinking Coffee|
+|Taxidermy|
+|Stand­Up Comedy|
+|Woodworking|
+|Wood carving|
+|Worldbuilding|
+|Writing|
+|Soapmaking|
+|Singing|
+|Eating|
+|Lacemaking|
+|Reading|
+|Pottery|
+|Model Building|
+|Handball|
+|Kiteflying|
+|Dowsing|
+|Rock climbing|
+|Nordic skating|
+|Paint Ball|
+|Graffiti|
+|Polo|
+|Motor sports|
+|Skateboarding|
+|Bird watching|
+|Gardening|
+|Beekeeping|
+|Foraging|
+|Urban exploration|
+|Snowboarding|
+|Ghost Hunting|
+|Kiteboarding|
+|Skydiving|
+|Basketball|
+|Taekwondo|
+|Hooping|
+|Skiing|
+|Running|
+|Sailing|
+|Backpacking|
+|Shopping|
+|Baseball|
+|Surfing|
+|Mountain biking|
+|Sculling or Rowing|
+|Flying|
+|Sand castle building|
+|Net Ball|
+|Fishing|
+|Metal detecting|
+|Machining|
+|Driving|
+|Photography|
+|Roller skating|
+|Hunting|
+|Football|
+|Astronomy|
+|Mushroom Hunting or Mycology|
+|Parkour|
+|Tai Chi|
+|Cycling|
+|LARPing|
+|Board sports|
+|Swimming|
+|BASE jumping|
+|Air sports|
+|Archery|
+|Kayaking|
+|Scuba Diving|
+|Inline Skating|
+|Geocaching|
+|Slacklining|
+|Rugby|
+|Vehicle restoration|
+|Shooting|
+|Skating|
+|Water sports|
+|Hiking|
+|Jogging|
+|Tennis|
+|Go|
+|Insect collecting|
+|Coin collecting|
+|Skateboarding|
+|Element collecting|
+|Jukskei|
+|Leaf collecting and pressing|
+|Paintball|
+|Baton Twirling|
+|Lincoln Douglas Debate|
+|Billiards|
+|Judo|
+|Fishing|
+|Triathlon|
+|Field Hockey|
+|League of Legends|
+|Chess|
+|Auto racing|
+|Card collecting|
+|Radio­controlled car racing (hobby grade)|
+|Audiophilia|
+|Debate|
+|Birdwatching|
+|Cricket|
+|Surfing|
+|Cricket (Indoor)|
+|Touch football|
+|Rugby league football|
+|Baseball|
+|Basketball|
+|Cheerleading|
+|Astrology|
+|Tour skating|
+|Roller Derby|
+|Shooting sport|
+|Marbles|
+|Swimming|
+|People watching|
+|Racquetball|
+|Microscopy|
+|Boxing|
+|Traveling|
+|Footbag|
+|Amateur geology|
+|Videophilia (Home theater)|
+|World of warcraft|
+|Model aircraft making and flying|
+|Amateur astronomy|
+|Gaming|
+|Slot car racing|
+|Disc golf|
+|Gongoozling|
+|Seashell collecting|
+|Trainspotting|
+|Bridge|
+|Color Guard|
+|Climbing|
+|Vintage Books|
+|Handball|
+|Bus spotting|
+|Cycling|
+|Table football|
+|Vintage cars|
+|Mineral collecting|
+|Golfing|
+|Aircraft spotting|
+|Stone collecting|
+|Badminton|
+|Jugger|
+|Football|
+|Cubing|
+|Shortwave listening|
+|College football|
+|Fossil hunting|
+|Exhibition Drill|
+|Reading|
+|Poker|
+|Rock stacking|
+|Pole dancing|
+|Weightlifting|
+|Curling|
+|Kart racing|
+|Gymnastics|
+|Volleyball|
+|Modelling|
+|Dancing|
+|Vintage clothing|
+|Ice hockey|
+|Animal showing|
+|Metal detecting|
+|Book collecting|
+|Auto Racing|
+|Antiquing|
+|Meteorology|
+|Record collecting|
+|Fencing|
+|Pigeon racing|
+|Equestrianism|
+|Figure skating|
+|Table tennis|
+|Dog sport|
+|Target shooting|
+|Art collecting|
+|Dota 2|
+|Herping|
+|Archery|
+|Association football (Soccer)|
+|Bowling|
+|Speed skating|
+|Squash|
+|Boxing|
+|Martial arts|
+|American football|
+|Australian Football League|
+|Volleyball|
+|Movie collecting|
+|Antiquities|
+|Geocaching|
+|Deltiology (Postcard collecting)|
+|Auto audiophilia|
+|Programming|
+|Flower collecting and pressing|
+|Airsoft|
+|Darts|
+|Seaglass collecting|
+|Stamp collecting|
+
+
+|Habbits:|
+|:-----|
+|High pitch/low raspy voice depending on mood|
+|Smacking gum|
+|Toying with objects before them|
+|Tapping foot|
+|Putting their feet on a desk or table|
+|Rubbing eyes/chin|
+|Speech patterns|
+|Squinting|
+|Glancing at watch|
+|Clicking or tapping teeth with a nail|
+|Talking with a full mouth|
+|Shrugging|
+|Playing with their glasses (spectacles) either pushing them up their nose or taking them off and twirling then by one of the arms.|
+|Chewing on their pencil|
+|Chewing bottom lip|
+|Humming|
+|Gesturing a lot when speaking|
+|Picking at nail polish|
+|Stuttering|
+|Applying Chap Stick to lips|
+|Potty mouth|
+|Twirling a ring around finger|
+|Cross/uncross legs|
+|Jiggling leg up and down|
+|Shifts in their seat when nervous|
+|Sniffing|
+|Slurping|
+|Raising eyebrows as they speak|
+|Pointing|
+|Slouching|
+|Cracking knuckles (cliche)|
+|Jaw clenching/jaw muscle jerking (mainly a male attribute)|
+|Twirling hair|
+|Pulling at bottom lip|
+|Snapping fingers|
+|Picking at teeth|
+|Rubbing hands together|
+|Yawning|
+|Winking|
+|Running fingers through hair|
+|Excessive eye blinking|
+|Pinching skin|
+|Picking at facial hair—eyebrows/eye lashes/moustache|
+|Licking lips|
+|Whistling|
+|Constantly apologizing|
+|Constantly checking cell phone for messages (text or voice)|
+|Eye-rolling|
+|Saluting|
+|Biting fingernails|
+|Slapping people on the back|
+|Constantly touching up makeup using a compact mirror|
+|Sliding the tip of one's index fingernail up and down along the side of the thumb beside it|
+|Nervous cough|
+|Burping|
+
+
+##Main Fantasy Character Classes:
+
+|Fighter Class| Description|
+|:------------:|:----------|
+|The Fighter Classes|  The fighter is basically, the strong person with heavy armor, a large melee weapon, and possibly a shield or second melee weapon.
+|The Barbarian:|(Also known as a Berserker) focused more on damage than defense. They have higher defense than other warriors.
+|The Knight:| An experienced fighter with better armor and a lot times he is on an armored horse.
+|The Swashbuckler:| A fighter that is lightweight and sometimes has little or no armor. They have great agility, cunning, and technical skills.
+|The Paladin:| (Also known as a Crusader, Templar, and Inquisitor) Light based knight with Healer abilities most of the time. Uses White Magic to gain higher defense.
+|The Dark Knight:| (Antipaladin and Death Knight.) Is the opposite of a Paladin. Their dark magic deal high amounts of damage and can lower stats of the foe.
+|The Dragon Knight:| (Also known as a Dragoon (Dragon rider)) Their armor is normally in a dragon style. They rarely fly, but commonly jump high and have fire breath. They can deal greater damage to dragons and most of the time have a dragon as a pet.
+|The Samurai:| Normally have less defense. They have Ki attacks, speed, great damage, and mobility.
+|Warlord:| (Also known as a General, Marshal, Commander, and Tactician) Tactical master. He can hold his own in frontline combat and gives allies around him bonuses for their stats.
+|Hero:| (Also known as a Lord or Protagonist) Good all around. They gain magic and unique skills. They always use a sword and a shield. It is possible that they will have no magic or shield, but that makes a really boring hero.
+
+|Magician Class| Description|
+|:------------:|:----------|
+|The Magician Classes:| (Also known as a Mage, Sorcerer, Wizard, Warlock, Witch, Magus, Magician, Sage, and Magi.) The magician uses magic against foes. There is a massive variety of different magic and one can make up an infinite number of magic users, but here are the basic magicians.
+|The Inherent Gift Magician:| (Known as a Sorcerer) Born with magic and do not need to study it. They normally do not know many spells unless they study.
+|The Theurgist Magician:| (Known as a Warlock) The magician gains magic by making a contract with a spirit.
+|The Summoner Magician:| (known as a Conjurer) A high level Theurgist magician. They can summon beings to do their bidding
+|The Vancian Magician:| (Know as a Wizard) These magicians study hard and learn magic.
+|The Red Mage:| They are open minded and study a variety of magic.
+|The Blue Mage:| (known as Mime or Mimic) They learn magic by fighting and can absorb magic or by seeing their enemies use magic abilities.
+|The Necromantic Magician:| They use the power of the dead, blood, and death energy. They are normally bad, but not all dark users are evil.
+|The Illusionist Magician:| They are only able to cast illusions.
+|The Nature Magician:| Have power over nature. Ex: Controlling vines, fire, water, throwing rocks, and creatures.
+|The Elemental Magician:| They can only control the elements. Fire, water, wind, etc.
+|The Druid Magician:| The can do anything related to nature. Turn into animals, trees, use fire with help of spirits, etc.
+|The Shamanic Magician:| Summons and makes deals with spirits.
+|The Elemental Magician:| They can control the elements. Plants, water, ice, fire, etc. Can be born with their power or a pack with a spirit or demon.
+
+|Rogue Class| Description|
+|:------------:|:----------|
+|The Rogue Classes:| (Also known as a thief, ninja, assassin, shadow, pirate, scout, and gambler.). Rogues are normally thieves or treasure hunters. They are good at lockpicking, traps, disarming, sneak attacks, and attacking from the behind.
+|The Thief:| Ability to steal items from enemies or others. Normally the theft can steal rare items.
+|The Assassin:| Very stealthy and has many fighting abilities. It normally poisons the enemy to easily take them down.
+|The Gambler:| Has magic that rely on chance. They fight with cards or other gambling game items.
+|The Ninja:| Have a large range of skills. Vanishing with smoke and has most rogue like class skills. They normally hide their face in the ninja outfit, throw items like shurikens (Normally good with any weapon), and are crazy fast. The sometimes can use special powers with chakra.
+|The Shadow:| Ninja like rogues that hide in shadows or can hide in a shadow dimension they create.
+|The Pirate:| A rogue that can switch from sword and pistol. They are not normally strong, but captains normally are very good at sword play, stealing, and tricks or riddles. For example, hiding their treasure, making traps, and anything to protect their belongings. They are not always at sea, but normally have some kind of transportation. Sky pirates, water pirates, sand boat pirates, etc.
+|The Scout:| They move from place to place quickly with superior sensory and information gathering skills. They are normally not noticed and if they are then they are killed. Not many scouts are good at combat.
+
+|Cleric Class| Description|
+|:------------:|:----------|
+|The Cleric Classes:| (Also known as a medic or healer.)  Unlike Magician|classes, the Clerics usually draw their powers from Faith (god). They normally need to follow and practice their belief to use their power or it has a chance of backfiring on them.
+|The Priest:| (Known as Healer and White Mage) They are able to fight off certain types of enemies like demons or undead beings. They normally have healing powers as well.
+|The Battle Priest:| They carry blessed weapons that can cause great damage to enemies. They normally fight in close combat.
+|The Witch Doctor:| Their power comes from nature culture worshiping.
+|The Templar:| They are a jack of all trades, but weaker than most classes and normally handle the church dirty work. Covering things up.
+|The Caster:| This character is usually female and the heroine. They will be in the party because no one else can use magic. They are normally weak all around, but progress overtime. 
+
+|Ranger Class| Description|
+|:------------:|:----------|
+|The Ranger Classes:| (Also known as a ranger, woodsmen, and hunter.) Rangers are good at archery, but can use a sword if they have to. They have skills to survive in the wilderness and can sometimes use nature magic.
+|The Sniper Ranger:| This type of ranger is only an archer, but does higher damage with projectiles for this reason. Their projectiles may cause status changes to their enemy. EX: Slow them down, poison them, lower their defense, etc. They are in the back of the troops because they are horrible at close combat.
+|The Bow and Blade Ranger:| This type of ranger uses weapons with a blade. They are good at close combat and are okay with a bow.
+|The Beastmaster Ranger:| This ranger can permanently take control of animals and have them destroy the enemy while they heal their allies and support with long range weapons.
+|The Dual Wielding Ranger:| Uses two melee weapons.
+|The Trapper Ranger:| Good at laying various traps and making it so the enemies can easily be ambushed.
+|The Magical Ranger:|  Uses enchanted arrows. They can freeze the enemy, slow them down, or trap them in a net. Almost any kind of element.
+
+|Rarer Class| Description|
+|:------------:|:----------|
+|Rarer Class Archetypes:| Depends on the world and has science fiction or medieval setting thrown around in it.
+|Magic Knight:| Other Names: (Known as Hexblade, Spellblade, Rune Knight, Eldritch Knight.) The Magic Knight is a hybrid is a combat magician. Normally weaker at magic than a mage and not as good in combat as a fighter.
+|The Bard:| They use songs for strengthening allies, weakening enemies, status effects, and cause damage. Bards are good at diplomacy compared to most classes.
+|The Dancer:| A variation of the Bard, but dances instead. Using dance styles to cut up the enemy and other effects.
+|The Monk:| (Known as Black Belt and Martial Artist) The Monk uses their bare fists to fight or use only martial art weapons like nunchucks and staffs. They often use Ki Attacks and charge up attacks.
+|The Engineer:| know as Tinker, Machinist, and Gadgeteer.) Engineers rely on technology. They are seen in most genre related to science fiction. For example, steampunk, cyberpunk, and clockpunk. They have guns and bombs as weapons. They sometimes employ stationary and mobile machines on the battlefield.
+|The Alchemist:| Chemist. An Alchemist combines items, magic, and science to make bombs, potions, and sometimes changing the structure of objects or creature around them. Sometimes they use their own body in experiments.
+|The Psychic:| (Known ad Psion and Mentalist) Psychics use telepathy and psychokinesis to attack the enemies mind or to deal damage to his body. It differs from magic because it is done with the mind or brain. Magic just comes out of no where. Poof! Magic.
+|The Gunslinger:| They use a variety of guns most of the time. They normally just involve guns to be honest. Most of the time very skilled at them compared to engineers.
+
+
+
 #Chapter 17: Upgrading and Export Project
 
 **Upgrading:**
