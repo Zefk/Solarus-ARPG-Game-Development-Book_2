@@ -3447,86 +3447,66 @@ Sidescrollers or Platformers are normally constant action and almost no dialog. 
 |walk|
 |Look up|
 |Pound|
+|Push|
 
-|Random Feature Dump:|
-|:-----|
-|Bouncers|
-|objects that change speed on impact|
-|Floating objects|
-|Growing objects|
-|Giant falling objects that break tiles|
-|Locked doors|
-|Blockades|
-|Secret rooms and shortcuts|
-|Invisible sections that appear once touched.|
-|Objects that get bigger when touched|
-|Floating points|
-|Flying mode|
-|Digging mode|
-|Travel up wall mode|
-|Underwater mode|
-|Super mode. The ability to walk up walls and destroy enemies faster|
-|Animated backgrounds|
-|Checkpoints|
-|Falling walls|
-|Turning spikes|
-|Jumping enemies|
-|Giant creatures coming out of liquid like elements|
-|Balance beam|
-|Projectiles bouncing off walls|
-|Unlimited ammo|
-|Scrolling object to prevent the hero from going back the other direction.|
-|A wheel moving on wire|
-|Bridges that fall after a certain amount of time|
-|Enemies on pools to prevent one from jumping on them|
-|Platforms that are unusable after one use.|
-|Enemies that turn into balls|
-|Floating enemies that move in a zigzag pattern|
-|Enemies that make the screen wave and distort|
-|Rubbery platforms|
-|Rolling tubes|
-|Push back beam or spray|
-|Wave creature platforms|
-|Spiked platforms - they flip once a switch is hit|
-|Double spiked platforms - two platforms flip at the same time once a switch is hit|
-|Objects that pop and shoot out moving points|
-|Floating direction rocks|
-|A boss that shoots out enemies once hit and gets smaller each time.|
-|Flying creatures that fall once they are knocked on the head|
-|Falling stones|
-|Falling block game|
-|Allied creature|
-|Killer spinning spikes|
-|Projectile thrower and cannon shooters|
-|Projectile blocking throwers|
-|Elemental projectiles|
-|Projectile thieves|
-|Slot machine game|
-|Enemies that sleep when you look at them and awake you are not looking.|
-|Creatures that jump out- Boo!|
-|Stones that move up and down|
-|Flame wheels|
-|Spinning blocks|
-|Bubble attacks|
-|Enemies hiding behind bushes|
-|Enemies that drop bombs from the sky|
-|Absorb attacks|
-|Same enemies with shields|
-|Hiding stealthy enemy popping out from behind images|
-|Signs to help direct the player|
-|Object platforms the pop after you jump off them (Projectiles, bombs, etc)|
-|Screen scroll|
-|Flying rocket cannons|
-|90 degree platform|
-|Floating rock that changes directions depending on what it hits and how many times the player jumps on it|
-|Falling rolling spike enemies|
-|Sticky ceiling|
-|Chain ball that rises when the player hits the roller at the top of the chain|
-|spiked balls on walls|
-|Pushing object off ledges|
-|Fancy explosion defeat and elegant exit|
-|Muti jump on switch to activate it.|
-|Enemies that die when stomped on.|
+|Random Feature Dump:|Description|
+|:--------|:----------|
+|Bouncers| A object that makes the player jump higher when it is jumped on.
+|Speed Objects| Objects that change speed on impact.|
+|Floating Objects| They are floating objects in the air.
+|Growing Objects| This object grows when something is planted. Normally a seed that grows a giant. plant, so the player can climb or walk up it.
+|Falling Tile Breaker|Giant falling objects or NPC that break tiles.|
+|Locked Doors| The player needs to find the key to unlock the door.
+|Blockades| Objects that slow down the player. For example, spikes along a path. The player would need to jump carefully onto something to avoid damage.
+|Secret Rooms/shortcuts| A quick shortcut on a hard to get to part of the map that allows all bonuses + beat the level without much effort or a mini game in a secret area.
+|Invisible Sections| These areas of the map only appear when they are hit or touched.
+|Object Growth| Objects that get bigger when they are hit or touched.
+|Floating Points|Objects that float in the air. If they are hit, then the player gets a number point value or some kind of bonus.
+|Flying Mode| Allows the player to fly.
+|Digging Mode| Allows the player to dig.
+|Travel Up Wall Mode| Allows the player to climb up wall.
+|Underwater Mode| Allows the player to swim and breath under water.
+|Super Mode.| The ability to walk up walls and destroy enemies faster.
+|Animated Backgrounds| A background that animates.
+|Checkpoints| The player will go back to this point if the mission is failed or death occurs.
+|Falling Walls| The walls slam down. Most likely causes damage.
+|Turning Spikes| Spikes that turn on a wheel. The player normally has to avoid this obstacle by running at the right time.
+|Jumping Enemies| Enemies that can jump.
+|Hidden Giants|Giant creatures coming out of liquid like elements.
+|Balance Beam| This is a platform that the player stands on or jumps on one edge of a platform for it to tilt.
+|Projectile Ricochet| The projectile bounces off walls or other objects.
+|Unlimited Ammo| No limit for projectiles that can be fired.
+|Scrolling Object/Scene| The scene follows behind the player preventing the player from going back or if the scene catches up with the player, then death occurs. An object that only makes a pass once and it will not come back when the player uses it. This prevents the player from using it again to go back.
+|Wheel On Wire| A wheel that moves on a wire when it is jumped on. There would normally be edges on the wheel for the player.
+|Falling Platform| This would be platform or bridges that falls after a certain amount of time of standing on it or just by touching it.
+| Enemy Pole Obstacle|An enemy on an object to prevent the player character from jumping on it.
+|Rollers| Enemies that turn into balls and roll. Sometimes they can be used to kill other enemies.
+|Zigzag Flayers| Floating enemies that move in a zigzag pattern.
+|Distort Object| Enemies or items that make the screen wave, wiggle, and distort.
+|Rubbery platforms| Platforms that wiggle like rubber.
+|Rolling Tubes| Tubes that the player can hide in and roll over enemies. Sometimes barrels or logs are used for this.
+|Enemy Platform| This platform is an enemy. Normally used to trick the player when they are not paying attention.
+|Spiked Platforms| The platform flips once a switch is hit. Normally the platform is in a position that the player cannot jump on until the switch is flipped or the next platform will not flip.
+|Double Spiked Platforms| Two platforms flip at the same time once a switch is hit. Normally timed and they have spikes on one end.
+|Point/Bonus Trap| Objects that have enemies pop out of moving/stationary points.
+|Temporary Flying creatures| Flying creatures that fall once they are knocked on the head. Normally they do not regain their flight ability.
+|Falling Stones| Falling stones are a common trap.
+|Falling Block Game| Kinda like a falling block pattern game, but the blocks are huge and can kill the player.
+|Allied Creature| A creature that can run down and kill enemies.
+|Projectile Thieves| These enemies steal our projectiles.
+|Enemy Ghosts| Enemies that sleep when you look at them (immortal at this point)and awake you are not looking. Normally a projectile needs to be bounced off a wall to kill them.
+|Enemy Boo!| These enemies jump out of hidden locations.
+|Flame Wheels| Wheels that move and have flames on them.
+|Bombers|Enemies that drop bombs from the sky.
+|Defenders| Enemies with shields.
+|Sign Tips| Signs to help direct the player.
+|Popping Platforms| Platforms that blow up after being stood on for a few seconds.
+|Giant Bullets| Random giant bullets that fly in one direction.
+|Sticky ceiling| The player gets stuck on the ceiling for a few seconds.
+|Movable Objects| Objects that can be pushed and moved into ditches to help the player cross.
+|Fancy Exit| There is a fancy explosion or sparkles when the player passes a level.
+|Multi-jump Switch| A switch that has to be jumped or slammed on multiple times in order for it to activate.
+|Stomp Enemies| An enemy that dies when stomped or jumped on.
 
 ##Basic Story Making\Genre:
 
