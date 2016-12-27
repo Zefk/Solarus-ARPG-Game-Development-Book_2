@@ -34,7 +34,7 @@
 
 **Chapter 15:** Make a Chain Quest
 
-**Chapter 16:** Game Design Walkthrough
+[Chapter 16: Game Design Walkthrough](#chapter-16-game-design-walkthrough)
 
 **Chapter 17:** Upgrading and Export Project
 
