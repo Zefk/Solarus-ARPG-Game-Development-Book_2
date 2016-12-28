@@ -3299,12 +3299,12 @@ These attack patterns are normally used by all enemies. Some foes are only one o
 |Wack the Whistle|This enemy hides in a hole and comes out to attack.
 |Terrain| This type of enemy uses the terrain to attack the hero. For example, falling spikes or rocks. Also, it can spin the terrain or bump up the edges to make the hero go off balance.
 |Grab and throw| This type of enemy grabs and throws the hero.
-|One with Terrain| This type of enemy becomes one with the terrain. For example, an enemy can cover itself with water and attack. A good way to defeat it would to know the core out of the water.
-|The Phantom| A enemy that normally floats, becomes invisible, and hides in a shadow. An item is normally needed to see it or light basic to take damage.
-|The deflector| These enemies attacks must be deflected and bounced back at it so it will take damage. The enemy might be able to deflect it back too.
+|One with Terrain| This type of enemy becomes one with the terrain. For example, an enemy can cover itself with water and attack. A good way to defeat this type would to know where the core is.
+|The Phantom| A enemy that normally floats, becomes invisible, and hides in a shadow. An item is normally needed to see it and/or light based attacks to cause damage.
+|The deflectors| The projectile attacks need to be deflected and bounced back at the enemy in order for the foe to take damage. The enemy might be able to deflect back.
 |Projectile seeker| This enemy shoots projectiles and sometimes the projectile will follow the hero.
 |Hammer|This type of enemy rises in the air and slams down to the ground like a hammer.
-|Clone|This type of enemy can clone them self and the only way to defeat them is to take out the original.
+|Clone|This type of enemy can clone them self and the only way to defeat them is to take out the original or quickily defeat them all.
 |limp-flation| This enemy either inflates its limps to make them bigger or ejects their like a hookshot. This type of enemy normally protects its limps, so it does not take damage.
 |Floor mover| This type of enemy works with the floors. It can change its location and bounce off the walls at a rapid pace. For example, they can bounce off the walls by bouncing, spinning, climbing, magic, flip, and blade.
 |The magician| The magician is similar to the Phantom, but it normally uses magic tricks. For example, runs into a mirror, teleport, strikes with magic, turns into objects, protects itself in a hat, and etc.
