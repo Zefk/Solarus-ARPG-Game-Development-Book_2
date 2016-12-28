@@ -4450,19 +4450,18 @@ There are many outline styles. More info: [Here](http://forum.solarus-games.org/
 |Nervous cough|
 |Burping|
 
-
 ##Main Fantasy Character Classes:
 
 |Fighter Class| Description|
 |:------------:|:----------|
 |The Fighter Classes|  The fighter is basically, the strong person with heavy armor, a large melee weapon, and possibly a shield or second melee weapon.
 |The Barbarian:|(Also known as a Berserker) focused more on damage than defense. They have higher defense than other warriors.
-|The Knight:| An experienced fighter with better armor and a lot times he is on an armored horse.
+|The Knight:| An experienced fighter with better armor and a lot of times he is on an armored horse.
 |The Swashbuckler:| A fighter that is lightweight and sometimes has little or no armor. They have great agility, cunning, and technical skills.
 |The Paladin:| (Also known as a Crusader, Templar, and Inquisitor) Light based knight with Healer abilities most of the time. Uses White Magic to gain higher defense.
 |The Dark Knight:| (Antipaladin and Death Knight.) Is the opposite of a Paladin. Their dark magic deal high amounts of damage and can lower stats of the foe.
 |The Dragon Knight:| (Also known as a Dragoon (Dragon rider)) Their armor is normally in a dragon style. They rarely fly, but commonly jump high and have fire breath. They can deal greater damage to dragons and most of the time have a dragon as a pet.
-|The Samurai:| Normally have less defense. They have Ki attacks, speed, great damage, and mobility.
+|The Samurai:| Normally have less defense. They have Ki attacks, speed, great damage, and mobility. They are experts with swords and are known to be able to deflect bullets with their blade. It has been proven that they were able to.
 |Warlord:| (Also known as a General, Marshal, Commander, and Tactician) Tactical master. He can hold his own in frontline combat and gives allies around him bonuses for their stats.
 |Hero:| (Also known as a Lord or Protagonist) Good all around. They gain magic and unique skills. They always use a sword and a shield. It is possible that they will have no magic or shield, but that makes a really boring hero.
 
@@ -4474,7 +4473,7 @@ There are many outline styles. More info: [Here](http://forum.solarus-games.org/
 |The Summoner Magician:| (known as a Conjurer) A high level Theurgist magician. They can summon beings to do their bidding
 |The Vancian Magician:| (Know as a Wizard) These magicians study hard and learn magic.
 |The Red Mage:| They are open minded and study a variety of magic.
-|The Blue Mage:| (known as Mime or Mimic) They learn magic by fighting and can absorb magic or by seeing their enemies use magic abilities.
+|The Blue Mage:| (known as Mime or Mimic) They learn magic by fighting and can absorb magic or learn it by seeing their enemies use magic abilities.
 |The Necromantic Magician:| They use the power of the dead, blood, and death energy. They are normally bad, but not all dark users are evil.
 |The Illusionist Magician:| They are only able to cast illusions.
 |The Nature Magician:| Have power over nature. Ex: Controlling vines, fire, water, throwing rocks, and creatures.
@@ -4486,9 +4485,9 @@ There are many outline styles. More info: [Here](http://forum.solarus-games.org/
 |Rogue Class| Description|
 |:------------:|:----------|
 |The Rogue Classes:| (Also known as a thief, ninja, assassin, shadow, pirate, scout, and gambler.). Rogues are normally thieves or treasure hunters. They are good at lockpicking, traps, disarming, sneak attacks, and attacking from the behind.
-|The Thief:| Ability to steal items from enemies or others. Normally the theft can steal rare items.
-|The Assassin:| Very stealthy and has many fighting abilities. It normally poisons the enemy to easily take them down.
-|The Gambler:| Has magic that rely on chance. They fight with cards or other gambling game items.
+|The Thief:| Ability to steal items from enemies or others. Normally the thief can steal rare items.
+|The Assassin:| Very stealthy and has many fighting abilities. The assassin normally poisons the enemy to easily take them down.
+|The Gambler:| Has some magic that relies on chance. They fight with cards or other gambling game items.
 |The Ninja:| Have a large range of skills. Vanishing with smoke and has most rogue like class skills. They normally hide their face in the ninja outfit, throw items like shurikens (Normally good with any weapon), and are crazy fast. The sometimes can use special powers with chakra.
 |The Shadow:| Ninja like rogues that hide in shadows or can hide in a shadow dimension they create.
 |The Pirate:| A rogue that can switch from sword and pistol. They are not normally strong, but captains normally are very good at sword play, stealing, and tricks or riddles. For example, hiding their treasure, making traps, and anything to protect their belongings. They are not always at sea, but normally have some kind of transportation. Sky pirates, water pirates, sand boat pirates, etc.
@@ -4496,7 +4495,7 @@ There are many outline styles. More info: [Here](http://forum.solarus-games.org/
 
 |Cleric Class| Description|
 |:------------:|:----------|
-|The Cleric Classes:| (Also known as a medic or healer.)  Unlike Magician|classes, the Clerics usually draw their powers from Faith (god). They normally need to follow and practice their belief to use their power or it has a chance of backfiring on them.
+|The Cleric Classes:| (Also known as a medic or healer.)  Unlike magicians their power comes from worshiping some kind of god.|classes, the Clerics usually draw their powers from Faith (god). They normally need to follow and practice their belief to use their power or it has a chance of backfiring on them.
 |The Priest:| (Known as Healer and White Mage) They are able to fight off certain types of enemies like demons or undead beings. They normally have healing powers as well.
 |The Battle Priest:| They carry blessed weapons that can cause great damage to enemies. They normally fight in close combat.
 |The Witch Doctor:| Their power comes from nature culture worshiping.
@@ -4515,16 +4514,15 @@ There are many outline styles. More info: [Here](http://forum.solarus-games.org/
 
 |Rarer Class| Description|
 |:------------:|:----------|
-|Rarer Class Archetypes:| Depends on the world and has science fiction or medieval setting thrown around in it.
-|Magic Knight:| Other Names: (Known as Hexblade, Spellblade, Rune Knight, Eldritch Knight.) The Magic Knight is a hybrid is a combat magician. Normally weaker at magic than a mage and not as good in combat as a fighter.
+|Rarer Class Archetypes:| This class depends on the world. These classes have a science fiction or medieval setting thrown around in them.
+|Magic Knight:| Other Names: (Known as Hexblade, Spellblade, Rune Knight, Eldritch Knight.) The Magic Knight is a hybrid combat magician. Normally weaker at magic than a mage and not as good in combat as a fighter.
 |The Bard:| They use songs for strengthening allies, weakening enemies, status effects, and cause damage. Bards are good at diplomacy compared to most classes.
 |The Dancer:| A variation of the Bard, but dances instead. Using dance styles to cut up the enemy and other effects.
 |The Monk:| (Known as Black Belt and Martial Artist) The Monk uses their bare fists to fight or use only martial art weapons like nunchucks and staffs. They often use Ki Attacks and charge up attacks.
-|The Engineer:| know as Tinker, Machinist, and Gadgeteer.) Engineers rely on technology. They are seen in most genre related to science fiction. For example, steampunk, cyberpunk, and clockpunk. They have guns and bombs as weapons. They sometimes employ stationary and mobile machines on the battlefield.
-|The Alchemist:| Chemist. An Alchemist combines items, magic, and science to make bombs, potions, and sometimes changing the structure of objects or creature around them. Sometimes they use their own body in experiments.
+|The Engineer:| (known as Tinker, Machinist, and Gadgeteer.) Engineers rely on technology. They are seen in most genre related to science fiction. For example, steampunk, cyberpunk, and clockpunk. They have guns and bombs as weapons. They sometimes employ stationary and mobile machines on the battlefield.
+|The Alchemist:| Chemist. An Alchemist combines items, magic, and science to make bombs, potions, and sometimes changing the structure of objects or creature around them. They often they use their own body in experiments.
 |The Psychic:| (Known ad Psion and Mentalist) Psychics use telepathy and psychokinesis to attack the enemies mind or to deal damage to his body. It differs from magic because it is done with the mind or brain. Magic just comes out of no where. Poof! Magic.
 |The Gunslinger:| They use a variety of guns most of the time. They normally just involve guns to be honest. Most of the time very skilled at them compared to engineers.
-
 
 
 #Chapter 17: Upgrading and Export Project
