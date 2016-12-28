@@ -3300,23 +3300,23 @@ These attack patterns are normally used by all enemies. Some foes are only one o
 |Terrain| This type of enemy uses the terrain to attack the hero. For example, falling spikes or rocks. Also, it can spin the terrain or bump up the edges to make the hero go off balance.
 |Grab and throw| This type of enemy grabs and throws the hero.
 |One with Terrain| This type of enemy becomes one with the terrain. For example, an enemy can cover itself with water and attack. A good way to defeat this type would to know where the core is.
-|The Phantom| A enemy that normally floats, becomes invisible, and hides in a shadow. An item is normally needed to see it and/or light based attacks to cause damage.
+|The Phantom| A enemy that normally floats, becomes invisible, and hides in a shadow. An item is normally needed to see it and/or light based attacks to cause damage. A phantom can use curses to hurt the hero when they try to cause damage. That curse only lasts a few seconds or a condition needs to be met to break it.
 |The deflectors| The projectile attacks need to be deflected and bounced back at the enemy in order for the foe to take damage. The enemy might be able to deflect back.
 |Projectile seeker| This enemy shoots projectiles and sometimes the projectile will follow the hero.
 |Hammer|This type of enemy rises in the air and slams down to the ground like a hammer.
-|Clone|This type of enemy can clone them self and the only way to defeat them is to take out the original or quickily defeat them all.
-|limp-flation| This enemy either inflates its limps to make them bigger or ejects their like a hookshot. This type of enemy normally protects its limps, so it does not take damage.
-|Floor mover| This type of enemy works with the floors. It can change its location and bounce off the walls at a rapid pace. For example, they can bounce off the walls by bouncing, spinning, climbing, magic, flip, and blade.
-|The magician| The magician is similar to the Phantom, but it normally uses magic tricks. For example, runs into a mirror, teleport, strikes with magic, turns into objects, protects itself in a hat, and etc.
-|Dark hero| This is a dark version of the hero. Normally encountered in other world or dimensions.
+|Clone|These types of enemies can clone themselves and the only way to defeat them is to take out the original or quickily defeat them all.
+|limp-flation| This enemy either inflates its limps to make them bigger or ejects their limbs like a hookshot. This type of enemy normally protects its limps, so it will not take damage.
+|Floor mover| This type of enemy works with the floors. It can change its location and bounce off the walls at a rapid pace. For example, they can bounce off the walls by bouncing, spinning, climbing, using magic, flipping, and with their blades.
+|The magician| The magician is similar to the Phantom, but it normally uses magic tricks. For example, runs into a mirror, teleport, strikes with magic, turns into objects, protects itself in a hat, etc.
+|Dark hero| This is a dark version of the hero. Normally encountered in other worlds or dimensions.
 |Weapon| This type of enemy fight with weapons.
-|Distancer| This enemy normally hides on the ceiling, jumps on pillars, and/or flys at a distance so it does not take damage.
+|Distancer| This enemy normally hides on the ceiling, jumps on pillars, and/or flys at a distance. That way this flying foe does not take damage until it comes down to attack.
 |Duplicator| This type of enemy divides based on the damage that is being taken.
-|Color warning| This enemy display warnings that tells the hero what kind of attack it will use or how rapid it will be. It does not have to be colors to be honest.
+|Color warning| This enemy display warnings that tells the hero what kind of attack it will use or how rapid its strikes will be. It does not have to be colors to be honest.
 |Monster commander| This type of enemy can produce weaker enemies to attack the hero.
 |Suicide Bomber| This type of enemy kills itself to harm the hero in an explosion.
 |Time traveler| This enemy can restore its health by time traveling its body. A normal effect is that it gets distorted and weakened as it keeps doing it.
-|The eater| This type of enemy eats the hero for a type and spits the player out.
+|The eater| This type of enemy eats the hero for a short time and spits the hero out.
 |Damaged by terrain only| This enemy can only be harmed by something in the terrain. A special root or statue with special powers.
 |Drag down| This type of enemy drags the hero down. Normally resulting in going to a different floor.
 |Transformer| This enemy changes and gets stronger the more it is attacked.
@@ -3369,18 +3369,18 @@ Telling you how to design your map is almost impossible because there is no righ
 
 |Tip|Description|
 |:-----:|:-----|
-|Cludder| Do not put to many objects on one map unless it is like a junk yard or something like that.
+|Cludder| Do not put too many objects on one map unless it is like a junk yard or something like that.
 |Duplicate objects| The same objects all over the place would look weird. The same flower pot appearing in a room 10 times would look unnatural.
-|Spacing| Try to keep decent space when making a map. For example, one want to get around the chair.
+|Spacing| Try to keep decent space when making a map. For example, one will want to get around the chair.
 |Larger Rooms| Small rooms are okay for houses, but in main locations they should be a bit more complex. For example, a square room after every door might get boring.
-|Outline| One should outline the map with basic tiles first because if one were to change things later after mapping it might look bad or a lot of things might need to be moved around. A complete map redesign can be needed in some cases when a change is decided.
+|Outline| One should outline the map with basic tiles first because if one were to change things later after mapping, then it might look bad or a lot of things might need to be moved around. A complete map redesign can be needed in some cases when a change is decided.
 |Doors| Doors are always good to have because there is just that wonder of what is on the other side. Having the door locked is even better because it is like a forbidden special place.
-|Plant Life| Plant life (EX: Vines) around windows and other places can make map look natural and not so plain.
-|Stairs|Going up to another level of floor can be as exciting as opening a door. What is up there? A stairway that is blocked can be more interesting.
+|Plant Life| Plant life (EX: Vines) around windows and other places can make maps look natural and not so plain.
+|Stairs|Going up to another level or floor can be as exciting as opening a door. What is up there? A stairway that is blocked can be more interesting.
 |Hidden Floors| Finding hidden floors can make the hero feel special and enjoy exploring the map more.
 |World Name| The world having a name can help you with your map organization. You do not want to get lost in over 100 maps.
 |Challenging| Getting through a map too easily can be a drag! Make it at least a little tough or have some locations that can be seen, so the player will not want to leave the map as soon as possible.
-|Heal Spots|Having spots to rest and have a person there to give you information is good way to not make a player mad while playing the game.
+|Heal Spots|Having spots to rest and people there to give one information is good way to not make a player mad while playing the game.
 
 **Map Examples Legend:**
 
@@ -3452,7 +3452,7 @@ Sidescrollers or Platformers are normally constant action and almost no dialog. 
 |Bouncers| A object that makes the player jump higher when it is jumped on.
 |Speed Objects| Objects that change speed on impact.|
 |Floating Objects| They are floating objects in the air.
-|Growing Objects| This object grows when something is planted. Normally a seed that grows a giant. plant, so the player can climb or walk up it.
+|Growing Objects| This object grows when something is planted. Normally a seed that grows a giant plant. That way the player can climb or walk up it.
 |Falling Tile Breaker|Giant falling objects or NPC that break tiles.|
 |Locked Doors| The player needs to find the key to unlock the door.
 |Blockades| Objects that slow down the player. For example, spikes along a path. The player would need to jump carefully onto something to avoid damage.
@@ -3464,19 +3464,19 @@ Sidescrollers or Platformers are normally constant action and almost no dialog. 
 |Digging Mode| Allows the player to dig.
 |Travel Up Wall Mode| Allows the player to climb up wall.
 |Underwater Mode| Allows the player to swim and breath under water.
-|Super Mode.| The ability to walk up walls and destroy enemies faster.
+|Super Mode| The ability to walk up walls, be immortal, and destroy enemies faster by just walking into them. Super mode does not last long.
 |Animated Backgrounds| A background that animates.
 |Checkpoints| The player will go back to this point if the mission is failed or death occurs.
 |Falling Walls| The walls slam down. Most likely causes damage.
 |Turning Spikes| Spikes that turn on a wheel. The player normally has to avoid this obstacle by running at the right time.
 |Jumping Enemies| Enemies that can jump.
 |Hidden Giants|Giant creatures coming out of liquid like elements.
-|Balance Beam| This is a platform that the player stands on or jumps on one edge of a platform for it to tilt.
+|Balance Beam| This is a platform that the player stands on or jumps on. One edge of a platform will tilt or tilt back if the player goes to the other edge. The platform normally stays balanced when the player stands in the middle.)
 |Projectile Ricochet| The projectile bounces off walls or other objects.
 |Unlimited Ammo| No limit for projectiles that can be fired.
-|Scrolling Object/Scene| The scene follows behind the player preventing the player from going back or if the scene catches up with the player, then death occurs. An object that only makes a pass once and it will not come back when the player uses it. This prevents the player from using it again to go back.
+|Scrolling Object/Scene| The scene follows behind the player preventing the player from going back or if the scene catches up with the player, then death occurs. Furthermore, this scrolling can involve an object that only makes a pass once and it will not come back after the player uses it. This prevents the player from using it again to go back.
 |Wheel On Wire| A wheel that moves on a wire when it is jumped on. There would normally be edges on the wheel for the player.
-|Falling Platform| This would be platform or bridges that falls after a certain amount of time of standing on it or just by touching it.
+|Falling Platform| This would be platform or bridges that falls after a certain amount of time standing on it or just by touching it.
 | Enemy Pole Obstacle|An enemy on an object to prevent the player character from jumping on it.
 |Rollers| Enemies that turn into balls and roll. Sometimes they can be used to kill other enemies.
 |Zigzag Flayers| Floating enemies that move in a zigzag pattern.
@@ -3485,23 +3485,23 @@ Sidescrollers or Platformers are normally constant action and almost no dialog. 
 |Rolling Tubes| Tubes that the player can hide in and roll over enemies. Sometimes barrels or logs are used for this.
 |Enemy Platform| This platform is an enemy. Normally used to trick the player when they are not paying attention.
 |Spiked Platforms| The platform flips once a switch is hit. Normally the platform is in a position that the player cannot jump on until the switch is flipped or the next platform will not flip.
-|Double Spiked Platforms| Two platforms flip at the same time once a switch is hit. Normally timed and they have spikes on one end.
+|Double Spiked Platforms| Two platforms flip at the same time once a switch is hit. Normally timed and they have spikes on one side.
 |Point/Bonus Trap| Objects that have enemies pop out of moving/stationary points.
 |Temporary Flying creatures| Flying creatures that fall once they are knocked on the head. Normally they do not regain their flight ability.
 |Falling Stones| Falling stones are a common trap.
 |Falling Block Game| Kinda like a falling block pattern game, but the blocks are huge and can kill the player.
 |Allied Creature| A creature that can run down and kill enemies.
-|Projectile Thieves| These enemies steal our projectiles.
+|Projectile Thieves| These enemies steal projectiles.
 |Enemy Ghosts| Enemies that sleep when you look at them (immortal at this point)and awake you are not looking. Normally a projectile needs to be bounced off a wall to kill them.
 |Enemy Boo!| These enemies jump out of hidden locations.
 |Flame Wheels| Wheels that move and have flames on them.
 |Bombers|Enemies that drop bombs from the sky.
-|Defenders| Enemies with shields.
+|Defenders| Enemies with shields. The shield has to be destroyed first or another strike is needed.
 |Sign Tips| Signs to help direct the player.
 |Popping Platforms| Platforms that blow up after being stood on for a few seconds.
 |Giant Bullets| Random giant bullets that fly in one direction.
 |Sticky ceiling| The player gets stuck on the ceiling for a few seconds.
-|Movable Objects| Objects that can be pushed and moved into ditches to help the player cross.
+|Movable Objects| Objects that can be pushed and moved into ditches or other places to help the player cross.
 |Fancy Exit| There is a fancy explosion or sparkles when the player passes a level.
 |Multi-jump Switch| A switch that has to be jumped or slammed on multiple times in order for it to activate.
 |Stomp Enemies| An enemy that dies when stomped or jumped on.
@@ -3516,7 +3516,7 @@ Genre is the term for any category of entertainment. Pick the genre you like mos
 |Fantasy|  A fantasy story is about magic or supernatural forces. 
 |Horror|  A horror story is told to scare or frighten the people. Normally with suspense, shock and/or violence.
 |Mystery|  A mystery story is normally about someone attempting to solve a puzzle. 
-|Science fiction|  Centered around technology (computers and machines), universes space/time travel, aliens, and genetic manipulation. EX: Steampunk, cyberpunk, and clockpunk. Science fiction is mixed with it a lot in future eras or time travel.
+|Science fiction|  Centered around technology (computers and machines), universes space/time travel, aliens, and genetic manipulation. EX: Steampunk, cyberpunk, and clockpunk. Science fiction is mixed a lot in future eras and time travel.
 
 ##The Plot:
 
@@ -3584,7 +3584,7 @@ What are the characters trying to do?
 
 List the events that happen.
 
-Jetarf family was eaten -----> he kills one of the alien ---------> gets the alien spaceship remodeled --------> looks for a ship called, "@#$@#%@@@!.. word in alien tongue.” 
+Jetarf family was eaten -----> he kills one of the aliens ---------> gets the alien spaceship remodeled --------> looks for a ship called, "@#$@#%@@@!.. word in alien tongue.” 
 
 There are many outline styles. More info: [Here](http://forum.solarus-games.org/index.php/topic,611.msg3430.html#msg3430)
 
@@ -3614,7 +3614,7 @@ There are many outline styles. More info: [Here](http://forum.solarus-games.org/
 |Dwarves| Short humanoid people. Normally strong and good at crafting weapons of any kind.
 |Elves| A humanoid race with long ears. They live for 1000s of ears, are good archers, and are skilled with magic.
 |Goblins| Known as short greedy ugly creatures. Many countries have conflicting information about them. Some smart, dumb, magic, etc.
-|Fairy| Small humanoid creatures that use magic and is very smart.
+|Fairy| Small humanoid creatures that use magic and are very smart.
 |Vampire| A humanoid that is immortal. They suck human blood and have super strength. Normally their heart needs to be damaged in order to kill them, but I think losing their head will work too.
 |Dragon| A giant lizard with wings. Normally it will breath fire, but there are different types of dragons. EX: Ice dragon and plant Dragons. One can shoot ice and the other acid.
 |Demon| A being of darkness that is known for corrupting and harming humans.
