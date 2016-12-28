@@ -3586,12 +3586,37 @@ List the events that happen.
 
 Jetarf family was eaten -----> he kills one of the aliens ---------> gets the alien spaceship remodeled --------> looks for a ship called, "@#$@#%@@@!.. word in alien tongue.” 
 
-There are many outline styles. More info: [Here](http://forum.solarus-games.org/index.php/topic,611.msg3430.html#msg3430)
+##Outline styles
 
+**Tips before getting into outlines:**
+
+Outlining is a big part of game development. The second would be dialogue, but a lot of time the main character normally does not talk. The main difference between story writing and game writing is outline. What do I mean? The only thing needed to start the creation of a game is an outline and then simple dialogue or almost none at all. (Story writing is way more descriptive.) For example, an outline is needed to know how to make the artwork and what lands or kingdoms to set up. Also, names of the characters are needed and how they will look or what appeal type (Medieval or futuristic clothing?) they need. The type of outline depends on you.
+
+**Mind Mapping Software:**
+Bubble outlining is kinda like mind mapping I would normally do this on paper, but maybe others prefer differently. - Give thanks to Renkineko for mentioning mind mapping.
+
+[Wisemapping](https://wisemapping.atlassian.net/wiki/display/WS/Download)
+
+[Freemind](http://freemind.sourceforge.net/wiki/index.php/Main_Page)
+
+[MindMaple](http://www.mindmaple.com/Default.aspx)
+
+**Common Outline Styles:**
 - Bubble outline
-- Cornell Note style
-- Box and arrow style
-- Common bullet Outlining
+
+![Chapter_16_images/Chapter_16_bubble_outlining.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Game_Design_Chapter_images/Chapter_16_images/Chapter_16_bubble_outlining.png)
+
+- Cornell Note Style
+
+![Chapter_16_images/Chapter_16_cornell_notes.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Game_Design_Chapter_images/Chapter_16_images/Chapter_16_cornell_notes.png)
+
+- Box and Arrow Style
+
+![Chapter_16_images/Chapter_16_Box_Arrows.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Game_Design_Chapter_images/Chapter_16_images/Chapter_16_Box_Arrows.png)
+
+- Common Bullet Outlining
+
+![Chapter_16_images/Chapter_16_common_bullet_outlining.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Game_Design_Chapter_images/Chapter_16_images/Chapter_16_common_bullet_outlining.png)
 
 ##Names:
 
