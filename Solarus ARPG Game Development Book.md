@@ -3530,7 +3530,7 @@ One has to know what the genre will be and what their hero or villain does. The 
 
 The table of plots below has 36 rows, one for each of Polti's canonical plots, and 4 columns. The first column is the plot number. The second column is the plot name. The third column lists the important actors and/or elements in the plot. And the fourth column includes one or more brief plot summaries, of no more than a single paragraph.
 
-**Note:** "PCs" stands for "Player Characters."
+**Note:** "PC(s)" stands for "Player Character(s)."
 
 |No.|	Plot Name|	Actors and Elements|	Brief Plot Summary|
 |:---:|:--------:|:-----------------------|:---------------------|
