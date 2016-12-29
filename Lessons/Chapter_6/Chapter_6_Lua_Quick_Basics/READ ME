@@ -1,32 +1,16 @@
-----
-IDE:
-----
+Copyright (c) <2016> <Zane Kukta>
 
-ZeroBrain would be a good IDE to use in order to compile these scripts, but you can use Solarus too.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files
+(the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, 
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
 
---------
-License:
---------
-======================================================================================================
-CC0 writing by Zefk at the Solarus ARPG game engine forum. 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-CC0 = That means you can do whatever with this. 
-
---------
-You can:
---------
--Do whatever you want with this writing.
--Sell it
--Use it for non-commercial use
--No need to credit me
--Change it to a different license if you want
-======================================================================================================
-
-------
-About:
-------
-======================================================================================================
-"0_Lua_Quick_Basics.lua" is everything in quick basics guide. The rest (1-6) are all in this file. 
-======================================================================================================
-
- 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION 
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
