@@ -3574,7 +3574,15 @@ The table of plots below has 36 rows, one for each of Polti's canonical plots, a
 
 ##Title:
 
-The title should be made around the time of the plot. Most of the time it describes the story in few words. It should be something related to the genre in order to help people know what the story is about.
+The title should be made around the time of the plot. Most of the time it describes the story in few words. It should be something related to the genre in order to help people know what the story is about. I will take my quick plot from before and make a title.
+
+|Quick Plot Example:|
+|:-----|
+|The hero Froyotay Grayerv sets out to destroys a peaceful advanced alien race because their touch can make humans immortal, but result in a mutated virus that makes humans unable to breed. He must fight to the death and find a way to rid himself of the curse that has been brought on by the mutation or else he will never be able to go home to his planet Dexerath.
+
+|Title:|
+|:-----|
+|Froyotay's Space War: The Battle for Rebirth
 
 ##Characters:
 
@@ -3625,7 +3633,19 @@ What are the characters trying to do?
 
 2.Get revenge on the creatures that ate her family? 
 
-3.Take over the world?
+3.Take over the world/universe/galaxy?
+
+4.Make the most powerful AI in the known existence?
+
+5.Create the strongest genetically modified solder?
+
+6.Save a race of aliens on a planet from a cyborg invasion?
+
+7.Protect your kingdom from an invasion of spore monsters?
+
+8.Be the greatest magic swords master that will ever live?
+
+9.Create a dimensional parallel world machine to escape your doomed dimension?
 
 
 ##Story Flow & Outline:
