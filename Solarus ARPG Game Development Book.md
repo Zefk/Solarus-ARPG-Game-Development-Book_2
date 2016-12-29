@@ -4631,7 +4631,7 @@ One must follow the Solarus [migration guide](http://wiki.solarus-games.org/doku
 Credits so far...I know there are more people involved in the Solarus project.
 
 **Graphics:**
-- Diarandor (Most of his art is in the images and sounds in the samples.)
+- Diarandor (Most of his art is in the images and sounds in the samples.) You can find a license in the sample quest. Most or all of his work is under CC-BY-SA 4.0
 
 **Sounds:**
 - Diarandor (Most of his art is in the images and sounds in the samples.)
@@ -4640,9 +4640,11 @@ Credits so far...I know there are more people involved in the Solarus project.
 - Christopho (All of his scripts and making the Solarus Game Engine)
 
 **Writing Credits:**
-- Zefk (Zane Kukta (Setting up the book and typing all the text, so far.) 
+- Zefk (Zane Kukta) CC-BY-SA 3.0
+- Loren J. Miller [The 36 Plots](https://www.rpglibrary.org/articles/storytelling/36plots.php) CC-BY-SA 3.0
+- Wikipedia [List_of_genres,](https://en.wikipedia.org/wiki/List_of_genres) [video_gaming,](https://en.wikipedia.org/wiki/Quest_(video_gaming)) [Puzzle](https://en.wikipedia.org/wiki/Puzzle) CC-BY-SA 3.0
 
-#Faryolica World Credits:
+##Faryolica World Credits:
 
 I use the Fariryolica world as a fair use educational example, but I feel that everyone deserves credit for that example.
 
