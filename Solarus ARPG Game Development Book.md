@@ -3039,11 +3039,11 @@ EX:
 
 **Making Your Own Function:**
 
-I never explained on how to make a function in the chapter 3.
+I mentioned functions in chapter 6, but here is a review.
 
 ```lua
 --Making function
-function name_you_want()
+function name_you_want(parameters)
   --What you want to happen
 end
 
