@@ -2426,8 +2426,13 @@ Type any text you want in that box. For example, "This is a test dialog."
 
 **game manager.lua**
 
-At this second I do not know why, but the mouse control in the sample quest messes with the alttp dialog box script, so remove this part in the game manager.
+**Mouse Control Fix:**
+
 **Edit:** A temporary solution: http://forum.solarus-games.org/index.php/topic,832.msg4539.html#msg4539
+
+Basically for the mouse control to work `function game:on_started() end` needs to be replaced with `game:register_event("on_started", function() end)`.
+
+Change this:
 
 ```Lua
    function game:on_started()
@@ -2446,6 +2451,30 @@ At this second I do not know why, but the mouse control in the sample quest mess
     local hero = game:get_hero()
     hero:set_tunic_sprite_id("main_heroes/eldran")
   end
+```
+
+To this:
+
+```lua
+ game:register_event("on_started", function()
+    -- HUD menu.
+    local hud = require("scripts/menus/hud")
+    sol.menu.start(game, hud)
+    hud:create(game)
+ 
+    -- Mouse control.
+    local mouse_control = require("scripts/menus/mouse_control")
+    sol.menu.start(game, mouse_control)
+    mouse_control:create(game, hud)
+ 
+    local hero = game:get_hero()
+    hero:set_tunic_sprite_id("main_heroes/eldran")
+ end)
+```
+
+Add `multi_events` at the beginning of the script: 
+```lua
+require("scripts/multi_events") 
 ```
 
 You can add a NPC and add `_dialog.test` to it.
