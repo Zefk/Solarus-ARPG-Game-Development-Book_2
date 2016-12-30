@@ -5,26 +5,26 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Every with a '*' next to it is being worked on.
 
-- Chapter 10*
+- math.floor and math.ceil*
 
-- [Menus](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/8)*
+- Destination, teletransporter, and pickable entities.*
 
-- Destination, teletransporter, and pickable entities.
+- Destructible, chest, and jumper entities.*
 
-- Mouse control [fix](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/4) by Christopho*
+- Enemy, NPC, and Movable block entities.*
 
-- Destructible, chest, and jumper entities.
+- Dynamic tiles, Switch, wall, and sensor entities.*
 
-- [Window Video Options](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/7)*
+- Cystal switch, cystal block, and shop entities.*
 
-- Enemy, NPC, and Movable block entities.
+- Stream, door, and stairs entities.*
 
-- Switch, wall, and sensor entities.
+- Seperator and a few custom entities.*
 
-- Cystal switch, cystal block, and shop entities.
-
-- Stream, door, and stairs entities.
-
-- Seperator and a few custom entities.
+- Game Types
 
 - [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
+
+- Chain Quest
+
+- Upgrading and Export Project
