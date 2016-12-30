@@ -5,8 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Every with a '*' next to it is being worked on.
 
-- math.floor and math.ceil*
-
 - Destination, teletransporter, and pickable entities.*
 
 - Destructible, chest, and jumper entities.*
