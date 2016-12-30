@@ -4,7 +4,7 @@
 ##Table of contents:
 [Reference I: RGB Color Reference](#reference-i-rgb-color-reference)
 
-[Glossary II: Game Terms]()
+[Glossary II: Game Terms](#glossary-game-terms)
 
 [Chapter 1: About Solarus, Basic History, Download Instructions, Shortcuts, and Documentation](#chapter-1-about-solarus-basic-history-download-instructions-shortcuts-and-documentation)
 
