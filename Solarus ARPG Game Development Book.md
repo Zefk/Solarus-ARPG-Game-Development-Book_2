@@ -22,11 +22,11 @@
 
 [Chapter 9: Key press, Mouse press, Image fade, and playing audio](#chapter-9-key-press-mouse-press-image-fade-and-playing-audio)
 
-**Chapter 10:** Timers and getting coordinates
+[Chapter 10: Timers and getting coordinates](#chapter-10-timers-and-getting-coordinates)
 
 [Chapter 11: Map editor](#chapter-11-map-editor)
 
-**Chapter 12:** Menus and Window Options
+[Chapter 12: Menus and Window Options](#chapter-12-menus-and-window-options)
 
 **Chapter 13:** Entities
 
@@ -3818,8 +3818,6 @@ One can select the remove traversable grass icon on the icon bar to make travers
 One can select the remove layer number icon on the icon bar to make layer numbers vanish. Everything, but the table in the images vanishes because I selected layer 0. The table is on layer 1.
 
 ![Chapter_11_images/Chapter-11_19_show_hide_layers.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Lesson_images/Chapter_11_images/Chapter-11_19_show_hide_layers.png)
-
-#Chapter 12 Menus and Window Options
 
 #Chapter 12 Menus and Window Options
 
