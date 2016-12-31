@@ -7,6 +7,10 @@ Every with a '*' next to it is being worked on.
 
 - Chapter 10 & 12: Add pics/vids/scripts*
 
+- Quest Launcher*
+
+- Chapter 4: Add how to set up a sprite*
+
 - Destination, teletransporter, and pickable entities.*
 
 - Destructible, chest, and jumper entities.*
@@ -22,6 +26,8 @@ Every with a '*' next to it is being worked on.
 - Seperator and a few custom entities.*
 
 - Game Types
+
+- Map types
 
 - [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
 
