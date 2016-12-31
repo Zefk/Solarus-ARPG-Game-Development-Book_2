@@ -5,6 +5,8 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Every with a '*' next to it is being worked on.
 
+- Chapter 10 & 12: Add pics/vids/scripts*
+
 - Destination, teletransporter, and pickable entities.*
 
 - Destructible, chest, and jumper entities.*
