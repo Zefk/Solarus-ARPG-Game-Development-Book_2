@@ -3,7 +3,7 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 **Coming Next in a random order:**
 
-Every with a '*' next to it is being worked on.
+Everything with a '*' next to it is being worked on.
 
 - Chapter 10 & 12: Add pics/vids/scripts*
 
