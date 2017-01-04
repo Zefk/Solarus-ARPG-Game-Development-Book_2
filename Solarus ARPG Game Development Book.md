@@ -32,15 +32,17 @@
 
 **Chapter 13:** Entities
 
-**Chapter 14:** Game Types
+**Chapter 14:** Quest Launcher and Map Types
 
-**Chapter 15:** Make a Chain Quest
+**Chapter 15:** Game Types
 
-[Chapter 16: Game Design Walkthrough](#chapter-16-game-design-walkthrough)
+**Chapter 16:** Make a Chain Quest
 
-**Chapter 17:** Upgrading and Export Project
+[Chapter 17: Game Design Walkthrough](#chapter-17-game-design-walkthrough)
 
-[Chapter 18: Credits](#chapter-18-credits)
+**Chapter 18:** Upgrading and Export Project
+
+[Chapter 19: Credits](#chapter-18-credits)
 
 #Reference I: RGB Color Reference
 
@@ -4173,11 +4175,13 @@ Lessons > Chapter_12_menu.zip
 
 #Chapter 13: Entities
 
-#Chapter 14: Game Types
+#Chapter 14: Quest Launcher and Map Types
 
-#Chapter 15: Make a Chain Quest
+#Chapter 15: Game Types
 
-#Chapter 16: Game Design Walkthrough
+#Chapter 16: Make a Chain Quest
+
+#Chapter 17: Game Design Walkthrough
 
 ##Enemy Types:
 
@@ -5519,7 +5523,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |The Gunslinger:| They use a variety of guns most of the time. They normally just involve guns to be honest. Most of the time very skilled at them compared to engineers.
 
 
-#Chapter 17: Upgrading and Export Project
+#Chapter 18: Upgrading and Export Project
 
 **Upgrading:**
 
@@ -5527,7 +5531,7 @@ One must follow the Solarus [migration guide](http://wiki.solarus-games.org/doku
 
 **Export Project:**
 
-#Chapter 18: Credits
+#Chapter 19: Credits
 
 Credits so far...I know there are more people involved in the Solarus project.
 
