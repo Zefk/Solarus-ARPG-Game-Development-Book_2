@@ -5555,7 +5555,7 @@ Credits so far...I know there are more people involved in the Solarus project.
 
 ##Faryolica World Credits:
 
-I use the Fariryolica world as a fair use educational example, but I feel that everyone deserves credit for that example.
+I use the Fariryolica world tileset is under CC-BY-SA 3.0.
 
 ----------------------- 
 About:
