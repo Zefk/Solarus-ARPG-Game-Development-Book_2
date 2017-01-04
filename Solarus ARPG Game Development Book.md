@@ -42,7 +42,7 @@
 
 **Chapter 18:** Upgrading and Export Project
 
-[Chapter 19: Credits](#chapter-18-credits)
+[Chapter 19: Credits](#chapter-19-credits)
 
 #Reference I: RGB Color Reference
 
