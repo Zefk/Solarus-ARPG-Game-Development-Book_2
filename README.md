@@ -7,8 +7,6 @@ Everything with a '*' next to it is being worked on.
 
 - Chapter 10 & 12: Add pics/vids/scripts*
 
-- Split up book by chapter (md files)*
-
 - Quest Launcher*
 
 - Chapter 4: Add how to set up a sprite*
