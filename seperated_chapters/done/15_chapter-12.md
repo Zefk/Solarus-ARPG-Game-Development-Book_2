@@ -1,7 +1,153 @@
 
 ##Chapter 12 Menus and Window Options
 
-###Window Options:
+**Preview:**
+
+Lessons > Chapter_12_menu_preview.gif
+
+###Menu Script Example:
+
+`Game_manager.lua`
+
+```lua
+local game_manager = {}
+local on = true
+
+local menu = require("scripts/chapter_12.lua")
+local initial_game = require("scripts/initial_game")
+require("scripts/menus/alttp_dialog_box")
+
+-- Starts the game from the given savegame file,
+-- initializing it if necessary.
+
+function game_manager:start_game()
+  local exists = sol.game.exists("save1.dat")
+  local game = sol.game.load("save1.dat")
+  if not exists then
+    -- Initialize a new savegame.
+    game:set_max_life(12)
+    game:set_life(game:get_max_life())
+    game:set_ability("lift", 2)
+    game:set_ability("sword", 1)
+  end
+
+menu:button_menu(game)
+
+function game:on_key_pressed(key)
+  if key == "m" then  
+
+    if on == true then
+      sol.menu.start(game, menu)
+      print("m")
+      on = false
+    end
+  end
+
+  if key == "s" then
+    sol.menu.stop(menu)
+    on = true
+  end
+end
+
+
+  game:start()
+
+  local hero = game:get_hero()
+  hero:set_tunic_sprite_id("main_heroes/eldran")
+end
+
+return game_manager
+```
+
+`Chapter_12.lua`
+
+```lua
+--[[
+-------------
+Instructions:
+-------------
+==================================================================================
+Press keys "up" and "down"
+==================================================================================
+--]]
+
+local menu = {}
+ 
+function menu:button_menu(game)
+
+--Creating surfaces for the images and loading in the images.
+local overlay = sol.surface.create ("overlay.png")
+local button_menu = sol.surface.create ("menu.png")
+local down_up = 0
+local direction = 0
+
+--Function for drawing or showing images
+function menu:on_draw(screen)
+   overlay:draw(screen,0,down_up)
+   button_menu:draw(screen)
+end -- end of draw function
+
+--Solarus key pressing function
+function menu:on_key_pressed(key)
+--Pause the game
+game:set_paused(true)
+
+if key == "up" then
+  if direction > 0 then
+    direction = direction - 1
+    down_up = down_up - 27 - 0.7
+    print("UP: "..direction.." down_up: "..down_up)
+  end
+end
+
+if key == "down" then
+  if direction < 6 then
+    direction = direction + 1
+    down_up = down_up + 27 + 0.7
+    print("Down: "..direction.." down_up: "..down_up)
+  end
+end
+
+if key == "e" then
+  if direction == 0 then
+    print("Item Menu ON!")
+  end
+
+  if direction == 1 then
+    print("Skills Menu ON!")
+  end
+
+  if direction == 2 then
+    print("Equipment Menu ON!")
+  end
+
+  if direction == 3 then
+    print("Status Menu ON!")
+  end
+
+  if direction == 4 then
+    print("Formation Menu ON!")
+  end
+
+  if direction == 5 then
+    print("Save Menu ON!")
+  end
+
+  if direction == 6 then
+    print("Logout Menu ON!")
+  end
+end
+
+end -- end of key press function
+
+
+
+end --end of button menu function
+
+return menu
+```
+
+####Window Options:
 
 The window is related to video. Not playing a video clip, but the window.
 
