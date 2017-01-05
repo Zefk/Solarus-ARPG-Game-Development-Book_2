@@ -191,7 +191,9 @@ Source: [Rapidtables](http://www.rapidtables.com/web/color/RGB_Color.htm)
 |light gray / light grey|(211,211,211)
 |gainsboro|(220,220,220)
 |white smoke(|245,245,245)
-|white|(255,255,255)##Glossary: Game Terms
+|white|(255,255,255)
+
+##Glossary: Game Terms
 
 |Glossary|Description|
 |:--------|:----------------------------------------------------------------------|
