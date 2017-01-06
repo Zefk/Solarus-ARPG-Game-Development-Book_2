@@ -5,10 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Quest Launcher*
-
-- Chapter 4: Add how to set up a sprite*
-
 - Destination, teletransporter, and pickable entities.*
 
 - Destructible, chest, and jumper entities.*
