@@ -100,3 +100,81 @@ This is what it looks like when the column is changed from 8 to 2.
 ![Chapter_4_14_Sprite_editor_sprite_direction_properties_columns_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_14_Sprite_editor_sprite_direction_properties_columns_1.png)
 
 ![Chapter_4_15_Sprite_editor_sprite_direction_properties_columns_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_15_Sprite_editor_sprite_direction_properties_columns_2.png)
+
+###Setting up a Sprite:
+
+Everyone needs to know how to setup a sprite. The Solarus Sprite editor is super amazing and makes this task easy as pie!
+
+#####Making a Sprite:
+
+Making a new sprite is first thing that needs to be done.
+
+![chapter_4_sprite_setup_images/0_a_make_sprite.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/0_a_make_sprite.png)
+
+#####Name Sprite:
+
+![chapter_4_sprite_setup_images/0_name_sprite.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/0_name_sprite.png)
+
+#####Create Animation:
+
+![chapter_4_sprite_setup_images/1_create_animation.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/1_create_animation.png)
+
+#####Name Animation:
+
+![chapter_4_sprite_setup_images/2_name_animation.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/2_name_animation.png)
+
+#####Load Sprite Image:
+
+Click the pencil to load a image from te sprite directory.
+
+![chapter_4_sprite_setup_images/3_load_slime_image_2.png.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/3_load_slime_image_2.png.png)
+
+![chapter_4_sprite_setup_images/3_load_slime_image.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/3_load_slime_image.png)
+
+#####Making Directions - Drag Click Release
+
+Click one of the sprite image frames and add it as a new direction. This can be done by holding down the left mouse button and dragging to highlight one of the red slime sprites. The first sprite at the upper left corner would be best.
+
+![chapter_4_sprite_setup_images/4_click_drag_release_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/4_click_drag_release_1.png)
+
+That creates a Direction called, "`Direction 0`."
+
+![chapter_4_sprite_setup_images/5_direction_zero.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/5_direction_zero.png)
+
+Repeat this process until you get 4 frames.
+
+![chapter_4_sprite_setup_images/6_repeat_until_four_directions.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/6_repeat_until_four_directions.png)
+
+#####Set Frame Delay & Loop
+
+![chapter_4_sprite_setup_images/7_set_frame_delay_loop_it.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/7_set_frame_delay_loop_it.png)
+
+#####Set Columns, Rows, & Origin
+
+We are using 4 frames, so column and rows are 4.
+
+Origin should be fine at 8x8.
+
+![chapter_4_sprite_setup_images/8_set_origin_row_column_4.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/8_set_origin_row_column_4.png)
+
+#####Show Origin
+
+Click the check box to show the origin.
+
+![chapter_4_sprite_setup_images/9_show_origin_centered.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/9_show_origin_centered.png)
+
+#####Zoom on Sprite
+
+![chapter_4_sprite_setup_images/10_zoom.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/10_zoom.png)
+
+#####Previous & Next Sprite Frame
+
+![Chapter_4_images/chapter_4_sprite_setup_images/11_previous_next_frame.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/11_previous_next_frame.png)
+
+#####Last & First Frame + Play & Stop
+
+Previous and next are the arrows.
+
+Stop is the button with the square and play is the triangle that is on its side.
+
+![](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/12_last_play_stop_first.png)
