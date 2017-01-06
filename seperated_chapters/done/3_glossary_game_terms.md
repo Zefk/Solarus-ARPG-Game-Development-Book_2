@@ -1,3 +1,4 @@
+
 ##Glossary: Game Terms
 
 |Glossary|Description|
