@@ -5,8 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Destination, teletransporter, and pickable entities.*
-
 - Destructible, chest, and jumper entities.*
 
 - Enemy, NPC, and Movable block entities.*
