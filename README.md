@@ -25,7 +25,7 @@ Everything with a '*' next to it is being worked on.
 
 - Chain Quest
 
-- Upgrading and Export Project
+- Export Project
 
 ##Book Export Process:
 
