@@ -5,8 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Destructible, chest, and jumper entities.*
-
 - Enemy, NPC, and Movable block entities.*
 
 - Dynamic tiles, Switch, wall, and sensor entities.*
@@ -17,7 +15,9 @@ Everything with a '*' next to it is being worked on.
 
 - Seperator and a few custom entities.*
 
-- Game Types
+- Item types
+
+- Game types
 
 - Map types
 
