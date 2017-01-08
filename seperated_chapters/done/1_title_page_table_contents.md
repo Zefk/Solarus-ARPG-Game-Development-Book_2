@@ -1,5 +1,4 @@
-![Title page.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Title%20page.png)
-
+![Book%20Covers/Book_Cover.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Book%20Covers/Book_Cover.png)
 
 ##Table of contents:
 [Reference I: RGB Color Reference](#reference-i-rgb-color-reference)
