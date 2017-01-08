@@ -270,5 +270,5 @@ The player character now can jump over the wall at the four jumper entity locati
 ###Stairs Entity
 
 ###Separator Entity
-
+ 
 ###Custom Entity
