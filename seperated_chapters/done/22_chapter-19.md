@@ -23,7 +23,11 @@ Credits so far...I know there are more people involved in the Solarus project.
 
 ###Faryolica World Credits:
 
-I use the Fariryolica world tileset is under CC-BY-SA 3.0.
+Most of it is free under CC-BY-SA 3.0 unless marked otherwise.
+
+That means it is free for commercial and non-commercial use.
+
+Please share back edits or fork this, so I can add your contributions.
 
 ####About:
 
@@ -113,3 +117,29 @@ Copyright/Attribution Notice:
 - Zefk (Zane Kukta) <http://zelzec-entertainment.weebly.com/>
 
 - Lanea Zimmerman (AKA Sharm)
+
+####[Free - No real license. They say, "Please let us know by dropping a comment here (though you certainly don’t have to)."]
+
+- Urbansquall <http://web.archive.org/web/20110225070311/http://www.gamepoetry.com/blog/2008/06/27/free-rpg-tilesheets/>
+
+###Audio Credits:
+
+Copyright/Attribution Notice
+
+####[CC-BY 3.0 Credit by their terms]
+
+- copyc4t (Paolo D'Emilio) <http://opengameart.org/users/copyc4t>
+- Elerya <http://opengameart.org/users/elerya>
+- Android128 (android128ya@ya.ru) <http://opengameart.org/users/android128>
+- Alexandr Zhelanov, https://soundcloud.com/alexandr-zhelanov
+- Cleyton R. Xavier - http://opengameart.org/users/doppelganger
+
+####[CC0 Public Domain]
+
+- Alexander Ehlers <http://opengameart.org/users/tricksntraps>
+- Controllerhead <http://opengameart.org/users/controllerhead>
+
+####[CC-BY-SA 3.0 Credit by their terms and share artwork under the same terms]
+
+- Aosi <http://momentsofelation.wordpress.com/>
+- Zefk (Zane Kukta) <http://zelzec-entertainment.weebly.com/>
