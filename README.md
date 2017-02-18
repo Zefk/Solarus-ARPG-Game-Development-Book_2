@@ -5,8 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Enemy, NPC, and Movable block entities.*
-
 - Dynamic tiles, Switch, wall, and sensor entities.*
 
 - Cystal switch, cystal block, and shop entities.*
@@ -31,9 +29,9 @@ Everything with a '*' next to it is being worked on.
 
 **About:**
 
-This book is being worked on in seperate markdown (.md) files on Linux using [Haroopad.](http://pad.haroopress.com/user.html)
+This book is being worked on in seperate markdown (.md) files on Linux using [Haroopad v0.13.1.](http://pad.haroopress.com/user.html)
 
-I will only provide HTML, MD, and PDF for this book. Others are welcome to make epubs, etc.
+I will only provide HTML, MD, and PDF for this book. Others are welcome to make epubs, mobi, azw, lit, etc.
 
 **Putting the .md files together:**
 
