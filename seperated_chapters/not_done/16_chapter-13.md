@@ -714,7 +714,7 @@ The Magician will look  down(3) in this case.
 
 #####Add Block
 
-The block entity is right by the green NPC person entity.
+The block entity is right by the green NPC person entity. A block can be moved around.
 
 ![1_add_block.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/8_Block/1_add_block.png)
 
@@ -735,16 +735,610 @@ The block entity is right by the green NPC person entity.
 
 The block entity is that simple. There will be more customization for the block entity in Solarus 1.6 version.
 
-
-###Dynamic Tiles Entity
-
 ###Switch Entity
+
+#####Add Switch
+
+The switch is the button with the red dot next to the block entity. You can step on the switch to activate certain events and there are a few other ways to activate it.
+
+![1_add%20switch.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/1_add%20switch.png)
+
+#####Switch Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
+|Sprite| Pick the sprite image for the switch.
+|Subtype| **Walkable:** Ability to walk on the switch. <br><br> **Solid:** You can hit the switch with the 'c' key to activate it. Normally that is a weapon like a sword. <br><br> **Arrow Target:** You can shoot an arrow at it. There is a built in bow and arrow.
+|Play Sound| Pick a sound that you want played when the switch activates.
+|Activation| You can require a block to be on the switch for it to be activated.
+|Leaving switch| The switch can be deactivated if this option is checked.
+
+![2_Click_switch_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/2_Click_switch_properties.png)
+
+#####Walkable Switch Coding
+
+In order to code a script one much give it a name. I gave it the name `chest_button`. In the following example I use the `on_activated()` function. 
+
+![2_button_chest_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/2_button_chest_name.png)
+
+```lua
+function chest_button:on_activated()
+```
+
+`on_activated` means that something will happen when the switch is stepped on. In this case a sound will be played and a chest will appear.
+
+```lua
+--chest_1
+function chest_button:on_activated()
+  sol.audio.play_sound("chest_appears")
+  chest:set_enabled(true)
+end
+```
+
+I named the chest the name `chest`. The function `Set_enabled(true/false` is used to make it appear or not appear.
+
+![1_chest_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/1_chest_name.png)
+
+The first thing that needs to be done is that the chest needs a save value because we will be using this to see if the chest has been opened. I used the save value name `Map_4_gem_treasure`.
+
+```lua
+  if game:get_value("Map_4_gem_treasure") then
+```
+
+![1_chest_name_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/1_chest_name_2.png)
+
+Next we want to show the button as activated and not deactivated. The `set_activated(true/false)` function is used in order to accomplish this.
+
+```lua
+    chest_button:set_activated(true)
+```
+
+Now we want the chest to be invisible if the switch is not activated yet.
+
+```lua
+  else
+    chest:set_enabled(false)
+  end
+end
+```
+
+The result is the following script.
+
+```lua
+ --chest_1
+function map:on_started()
+  if game:get_value("Map_4_gem_treasure") then
+    chest_button:set_activated(true)
+  else
+    chest:set_enabled(false)
+  end
+end
+
+--chest_1
+function chest_button:on_activated()
+  sol.audio.play_sound("chest_appears")
+  chest:set_enabled(true)
+end
+```
+
+#####Block Switch Coding
+
+The block coding is almost exactly the same, so I will not be typing everything over again. I will cover the parts that are different.
+
+Name the block. I named it `block`.
+
+![1_block_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/block%20switch/1_block_name.png)
+
+Name the switch. I named it `chest_button_2`. Check `require a block to be activated` and `deactivate when leaving`.
+
+![2_switch_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/block%20switch/2_switch_name.png)
+
+Name the chest. I named it `chest_2`. I gave it the save state name `Map_4_gem_treasure_2`.
+
+![3_chest_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/block%20switch/3_chest_name.png)
+
+The script. The switch and chest will activate/deactivated if the block is moved on/off it.
+
+```lua
+function map:on_started()  
+  --chest_2
+  if game:get_value("Map_4_gem_treasure_2") then
+    chest_button_2:set_activated(true)
+  else
+    chest_2:set_enabled(false)
+  end
+end
+
+ --chest_2
+function chest_button_2:on_activated()
+  sol.audio.play_sound("chest_appears")
+  chest_2:set_enabled(true)
+end
+
+```
+
+Now we want the chest to vanish when the block leaves the button. We want this to happen only when the chest is not opened. 
+
+We need to check when the button is inactivated. We will use the function `on_inactivated()`.
+
+```lua
+function chest_button_2:on_inactivated()
+```
+
+After that we need to check if the chest is open or not. We use the function `is_open()`. The chest needs to be `set_enabled(false)` because we do not want the chest to appear if the button is inactive.
+
+```lua
+  if not chest_2:is_open() then
+    chest_2:set_enabled(false)
+  end
+end
+```
+
+The script will look like this.
+
+```lua
+function chest_button_2:on_inactivated()
+  if not chest_2:is_open() then
+    chest_2:set_enabled(false)
+  end
+end
+```
+
+Now we need to check the block position. We want the block to still be on the switch when we leave and come back to the map.
+
+Check if the chest is open.
+
+```lua
+  if chest_2:is_open() then
+```
+
+If the chest is open, then set button activated to true, otherwise set the chest to false.
+
+```lua
+    chest_button_2:set_activated(true)
+  else
+    chest_2:set_enabled(false)
+```
+
+Set the position of the block. Use the function `set_position(x,y)`.
+
+Hover over the location of switch and set the block to that position. Adjust it if you have to.
+
+![4_position_switch_status_bar.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/block%20switch/4_position_switch_status_bar.png)
+
+```lua
+    block:set_position(216,308)
+```
+
+The result.
+
+```lua
+function map:on_started()
+  if chest_2:is_open() then
+    chest_button_2:set_activated(true)
+    block:set_position(216,308)
+  else
+    chest_2:set_enabled(false)
+  end
+end
+```
+
+The full script.
+
+Tip: When I say the chest is false, that means the chest does not appear.
+
+```lua
+function map:on_started()  
+  --chest_2
+--Save chest state if chest is opened and set button activation to true. Otherwise, the chest is set to false.
+  if game:get_value("Map_4_gem_treasure_2") then
+    chest_button_2:set_activated(true)
+  else
+    chest_2:set_enabled(false)
+  end
+
+--if chest is open, then have the button activated and set block position. Otherwise, the chest is false.
+  if chest_2:is_open() then
+    chest_button_2:set_activated(true)
+    block:set_position(216,308)
+  else
+    chest_2:set_enabled(false)
+  end
+end
+
+--Set chest_2 to activate if the block is on the button
+function chest_button_2:on_activated()
+  sol.audio.play_sound("chest_appears")
+  chest_2:set_enabled(true)
+end
+
+--Set chest_2 to deactivated if the block is not on or move off the button and if the chest is not open.
+function chest_button_2:on_inactivated()
+  if not chest_2:is_open() then
+    chest_2:set_enabled(false)
+  end
+end
+```
+
+#####Solid Switch Coding
+
+The same as the walkable switch. Just set it to `solid` and press `c` to activate it. There will be an example in the dynamic Tile section.
+
+![](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/3_solid_switch.png)
+
+###Dynamic Tile
+
+Dynamic Tiles are not entities, but they can be manipulated like an entity once a name is given to them. You can script it and all that jazz. Tiles are originally static meaning they cannot be used with scripts until converted to Dynamic.
+
+#####Convert to Dynamic
+
+Right click > Convert to dynamic tile
+
+![1_convert_dynamic.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/1_convert_dynamic.png)
+
+#####Convert to Static
+
+Right click > Convert to static tile
+
+![2_convert_static.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/2_convert_static.png)
+
+#####Dynamic Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the tile is at. You can manually change them or move the entity with the cursor.
+|Size| The dimension size of the tile.
+|Initial State| Display or do not display at start of game.
+
+![3_Dynamic_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/3_Dynamic_properties.png)
+
+#####Dynamic Scripting
+
+Dynamic scripting is not really different from scripting with entities.
+
+Give a name to a switch. I am using a solid switch in this case and gave it the name `solid_switch`.
+
+![1_dynamic_solid_switch.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/dynamic_scripting/1_dynamic_solid_switch.png)
+
+The next step is to convert a normal tile to dynamic, so we can script it. Make sure that `enabled at start` is unchecked.
+
+![2_dynamic_bridge.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/dynamic_scripting/2_dynamic_bridge.png)
+
+Now we will make the bridge to appear when the solid switch is hit. We will do this with the following script. Not really anything to explain because we already covered these functions.
+
+```lua
+--Solid Switch bridge
+function solid_switch:on_activated()
+   bridge:set_enabled(true)
+end
+```
+
+###Wall Entity
+
+#####Add Wall Entity
+
+Click on the stop sign like image by the switch entity to add the wall entity. It can be stretched to fit a large area and blocks paths for certain obstacles.
+
+![1_add_wall.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/11_Wall/1_add_wall.png)
+
+#####Wall Entity Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
+|Size| The dimension size of the entity.
+|Obstacles| **Hero** - Prevents the hero from passing. <br><br> **Enemies** - Prevents the enemies from passing. <br><br> **NPCs** - Prevents the NPCs from passing. <br><br> **Blocks** - Prevents the blocks from passing. <br><br> **Projectiles** - Prevents the projectiles from passing.
+
+![2_wall_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/11_Wall/2_wall_properties.png)
+
+#####Wall Entity Scripting
+
+The scripting is no different from any other entity. There will be an example in the sensor section, but let me cover another function before that. 
+
+The function is `remove()`. This function deletes or erases an entity from the map. One must be really careful when using this function because annoying messages can appear if not taken care of properly.
+
+The reason why I am covering this function is that one will want the wall to vanish at a certain point.
+
+Let us pretend that the wall is blocking the enemy. On some condition, like stepping on a switch, the wall can be removed.
+
+```lua
+      enemy_wall:remove()
+```
+
+Now every time that switch is activated an annoying message will appear in the terminal because the entity was removed and no longer exists (nil).
+
+The following script is a way to avoid the annoying message. Of course, there are many other ways and this way may not be very professional. One could just show an entity as activated instead of leaving the space blank or remove the entity too. Removing the switch avoids the error message all together.
+```lua
+  if enemy_wall == nil then
+--nothing happens
+    else
+      enemy_wall:remove()
+    end
+    ```
 
 ###Sensor Entity
 
-###Crystal Switch Entity
+#####Add Sensor Entity
 
-###Crystal Block Entity
+The sensor entity is right next to the wall Entity. It is a green circle with a question mark on it. It can be stretched to fit a large area and can detect the hero when it gets into the boundary.
+
+![1_add_sensor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/1_add_sensor.png)
+
+#####Sensor Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
+|Size| The dimension size of the entity.
+
+![2_sensor_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/2_sensor_properties.png)
+
+#####Sensor Scripting
+
+This is an example of wall and sensor scripting. First off, do not name your sensor entity the name `sensor`. You can, but it will interfere with a shortcut, at least when I tried it. Instead, we will be using the name `ground_sensor_`.
+
+![1_sensor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/1_sensor.png)
+
+Name the wall `enemy_wall` or any name you want.
+
+![2_sensor_wall.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/2_sensor_wall.png)
+
+
+Now let us go over the scripting part. There is a good function that goes good with sensors. The function is `hero:save_solid_ground`. This function teleports the hero back to the sensor in this case. That means if the hero falls into a hole he/she/it will go back to the sensor instead of near the falling point.
+
+```lua
+function ground_sensor_1:on_activated()
+    hero:save_solid_ground()
+```
+
+Enable the bridge with the following script. Make sure that `enabled at start` is unchecked.
+
+![6_bridge_2_sensor.pn](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/6_bridge_2_sensor.png)
+
+```lua
+    bridge_2:set_enabled(true)
+```
+
+Remove the wall when the sensor is touched and prevent annoying message because the wall entity will no longer exists (nil).
+
+```lua
+    if enemy_wall == nil then
+--nothing happens
+    else
+      enemy_wall:remove()
+    end
+```
+
+The final script:
+
+```lua
+--Bridge sensor
+function ground_sensor_1:on_activated()
+    hero:save_solid_ground()
+    bridge_2:set_enabled(true)
+
+    if enemy_wall == nil then
+--nothing happens
+    else
+      enemy_wall:remove()
+    end
+end
+```
+
+Tip: There is a shortcut for `hero:save_solid_ground()`. Instead of typing `hero:save_solid_ground()` over and over again for each new sensor, you could use the following script.
+
+```lua
+--Do not name your sensor, "sensor." Do not give it the same name. use a unique name like "ground_sensor."
+for sensor in map:get_entities("ground_sensor_") do
+
+   function sensor:on_activated()
+     hero:save_solid_ground()
+   end
+end
+```
+
+The "for sensor" part refers to the sensors on the map. The `get_entities()` function refers to the names of the sensors. The names are all `ground_sensor_` with some number index. For example, `ground_sensor_1`. The `get_entities()` functions grabs or gets the sensors with the same name, but with a number difference (number index).
+
+```lua
+for sensor in map:get_entities("ground_sensor_") do
+```
+
+Now we will make a function for the sensors on the map. We will `save_solid_ground()`with this function. The "sensor" in the on_activated function refers to all the sensors on the map.
+
+```lua
+   function sensor:on_activated()
+     hero:save_solid_ground()
+   end
+```
+
+The resulting script.
+
+```lua
+--Do not name your sensor, "sensor." Do not give it the same name. use a unique name like "ground_sensor."
+for sensor in map:get_entities("ground_sensor_") do
+
+   function sensor:on_activated()
+     hero:save_solid_ground()
+   end
+end
+```
+
+#####Sensor Get Position
+
+We covered the `set_position` function, but we can get the position of an entity as well. The function for getting an entity is `get_position()`.
+
+Using the `get_position()` function is quite easy. For example, if you wanted the hero to teleport to an entity to trick or torture the person playing your game, then you could have the player go to a destination entity. I used the name `up_stairs_2`.
+
+![7_destination_sensor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/7_destination_sensor.png)
+
+```lua
+  hero:set_position(up_stairs_2:get_position())
+```
+
+![3_destination_sensor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/3_destination_sensor.png)
+
+```lua
+function ground_sensor_2:on_activated()
+  hero:set_position(up_stairs_2:get_position())
+end
+```
+
+#####Sensor Multiple Dynamic Tiles
+
+This a shortcut for bulk numbers of dynamic tiles with the same name. The first thing we will do is add a sensor. I named it `ground_sensor_3`.
+
+![4_sensor_multiple_dynamic.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/4_sensor_multiple_dynamic.png)
+
+The next step is to add a dynamic tile and name it. Make sure to set up the properties before copying. The number index in the name will change as you copy it. We do not want the dynamic tiles enabled at start, so uncheck `enabled at start`.
+
+![5_sensor_multiple_dynamic_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/5_sensor_multiple_dynamic_2.png)
+
+We will use a timer for a delay with each dynamic tile. One will appear after the other. You could shorten the timer for an instant result.
+
+The first thing that needs to be done is to make a variable called `tile_index`. We will be concatenating this with the name of the dynamic tiles, `tile_` with some number index. We will assign the value `1` to ` tile_index`.
+
+```lua
+local tile_index = 1
+```
+
+The second step is to make a timer. You can assign the time delay you want.
+
+```lua
+  sol.timer.start(400, function()
+```
+
+The third step is to male a variable called `previous_tile`. This will activate the first tile. 
+
+Now let us set up the `previous_tile` variable.
+
+```lua
+local previous_tile =
+```
+
+We will assign it to a function called `map:get_entity`. We will use this to get the times of all the dynamic tiles we want. We want the names of all the `tile_` dynamic tiles with some number index. For example, `tile_1`.
+
+```lua
+local previous_tile = map:get_entity("tile_"
+```
+
+Lastly, we will concatenate the `tile_index`. That will name it `tile_1` because the value of `tile_index` is `1`.
+
+```lua
+local previous_tile = map:get_entity("tile_" .. tile_index)
+```
+
+The fourth step `next_tile` is almost the same as `previous_tile`. The only difference is that we will be adding `1` to the `tile_index`.
+
+```lua
+    local next_tile = map:get_entity("tile_" .. (tile_index + 1))
+```
+
+The fifth step is to set up an increment for `next_tile`. This is needed for `tile_`  indexes 2, 3, 4, and 5.
+
+Tip: Increment is adding a value to itself.
+
+```lua
+    tile_index = tile_index + 1
+```
+
+The seventh step is to enable the `previous_tile`. If it is set to false, then the tiles will vanish one after the other. That could be useful for timed puzzles.
+
+**False example**
+```lua
+    previous_tile:set_enabled(false)
+```
+
+However, we want it to be true.
+
+```lua
+    previous_tile:set_enabled(true)
+```
+
+Step 8 will be to stop the index from going beyond the number of tiles we have. The number of dynamic tiles is five for me. We will return `next_tile` false if it becomes nil. For instance, `tile_6` will be nil because it does not exist.
+
+```lua
+    if next_tile == nil then
+      --finished
+      return false
+    end
+```
+
+The 9th step is to set `next_tile` to true, but in this case it really does not matter if it is true or false. There may be transition differences.
+
+```lua
+    next_tile:set_enabled(true)
+    --Return true or it will stop after the second tile.
+    return true
+  end)
+end
+```
+
+The final script.
+
+```lua
+function ground_sensor_3:on_activated()
+  hero:save_solid_ground()
+
+  local tile_index = 1
+  sol.timer.start(400, function()
+    local previous_tile = map:get_entity("tile_" .. tile_index)
+    local next_tile = map:get_entity("tile_" .. (tile_index + 1))
+    tile_index = tile_index + 1
+    previous_tile:set_enabled(true)
+    if next_tile == nil then
+      --finished
+      return false
+    end
+    next_tile:set_enabled(true)
+    --Return true or it will stop after the second tile.
+    return true
+  end)
+end
+```
+
+Lastly, if you check `enabled at start` for the initial state of all the `tile_` dynamic tiles, then set `previous_tile` and `next_tile` enabled to false, the dynamic tiles will vanish one after the other instead of appearing on after another.
+
+```lua
+    previous_tile:set_enabled(false)
+    next_tile:set_enabled(false)
+```
+
+![8_sensor_dynamic_enabled_checked.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/Sensor_scripting/8_sensor_dynamic_enabled_checked.png)
+
+```lua
+function ground_sensor_3:on_activated()
+  hero:save_solid_ground()
+
+  local tile_index = 1
+  sol.timer.start(400, function()
+    local previous_tile = map:get_entity("tile_" .. tile_index)
+    local next_tile = map:get_entity("tile_" .. (tile_index + 1))
+    tile_index = tile_index + 1
+    previous_tile:set_enabled(false)
+    if next_tile == nil then
+      --finished
+      return false
+    end
+    next_tile:set_enabled(false)
+    --Return true or it will stop after the second tile.
+    return true
+  end)
+end
+```
+
+
+
+
+###Crystal Switch and Crystal Block Entities
 
 ###Shop Entity
 
@@ -757,7 +1351,3 @@ The block entity is that simple. There will be more customization for the block 
 ###Separator Entity
  
 ###Custom Entity
-
-###Entity Scripting
-
-This section of the chapter is for learning how to script with entities and to give as many reasonable examples as possible. Some will obviously not need examples, but most of the entities will. That just means I will not do the same thing over and over again for each entity.
