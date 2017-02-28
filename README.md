@@ -5,13 +5,13 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Dynamic tiles, Switch, wall, and sensor entities.*
-
 - Cystal switch, cystal block, and shop entities.*
 
 - Stream, door, and stairs entities.*
 
 - Seperator and a few custom entities.*
+
+- Issue fixing
 
 - Item types
 
