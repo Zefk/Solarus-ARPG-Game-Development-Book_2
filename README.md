@@ -5,13 +5,15 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Cystal switch, cystal block, and shop entities.*
+- Cystal switch, cystal block, Stream, and shop entities.*
 
-- Stream, door, and stairs entities.*
+- door, stairs, and Seperator entities.*
 
-- Seperator and a few custom entities.*
+- 3 custom entities.*
 
 - Issue fixing
+
+- [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
 
 - Item types
 
@@ -19,11 +21,15 @@ Everything with a '*' next to it is being worked on.
 
 - Map types
 
-- [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
-
 - Chain Quest
 
 - Export Project
+
+- Correct remaining errors and revamp book
+
+- Alpha 0.9 release and get the opinion of the Solarus community.
+
+- Release Beta 1.0
 
 ##Book Export Process:
 
