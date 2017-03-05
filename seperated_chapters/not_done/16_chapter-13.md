@@ -1334,15 +1334,646 @@ function ground_sensor_3:on_activated()
   end)
 end
 ```
+###Crystal Switch Entity
+
+#####Add Crystal Switch
+
+The crystal switch works with the crystal block. A crystal block rises or lowers when a crystal switch is hit with key `c`. For example, the block will lower if the initial state of the block is set to lowered.
+
+![1_Add_crystal_switch.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/13_crystal_switch/1_Add_crystal_switch_fix.png)
+
+#####Crystal Switch Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
+
+![2_crystal_switch_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/13_crystal_switch/2_crystal_switch_properties.png)
+
+#####Default Crystal Switch Graphic Names
+
+As far as I know the animation keywords for switches are `blue_lowered` and `orange_lowered`. The default animation is the color that one wants to see first.
+
+![3_default_entities_crystal.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/13_crystal_switch/3_default_entities_crystal.png)
+
+###Crystal Block Entities
+
+The crystal block works with the crystal switch. A crystal block rises or lowers when a crystal switch is hit with key `c`. For example, the block will lower if the initial state of the block is set to lowered.
+
+#####Add Crystal Block
+
+![1_add_crystal_block_lowered_raised.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/14_crystal_block/1_add_crystal_block_lowered_raised_fix.png)
+
+#####Crystal Block Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
+|Size| The dimension size of the entity.
+|Subtype| Initially lowered or raised. Basically, start the block lowered or raised at the start of the map.
+
+![2_crystal_block_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/14_crystal_block/2_crystal_block_properties.png)
+
+#####Default Crystal Block Graphic Names
+
+As far as I know the keywords are `blue_lowered`, `blue_raised`, `orange_lowered`, and `orange_raised`. I tried different keywords for the animations, but the blocked failed to show up on the map when playtesting the game.
+
+![3_block_set_up.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/14_crystal_block/3_block_set_up.png)
+
+###Stream Entity
+
+The stream entity pushes the player or moves him/her/it in the desired direction. It can also be used to slow the player down. For instance, gravity, spinning wheel, and/or a sandstorm. A developer might want to have some force to slow down the player.
+
+#####Add Stream
+
+![16_stream/1_add_streamer.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/16_stream/1_add_streamer_fix.png)
+
+#####Stream Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
+|Direction| You can pick the direction you want the stream to go or push the player. Up, down, left, left-up, right-up, and right.
+|Sprite| Pick the sprite image for the switch.
+|Movement| Allow the player to move when on the stream.
+|Sword| Allow the player to use the sword during movement.
+|Items| Allow the usage of items when on the stream.
+|Speed| The speed at which the stream will move the player.
+
+![2_stream_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/16_stream/2_stream_properties.png)
+
+
+###HUD
+
+HUD stands for `heads up display`. It is the health bar, money counter, etc.
+
+There are many scripts from Christopho's games that can be used. You can check his [YouTube Tutorial](https://www.youtube.com/watch?v=RvV2rU75WmA) for that information. I will be covering the heart display and money counter.
+
+#####Setup HUD Scripts
+
+The 1st step will be to add the HUD scripts folder (Get them from sample > `E_Crystal_switch-Block_Shop_stream.zip`.) and remove the current HUD in the menu directory or rename the scrips to `.old`.
+
+![1_add_hud_folder.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/18_hud/1_add_hud_folder.png)
+
+![2_old.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/18_hud/2_old.png)
+
+Remember to comment out the old hud in the `game_manager.lua` and require the HUD from the manager.
+
+```lua
+require("scripts/hud/hud")
+```
+
+![4_game_manager.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/18_hud/4_game_manager.png)
+
+![3_comment_out_old_hud.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/18_hud/3_comment_out_old_hud.png)
+
+
+```lua
+require("scripts/menus/alttp_dialog_box")
+require("scripts/multi_events")
+require("scripts/hud/hud")
+
+local game_manager = {}
+```
+
+Add the `green_digits` and `white_digits` fonts to the font directory. Get them from sample > `E_Crystal_switch-Block_Shop_stream.zip`. Remember to add them in the manager too.
+
+![5_fonts.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/18_hud/5_fonts.png)
+
+#####Hud Configurations `hud_config.lua`
+
+You can change the coordinates of the counter and heart health display from this script. Change the x,y coordinates until you like what you see.
+
+```lua
+  -- Hearts meter.
+  {
+    menu_script = "scripts/hud/hearts",
+    x = -88,
+    y = 0,
+  },
+
+  -- Rupee counter.
+  {
+    menu_script = "scripts/hud/rupees",
+    x = 121,
+    y = 10,
+  }
+```
+
+#####Health Heart Display `hearts.lua`
+
+Health is the life points the player has until he dies or faints. The way this script works is that it draws a surface of your heart image. The image will have full, half empty, and empty graphics. 
+
+![0_heart.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/17_Health_system/0_heart.png)
+
+You might have to adjust the surface for your image if you have super huge hearts or other graphics related to this system. This part can be found at the beginning of the `hearts.lua` script.
+```lua
+  hearts.surface = sol.surface.create(80, 16)
+```
+
+If your hearts or graphics are like mine (beyond 8x8 in dimensions), then you will have to adjust them. At first mine turned out like this.
+
+![1_heart.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/17_Health_system/1_heart.png)
+
+The script is currently set up for 8x8 hearts, but mine is 16x16 hearts. You will have to adjust the ` function hearts:rebuild_surface()`.
+
+
+```lua
+ function hearts:rebuild_surface()
+
+    hearts.surface:clear()
+
+    local life = hearts.current_life_displayed
+    local max_life = hearts.max_life_displayed
+    for j = 1, max_life do
+      if j % 2 == 0 then
+        local x, y
+        if j <= 20 then
+          x = 4 * (j - 2)
+          y = 0
+        else
+          x = 4 * (j - 22)
+          y = 8
+        end
+        if life >= j then
+          hearts_img:draw_region(0, 0, 8, 8, hearts.surface, x, y)
+        else
+          hearts_img:draw_region(16, 0, 8, 8, hearts.surface, x, y)
+        end
+      end
+    end
+    if life % 2 == 1 then
+      local x, y
+      if life <= 20 then
+        x = 4 * (life - 1)
+        y = 0
+      else
+        x = 4 * (life - 21)
+        y = 8
+      end
+      hearts_img:draw_region(8, 0, 8, 8, hearts.surface, x, y)
+    end
+  end
+  ```
+  
+  To be specific this part:
+  
+  ```lua
+      if j <= 20 then
+          x = 4 * (j - 2)
+          y = 0
+        else
+          x = 4 * (j - 22)
+          y = 8
+        end
+        if life >= j then
+          hearts_img:draw_region(0, 0, 8, 8, hearts.surface, x, y)
+        else
+          hearts_img:draw_region(16, 0, 8, 8, hearts.surface, x, y)
+        end
+      end
+    end
+    if life % 2 == 1 then
+      local x, y
+      if life <= 20 then
+        x = 4 * (life - 1)
+        y = 0
+      else
+        x = 4 * (life - 21)
+        y = 8
+      end
+```
+
+In order to fix this I have to adjust `draw_region` functions. Draw_region draws certain locations on a surface.
+
+Note: You can set up your graphics in the sprite editor to get coordinates easier.
+
+Location 1 is at `(0, 0, 16, 16,)`. The 2 zeros are the positions. The y position does not change (px,`py`,sx,sy,) and the next 2 spots `16,16` are the sprite dimensions.
+
+px,py = position
+
+sx,sy = sprite dimensions
+
+```lua
+hearts_img:draw_region(0, 0, 16, 16, hearts.surface, x, y)
+```
+
+Location 2 is at `(16, 0, 16, 16,)`.
+
+```lua
+hearts_img:draw_region(16, 0, 16, 16, hearts.surface, x, y)
+```
+
+Location 3 is at `(32, 0, 16, 16,)`.
+
+```lua
+hearts_img:draw_region(32, 0, 16, 16, hearts.surface, x, y)
+```
+
+The script result is the hearts are almost fixed. Notice that spacing issue?
+
+![2_heart.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/17_Health_system/2_heart.png)
+
+```lua
+if life >= j then
+    for j = 1, max_life do
+      if j % 2 == 0 then
+        local x, y
+        if j <= 20 then
+          x = 4 * (j - 2)
+          y = 0
+        else
+          x = 4 * (j - 22)
+          y = 8
+        end
+        if life >= j then
+          hearts_img:draw_region(0, 0, 16, 16, hearts.surface, x, y)
+        else
+          hearts_img:draw_region(32, 0, 16, 16, hearts.surface, x, y)
+        end
+      end
+    end
+    if life % 2 == 1 then
+      local x, y
+      if life <= 20 then
+        x = 4 * (life - 1)
+        y = 0
+      else
+        x = 4 * (life - 21)
+        y = 8
+      end
+      hearts_img:draw_region(16, 0, 16, 16, hearts.surface, x, y)
+    end
+```
+
+One must adjust the variable `x` to fix the spacing issue. I changed them all to 
+`x = 5`.
+
+![3_heart.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/17_Health_system/3_heart.png)
+
+```lua
+if life >= j then
+    for j = 1, max_life do
+      if j % 2 == 0 then
+        local x, y
+        if j <= 20 then
+          x = 5 * (j - 2)
+          y = 0
+        else
+          x = 5 * (j - 22)
+          y = 8
+        end
+        if life >= j then
+          hearts_img:draw_region(0, 0, 16, 16, hearts.surface, x, y)
+        else
+          hearts_img:draw_region(32, 0, 16, 16, hearts.surface, x, y)
+        end
+      end
+    end
+    if life % 2 == 1 then
+      local x, y
+      if life <= 20 then
+        x = 5 * (life - 1)
+        y = 0
+      else
+        x = 5 * (life - 21)
+        y = 8
+      end
+      hearts_img:draw_region(16, 0, 16, 16, hearts.surface, x, y)
+    end
+```
 
 
 
+#####Money System Rupee Style
 
-###Crystal Switch and Crystal Block Entities
+I will explain on how to adjust it to different size hearts and coordinate changes. You can change the counter's location from `hud_config.lua`.
+
+The HUD uses an image file called `rupee_icon.png`. I made up a simple gem for this purpose. This needs to be added to `sprites > hud` directory.
+
+![1_rupee_icon.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/1_rupee_icon.png)
+
+The counter should just show up after adding the scripts. You can adjust the gem's location in `rupees.lua`. Look for `function rupees:on_draw`.
+
+This line changes the x-axis. The `-2` location.
+```lua
+    rupee_icon_img:draw(dst_surface, x + -2, y)
+```
+This line changes the y-axis. The `11` location.
+```lua
+    digits_text:draw(dst_surface, x, y + 11)
+```
+```lua
+  function rupees:on_draw(dst_surface)
+
+    local x, y = dst_x, dst_y
+    local width, height = dst_surface:get_size()
+    if x < 0 then
+      x = width + x
+    end
+    if y < 0 then
+      y = height + y
+    end
+
+    rupee_icon_img:draw(dst_surface, x + -2, y)
+    digits_text:draw(dst_surface, x, y + 11)
+  end
+  ```
+  
+The counter shows up green and nothing happens. In order to use the counter one must set the limit. By default, it is set to 0. That means it is full. Green font means the counter is full.
+  
+![2_green_full.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/2_green_full.png)
+  
+In `game_manager.lua` under function `function game_manager:start_game()` add the following line of code.
+
+```lua
+    game:set_max_money(100)
+```
+
+```lua
+function game_manager:start_game()
+
+  local exists = sol.game.exists("save1.dat")
+  local game = sol.game.load("save1.dat")
+  if not exists then
+    -- Initialize a new savegame.
+    game:set_max_life(12)
+    game:set_life(game:get_max_life())
+    game:set_ability("lift", 2)
+    game:set_max_money(100)
+    game:set_ability("sword", 1)
+    game:set_starting_location("Map_4") -- Starting location.
+  end
+```
+
+![3_white_not_full.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/3_white_not_full.png)
+
+###Money (Gem) Setup
+
+The gem already exists for you. You can thank Diarandor for that, but I will explain how to set up the gem. This script is a little cleaner.
+
+1.Make an item script called `gem`. You probably want to delete the old one first or use the name `gem2`.
+
+![1_Create_gem_item.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/1_Create_gem_item.png)
+
+2.Go to `sprites > entities > items`. The item script name must match, the item animation game.
+
+![2_entities_items.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/2_entities_items.png)
+
+![3_animation_variants_in_items.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/3_animation_variants_in_items.png)
+
+3.By default, a script template is made when making an item.
+
+```lua
+-- Lua script of item gem.
+-- This script is executed only once for the whole game.
+
+-- Feel free to modify the code below.
+-- You can add more events and remove the ones you don't need.
+
+-- See the Solarus Lua API documentation for the full specification
+-- of types, events and methods:
+-- http://www.solarus-games.org/doc/latest
+
+local item = ...
+local game = item:get_game()
+
+-- Event called when the game is initialized.
+function item:on_started()
+
+  -- Initialize the properties of your item here,
+  -- like whether it can be saved, whether it has an amount
+  -- and whether it can be assigned.
+end
+
+-- Event called when the hero is using this item.
+function item:on_using()
+
+  -- Define here what happens when using this item
+  -- and call item:set_finished() to release the hero when you have finished.
+  item:set_finished()
+end
+
+-- Event called when a pickable treasure representing this item
+-- is created on the map.
+function item:on_pickable_created(pickable)
+
+  -- You can set a particular movement here if you don't like the default one.
+end
+```
+
+4.`function item:on_using()` will not be used because you buy things with money (gems), but if you plan to attack with gems, then you would use this function. That means you can delete this part.
+
+```lua
+-- Event called when the hero is using this item.
+function item:on_using()
+
+  -- Define here what happens when using this item
+  -- and call item:set_finished() to release the hero when you have finished.
+  item:set_finished()
+end
+```
+
+5.`function item:on_pickable_created(pickable)` is used for when an item is created on a map. The movement animation can be changed. For example, have it spin differently (default one works fine in my opinion) or have the gem move slowly away from the player. That means you can delete this part of the script as well.
+
+```lua
+-- Event called when a pickable treasure representing this item
+-- is created on the map.
+function item:on_pickable_created(pickable)
+
+  -- You can set a particular movement here if you don't like the default one.
+end
+```
+
+6.We are left with one function `function item:on_started()`. This function is used to set up the properties for your item. For example, shadow size, and sound when picked up. There are a lot of functions that can be used and I will cover the basic ones.
+
+```lua
+local item = ...
+local game = item:get_game()
+
+-- Event called when the game is initialized.
+function item:on_started()
+
+  -- Initialize the properties of your item here,
+  -- like whether it can be saved, whether it has an amount
+  -- and whether it can be assigned.
+end
+```
+
+7.Set the shadow size with the function `self:set_shadow("animation_name")`.
+
+![Rupee_scripting/4_big_small_shadow.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/4_big_small_shadow.png)
+
+```lua
+function item:on_created()
+
+  -- Define the properties of rupees.
+  self:set_shadow("small")
+end
+```
+
+8.Set whether it can disappear or not with the function `self:set_can_disappear(true/false)`.
+
+```lua
+function item:on_created()
+
+  -- Define the properties of rupees.
+  self:set_can_disappear(true)
+end
+```
+
+9.Set the "ta da da daa" brandish sound when picking up the item. This will be false because it would be strange for this to happen on a simple gem. Normally, this happens when a chest is open. The function for that is `self:set_brandish_when_picked(false/true)`.
+
+```lua
+function item:on_created()
+
+  -- Define the properties of rupees.
+  self:set_brandish_when_picked(false)
+end
+```
+
+10.Set the sound for when the item is picked up with function `self:set_sound_when_picked("name_of_sound")`.
+
+```lua
+function item:on_created()
+
+  -- Define the properties of rupees.
+  self:set_sound_when_picked("picked_rupee")
+end
+```
+The result:
+
+```lua
+function item:on_created()
+
+  -- Define the properties of rupees.
+  self:set_shadow("small")
+  self:set_can_disappear(true)
+  self:set_brandish_when_picked(false)
+  self:set_sound_when_picked("picked_rupee")
+end
+```
+
+**Function item:on_obtaining**
+
+The last function will be for setting up the value for all the variants and so that money can be added to the counter. We do this with the function `function item:on_obtaining(variant, savegame_variable)`.
+
+1.It is best to start this with a table. The table will hole the money amount for 3 variants. For example, value 2 = variant 1, value 10 = variant 3, etc.
+
+```lua
+function item:on_obtaining(variant, savegame_variable)
+
+  local amounts = { 2, 6, 10 }
+end
+```
+
+2.Next we will use the function `game:add_money()`. This is used to add value to the money counter. We will use the variable `amounts` and `variant` from the function item:on_obtaining(`variant`, savegame_variable) to add values for the gem `amounts[variant]`.
+
+```lua
+function item:on_obtaining(variant, savegame_variable)
+
+  local amounts = { 2, 6, 10 }
+  game:add_money(amounts[variant])
+end
+```
+
+The result is the gem script.
+
+```lua
+local item = ...
+local game = item:get_game()
+
+function item:on_created()
+
+  -- Define the properties of rupees.
+  self:set_shadow("small")
+  self:set_can_disappear(true)
+  self:set_brandish_when_picked(false)
+  self:set_sound_when_picked("picked_rupee")
+end
+
+function item:on_obtaining(variant, savegame_variable)
+
+  local amounts = { 2, 6, 10 }
+  game:add_money(amounts[variant])
+end
+```
 
 ###Shop Entity
 
-###Stream Entity
+The shop entity is a quick shop setup. The shop entity shows the price, an icon, and the treasure. It uses an image file called `rupee_icon.png`.
+
+#####Add Shop Entity
+
+![1_Add_shop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/1_Add_shop_fix.png)
+
+#####Shop Entity Properties
+
+|Type|Option|
+|:---:|:---|
+|Name| A name is needed for scripting reasons. You can leave it blank, but unless you plan to have it there just for show, then a name is needed.
+|Layer| The layer you want the entity on.
+|Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
+|Treasure| The treasure item to choose. You can pick a variant and save state.
+|Price| The cost of the item.
+|Price font| The font for the shop.
+|Description dialog id| Dialog to use when buying the item.
+
+![2_shop_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/2_shop_properties.png)
+
+#####Shop Setup
+
+This is what the basic shop set up looks like.
+
+![3_shop_set_up.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/3_shop_set_up.png)
+
+#####Shop Entity Dialogs
+
+The shop requires some dialogs. 
+
+The first is in the dialog properties. The name can be whatever you want in this case.
+
+![shop_dialog-save_state/1_dialog_call.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/shop_dialog-save_state/1_dialog_call.png)
+
+`shop.gem`
+```
+Do you want to buy a gem?
+```
+
+The rest of the dialog go by default built in names. They will all be under, "_shop."
+
+`_shop.amount_full `
+
+```
+You can't carry any more!
+```
+
+`_shop.not_enough_money`
+
+```
+Sorry, you don't have enough Rupees!
+```
+
+`_shop.question`
+
+```
+Price: $v Rupees.
+        $? Buy
+        $? Don't Buy
+```
+
+![shop_dialog-save_state/2_dialogs_shop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/shop_dialog-save_state/2_dialogs_shop.png)
+
+Lastly, if you save the state of the treasure from the shop, then you will only be able to buy that item once.
+
+![shop_dialog-save_state/3_save_shop_item_state.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/shop_dialog-save_state/3_save_shop_item_state.png)
+
 
 ###Door Entity
 
@@ -1350,4 +1981,6 @@ end
 
 ###Separator Entity
  
-###Custom Entity
+###Custom Entities
+
+#####Cactus
