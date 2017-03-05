@@ -5,8 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Cystal switch, cystal block, Stream, and shop entities.*
-
 - door, stairs, and Seperator entities.*
 
 - 3 custom entities.*
@@ -24,6 +22,8 @@ Everything with a '*' next to it is being worked on.
 - Chain Quest
 
 - Export Project
+
+- Revise credits
 
 - Correct remaining errors and revamp book
 
