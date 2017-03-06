@@ -5,9 +5,7 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- door, stairs, and Seperator entities.*
-
-- 3 custom entities.*
+- door, stairs, seperator, and 1 custom entity.*
 
 - Issue fixing
 
