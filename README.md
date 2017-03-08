@@ -7,6 +7,12 @@ Everything with a '*' next to it is being worked on.
 
 - door, stairs, seperator, and 1 custom entity.*
 
+- Swimming
+
+- Save Game
+
+- Title screen
+
 - Issue fixing
 
 - [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
