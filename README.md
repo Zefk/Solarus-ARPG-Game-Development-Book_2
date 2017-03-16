@@ -35,7 +35,7 @@ Everything with a '*' next to it is being worked on.
 
 - Release Beta 1.0
 
-##Book Export Process:
+## Book Export Process:
 
 **About:**
 
@@ -58,3 +58,36 @@ I will only provide HTML, MD, and PDF for this book. Others are welcome to make 
 4.A table of contents is added with Haroopad and the URLs are changed to folder directories.
 
 5.The .md file is exported as an HTML file and printed with Chrome. The table of contents, images, code syntax, style/theme, and everything still works in the pdf exported from Chrome.
+
+
+## Book v1.1
+
+This version would be for Solarus 1.6
+
+**Possible Additions:**
+- Followers
+- Inventory
+- Projectiles
+- Hookshot
+
+## Book v1.2
+
+This version of the book might never happen.
+
+**Possible Additions:**
+- Allied AI
+
+Bare basics needed for Allied AI.
+- Follwer script (follow hero)
+- Distance detection script (For enemy and hero)
+- Allied AI move toward enemy and enemy move toward allied AI based on distance.
+- Ally projectiles
+- Melee attack animations and damge based on distance.
+- Options for allied AI. (Dodge often, rapid melee attack, projectile attack, and balanced.)
+- Border tests for when it gets stuck.
+
+Possible errors include:
+- Walking over holes
+- Not able to go up ladders
+- No damage by prickles
+- No animation when walking on grass
