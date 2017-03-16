@@ -78,13 +78,14 @@ This version of the book might never happen.
 - Allied AI
 
 Bare basics needed for Allied AI.
-- Follwer script (follow hero)
+- Follower script (follow hero)
 - Distance detection script (For enemy and hero)
-- Allied AI move toward enemy and enemy move toward allied AI based on distance.
+- Allied AI moves toward enemy and enemy move toward allied AI based on distance.
 - Ally projectiles
-- Melee attack animations and damge based on distance.
+- Melee attack animations and damage based on distance.
 - Options for allied AI. (Dodge often, rapid melee attack, projectile attack, and balanced.)
-- Border tests for when it gets stuck.
+- Border tests for when allies gets stuck.
+- Hero walking through ally
 
 Possible errors include:
 - Walking over holes
