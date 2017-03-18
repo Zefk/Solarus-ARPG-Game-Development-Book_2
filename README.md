@@ -77,7 +77,7 @@ This version of the book might never happen.
 **Possible Additions:**
 - Allied AI
 
-Bare basics needed for Allied AI.
+Bare basics needed for Allied AI:
 - Follower script (follow hero)
 - Distance detection script (For enemy and hero)
 - Allied AI moves toward enemy and enemy move toward allied AI based on distance.
@@ -87,7 +87,7 @@ Bare basics needed for Allied AI.
 - Hero walking through ally
 - Targeting system. (The enemy and ally will continue to attack the current target. Do not want them to run off to random targets without defeating the first one.)
 
-Advanced.
+Advanced:
 - Call command. (Protect hero or regroup. That way they will attack enemies close to the hero.)
 - Options for allied AI. (Dodge often, rapid melee attack, projectile attack, and balanced.)
 
