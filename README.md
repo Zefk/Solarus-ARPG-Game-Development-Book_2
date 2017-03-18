@@ -83,9 +83,13 @@ Bare basics needed for Allied AI.
 - Allied AI moves toward enemy and enemy move toward allied AI based on distance.
 - Ally projectiles
 - Melee attack animations and damage based on distance.
-- Options for allied AI. (Dodge often, rapid melee attack, projectile attack, and balanced.)
 - Border tests for when allies gets stuck.
 - Hero walking through ally
+- Targeting system. (The enemy and ally will continue to attack the current target. Do not want them to run off to random targets without defeating the first one.)
+
+Advanced.
+- Call command. (Protect hero or regroup. That way they will attack enemies close to the hero.)
+- Options for allied AI. (Dodge often, rapid melee attack, projectile attack, and balanced.)
 
 Possible errors include:
 - Walking over holes
