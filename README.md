@@ -5,9 +5,9 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Swimming
+- Abilities: swim, lift, sword, run, etc.*
 
-- Save Game
+- Save Game*
 
 - Title screen
 
@@ -69,6 +69,7 @@ This version would be for Solarus 1.6
 - Inventory
 - Projectiles
 - Hookshot
+- Boomerang
 
 ## Book v1.2
 
