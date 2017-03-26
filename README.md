@@ -15,6 +15,8 @@ Everything with a '*' next to it is being worked on.
 
 - [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
 
+- Hero types
+
 - Item types
 
 - Game types
