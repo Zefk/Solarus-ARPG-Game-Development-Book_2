@@ -92,7 +92,7 @@ Bare basics needed for Allied AI:
 
 Advanced:
 - Call command. (Protect hero or regroup. That way they will attack enemies close to the hero.)
-- Options for allied AI. (Dodge often, rapid melee attack, projectile attack, and balanced.)
+- Options for allied AI. (Dodge often, rapid melee attack, charged attacks, projectile attack, and balanced.)
 
 Possible errors include:
 - Walking over holes
