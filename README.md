@@ -5,23 +5,19 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Abilities: swim, lift, sword, run, etc.*
+- Title screen*
 
-- Save Game*
+- [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)*
 
-- Title screen
+- Hero types*
+
+- Item types*
+
+- Game types*
+
+- Map types*
 
 - Issue fixing
-
-- [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)
-
-- Hero types
-
-- Item types
-
-- Game types
-
-- Map types
 
 - Chain Quest
 
