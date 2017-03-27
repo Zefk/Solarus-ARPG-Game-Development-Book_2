@@ -31,9 +31,9 @@
 
 **Chapter 13:** Entities
 
-**Chapter 14:** Quest Launcher and Map Types
+**Chapter 14:** Abilities, Save Game, and Quest Launcher
 
-**Chapter 15:** Game Types
+**Chapter 15:** Title Screen, Movements, Game Types, Map Types, Hero Types, Item Types
 
 **Chapter 16:** Make a Chain Quest
 
