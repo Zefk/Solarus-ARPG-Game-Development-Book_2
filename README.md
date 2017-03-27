@@ -99,3 +99,4 @@ Possible errors include:
 - Not able to go up ladders
 - No damage by prickles
 - No animation when walking on grass
+- Hookshot leaves allies behind
