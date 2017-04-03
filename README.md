@@ -63,6 +63,7 @@ I will only provide HTML, MD, and PDF for this book. Others are welcome to make 
 This version would be for Solarus 1.6
 
 **Possible Additions:**
+- More functions (I never plan to cover them all, but there are some important ones that I should cover.)
 - [Followers](http://www.solarus-games.org/doc/latest/lua_api_path_finding_movement.html)
 - Inventory
 - Projectiles
