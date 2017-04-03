@@ -7,6 +7,8 @@ Everything with a '*' next to it is being worked on.
 
 - Title screen/save menu*
 
+- Movements
+
 - Hero types*
 
 - Item types*
