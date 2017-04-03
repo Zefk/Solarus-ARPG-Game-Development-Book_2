@@ -63,7 +63,7 @@ I will only provide HTML, MD, and PDF for this book. Others are welcome to make 
 This version would be for Solarus 1.6
 
 **Possible Additions:**
-- Followers
+- [Followers](http://www.solarus-games.org/doc/latest/lua_api_path_finding_movement.html)
 - Inventory
 - Projectiles
 - Hookshot
@@ -77,14 +77,14 @@ This version of the book might never happen.
 - Allied AI
 
 Bare basics needed for Allied AI:
-- Follower script (follow hero)
-- Distance detection script (For enemy and hero)
-- Allied AI moves toward enemy and enemy move toward allied AI based on distance.
+- [Follower](http://www.solarus-games.org/doc/latest/lua_api_path_finding_movement.html) script (follow hero)
+- [Distance](http://www.solarus-games.org/doc/latest/lua_api_entity.html#lua_api_entity_get_distance) detection script (For enemy and hero)
+- Allied AI moves toward enemy and enemy move toward allied AI based on distance. [Target](http://www.solarus-games.org/doc/latest/lua_api_target_movement.html) basically.
 - Ally projectiles
 - Melee attack animations and damage based on distance.
-- Border tests for when allies gets stuck.
-- Hero walking through ally
-- Targeting system. (The enemy and ally will continue to attack the current target. Do not want them to run off to random targets without defeating the first one.)
+- Border tests for when allies gets stuck. [Ignore obsticle](http://www.solarus-games.org/doc/latest/lua_api_movement.html#lua_api_movement_set_ignore_obstacles) and [path find](http://www.solarus-games.org/doc/latest/lua_api_path_finding_movement.html).
+- Hero walking through ally [Ignore obsticle](http://www.solarus-games.org/doc/latest/lua_api_movement.html#lua_api_movement_set_ignore_obstacles)
+- Targeting system. (The enemy and ally will continue to attack the current target. Do not want them to run off to random targets without defeating the first one.) [Conditional statement with a reset]
 
 Advanced:
 - Call command. (Protect hero or regroup. That way they will attack enemies close to the hero.)
