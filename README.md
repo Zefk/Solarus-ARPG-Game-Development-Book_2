@@ -5,9 +5,7 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Title screen*
-
-- [Movements](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/issues/6)*
+- Title screen/save menu*
 
 - Hero types*
 
