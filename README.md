@@ -5,14 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Title screen/save menu*
-
-- Movements
-
-- Hero types*
-
-- Item types*
-
 - Game types*
 
 - Map types*
