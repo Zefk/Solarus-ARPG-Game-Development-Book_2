@@ -97,3 +97,4 @@ Possible errors include:
 - No damage by prickles
 - No animation when walking on grass
 - Hookshot leaves allies behind
+- Teleporting NPC
