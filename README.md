@@ -9,6 +9,8 @@ Everything with a '*' next to it is being worked on.
 
 - Issue fixing*
 
+- I/O*
+
 - Chain Quest
 
 - Export Project*
