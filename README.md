@@ -7,11 +7,11 @@ Everything with a '*' next to it is being worked on.
 
 - Map types*
 
-- Issue fixing
+- Issue fixing*
 
 - Chain Quest
 
-- Export Project
+- Export Project*
 
 - Revise credits
 
