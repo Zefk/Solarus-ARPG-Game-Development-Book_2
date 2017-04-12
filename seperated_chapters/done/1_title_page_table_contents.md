@@ -33,7 +33,7 @@
 
 **Chapter 14:** Abilities, Save Game, and Quest Launcher
 
-**Chapter 15:** Title Screen, Movements, Game Types, Map Types, Hero Types, Item Types
+**Chapter 15:** Title Screen, Save menu, Movements, Map Types, Cameria, I/O,
 
 **Chapter 16:** Make a Chain Quest
 
