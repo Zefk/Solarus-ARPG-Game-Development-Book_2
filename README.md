@@ -5,15 +5,9 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
-- Map types*
-
 - Issue fixing*
 
-- I/O*
-
 - Chain Quest
-
-- Export Project*
 
 - Revise credits
 
