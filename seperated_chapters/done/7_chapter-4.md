@@ -23,6 +23,8 @@ You can right click the mouse to do the same task.
 
 There are many options when it comes to the animation properties. 
 
+![Chapter_4_images/Chapter_4_3_Sprite_editor_sprite_animation_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_3_Sprite_editor_sprite_animation_properties.png)
+
 1.Setting an animation as default
 
 2.Selecting a source image
@@ -33,11 +35,13 @@ There are many options when it comes to the animation properties.
 
 4.Loop on a certain frame number. Ex: Loop on frame 0
 
-![Chapter_4_images/Chapter_4_3_Sprite_editor_sprite_animation_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_3_Sprite_editor_sprite_animation_properties.png)
+It can be used for the preview if checked. Also, if this is checks on the walking animation for a sprite, then the sprite will walk in place. It will not move.
 
 ##### Direction Properties:
 
 The `direction properties` contains dimension options that allows one to easily set up a sprite.
+
+![Chapter_4_4_Sprite_editor_sprite_direction_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_4_Sprite_editor_sprite_direction_properties.png)
 
 1.Size
 
@@ -48,8 +52,6 @@ The `direction properties` contains dimension options that allows one to easily 
 4.Number of frames
 
 5.Number of columns
-
-![Chapter_4_4_Sprite_editor_sprite_direction_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_4_Sprite_editor_sprite_direction_properties.png)
 
 ##### Size:
 
