@@ -87,3 +87,4 @@ Possible errors include:
 - No animation when walking on grass
 - Hookshot leaves allies behind
 - Teleporting NPC
+- NPC getting stuck on blocks
