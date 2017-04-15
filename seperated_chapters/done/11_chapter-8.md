@@ -129,7 +129,7 @@ end
 
 You can download the sample for this lesson in the lessons folder.
 
-Lessons > Chapter_8_display_example.zip
+`Lessons > Chapter_8_display_example.zip`
 
 ###Breaking Down The Script:
 
@@ -143,7 +143,7 @@ The next line that you may not understand is `local surface_img = sol.surface.cr
 
 The next line of code `local button_img = sol.surface.create("button.png")` is the exactly the same as the pervious line I explained, but we create a surface for an image file. In this case a portable graphic image (.png) `button.png`. This image is located in the sprites directory. sprites > button.png
 
-The next line of code is making a surface for a `.ttf` font package or bitmap font like `alttp.png`. You cannot change colors for the bitmap font and there are a few other limitation with that font type. You can do everything with a `.ttf` font(TrueType Font). The surface that is created for the font, uses a table in order to assign properties to it. You must never forget the comma at the end of each line.
+The next line of code is making a surface for a `.ttf` font package or bitmap font like `alttp.png`. You cannot change colors for the bitmap font and there are a few other limitation with that font type. You can do everything with a `.ttf` font(TrueType Font). Solarus supports .ttf, .tcc and fon. The surface that is created for the font, uses a table in order to assign properties to it. You must never forget the comma at the end of each line.
 
 ```lua
 local test_img = sol.text_surface.create({ -- name a local variable something and assign it to the sol.text_surface
