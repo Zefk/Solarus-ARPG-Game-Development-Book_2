@@ -37,6 +37,20 @@ There are many options when it comes to the animation properties.
 
 It can be used for the preview if checked. Also, if this is checks on the walking animation for a sprite, then the sprite will walk in place. It will not move.
 
+##### Direction Order
+
+The direction numbers represent the animation direction. 
+
+**EX:** 
+`Direction 1` would be walking to the right.
+
+|Number|Direction
+|:-----|:-------|
+|Direction 1| Right
+|Direction 2| Up
+|Direction 3| Left
+|Direction 4| Down
+
 ##### Direction Properties:
 
 The `direction properties` contains dimension options that allows one to easily set up a sprite.
