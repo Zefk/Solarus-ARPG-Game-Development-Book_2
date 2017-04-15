@@ -200,3 +200,35 @@ Previous and next are the arrows.
 Stop is the button with the square and play is the triangle that is on its side.
 
 ![](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/12_last_play_stop_first.png)
+
+##### Dat File Editing
+
+.`dat` file editing is useful. If the dat file is going to be almost the same for every sprite, then the filenames just need to be changed. This would be faster than creating everything over and over again in the editor.
+
+**Example:**
+
+Blue_female.dat
+````
+  src_image = "Erbarlow/Bard/Female/Blue_female.png",
+````
+Green_female.dat
+````
+  src_image = "Erbarlow/Bard/Female/green_female.png",
+```
+
+**Another Example:**
+
+It is useful for trading animation to another sprite. Some animations can take a lot of time to setup.
+
+```
+animation{
+  name = "stopped",
+  src_image = "Erbarlow/Bard/Female/green_female.png",
+  directions = {
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 32 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 32 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 32 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 32 },
+  },
+}
+```
