@@ -205,6 +205,12 @@ Stop is the button with the square and play is the triangle that is on its side.
 
 .`dat` file editing is useful. If the dat file is going to be almost the same for every sprite, then the filenames just need to be changed. This would be faster than creating everything over and over again in the editor.
 
+A few good notepad editors.
+
+- Notepad++ (Windows/Wine)
+- Jedit (Linux)
+- Gedit (Linux): [advanced-find-add-on](https://code.google.com/archive/p/advanced-find/downloads)
+
 **Example:**
 
 Blue_female.dat
