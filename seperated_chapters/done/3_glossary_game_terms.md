@@ -142,3 +142,9 @@
 |Source:| https://en.wikipedia.org/wiki/Beat_%27em_up
 |Source:| https://en.wikipedia.org/wiki/Central_processing_unit
 |Source:| https://en.wikipedia.org/wiki/Spawning_%28video_gaming%29
+|Chipset| Commonly know now as tileset. This word is kinda old school now. This is the file that holds most graphics. Normally, it does not contain character graphics.
+|Charset| Short for character sets. Charsets hold character graphics.
+|Layer|Think of a layer like a sandwich. Cheese layer goes on the mean layer. Layers are basically images layered on top of each other. You can normally change the layers in some way.
+|Entity| An entity is something that exists separately from other things and has a clear identity or purpose. For example, a door entity would be used for only door like functions.
+|Map| A map in game development is the place where you put together the tiles from the tileset. Your map is the world you create with the tile graphics.
+|Cursor| The cursor is the black arrow (normally a black arrow) that you move around on the screen.
