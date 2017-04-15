@@ -7,6 +7,14 @@
 
 Inside the Solarus Engine Download contains many free graphics and audio. You can thank Diarandor for that because he is contantly adding resources to the sample quest.
 
+https://github.com/solarus-games/solarus-sample-quest
+
+#####Children of Solarus
+
+This opensource project contains opensource graphics.
+
+https://github.com/solarus-games/children-of-solarus
+
 #####Faryolica World:
 
 This is an outside world tileset I put together with opensource art. I did make a few things, but that does not really matter.
@@ -14,6 +22,7 @@ This is an outside world tileset I put together with opensource art. I did make 
 The full pack has the tileset and a lot of my free audio files. Make sure to download the repo instead of the release because I cleaned up the credit file. 
 
 https://github.com/Zefk/Fairyolica-World
+https://github.com/Zefk/Fairyolica-World/releases
 
 ###Scripts:
 
