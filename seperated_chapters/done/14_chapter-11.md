@@ -61,7 +61,7 @@ Click and drag the right edge.
 
 ##### Map Zoom
 
-You can zoom into the map with CTRL + Z or with the zoom icon.
+You can zoom into the map with CTRL + Z or with the zoom icon. You can do the same where you select the tiles for the map.
 
 ![Chapter_11_images/Chapter-11_5_Zoom_CTRL_Z.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_11_images/Chapter-11_5_Zoom_CTRL_Z.png)
 

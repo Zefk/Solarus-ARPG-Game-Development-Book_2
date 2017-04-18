@@ -7,11 +7,101 @@ The inside store contains pre-made maps. These can be selected, copied, and past
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png)
 
+### get_sprite() & related
+
+If you have not already noticed, then there are ways to get cetain functions in scripts. I will use the map script as an example, but you can do them in other scripts. 
+
+For a map script to use map functions it needs `local map = ...` and external scripts need `local game = ...`, but the map does not need `local game = ..` because it has `map:get_game()`.
+
+Some of these are:
+
+```lua
+get_sprite()
+get_game()
+get_hero()
+```
+
+#### map:get_game()
+
+If you wanted to use game functions on a map, then you use use the following line of code.
+
+```lua
+local game = map:get_game()
+```
+
+You can then use a function like:
+
+```lua
+game:set_starting_location("Map_4", "starting_destination") -- Starting location.`
+```
+
+#### map:get_hero()
+
+If you wanted to use hero functions on a map, then you use use the following line of code.
+
+```lua
+local hero = map:get_hero()
+```
+
+You can then use a function like:
+
+```lua
+hero:set_animation("dead") -- calls an animation you made for the hero.
+```
+
+#### entity:get_sprite()
+
+`entity:get_sprite()` is a little different. You mostly use it when using [sprites methods](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_methods).
+
+```lua
+entity_name:get_sprite():set_animation("animation_name")
+```
+
+
 ###Entity Position & Name
 
 You can hover over entities to see their names and position.
 
 ![Chapter_13_hover_entity_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/Chapter_13_hover_entity_name.png)
+
+###Types of entities
+
+Here are the existing types of entities.
+
+|Entity|Description
+|------|:-----------
+|Hero| The character controlled by the player.
+|Tile| A small brick that composes a piece of the map, with a pattern picked from the tileset.
+|Dynamic tile| A special tile that can be enabled or disabled dynamically (usual tiles are optimized away at runtime).
+|Teletransporter| When walking on it, the hero is transported somewhere, possibly on the same map or another map.
+|Destination| A possible destination place for teletransporters.
+|Pickable treasure| A treasure placed on the ground and that the hero can pick up.
+|Destructible object| An entity that can be cut or lifted by hero, and that may hide a pickable treasure.
+|Carried object| A destructible object lifted and carried by the hero.
+|Chest| A chest that contains a treasure.
+|Shop treasure: A treasure that the hero can buy for a price.
+|Enemy| A bad guy (possibly a boss) who may also drop a pickable treasure when killed.
+|Non-playing character (NPC)| Somebody or something the hero can interact with.
+|Block| An entity that the hero can push or pull.
+|Jumper| When walking on it, the hero jumps into a direction.
+|Switch| A button or another mechanism that the hero can activate.
+|Sensor| An invisible detector that detects the presence of the hero.
+|Separator| An horizontal or vertical separation between two parts of the map.
+|Wall| An invisible object that stops some kinds of entities.
+|Crystal| A switch that lowers or raises crystal blocks.
+|Crystal block| A low wall that can be lowered (travserable) or raised (obstacle) using a crystal.
+|Stream| When walking on it, the hero automatically moves into a direction.
+|Door| A door to open with an equipment item or another condition.
+|Stairs| Stairs between two maps or to a platform of a single map.
+|Bomb| A bomb that will explode after a few seconds and that may be lifted by the hero.
+|Explosion| An explosion that can hurt the hero and the enemies.
+|Fire| A flame that can hurt enemies and interact with other entities.
+|Arrow| An arrow shot by the bow.
+|Hookshot| A hookshot shot by the hero.
+|Boomerang| A boomerang shot by the hero.
+|Camera| A rectangle that determines the visible area of the map.
+|Custom entity| An entity fully controlled by your Lua scripts.
+
 
 ### Destination Entity
 
@@ -319,9 +409,11 @@ function enemy:on_restarted()
 end
 ```
 
-Everything is pretty simple and the documentation can be checked for more options. I would like to point out a one thing.
+Everything is pretty simple and the documentation can be checked for more options. I would like to point out two things.
 
 `function enemy:on_restarted()` is basically a reset for the sprite. If the enemy is hit, then it will reset or restart to this.
+
+`sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())` is creating the sprite for the enemy. The `enemy:get_breed())`  gets the name of the enemy and since the image filename is the same as the enemy breed. That sprite is created.
 
 ##### Enemy Four Way Direction
 
@@ -518,7 +610,7 @@ I lost my hammer!(1) - line 1
 
 
 
-Help me find it? I will give you a reward. (1) - line 2
+Help me find it? I will give you a reward. (1)
      $? Yes(2)
      $? No(3)
 ```
@@ -979,7 +1071,7 @@ The same as the walkable switch. Just set it to `solid` and press `c` to activat
 
 ### Dynamic Tile
 
-Dynamic Tiles are not entities, but they can be manipulated like an entity once a name is given to them. You can script it and all that jazz. Tiles are originally static meaning they cannot be used with scripts until converted to Dynamic.
+Dynamic Tiles are entities and they can be manipulated like an entity once a name is given to them. You can script it and all that jazz. Tiles are originally static meaning they cannot be used with scripts until converted to Dynamic.
 
 ##### Convert to Dynamic
 
@@ -2281,3 +2373,187 @@ function entity:on_interaction()
 end
 ```
 
+#### Custom Entity Switch
+
+There is no function for `on_activated` with a custom entity, but one can easily make one with Lua using a timer.
+
+```lua
+local hero = map:get_hero()
+
+--Create on_activated
+sol.timer.start(500, function()
+  if entity.on_activated ~= nil then
+    entity:on_activated()
+   return true 
+  end
+end)
+```
+
+The easiest way to detect an entity overlapping another is with the `overlaps` function. 
+
+`entity:overlaps(other_entity, [collision_mode])`
+
+|Collision mode| Description
+|--------------|:-----------
+|"overlapping"| Collision if the bounding box of both entities overlap. This is the default value.
+|"containing"| Collision if the bounding box of the other entity is fully inside the bounding box of this entity.
+|"origin"| Collision if the origin point or the other entity is inside the bounding box of this entity.
+|"center"| Collision if the center point of the other entity is inside the bounding box of this entity.
+|"facing"| Collision if the facing position of the other entity's bounding box is touching this entity's bounding box. Bounding boxes don't necessarily overlap, but they are in contact: there is no space between them. When you consider the bounding box of an entity, which is a rectangle with four sides, the facing point is the middle point of the side the entity is oriented to. This "facing" collision test is useful when the other entity cannot traverse your custom entity. For instance, if the other entity has direction "east", there is a collision if the middle of the east side of its bounding box touches (but does not necessarily overlap) this entity's bounding box. This is typically what you need to let the hero interact with this entity when he is looking at it.
+|"touching"| Like "facing", but accepts all four sides of the other entity's bounding box, no matter its direction.
+|"sprite"| Collision if a sprite of the other entity overlaps a sprite of this entity. The collision test is pixel precise.
+
+
+```lua
+local hero = map:get_hero()
+
+function entity:on_activated()
+  if hero:overlaps(entity) then
+    sol.audio.play_sound("secret")
+    hero:start_hurt(240,277,6)
+  end
+end
+```
+
+Another way to detect the hero is by doing it manually with the `get_position()` function, but overlaps function is easier.
+
+```lua
+--if hero's position is equal to entity's position, then hero is damaged when stepping on entity.
+function entity:on_activated()
+local x1,y1 = hero:get_position()
+print("Hero: "..x1..","..y1)
+  if (x1 > 240 and x1 < 256) and (y1 > 272 and y1 < 288) then
+    sol.audio.play_sound("secret")
+    hero:start_hurt(240,277,6)
+  end
+end
+```
+
+#### Custom Animation
+
+You can change the animation for the custom entity. Let us say you want to do a sword swing animation. All you would have to do is the following line of code.
+
+```lua
+entity:get_sprite():set_animation("sword_swing")
+```
+
+You must make the `sword_swing` animation in the sprite editor.
+
+For the hero you will not have to `get_sprite()` because the function exists for the hero and it does not have to be retrieve from the sprites methods, so it would be like the following line of code.
+
+```lua
+hero:set_animation("dead")
+```
+
+#### Get Distance to Entity
+
+The function `entity:get_distance(other_entity)` checks the distance in pixels to another entity. It is super useful.
+
+**Example:**
+
+If the entities distance is less that 20 pixels, then print "Entity encounters hero!"
+
+```lua
+local hero = map:get_hero()
+
+--Create on_activated
+sol.timer.start(500, function()
+  if map.on_activated ~= nil then
+    map:on_activated()
+ return true 
+  end
+end)
+ 
+function map:on_activated()
+ print("------------",hero:get_distance(sprite))
+local distance_between = hero:get_distance(sprite)
+  if distance_between < 20 then
+    print("Entity encounters hero!")
+  end
+end
+```
+
+#### Make Entity Turn to Entity
+
+Then function `set_direction` and `entity:get_direction4_to(other_entity)` are needed for this to work. 
+
+The ``entity:get_direction4_to(other_entity)`` function gets the direction of another entity and `set_direction` makes an entity face a direction.
+
+The following code makes the two sprites look at each other.
+
+```lua
+--set_direction
+npc_2:get_sprite():set_direction(npc_2:get_direction4_to(npc))
+npc:get_sprite():set_direction(npc:get_direction4_to(npc_2))
+```
+
+#### Obstacle Detection
+
+Let us say a sprite is using the `target` movement and gets stuck. The best way to solve this is with the function `entity:on_obstacle_reached()`. Basically, if the entity hits an obstacle, then something happens.
+
+**Example:**
+
+In the following script the entity uses the `path_finding` movement until the distance to the hero is less than 25 pixels. At that time it uses the `target` movement again.
+
+```lua
+function entity:on_obstacle_reached()
+
+   movement = sol.movement.create("path_finding")
+   movement:set_target(hero)
+   movement:set_speed(60)
+   movement:start(entity)
+
+local distance_between = hero:get_distance(entity)
+  if distance_between < 25 then
+     movement = sol.movement.create("target")
+     movement:set_target(hero)
+     movement:set_speed(60)
+     movement:start(entity)
+  end
+end
+```
+
+#### On Hero State
+
+The hero has many build in states.
+
+|States|
+|:------|
+|"back to solid ground"
+|"boomerang"
+|"bow"
+|"carrying"
+|"falling"
+|"forced walking"
+|"free"
+|"frozen"
+|"grabbing"
+|"hookshot"
+|"hurt"
+|"jumping"
+|"lifting"
+|"plunging"
+|"pulling"
+|"pushing"
+|"running"
+|"stairs"
+|"stream"
+|"swimming"
+|"sword loading"
+|"sword spin attack"
+|"sword swinging"
+|"sword tapping"
+|"treasure"
+|"using item"
+|"victory"
+
+The following script print "spin attack" when the hero does a sword spin attack.
+
+```lua
+function hero:on_state_changed(state)
+ 
+  if state == "sword spin attack" then
+    print("spin attack")
+  end
+end
+```

@@ -34,6 +34,15 @@ A pattern id can be changed like this:
 
 ![chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png)
 
+A pattern ID is important because if you have two tilesets that are exactly the same except one is a different color, then you can simply give the same patterns to the other tileset and the map will be changed to that different color when you switch tilesets.
+
+**Example:**
+A forest can become an instant desert once tilesets are changed. The patterns must be the same or similar enough for a decent change without much editing. This could be useful for different dimensions or terrain changes due to some cause.
+
+You can use `map:set_tileset("tileset_name")` to change tilesets.
+
+
+
 ##### Ground
 
 You can select different grounds to fit your tile. For example, the tile would be `traversable` if the player character can walk on it.
@@ -70,3 +79,18 @@ You can also select the type for the tile.
 
 ![chapter_5_9_Tileset_Editor_selecting_7_making_new_type_tile.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_9_Tileset_Editor_selecting_7_making_new_type_tile.png)
 
+##### 8x8 Formatting
+
+I will use gimp as an example for 8x8 formatting. In `edit > preferences` menu go down to grid.
+
+![Chapter_5_12_Gimp_preferences_8x8.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_12_Gimp_preferences_8x8.png)
+
+Now you may have to restart gimp after saving your new grid preferences.
+
+Now after going to `view > show grid` you will notice black lined boxes. Each box is an 8x8 block as you can see in the image below. In this example image each tile is in an 8x8 block.
+
+![Chapter_5_13_Gimp_grid_8x8_block.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_13_Gimp_grid_8x8_block.png)
+
+Your graphics do not have to be in a single 8x8 block, but they will have to be in the same range. Like the whirlpool and larger sand tile below. They are 16 x 16 blocks.
+
+![Chapter_5_14_Gimp_grid_8x8_block_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_14_Gimp_grid_8x8_block_2.png)

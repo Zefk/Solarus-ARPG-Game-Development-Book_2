@@ -31,7 +31,7 @@
 
 **Chapter 13:** Entities
 
-**Chapter 14:** Abilities, Save Game, and Quest Launcher
+**Chapter 14:** Abilities, Save Game, Quest Launcher, and Game Over
 
 **Chapter 15:** Title Screen, Save menu, Movements, Map Types, Cameria, I/O,
 

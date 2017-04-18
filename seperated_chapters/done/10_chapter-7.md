@@ -175,11 +175,20 @@ In the text section:
 
 `"Do you want to print yes?"`
 
-               `$?Yes`
+               $?Yes
                
-               `$?No`
+               $?No
 	       
 ![chapter_7_yes_no.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/chapter_7_yes_no.png)
+
+#####Dialog lines
+
+You must remember the line order for yes/no in order to correctly code it.
+
+`"Do you want to print yes?"` (line 1)
+`$?Yes` (line 2)
+`$?no` (line 3)
+
 
 ##### Adding on_paused
 
@@ -188,6 +197,7 @@ In the `game_manager.lua` put the following code above `game:start()`
 ```Lua
   function game:on_paused()
     game:start_dialog("_dialog.yes_no",function(answer)
+      --Answer 2 is line 2
       if answer == 2 then
         print("Yes")
       end 
@@ -195,9 +205,9 @@ In the `game_manager.lua` put the following code above `game:start()`
 end
 ```
 
-`function game:on_paused()` is the pause function. This activates when the game is paused. The key "d" is default for pausing in Solarus. There is function `game:on_unpaused()`as well. In unpaused, code you write will activate when you press "d" again to unpause the game.
+`function game:on_paused()` is the pause function. This activates when the game is paused. The key `d` is default for pausing in Solarus. There is function `game:on_unpaused()`as well. In unpaused, code you write will activate when you press `d` again to unpause the game.
 
-`function(answer)` is part of the dialog box. Basically, `answer == 2` is the "yes" option.
+`function(answer)` is part of the dialog box. Basically, `answer == 2` is line 2.
 
 Playtest with `F5` and press the key `d` and press the `space bar` to choose yes.
 

@@ -263,3 +263,8 @@ animation{
   },
 }
 
+#####Bounding box or Hitbox
+
+The default size value is 16x16 pixels. This is the effective size used to detect obstacles when moving, but the sprite(s) of the custom entity and enemy may be bigger than 16x16.
+
+The functions `custom_entity:set_size(width, height)` for the custom entity and `enemy:set_size(width, height)` can be used for enemies.
