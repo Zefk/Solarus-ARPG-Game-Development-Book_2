@@ -1,7 +1,7 @@
 
-##Chapter 7: Setting up Dialog and Pause
+## Chapter 7: Setting up Dialog and Pause
 
-#####Setting Up The Dialog Script:
+##### Setting Up The Dialog Script
 
 
 In `game_manager.lua` put the following require directory at the top of the script. (I explained how to use require already. This is the dialog box script designed by Christopho.)
@@ -28,10 +28,10 @@ In the editor in the font section. Make sure to add the alttp.png.
 
 ![Chapter_7_add_files.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_add_files.png)
 
-Using the Dialog box:
--
+##### Using the Dialog box
 
-Go to the dialog section of the editor. languages > en > double click
+
+Go to the dialog section of the editor. Languages > en > double click
 
 ![Chapter_7_open_Dialog_GUI.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_open_Dialog_GUI.png)
 
@@ -43,7 +43,7 @@ type `_dialog.test`
 
 `.test` is the dialog
 
-double click on `test`, go to dialog properties and down to the first rectangle box where it says text (At the right)
+Double click on `test`, go to dialog properties and down to the first rectangle box where it says text (At the right)
 
 Type any text you want in that box. For example, "This is a test dialog."
 
@@ -51,11 +51,9 @@ Type any text you want in that box. For example, "This is a test dialog."
 
 
 
-#####Mouse Control Fix:
+##### Mouse Control Fix
 
 In `game manager.lua`
-
-**Edit:** A temporary solution: http://forum.solarus-games.org/index.php/topic,832.msg4539.html#msg4539
 
 Basically for the mouse control to work `function game:on_started() end` needs to be replaced with `game:register_event("on_started", function() end)`.
 
@@ -112,12 +110,12 @@ Save the project and playtest with F5. You should see a dialog box appear after 
 
 ![Chapter_7_NPC_Playtest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_NPC_Playtest.png)
 
-Passing a value and string into the dialog:
--
+##### Passing a value and string into the dialog
+
 
 Now what if you wanted to pass a name or number value into the dialog?
 
-Make a new a new dialog. Click test > add new dialog (+) > change it to "_dialog.test2
+Make a new dialog. Click test > add new dialog (+) > change it to "_dialog.test2
 
 In the text section, add the `$v` in the text. This passed a variable into the dialog.
 
@@ -163,10 +161,7 @@ Save the project and playtest with F5. It should just appear. Press the "space b
 
 ![chapter_7_value_playtest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/chapter_7_value_playtest.png)
 
-Dialog pause: Yes and no:
--
-
-#####Setting up yes_no:
+##### Setting up yes_no
 
 I personally script my own yes_no menu with images, but the alttp dialog box can make yes and no. 
 
@@ -186,7 +181,7 @@ In the text section:
 	       
 ![chapter_7_yes_no.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/chapter_7_yes_no.png)
 
-#####Adding on_paused:
+##### Adding on_paused
 
 In the `game_manager.lua` put the following code above `game:start()`
 
@@ -204,13 +199,14 @@ end
 
 `function(answer)` is part of the dialog box. Basically, `answer == 2` is the "yes" option.
 
-Playtest with F5 and press the key "d" and press the "space bar" to choose yes.
+Playtest with `F5` and press the key `d` and press the `space bar` to choose yes.
 
 ![Chapter_7_yes_no_playtest.png)](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_yes_no_playtest.png)
 
-Dialog Lesson Sample:
--
+**Dialog Lesson Sample:**
+
 
 The lesson file is located in the folder:
 
-lesson > chapter_7_Dialog.zip
+`Lesson > chapter_7_Dialog.zip
+`

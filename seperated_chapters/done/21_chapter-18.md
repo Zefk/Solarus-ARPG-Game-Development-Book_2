@@ -1,12 +1,13 @@
-##Chapter 18: Upgrading and Export Project
+
+## Chapter 18: Upgrading and Export Project
 
 You can get the sample `Chapter_18_export_sample.zip` in the lesson directory.
 
-####Upgrading:
+#### Upgrading:
 
 One must follow the Solarus [migration guide](http://wiki.solarus-games.org/doku.php?id=migration_guide) to learn how to upgrade to a new version of Solarus. This book is for Solarus 1.5.x. It is possible that is book will be forked for 1.6+
 
-####Export Project:
+#### Export Project:
 
 Remember to make a backup of your game before exporting.
 
@@ -14,7 +15,7 @@ You need to copy the Solarus Engine into a folder of your choosing, copy your qu
 
 **Deleting Files**
 
-Not all the  `.dll` files are needed when exporting your game. You can delete the Solarus editor files because some of them are quite large, but you might need them for the quest launcher.
+Not all the  `.dll` files are needed when exporting your game. You can delete the Solarus editor files because some of them are quite large, but you might need them for the quest launcher or if for possible memory leaks happen.
 
 |Delete Files & Folders| File Size|
 |:---------------------|:---------|
@@ -93,7 +94,7 @@ Press next.
 |:---------------------|:-----------|
 |Application name| Name of your program.
 |Application version| Current version of your project.
-|Application publisher| Your company or buisness name.
+|Application publisher| Your company or business name.
 |Application website|www.YourWebsite.com
 
 ![Chapter_18_images/inno_setup_3.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/inno_setup_3.png)
@@ -181,3 +182,4 @@ You can always compile your script from `Build > Compile`.
 Your installer will show up in a folder called `output`.
 
 ![Chapter_18_images/inno_setup_16.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/inno_setup_16.png)
+

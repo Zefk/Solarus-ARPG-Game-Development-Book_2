@@ -1,19 +1,19 @@
 
-##Chapter 9: Key press, Mouse press, Image fade, and playing audio
+## Chapter 9: Key press, Mouse press, Image fade, and playing audio
 
 **Lesson Preview:**
 
 One can watch a video preview of the lesson. 
 
-Lessons > Chapter_9 > Chapter_9_Video_Preview.ogv.zip
+`Lessons > Chapter_9 > Chapter_9_Video_Preview.ogv.zip`
 
 **Lesson Sample:**
 
 One can download the completed lesson.
 
-Lessons > Chapter_9 > Chapter_9_key_mouse_fade.zip
+`Lessons > Chapter_9 > Chapter_9_key_mouse_fade.zip`
 
-####Lesson Script:
+#### Lesson Script
 
 I would like to show the script before beginning the lesson and how to use it. 
 
@@ -277,11 +277,11 @@ function stop_draw()
 end
 ```
 
-###Breaking Down the Script
+### Breaking Down the Script
 
 I will not mention anything related to how to use the draw function because that was explained last chapter.
 
-####Key Pressed:
+#### Key Pressed
 
 The key press function is very easy to use.
 
@@ -293,7 +293,7 @@ function sol.main:on_key_pressed(key)
 end
 ```
 
-EX:
+**EX:**
 
 This will activate if the key 'a' is pressed.
 
@@ -308,11 +308,11 @@ function sol.main:on_key_pressed(key)
 end
    ```
 
-####Set Pause:
+#### Set Pause
 
 By default the game pauses with the key 'd', but that is not the only way to pause the game. One can use `game:set_pause` to pause and unpause the game.
 
-EX:
+**EX:**
 
 ```lua
 --pause the game
@@ -321,11 +321,11 @@ game:set_paused(true)
 --unpause the game
 game:set_paused(false)
 ```
-####Changing Volume:
+#### Changing Volume
 
 Changing the volume is very easy. All one has to do is type `sol.audio.set_music/sound_volume(number or variable from 1 - 100)`.
 
-EX:
+**EX:**
 
 ```lua
        --Change the volume
@@ -338,11 +338,11 @@ EX:
        sol.audio.set_sound_volume(volume)
 ```
 
-####Playing Music & Sound:
+#### Playing Music & Sound
 
 Play music/sound is as easy as changing the volume. All one has to do is type `sol.audio.play_music/sound("the name of the audio")`.
 
-EX:
+**EX:**
 
 ```lua
        --Play music and sound
@@ -351,7 +351,7 @@ EX:
 ```
 
 
-####Making Your Own Function:
+#### Making Your Own Function
 
 I mentioned functions in chapter 6, but here is a review.
 
@@ -365,7 +365,7 @@ end
 name_you_want()
 ```
 
-Example:
+**Example:**
 
 ```lua
 function stop_draw()
@@ -376,27 +376,27 @@ end
 fade_img:fade_in(100,stop_draw())
 ```
 
-####Fade In and Out:
+#### Fade In and Out
 
-I would have covered fading in/out during the last chapter, but the key pressed was needed for a decent example. One takes the surface `fade_img` and adds `fade_in/out(delay time in miliseconds,A function)`.
+I would have covered fading in/out during the last chapter, but the key pressed was needed for a decent example. One takes the surface `fade_img` and adds `fade_in/out(delay time in milliseconds, A function)`.
 
-EX:
+**EX:**
 
 ```lua
 ----Activates fade in on key 'i'
    if key == "i" then
-     fade_img:fade_in(100,stop_draw())
+     fade_img:fade_in(100, stop_draw())
    end
 
 ----Activates fade out on key 'o'
    if key == "o" then
-     fade_img:fade_out(100,stop_draw())
+     fade_img:fade_out(100, stop_draw())
    end
 ```
 
-####Mouse Pressed:
+#### Mouse Pressed
 
-The hardest part about the mouse press function is getting the coordinates. I use a program on the Linux operating system called Kolour Paint, but you can do this in most paint programs.
+The hardest part about the mouse press function is getting the coordinates. I use a program on the Linux operating system called KolourPaint, but you can do this in most paint programs.
 
 ![Chapter_9_images/Chapter_9_1_Coordinates.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_9_images/Chapter_9_1_Coordinates.png)
 
@@ -413,7 +413,7 @@ function sol.main:on_mouse_pressed(button,x,y)
 end -- end of mouse press function
 ```
 
-EX:
+**EX:**
 
 ```lua
 --Mouse press coordinates. Use a simple paint program. I used Kolourpaint on Linux.
@@ -434,3 +434,4 @@ function sol.main:on_mouse_pressed(button,x,y)
   end -- end of right button
 end -- end of mouse press function
 ```
+

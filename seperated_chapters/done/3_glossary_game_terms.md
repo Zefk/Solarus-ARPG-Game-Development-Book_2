@@ -1,5 +1,5 @@
 
-##Glossary: Game Terms
+## Glossary: Game Terms
 
 |Glossary|Description|
 |:--------|:----------------------------------------------------------------------|
@@ -148,3 +148,4 @@
 |Entity| An entity is something that exists separately from other things and has a clear identity or purpose. For example, a door entity would be used for only door like functions.
 |Map| A map in game development is the place where you put together the tiles from the tileset. Your map is the world you create with the tile graphics.
 |Cursor| The cursor is the black arrow (normally a black arrow) that you move around on the screen.
+

@@ -1,6 +1,6 @@
-![Book%20Covers/Book_Cover.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/blob/master/Book%20Covers/Book_Cover.png)
+![Book%20Covers/Book_Cover.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Book%20Covers/Book_Cover.png)
 
-##Table of contents:
+## Table of Contents
 [Reference I: RGB Color Reference](#reference-i-rgb-color-reference)
 
 [Glossary II: Game Terms](#glossary-game-terms)
@@ -42,3 +42,4 @@
 **Chapter 18:** Upgrading and Export Project
 
 [Chapter 19: Credits](#chapter-19-credits)
+

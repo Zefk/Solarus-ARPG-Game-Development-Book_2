@@ -1,9 +1,9 @@
 
-##Chapter 14: Abilities, Quest Launcher, and Save Game
+## Chapter 14: Abilities, Quest Launcher, and Save Game
 
 The sample for this lesson is `G_Abilities_Quest-launcher_savegame.zip`. It can be found in the lesson directory.
 
-###Abilities: swim, lift, sword, run, etc
+### Abilities: swim, lift, sword, run, etc
 
 Built-in ability levels indicate whether the hero can perform some built-in actions like attacking, swimming, and running.
 
@@ -19,7 +19,7 @@ Built-in ability levels indicate whether the hero can perform some built-in acti
 |run| Ability to run when pressing the action command.
 |detect_weak_walls| Notifies the player with a sound when a weak wall is nearby.
 
-#####Set Ability
+##### Set Ability
 
 You can set an ability with the game function `game:set_ability`. 
 ```lua
@@ -60,7 +60,7 @@ function map:on_started()
 end
 ```
 
-#####Get Ability
+##### Get Ability
 
 This function will get the level of the ability.
 
@@ -68,14 +68,14 @@ This function will get the level of the ability.
 game:get_ability("Ability")
 ```
 
-#####Has Ability
+##### Has Ability
 
 This function will return true if the hero has the ability or false if the hero does not have it.
 
 ```lua
 game:has_ability("Ability")
 ```
-#####Tunic Ability Setup
+##### Tunic Ability Setup
 
 An ability needs to be set or activated before it can work.
 ```lua
@@ -142,7 +142,7 @@ The tunic has the following default animations and probably more. They are neede
 
 
 
-#####Sword Ability Setup 
+##### Sword Ability Setup 
 
 An ability needs to be set or activated before it can work.
 ```lua
@@ -186,7 +186,7 @@ An animation called `sword_stars1` is needed for the charging animation during t
 
 ![Chapter_14_images/Abilities/3_sword.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_images/Abilities/3_sword.png)
 
-#####Sword Knowledge
+##### Sword Knowledge
 
 An ability needs to be set or activated before it can work.
 ```lua
@@ -198,7 +198,7 @@ The `sword_knowledge` ability allows the player to do a super spin attack.
 An animation called `super_spin_attack` is needed in `tunic1` and `sword1` for this to work.
 
 
-#####Shield Ability Setup
+##### Shield Ability Setup
 
 An ability needs to be set or activated before it can work.
 ```lua
@@ -236,7 +236,7 @@ The shield has the following default animations. They follow when a sword is use
 - sword_tapping
 - walking
 
-#####Lift Ability Setup
+##### Lift Ability Setup
 
 An ability needs to be set or activated before it can work.
 
@@ -255,7 +255,7 @@ game:set_ability("lift", 3)
 
 The `lifting`, `carrying_stopped`, and `carrying walking` animations are required in the tunic sprite animation.
 
-#####Water Jump Ability Setup
+##### Water Jump Ability Setup
 
 An ability needs to be set or activated before it can work.
 
@@ -267,7 +267,7 @@ The player drowns instantly when touching deep water unless they have the swim a
 
 The `plunging_water` animation is required in the tunic sprite animation.
 
-#####Run Ability Setup
+##### Run Ability Setup
 
 An ability needs to be set or activated before it can work.
 
@@ -290,7 +290,7 @@ I think 150 pixels per second makes a very quick run.
 ```
 
 
-#####Swim Ability Setup
+##### Swim Ability Setup
 
 An ability needs to be set or activated before it can work.
 
@@ -307,11 +307,11 @@ The `swimming_fast` and `swimming_slow` animations are required in the tunic spr
 
 ![Chapter_14_images/Abilities/2_swim.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_images/Abilities/2_swim.png)
 
-###Quest Launcher
+### Quest Launcher
 
 The quest launcher is a place where all Solarus games can be played from.
 
-#####Activate Quest Launcher
+##### Activate Quest Launcher
 
 Activating the quest launcher.
 
@@ -321,42 +321,42 @@ Activating the quest launcher.
 
 ![chapter_14_quest_launcher_images/2_quest_launcher.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/2_quest_launcher.png)
 
-#####Play Game
+##### Play Game
 
 ![chapter_14_quest_launcher_images/3_play_quest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/3_play_quest.png)
 
-#####Game - Add & Remove
+##### Game - Add & Remove
 
 ![chapter_14_quest_launcher_images/4_add_remove_quest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/4_add_remove_quest.png)
 
-#####Video > Fullscreen, 2D Acceleration, Window Size, & Zoom
+##### Video > Fullscreen, 2D Acceleration, Window Size, & Zoom
 
 ![chapter_14_quest_launcher_images/6_full_acceleration_window-size.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/6_full_acceleration_window-size.png)
 
-#####Quest Launcher > File > Add, Remove, & Exit
+##### Quest Launcher > File > Add, Remove, & Exit
 
 ![chapter_14_quest_launcher_images/7_file_add_remove_quit.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/7_file_add_remove_quit.png)
 
-#####Game - Play & Stop
+##### Game - Play & Stop
 
 ![chapter_14_quest_launcher_images/8_Quest_play_stop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/8_Quest_play_stop.png)
 
-#####Help > About
+##### Help > About
 
 ![chapter_14_quest_launcher_images/9_about.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/9_about.png)
 
 ![chapter_14_quest_launcher_images/10_about_info.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/10_about_info.png)
 
-###About Logo & Icons:
+### About Logo & Icons:
 
 The `logos/` directory can contain logos and icons to represent your game in the `Quest launcher`.
 
-#####Quest Logo
+##### Quest Logo
 
 Christopho says, "The logo of your quest should be a PNG image of size 200x140 called `logos/logo.png"` The logo is optional."
 
 
-#####Quest Icons
+##### Quest Icons
 
 An icon can also represent your game or quest. The icon is optional as well. Many icon sizes are allowed  and every icon needs to be on a separate png. Icon sizes 16  x 16 to 1024x1024 pixels are allowed.
 
@@ -374,7 +374,7 @@ An icon can also represent your game or quest. The icon is optional as well. Man
 
 The Solarus GUI will automatically choose the best size.
 
-###Save Game
+### Save Game
 
 Saving the game is quite simple. There are two functions that need to be known. They are `sol.game.exists(file_name)` and `sol.game.load(file_name)`. One checks if the save file exists and the other loads the save file. The best place to put the save script is in the `game_manager.lua`.
 
@@ -497,3 +497,4 @@ The names in `save1.dat` that have an underscore before it are automatically cre
 Other save values are created by entities or with the function `game:set_value(savegame_variable_name, value)`. The value can be a string, boolean, or a number. [game:set_value()](http://www.solarus-games.org/doc/latest/lua_api_game.html#lua_api_game_set_value) is very useful when making custom scripts.
 
 You can check the documentation for more information on [save data](http://www.solarus-games.org/doc/latest/lua_api_game.html#lua_api_game_overview_save).
+

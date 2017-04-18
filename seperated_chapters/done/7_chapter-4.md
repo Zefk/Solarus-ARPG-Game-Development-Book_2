@@ -1,15 +1,26 @@
 
 ## Chapter 4: Using the Sprite editor
 
-### Resource Manager > Sprites > Sprite Editor:
+### Resource Manager > Sprites > Sprite Editor
 
-You can add a sprite character by putting a sprite image in the sprites directory and add it by right clicking.  The sprite editor appears when one double clicks on a sprite name. You can make a `.dat` file manually or by right clicking the sprite folder in the editor to create your sprite. For example, `slime_green.dat` for `slime_green.png`. We will get to how to setup a sprite with pictures later in this chapter.
+You can add a sprite character by putting a sprite image in the sprites folder directory and add it by right clicking in the Solarus Editor resource manager. 
+
+For example, `old_woman.dat` for `old_woman.png`. 
 
 ![Chapter_4_0_Sprite_editor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_0_Sprite_editor.png)
 
+
+![Chapter_4_21_add_as_sprite.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_21_add_as_sprite.png)
+
+You can right click on the `sprites` folder in the resource manager to add as well.
+
+![Chapter_4_20_New_Sprite.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_20_New_Sprite.png)
+
+The sprite editor appears when one double clicks on a sprite name. 
+
 ![Chapter_4_images/Chapter_4_1_Sprite_editor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_1_Sprite_editor.png)
 
-##### Sprite Properties:
+##### Sprite Properties
 
 You can add various different types of movements in the sprite editor. You can use the green plus(+) sign to add new ones. The other options allow duplicating an animation, deleting(x) an animation, and renaming them.
 
@@ -19,7 +30,7 @@ You can right click the mouse to do the same task.
 
 ![Chapter_4_17_right_click.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_17_right_click.png)
 
-##### Animation Properties:
+##### Animation Properties
 
 There are many options when it comes to the animation properties. 
 
@@ -51,7 +62,7 @@ The direction numbers represent the animation direction.
 |Direction 3| Left
 |Direction 4| Down
 
-##### Direction Properties:
+##### Direction Properties
 
 The `direction properties` contains dimension options that allows one to easily set up a sprite.
 
@@ -67,7 +78,7 @@ The `direction properties` contains dimension options that allows one to easily 
 
 5.Number of columns
 
-##### Size:
+##### Size
 
 This is what it looks like when the size is changed. I Changed the size from 24 x 24 to 12 x 12.
 
@@ -77,7 +88,7 @@ This is what it looks like when the size is changed. I Changed the size from 24 
 
 ![Chapter_4_6_Sprite_editor_sprite_direction_properties_size_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_6_Sprite_editor_sprite_direction_properties_size_2.png)
 
-##### Position:
+##### Position
 
 This is what it looks like when the position is changed from 0 x 0 to 20 x 20 .
 
@@ -87,7 +98,7 @@ This is what it looks like when the position is changed from 0 x 0 to 20 x 20 .
 
 ![Chapter_4_8_Sprite_editor_sprite_direction_properties_position_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_8_Sprite_editor_sprite_direction_properties_position_2.png)
 
-##### Origin:
+##### Origin
 
 The origin is the center of the player character. One would normally have it `y` centered and `x` lowered down to the sprites feet. This helps with proper collision with tileset objects. For this sprite the `x` is 12 and `y` is 23. (12 x 23)
 
@@ -111,7 +122,7 @@ The origin is different for switches and some other sprites. The origin needs to
 
 ![Chapter_4_images/Chapter_4_18_switch_centered_upper_left%20corner.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_18_switch_centered_upper_left%20corner.png)
 
-##### Frames:
+##### Frames
 
 This is what it looks like when the frames are set to 8.
 
@@ -123,7 +134,7 @@ Now this is what it looks like when the frames are changed from 8 to 3.
 
 ![Chapter_4_13_Sprite_editor_sprite_direction_properties_frames_3.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_13_Sprite_editor_sprite_direction_properties_frames_3.png)
 
-##### Columns:
+##### Columns
 
 This is what it looks like when the column is changed from 8 to 2.
 
@@ -131,29 +142,29 @@ This is what it looks like when the column is changed from 8 to 2.
 
 ![Chapter_4_15_Sprite_editor_sprite_direction_properties_columns_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_15_Sprite_editor_sprite_direction_properties_columns_2.png)
 
-### Setting up a Sprite:
+### Setting up a Sprite
 
 Everyone needs to know how to setup a sprite. The Solarus Sprite editor is super amazing and makes this task easy as pie!
 
-##### Making a Sprite:
+##### Making a Sprite
 
 Making a new sprite is first thing that needs to be done.
 
 ![chapter_4_sprite_setup_images/0_a_make_sprite.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/0_a_make_sprite.png)
 
-##### Name Sprite:
+##### Name Sprite
 
 ![chapter_4_sprite_setup_images/0_name_sprite.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/0_name_sprite.png)
 
-##### Create Animation:
+##### Create Animation
 
 ![chapter_4_sprite_setup_images/1_create_animation.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/1_create_animation.png)
 
-##### Name Animation:
+##### Name Animation
 
 ![chapter_4_sprite_setup_images/2_name_animation.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/chapter_4_sprite_setup_images/2_name_animation.png)
 
-##### Load Sprite Image:
+##### Load Sprite Image
 
 Click the pencil to load an image from the sprite directory.
 
@@ -217,7 +228,7 @@ Stop is the button with the square and play is the triangle that is on its side.
 
 ##### Dat File Editing
 
-.`dat` file editing is useful. If the dat file is going to be almost the same for every sprite, then the filenames just need to be changed. This would be faster than creating everything over and over again in the editor.
+`.dat` file editing is useful. If the dat file is going to be almost the same for every sprite, then the filenames just need to be changed. This would be faster than creating everything over and over again in the editor.
 
 A few good notepad editors.
 
@@ -251,4 +262,4 @@ animation{
     { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 32 },
   },
 }
-```
+

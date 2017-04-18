@@ -1,5 +1,5 @@
 
-##Reference I: RGB Color Reference
+## Reference I: RGB Color Reference
 
 Source: [Rapidtables](http://www.rapidtables.com/web/color/RGB_Color.htm)
 
@@ -147,3 +147,4 @@ Source: [Rapidtables](http://www.rapidtables.com/web/color/RGB_Color.htm)
 |gainsboro|(220,220,220)
 |white smoke(|245,245,245)
 |white|(255,255,255)
+

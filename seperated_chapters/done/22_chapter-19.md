@@ -1,18 +1,20 @@
 
-##Chapter 19: Credits
+## Chapter 19: Credits
 
-Credits so far...I know there are more people involved in the Solarus project.
+Credits so far...
 
-#####Graphics:
+##### Graphics:
 - Diarandor (Most of his art is in the images and sounds in the samples.) You can find a license in the sample quest. Most or all of his work is under CC-BY-SA 4.0
 
-#####Sounds:
+##### Sounds:
 - Diarandor (Most of his art is in the images and sounds in the samples.) CC-BY-SA 4.0
 
-#####Scripting Credits:
+##### Scripting Credits:
 - Christopho (All of his scripts and making the Solarus Game Engine) GPLv3
+- Zane Kukta (Most sample scripts)
 
-#####Writing Credits:
+##### Writing Credits:
+- Christopho
 - Zefk (Zane Kukta) CC-BY-SA 3.0
 - Loren J. Miller [The 36 Plots](https://www.rpglibrary.org/articles/storytelling/36plots.php) CC-BY-SA 3.0
 - Logan M: [Differences-between-visual-novel-eroge-gal-game-and-a-dating-sim](http://anime.stackexchange.com/questions/4926/what-are-the-differences-between-visual-novel-eroge-gal-game-and-a-dating-sim) (CC-BY-SA 3.0)
@@ -21,36 +23,31 @@ Credits so far...I know there are more people involved in the Solarus project.
 
 
 
-###Faryolica World Credits:
+### Fairyolica World Credits:
 
-Most of it is free under CC-BY-SA 3.0 unless marked otherwise.
+I use the Fariryolica world tileset is under CC-BY-SA 3.0.
 
-That means it is free for commercial and non-commercial use.
+#### About:
 
-Please share back edits or fork this, so I can add your contributions.
-
-####About:
-
-============================================================================================================================
 1.The bullet "•" means it is a person and the way they want to be credited. 
 
 2.This is organized by license type. CC0, CC-BY 3.0, CC-BY-SA 3.0. 
 
 3.CC0 is not required for crediting, but I added them anyway. 
 
-4.Go into the orginal graphics for more detailed credits for each folder with related links. 
+4.Go into the original graphics for more detailed credits for each folder with related links. 
 
 5.Yes, all these licenses are compatible with each other, but the end result is CC-BY-SA 3.0 
 
-and you must credit everyone if you use the Fariyolica png. That means the CC0 people too.
+and you must credit everyone if you use the Fariyolica.png. That means the CC0 people too.
 
-6.I refined this list a little. 11-14-16 [Novemeber 14th, 2016]
+6. I refined this list a little. 11-14-16 [November 14th, 2016]
 
-####Credit
+#### Credit
 
 Copyright/Attribution Notice: 
 
-####[CC0 Public Domain]
+#### [CC0 Public Domain]
 
 - Jetrel <http://www.frogatto.com/>
 
@@ -71,7 +68,7 @@ Copyright/Attribution Notice:
 - "Russpuppy http://russpuppy.com" [would love to hear about your game]
 
 
-####[CC-BY 3.0 Credit by their terms]
+#### [CC-BY 3.0 Credit by their terms]
 
 - Stephen Challener and the Open Surge team ( http://opensnc.sourceforge.net), hosted by OpenGameArt.org
 
@@ -85,7 +82,7 @@ Copyright/Attribution Notice:
 
 - knunery
 
-- Albert Manhattan - A redrawing of surt's Classical Ruin Tiles (http://opengameart.org/content/classical-ruin-tiles) at higher resolution.
+- Albert Manhattan - A redrawing of Surt's Classical Ruin Tiles (http://opengameart.org/content/classical-ruin-tiles) at higher resolution.
 
 - Ivan Voirol - butterflies are CC0 and CC-BY
 
@@ -95,10 +92,10 @@ Copyright/Attribution Notice:
 
 - Credit Buch for the original version of this set and link to his profile page. The portcullis are based on the iron bars in http://opengameart.org/content/lpc-dungeon-elements, by Sharm as contributed by William.Thompsonj.
 
-- Animated Castle Doors by by Tuomo Untinen
+- Animated Castle Doors by Tuomo Untinen
 
 
-####[CC-BY-SA 3.0 Credit by their terms and share artwork under the same terms]
+#### [CC-BY-SA 3.0 Credit by their terms and share artwork under the same terms]
 
 - interdimensional_ <http://interdimensional.space/>
 
@@ -118,28 +115,3 @@ Copyright/Attribution Notice:
 
 - Lanea Zimmerman (AKA Sharm)
 
-####[Free - No real license. They say, "Please let us know by dropping a comment here (though you certainly don’t have to)."]
-
-- Urbansquall <http://web.archive.org/web/20110225070311/http://www.gamepoetry.com/blog/2008/06/27/free-rpg-tilesheets/>
-
-###Audio Credits:
-
-Copyright/Attribution Notice
-
-####[CC-BY 3.0 Credit by their terms]
-
-- copyc4t (Paolo D'Emilio) <http://opengameart.org/users/copyc4t>
-- Elerya <http://opengameart.org/users/elerya>
-- Android128 (android128ya@ya.ru) <http://opengameart.org/users/android128>
-- Alexandr Zhelanov, https://soundcloud.com/alexandr-zhelanov
-- Cleyton R. Xavier - http://opengameart.org/users/doppelganger
-
-####[CC0 Public Domain]
-
-- Alexander Ehlers <http://opengameart.org/users/tricksntraps>
-- Controllerhead <http://opengameart.org/users/controllerhead>
-
-####[CC-BY-SA 3.0 Credit by their terms and share artwork under the same terms]
-
-- Aosi <http://momentsofelation.wordpress.com/>
-- Zefk (Zane Kukta) <http://zelzec-entertainment.weebly.com/>

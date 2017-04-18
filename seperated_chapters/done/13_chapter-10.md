@@ -1,11 +1,11 @@
 
-##Chapter 10: Timers and Getting Coordinates
+## Chapter 10: Timers and Getting Coordinates
 
 **Preview:**
 
-Lessons > Chapter_10_Click_drag_mouse_preview.ogv.zip
+`Lessons > Chapter_10_Click_drag_mouse_preview.ogv.zip`
 
-###Basic Timer Map Script Example
+### Basic Timer Map Script Example
 
 ```lua
 --[[
@@ -94,13 +94,13 @@ end -- end of key press function
 
 ```
 
-###Timer
+### Timer
 
 ```lua
 sol.timer.start([context], delay, callback)
 ```
 
-#####Timer Function Delay:
+##### Timer Function Delay
 
 1.Timer will go off (as long as you are still on the same map) in 5 
 seconds.
@@ -120,7 +120,7 @@ end
 sol.timer.start(1000, play_secret_sound)
 ```
 
-#####Timer Anonymous Function Delay:
+##### Timer Anonymous Function Delay
 
 This is a shorter form of the example before.
 
@@ -140,7 +140,7 @@ sol.timer.start(5000, function()
 end)
 ```
 
-#####Repeat Timer with True:
+##### Repeat Timer with True
 
 This timer repeats after every half second.
 
@@ -151,10 +151,10 @@ sol.timer.start(500, function()
 end)
 ```
 
-#####Stop Repeating Timer With Variable:
+##### Stop Repeating Timer With Variable
 
 ```lua
--- Call a function half second with a number value variable
+-- Call a function with a number value variable
 --Press "o" to stop the timer
 local variable_1 = 0
 sol.timer.start(500, function()
@@ -162,7 +162,7 @@ sol.timer.start(500, function()
   return variable_1 ~= 1
 end)
 
--- Call a function half second with a true/false
+-- Call a function with a true/false
 --Press "o" to stop the timer
 local on = true
 sol.timer.start(500, function()
@@ -182,7 +182,7 @@ end
 end -- end of key press function
 ```
 
-#####Repeat Timer a Number of Times:
+##### Repeat Timer a Number of Times
 
 ```lua
 -- Call a function ten times, with half second between each call.
@@ -194,7 +194,7 @@ sol.timer.start(500, function()
 end)
 ```
 
-#####Context Timer:
+##### Context Timer
 
 1.Using the "game" context or parameter will make the timer go off even though you leave the map.
 
@@ -206,7 +206,7 @@ sol.timer.start(game, 5000, function()
 end)
 ```
 
-###Timer Display Drag Click Script Example
+### Timer Display Drag Click Script Example
 
 ```lua
 --[[
@@ -356,7 +356,7 @@ end --end of draw function
 
 ```
 
-#####Stopping a Timer:
+##### Stopping a Timer
 
 Stopping a timer is simple.
 
@@ -374,7 +374,7 @@ end)
 timer:stop()
 ```
 
-#####Stop all Context Timers:
+##### Stop all Context Timers
 
 1.Context (map, game, item, map entity, menu or sol.main; optional)
 
@@ -383,7 +383,7 @@ timer:stop()
 sol.timer.stop_all(context)
 ```
 
-#####Getting Remaining Time:
+##### Getting Remaining Time
 
 This is very useful for when wanting to display a time count down.
 
@@ -402,7 +402,7 @@ print(test:get_remaining_time())
 milliseconds = test:get_remaining_time()
 ```
 
-#####Displaying Timer:
+##### Displaying Timer
 
 ```lua
 --The draw function for showing images
@@ -433,7 +433,7 @@ hours   = math.floor(((milliseconds / (1000*60*60)) % 24))
 end --end of draw function
 ```
 
-#####Timer Sound:
+##### Timer Sound
 
 ```
 Variable:set_with_sound(true/false)
@@ -455,7 +455,7 @@ end)
 test:set_with_sound(true)
 ```
 
-#####Change Remaining Timer:
+##### Change Remaining Timer
 
 You can change the remaining time.
 
@@ -473,9 +473,9 @@ end)
 test:set_remaining_time(20000)
 ```
 
-#####Suspend Timer:
+##### Suspend Timer
 
-When you pause the game with "d" the timer pauses too. You can unsuspend the timer, so the timer still goes off for when the game is paused.
+When you pause the game with `d`, the timer pauses too. You can unsuspend the timer, so the timer still goes off for when the game is paused.
 
 ```
 variable:set_suspended(false/true)
@@ -497,10 +497,10 @@ end)
 sup_timer:set_suspended(false)
 ```
 
-###Get Coordinates
+### Get Coordinates
 
 
-#####Getting Cursor Location:
+##### Getting Cursor Location
 
 You must assign variables to the following to get coordinates of the cursor.
 
@@ -511,7 +511,7 @@ sol.input.get_mouse_position()
 local x,y = sol.input.get_mouse_position()
 ```
 
-#####Applying Coordinates To Images:
+##### Applying Coordinates To Images
 
 ```
 sol.input.get_mouse_position()
@@ -527,7 +527,7 @@ end
 
 ```
 
-#####Using Timer To Drag Image:
+##### Using Timer To Drag Image
 
 
 ```lua
@@ -560,6 +560,7 @@ Check the [documentation](http://www.solarus-games.org/doc/latest/) for more inf
 
 **Timer Project Sample(s)**
 
-Lessons > Chapter_10_Timer.zip
+`Lessons > Chapter_10_Timer.zip`
 
-Lessons > Chapter_10_Click_drag_mouse.zip
+`Lessons > Chapter_10_Click_drag_mouse.zip`
+

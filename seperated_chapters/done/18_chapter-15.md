@@ -1,8 +1,9 @@
-##Chapter 15: Title Screen, Save menu, Movements, Map Types, Cameria, I/O
+
+## Chapter 15: Title Screen, Save menu, Movements, Map Types, Cameria, I/O
 
 This chapter is mostly about the remaining basics that need to be covered. You can get the sample `Chapter_15_Sample.zip` in the lesson directory.
 
-###Title Screen
+### Title Screen
 
 Almost every game has a title screen. A place to start the game. The title screen I scripted for the section is fairly simple. Let me show you the script.
 
@@ -809,7 +810,7 @@ return game_manager
 **Usage Instructions:**
 
 1.Use the up and down keys
-2.Change the action key to what you desire in the change area. By default it is key `a`, reset with `s`, and in game clear with `q`.
+2.Change the action key to what you desire in the change area. By default, it is key `a`, reset with `s`, and in game clear with `q`.
 3.Key `L` activates the save menu in game and key `q` can clear it. 
 
 **Breaking Down The Script:**
@@ -837,7 +838,7 @@ game:register_event("on_started", function()
 end)
 ```
 
-###Movements
+### Movements
 
 ![Chapter_15_images/Movements_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_15_images/Movements_1.png)
 
@@ -853,7 +854,7 @@ end)
 |Jump movement:| An illusion of jump above a baseline.|"jump"
 |Pixel movement:| A trajectory described pixel by pixel.|"pixel"
 
-####Create Movement
+#### Create Movement
 
 This is the basic structure for creating a movement.
 
@@ -865,7 +866,7 @@ variable:start(entity_name)
 
 There are many movement functions and one should check the documentation for more.
 
-#####Jump Movement
+##### Jump Movement
 
 An illusion of jump above a baseline.
 
@@ -880,7 +881,7 @@ function map:on_started()
  jump:start(elf_2)
 ```
 
-#####Random Path Movement
+##### Random Path Movement
 
 Like a path movement, but with random steps.
 
@@ -890,7 +891,7 @@ Like a path movement, but with random steps.
  random_path:start(elf)
  ```
 
-#####Target Movement
+##### Target Movement
 
 Straight trajectory towards a possibly moving target.
 
@@ -915,7 +916,7 @@ If one wants to target a different entity, then one has to use the function `:se
  target2:set_target(elf)
 ```
 
-#####Path Finding Movement
+##### Path Finding Movement
 
 Like a path movement, but calculated to reach a possibly moving target.
 
@@ -930,7 +931,7 @@ Like a path movement, but calculated to reach a possibly moving target.
  
  ```
 
-#####Random Movement
+##### Random Movement
 
 A straight movement whose direction changes randomly from time to time.
 
@@ -941,7 +942,7 @@ A straight movement whose direction changes randomly from time to time.
 straight_random:start(elf_7)
 ```
 
-#####Straight Movement
+##### Straight Movement
 
 Straight trajectory in any direction. 
 
@@ -961,7 +962,7 @@ straight:set_angle(3)
 straight:start(elf_3)
 ```
 
-#####Path Movement
+##### Path Movement
 
 Predetermined path composed of steps in the 8 main directions.
 
@@ -976,7 +977,7 @@ path:set_ignore_obstacles(true)
 path:start(elf_8)
 ```
 
-#####Pixel Movement
+##### Pixel Movement
 
 A trajectory described pixel by pixel.
 
@@ -990,7 +991,7 @@ pixel:set_ignore_obstacles(true)
 pixel:start(elf_9)
 ```
 
-#####Circle Movement
+##### Circle Movement
 
 Circular trajectory around a possibly moving center.
 
@@ -1010,7 +1011,7 @@ circle:set_ignore_obstacles(false)
 circle:start(elf_10)
 ```
 
-#####Walk through Entity
+##### Walk through Entity
 
 Instead of bumping into entities and getting trapped. I think it is best the walk through them. You can use the function `entity:set_traversable(true/false)` to walk through NPC, etc.
 
@@ -1019,7 +1020,7 @@ elf_4:set_traversable(true)
 elf_6:set_traversable(true)
 ```
 
-###Map Types
+### Map Types
 
 I have covered a few map types already, but here are some more useful ones that I did not cover.
 
@@ -1117,7 +1118,7 @@ You can also get the music you set for the map. This is useful for when playing 
 sol.audio.play_music(map:get_music())
 ```
 
-###Camera Entity
+### Camera Entity
 
 The cameria is an entity like a NPC. You can check the Documentation for the functions for all entity types. You need to get the camera before you can use it.
 
@@ -1125,7 +1126,7 @@ The cameria is an entity like a NPC. You can check the Documentation for the fun
 local camera = map:get_camera()
 ```
 
-#####Camera Size
+##### Camera Size
 
 The camera size is what you can see on the screen. A size of (96,96) would be quite small compared to the default size of (320,240). The camera size function goes by 8 (8,16,24,32,40,48,56,64,72,80,88,96)
 
@@ -1136,7 +1137,7 @@ The camera size is what you can see on the screen. A size of (96,96) would be qu
  You could set your screen back to normal with `        camera:set_size(320, 240)
 `. That is the default quest screen size.
  
-#####Camera Tracking
+##### Camera Tracking
 
 Changing the screen size can help with camera tracking when it comes to sprites.
 
@@ -1147,7 +1148,7 @@ The function `camera:start_tracking(entity_name)` is used for camera tracking. B
         camera:start_tracking(elf_6)
 ```
 
-#####Camera Position
+##### Camera Position
 
 Normally the camera position is centered at `(0,0)`. You can change the position of the screen with the function `camera:set_position_on_screen(x,y)`.
 
@@ -1162,7 +1163,7 @@ You can change it back to normal like this:
         camera:set_position_on_screen(0,0)
 ```
 
-#####Camera & Movements
+##### Camera & Movements
 
 You can apply movements to the camera. The camera entity name is `map:get_camera()`.
 ```lua
@@ -1175,7 +1176,7 @@ You can apply movements to the camera. The camera entity name is `map:get_camera
 
     path:start(map:get_camera())
 ```
-#####Camera Example Script
+##### Camera Example Script
 
 Press the keys `1`, `2`, `3`, and `4` to test the camera. Key `2` sets everything back to default.
 
@@ -1222,7 +1223,7 @@ function map:on_key_pressed(key)
 end
 ```
 
-###I/O - Input/Output
+### I/O - Input/Output
 
 The I/O is writing and reading text from a file. The easiest way to do this is to just use the engine's functions `game:get_value` and `game:set_value`.
 
@@ -1449,3 +1450,4 @@ local tLines = readLines("test.txt") -- Read this file
 --Print line 3. Line 4 will not be 50 because we removed line 2. That means line 3 will be 50.
 print("Line 4 value is: "..tLines[3])
 ```
+

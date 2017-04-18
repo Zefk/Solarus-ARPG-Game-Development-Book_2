@@ -1,23 +1,23 @@
 
-##Chapter 6: Very Basic Lua Scripting, Tutorial Point Lua PDF, ways to load script, and lua console
+## Chapter 6: Very Basic Lua Scripting, Tutorial Point Lua PDF, ways to load script, and Lua console
 
-####Very Basic Lua Scripting:
+#### Very Basic Lua Scripting
 
-This link shows very basic programming knowledge. The files for the very basic programming knowledge are added the github.
+This link shows very basic programming knowledge. The files for the very basic programming knowledge are added the Github.
 
-Lessons > Chapter_6 > Chapter_6_Lua_Quick_Basics
+`Lessons > Chapter_6 > Chapter_6_Lua_Quick_Basics`
 
-#####ZeroBrane IDE:
+##### ZeroBrane IDE
 
 For the basic lessons I recommend [ZeroBrane IDE](https://studio.zerobrane.com/) or you can skip to "ways to load scripts in Solarus."
 
-#####Using ZeroBrane:
+##### Using ZeroBrane
 
 1.Install and open ZeroBrane.
 
 ![Chapter_6_1_open_zero_brane.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_1_open_zero_brane.png)
 
-2.Open a lua file or add the following code and save it somewhere.
+2.Open a Lua file or add the following code and save it somewhere.
 
 ```lua
 --Hello_Solarus.lua
@@ -26,11 +26,11 @@ print("Hello Solarus!")
 
 ![Chapter_6_2_open_lua_file_save.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_2_open_lua_file_save.png)
 
-3.Click the first green arrow to compile and run the script. You can press F6 as well.
+3.Click the first green arrow to compile and run the script. You can press the key `F6` as well.
 
 ![Chapter_6_3_run_F6.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_3_run_F6.png)
 
-4.When you run the script with F6. The console at the bottom will show the text.
+4.When you run the script with F6, the console at the bottom will show the text.
 
 ![Chapter_6_4_console.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_6_images/Chapter_6_4_console.png)
 
@@ -40,13 +40,13 @@ print("Hello Solarus!")
 
 That is all!
 
-#####Whitespace:
+##### Whitespace
 
 Blank lines and spaces that are ignored.
 
-#####Variables:
+##### Variables
 
-Variables are just names that can be manupulated. Global variables are not marked with local or global. 
+Variables are just names that can be manipulated. Global variables are not marked with local or global. 
 
 Three types:
 
@@ -64,9 +64,9 @@ local name2 = 10
 name + name2
 ```
 
-#####Identifiers:
+##### Identifiers
 
-When making a variable name there are some rules. 
+When making a variable name, there are some rules. 
 
 Unacceptable:
 ```
@@ -74,7 +74,7 @@ Unacceptable:
 
 2. Cannon start with a number
 
-3. No spaces between variables. EX: local the varaible (It should be: local the_varaible)
+3. No spaces between variables. EX: `local the variable` should be: `local the_variable`.
 ```
 
 Acceptable:`
@@ -85,7 +85,7 @@ Acceptable:`
 
 3. Underscore followed by numbers and letters _8Wn
 
-4. Case sensitive EX: She and she are different
+4. Case-sensitive EX: She and she are different
 ```
 Examples of the acceptable identifiers:
 
@@ -94,7 +94,7 @@ Examples of the acceptable identifiers:
 |yodz         |zata      |abcd     |number_five    |z_456
 |sefra34      |_ten      |x        |f2359y2        |SpiritBlast
 
-#####Keywords:
+##### Keywords
 
 Reserved words in Lua. You cannot name them as variables.
 
@@ -104,7 +104,7 @@ Reserved words in Lua. You cannot name them as variables.
 |in|     else|    elseif|   local|    if |    nil|     repeat|
 |return| function| while|    end  |   then| until|     do|
 
-#####Data Types:
+##### Data Types
 
 |   Type:  |       About         |
 | ------|--------------------------------------|
@@ -124,7 +124,7 @@ print(type(print))               ---> function
 print(type(false))               ---> boolean
 print(type(type))                ---> function
 ```
-#####Relational Operators:
+##### Relational Operators
 
 |   Operator:  |       About         |
 | ------|--------------------------------------|
@@ -135,7 +135,7 @@ print(type(type))                ---> function
 |>=	|Checks if one is greater or equal to each other
 |<=	|Checks if one is less or equal to each other
 
-#####Logical Operators:
+##### Logical Operators
 
 |   Operator:  |       About         |
 | ------|--------------------------------------|
@@ -143,7 +143,7 @@ print(type(type))                ---> function
 |**or**	|If one of them are true, the it activates.			   
 |**not**|If it is true, then it will be false.     
 
-#####Arithmetic Operators:
+##### Arithmetic Operators
 
 | Operator         | Math         |   Examples      |
 | ------|-------------------------| ----------------|
@@ -156,14 +156,14 @@ print(type(type))                ---> function
 |**-**	|Can act as a negative    |-Three * three = -9|
 
 
-#####Other Operators:
+##### Other Operators
 
 |Misc:|	About	|
 |
 |**..**	|Concatenates or combines text/string.	aa..5 = aa5
-|**#**	|Lenth of text/string. #"text" = 4
+|**#**	|Length of text/string. #"text" = 4
 
-#####Escape Sequences:
+##### Escape Sequences
 
 | Escape  | Task         |
 | ------|----------------|
@@ -180,7 +180,7 @@ print(type(type))                ---> function
 |**\[**	|Left square bracket |
 |**\]**	|Right square bracket|
 
-#####Repetitions Pattern Modifiers:
+##### Repetitions Pattern Modifiers
 
 | Modifier | About         |
 | ------|----------------|
@@ -190,7 +190,7 @@ print(type(type))                ---> function
 |?|   optional (0 or 1 occurrence)
 
 
-#####Character Pattern Classes:
+##### Character Pattern Classes
 
 | Pattern  | About         |
 | ------|----------------|
@@ -206,17 +206,17 @@ print(type(type))                ---> function
 |**%x**|  hexadecimal digits
 |**%z**|  the character with representation 0
 
-####Common Variable Naming Rules:
+#### Common Variable Naming Rules
 
 This is not a Lua naming rule and one can completely ignore this 
 because everyone can program the way they want, but this 
 will help people read your code. This is standard in most programming languages.
 
-#####Clear Variable Name:
+##### Clear Variable Name
 
 Variable `yellow` is easier to understand than `var2`.
 
-#####Variable Length:
+##### Variable Length
 
 The variable name can be of any length, but do not get make too long. One will have to type this name.
 
@@ -227,9 +227,9 @@ local the_bunny_crossed_the_road_at_street_number = 50
 local bunny_crossed = 50
 ```
 
-#####UPPERCASE vs lowercase Variables:
+##### UPPERCASE vs lowercase Variables
 
-Constants are normall uppercased. This variable will always stay the same.
+Constants are normally uppercased. This variable will always stay the same.
 
 ```lua
 local SPEED = 50
@@ -237,20 +237,20 @@ local SPEED = 50
 
 Deciding on StudlyCaps vs. camelCase vs SCREAMING_CAPS is worth maybe 90 seconds discussion with a programming team one is working with, but I always see ALL_CAPS.
 
-Lowercase varibles are mostly normal variables.
+Lowercase variables are mostly normal variables.
 
 ```lua
 local color = "yellow"
 color = "green"
 ```
-####Lua Programming:
+#### Lua Programming
 
-#####Comments:
+##### Comments
 
 ```lua
 --[[
 Lua is a very simple programming language, but very powerful.
-This is a quick start for the "very" basics of lua and more will be added later based on examples in scripts.
+This is a quick start for the "very" basics of Lua and more will be added later based on examples in scripts.
 
 Read this book for more information and detail.
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
@@ -276,12 +276,12 @@ You must use two dashes and opening plus closing brackets. -- [ [ ] ]
 Write all the text you want between here.
 --]]
 ```
-#####Print Text:
+##### Print Text
 
 ```lua
 --[[
 Lua is a very simple programming language, but very powerful.
-This is a quick start for the "very" basics of lua and more will be added later based on examples in scripts.
+This is a quick start for the "very" basics of Lua and more will be added later based on examples in scripts.
 
 Read this book for more information and detail.
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
@@ -294,12 +294,12 @@ print "Hello Solarus World! - Method 1 without ()"
 print ("Hello Solarus World! - Method 2 with ()")
 ```
 
-#####Declaring variables:
+##### Declaring variables
 
 ```lua
 --[[
 Lua is a very simple programming language, but very powerful.
-This is a quick start for the "very" basics of lua and more will be added later based on examples in scripts.
+This is a quick start for the "very" basics of Lua and more will be added later based on examples in scripts.
 
 Read this book for more information and detail.
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
@@ -339,12 +339,12 @@ local pie = 3
 print (pie + add)
 ```
 
-#####Tables:
+##### Tables
 
 ```lua
 --[[
 Lua is a very simple programming language, but very powerful.
-This is a quick start for the "very" basics of lua and more will be added later based on examples in scripts.
+This is a quick start for the "very" basics of Lua and more will be added later based on examples in scripts.
 
 Read this book for more information and detail.
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
@@ -365,12 +365,12 @@ muffin.blueberry = 2
 print ("I have "..muffin.chocolate.." chocolate muffins and "..muffin.blueberry.." blueberry muffins.")
 ```
 
-#####Arrays:
+##### Arrays
 
 ```lua
 --[[
 Lua is a very simple programming language, but very powerful.
-This is a quick start for the "very" basics of lua and more will be added later based on examples in scripts.
+This is a quick start for the "very" basics of Lua and more will be added later based on examples in scripts.
 
 Read this book for more information and detail.
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
@@ -406,7 +406,7 @@ for rep = pie[4],pie[5] do
   print(pie[rep])
 end
 
---Making variables equal to a variable. You need this with calculations or you will get a "nil error", so make them zero at least. This is better than declaring a hundred to zero...one...by one. That would be a pain!
+--Making variables equal to a variable. You need this with calculations or you will get a "nil error", so make them zero at least. This is better than declaring a hundred to '0' one by one. That would be a pain!
 for rep = 1, 10 do
   array[rep] = 0
   print("Array "..rep..":"..array[rep])
@@ -480,12 +480,12 @@ for rep = 1,3 do
 end
 ```
 
-#####If Statement & Operators:
+##### If Statement & Operators
 
 ```lua
 --[[
 Lua is a very simple programming language, but very powerful.
-This is a quick start for the "very" basics of lua and more will be added later based on examples in scripts.
+This is a quick start for the "very" basics of Lua and more will be added later based on examples in scripts.
 
 Read this book for more information and detail.
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
@@ -572,7 +572,7 @@ if a or z then
 end
 
 --Logical Operators: not
---Remember a and z are equal to a vaule. That names them true, but "not" will make that true into a false. It makes the opposite happen.
+--Remember a and z are equal to a value. That names them true, but "not" will make that true into false. It makes the opposite happen.
 --Changing the values.
 local a = 1
 local z = 1
@@ -608,7 +608,7 @@ end
 local a = 10
 local b = 5
 
---If 'a' is geater than 'b'
+--If 'a' is greater than 'b'
 if a > b then
 --if 'a' is greater than 9
   if a > 9 then
@@ -620,7 +620,7 @@ end
 local a = 8
 local b = 5
 
---If 'a' is geater than 'b'
+--If 'a' is greater than 'b'
 if a > b then
 --if 'a' is greater than 9
   if a > 9 then
@@ -630,7 +630,7 @@ if a > b then
   end
 end
 ```
-#####Goto Statement:
+##### Goto Statement
 
 ```lua
 --Use goto as a nested break statement
@@ -648,7 +648,7 @@ end
 ::done::
 ```
 
-#####Loops Types:
+##### Loops Types
 
 ```lua
 --While loop: Repeats a statement a given condition is true.
@@ -722,7 +722,7 @@ end
 
 print("End of break loop")
 
---The Infinite Loop: Keeps goign forever. Normally causes a crash.
+--The Infinite Loop: Keeps going forever. Normally causes a crash.
 
 --[[
 while( true )
@@ -732,7 +732,7 @@ end
 --]]
 ```
 
-#####Math:
+##### Math
 
 ```lua
 --[[
@@ -866,7 +866,7 @@ print ("-1.5 rounded down: "..math.floor(-1.5))
 print ("-1.5 rounded  up: "..math.ceil(-1.5))
 ```
 
-#####Strings:
+##### Strings
 
 ```lua
 --String Examples
@@ -934,7 +934,7 @@ print("The new name is now:"..reverse_text)
 --Calculate te length with #
 print ("The length is: "..#"Length")
 ```
-#####tonumber():
+##### tonumber()
 
 ```lua
 --A string of numbers. These would need to be converted in order to do math.
@@ -947,7 +947,7 @@ print("End of tonumber(): "..number - 178)
 
 ----------------------------------------------------------------------
 
-#####string.format():
+##### string.format()
 
 ```lua
 local number = 3300
@@ -961,7 +961,7 @@ print("End of string.format(): "..number_string)
 
 ----------------------------------------------------------------------
 
-#####string.len() or :len():
+##### string.len() or :len()
 
 ```lua
 local string = "What"
@@ -973,7 +973,7 @@ print("The string length is: "..string:len())
 
 ------------------------------------------------------------------------
 
-#####string.reverse() or :reverse():
+##### string.reverse() or :reverse()
 
 ```lua
 local string = "Programming"
@@ -985,7 +985,7 @@ print("Reversing programming: "..string:reverse())
 
 ------------------------------------------------------------------------
 
-#####string.sub() or :sub():
+##### string.sub() or :sub()
 
 ```lua
 --Print 7 until the end. "Print " = 6 characters (with space), so they are not included
@@ -1003,7 +1003,7 @@ print(string.sub("Print seven characters", 7, -9))
 
 ------------------------------------------------------------------------
 
-#####string.gmatch(string, pattern) or string:gmatch(pattern):
+##### string.gmatch(string, pattern) or string:gmatch(pattern)
 
 ```lua
 local word
@@ -1031,12 +1031,12 @@ Repetitions pattern Modifiers:
 +	1 or more repetitions
 *	0 or more repetitions
 -	also 0 or more repetitions
-?	optional (0 or 1 occurrence)
+?	Optional (0 or 1 occurrence)
 
 --]]
 
 --[[
-character pattern classes:
+Character pattern classes:
 
 .	all characters
 %a	letters
@@ -1054,7 +1054,7 @@ character pattern classes:
 
 ------------------------------------------------------------------------
 
-#####Clear Table:
+##### Clear Table
 
 ```lua
 --Makes a table with 2 and 5 in it.
@@ -1073,7 +1073,7 @@ print("Table after clearing: "..vars[1],vars[2])
 
 ------------------------------------------------------------------------
 
-#####Math/Arithmetic in an if statement:
+##### Math/Arithmetic in an if statement
 
 ```lua
 local test = 2
@@ -1098,7 +1098,7 @@ end
 
 ------------------------------------------------------------------------
 
-#####Simple table.concat():
+##### Simple table.concat()
 
 ```lua
 local char ={}
@@ -1115,7 +1115,7 @@ print("Table concat: "..foo)
 
 ------------------------------------------------------------------------
 
-#####table.concat() and table.insert():
+##### table.concat() and table.insert()
 
 ```lua
 local multiple ={}
@@ -1150,7 +1150,7 @@ end
 
 ------------------------------------------------------------------------
 
-#####table.sort:
+##### table.sort
 
 ```lua
 local test_table = {"b", "a", "c", "e", "d"}
@@ -1187,7 +1187,7 @@ print("")
 
 ------------------------------------------------------------------------
 
-#####Defining a function:
+##### Defining a function
 
 ```lua
 --[[
@@ -1223,7 +1223,7 @@ print(thetruth())
 
 -----------------------------------------------------------------------
 
-#####pairs() and ipairs():
+##### pairs() and ipairs()
 
 ```lua
 --for key, variable in pairs() (no particular order)
@@ -1247,11 +1247,11 @@ end
 
 ------------------------------------------------------------------------
 
-#####Assosciative table:
+##### Associative table
 
 ```lua
 --[[
-Sorting an Assosciative table - not possible.
+Sorting an Associative table - not possible.
 You can only sort a table of keys which has a number index
 ]]
 
@@ -1305,7 +1305,7 @@ end
 
 ------------------------------------------------------------------------
 
-#####Error Handling:
+##### Error Handling
 
 ```lua
 --Common errors people make in lua
@@ -1356,7 +1356,7 @@ Some other common errors. That happen when people do not use tables and arrays.
 --]]
 ```
 
-#####Declaring Multiple Variables On One Line:
+##### Declaring Multiple Variables On One Line
 
 ```lua
 --One can use a comma to declare many variables at one time.
@@ -1370,16 +1370,16 @@ print(d)
 print(a + b + c + d)
 ```
 
-####Tutorial Point Lua PDF:
+#### Tutorial Point Lua PDF
 -
 
 Read this book for more information and detail.
 
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
 
-####Ways To Load Script In Solarus Part 1:
+#### Ways To Load Script In Solarus Part 1
 
-#####require()
+##### Require()
 
 **Require Part 1:**
 
@@ -1419,7 +1419,7 @@ In the file `game_manager.lua`
 
 In the file `0_Lua_Quick_Basics.lua`
 
-Now you should know everything except for the function from the quick lua knowledge files. A function does a certain task and in this case it loads the script.
+Now you should know everything basic except for the function from the quick Lua knowledge files. A function does a certain task and in this case it loads the script.
 
 ```Lua 
 function table:give_name_to_function(parameter)
@@ -1438,7 +1438,7 @@ Playtest the game with F5 and the script will run. Sometimes the console will op
 I added a test file in the Github repo. Lessons folder > Chapter_6 > chapter_6_require_load.zip
 
 
-#####Sol Main Load:
+##### Sol Main Load
 
 ```Lua 
 sol.main.load_file(script_name)
@@ -1465,4 +1465,5 @@ The end result is this:
 
 Playtest the game with F5 and the script will run. Sometimes the console will open. If not, then press F12. You can drag it up to show more of the output.
 
-I added a test file in the Github repo. Lessons folder > Chapter_6_sol_main_load.zip
+I added a test file in the Github repository. `Lessons folder > Chapter_6_sol_main_load.zip`
+

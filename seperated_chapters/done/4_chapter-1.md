@@ -1,25 +1,26 @@
 
-##Chapter 1: About Solarus, Basic History, Download Instructions, Shortcuts, and Documentation
+## Chapter 1: About Solarus, Basic History, Download Instructions, Shortcuts, and Documentation
 
-####About:
+#### About
 
-Solarus is a free GPLv3 2D ARPG game engine. ARPG stands for action role playing game. That means it for making games like Secret of Mana or Zelda, but you can do anyting in Solarus if you code it. Visual novels, side scrollers, and all those good game types are possible as well. There is already code in the community for most of it. The coding language used for making games is Lua and it is a super easy programming language.
+Solarus is a free GPLv3 2D ARPG game engine. ARPG stands for action role playing game. That means it for making games like Secret of Mana or Zelda, but you can do anything in Solarus if you code it. Visual novels, sidescrollers, and all those good game types are possible as well. There is already code in the community for most of it. The coding language used for making games is Lua and it is a super easy programming language. The easiest part is that Solarus's creator, "Christopho", has put together many functions to make tasks even easier.
 
-####Basic Solarus History:
+#### Basic Solarus History
 
 Solarus began as a Zelda-like RPG Maker 2000 game. Due to limitations in RPG Maker 2000, the creator Christopho created a Java Engine called Solarus. The Solarus engine was named after the game made with RPG maker. The engine was scripted in Java, but later rewritten in C++ for speed.
 
 Solarus has advanced greatly since being rewritten in C++, but that is greatly due to Christopho and his team. Their hard efforts keep the Solarus Community growing. The future of Solarus is getting brighter by each passing day.
 
-####Download the Solarus ARPG Engine:
+#### Download the Solarus ARPG Engine
 
+Go to this URL to download Solarus.
 http://www.solarus-games.org/engine/download/
 
 Scroll down to the bottom and choose the version that fits your OS. Ubuntu, Archlinux, Gentoo, OpenBSD / FreeBSD, OpenSUSE, Mac OS X, Microsoft Windows, and ReactOS Windows.
 
 ![Chapter_1_download.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_download.png)
 
-####Shortcuts:
+#### Shortcuts
 
 |Task|Shortcut|
 |---------|:----------:
@@ -69,9 +70,12 @@ Scroll down to the bottom and choose the version that fits your OS. Ubuntu, Arch
 |Show/hide Stream |CTRL + E, CTRL + M
 |Show/hide Door| CTRL + E, CTRL + O
 |Show/hide Stairs| CTRL + E, CTRL + R
-|Show/hide Seperator| CTRL + E, CTRL + A
+|Show/hide Separator| CTRL + E, CTRL + A
 |Show/hide Custom Entity| CTRL + E, CTRL + Y
 
-####Documentation:
+#### Documentation
+
+You will be looking at the documentation a lot.
 
 You can download at the [Solarus website](http://www.solarus-games.org/development/documentation/). I will provide a PDF version in this Github too.
+

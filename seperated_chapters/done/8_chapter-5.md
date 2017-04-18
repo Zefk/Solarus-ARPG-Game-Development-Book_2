@@ -1,17 +1,26 @@
 
-##Chapter 5: Using the Tileset editor
+## Chapter 5: Using the Tileset Editor
 
-####Resource Manager > Tileset > Tileset Editor:
+#### Resource Manager > Tileset > Tileset Editor
 
-You can add a tileset by putting an image with the following extension `file_name.tiles.png` and making a `file_name.dat` in the tileset directory and add it by right clicking. When one double clicks on a tileset, the tileset editor appears. Also, one will have to make a .dat file. 
+You can add a tileset by putting an image with the following extension `file_name.tiles.png` and making a `file_name.dat` in the tileset directory and add it by right clicking. 
 
-For example, `Fairyolica World.png` to `Fairyolica World.tiles.png`. You will need a `Fairyolica World.dat` too.
+For example, `Fairyolica World.png` to `Fairyolica World.tiles.png`. You will need a `Fairyolica World.dat` as well.
 
 ![Chapter_5_images/chapter_5_0_Tileset_Editor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_0_Tileset_Editor.png)
 
+![Chapter_5_11_add_as_tileset.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_11_add_as_tileset.png)
+
+Also, one can make a `.dat` file or new tileset by right clicking the `tilesets` folder in the editor.
+
+![Chapter_5_10_new_tileset.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_10_new_tileset.png)
+
+
+When one double clicks on a tileset, the tileset editor appears. 
+
 ![Chapter_5_images/chapter_5_1_Tileset_Editor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_1_Tileset_Editor.png)
 
-#####Resource Manager > Tileset > Tileset Editor > Selection Properties:
+##### Selection Properties
 
 Properties appear in the `selection properties section` when one selects a pattern image id in a tileset.
 
@@ -19,19 +28,19 @@ Properties appear in the `selection properties section` when one selects a patte
 
 ![chapter_5_3_Tileset_Editor_selecting_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_3_Tileset_Editor_selecting_2.png)
 
-#####Resource Manager > Tileset > Tileset Editor > Selection Properties > Rename ID:
+##### Rename ID
 
 A pattern id can be changed like this:
 
 ![chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png)
 
-#####Resource Manager > Tileset > Tileset Editor > Selection Properties > Ground:
+##### Ground
 
 You can select different grounds to fit your tile. For example, the tile would be `traversable` if the player character can walk on it.
 
 ![chapter_5_5_Tileset_Editor_selecting_4_ground.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_5_Tileset_Editor_selecting_4_ground.png)
 
-#####Resource Manager > Tileset > Tileset Editor > Selection Properties > Repeatable:
+##### Repeatable
 
 A repeatable tile is normally a tile that looks the same while it is being duplicated or by being set right next to the same tile. Grass ground tiles normally look the same in games. They are repeated or duplicated over and over again.
 
@@ -39,13 +48,13 @@ You can set a direction. For example, in the case that the tile only repeats in 
 
 ![chapter_5_6_Tileset_Editor_selecting_5_repeatable.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_6_Tileset_Editor_selecting_5_repeatable.png)
 
-#####Resource Manager > Tileset > Tileset Editor > Selection Properties > Animation:
+##### Animation
 
 Animation can make moving flowers or waterfalls. You can set different frame patterns to fit your needs.
 
 ![chapter_5_7_Tileset_Editor_selecting_6_animation.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_7_Tileset_Editor_selecting_6_animation.png)
 
-#####Resource Manager > Tileset > Tileset Editor > Selection Properties > Making Tile Patterns:
+##### Making Tile Patterns
 
 The tilesets in Solarus follow an 8 x 8 pattern per block. That means you will have to set up your tileset in a grid to make it work properly. 
 
@@ -60,3 +69,4 @@ To make a pattern you just click and drag to make a box.
 You can also select the type for the tile.
 
 ![chapter_5_9_Tileset_Editor_selecting_7_making_new_type_tile.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_9_Tileset_Editor_selecting_7_making_new_type_tile.png)
+

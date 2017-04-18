@@ -1,5 +1,5 @@
 
-##Chapter 13: Entities
+## Chapter 13: Entities
 
 You may use the `inside_store.zip` file in the directory `Lessons > Chapter_13_Entities > inside_store.zip` to help you do these lessons. A sample will be provided for each entity in the same directory.
 
@@ -7,9 +7,9 @@ The inside store contains pre-made maps. These can be selected, copied, and past
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png)
 
-###Destination Entity
+### Destination Entity
 
-#####Setting up Maps and Starting Location.
+##### Setting up Maps and Starting Location
 
 In `game_manager.lua` there is a game script for the starting location. it is set to `Map_1`.
 
@@ -28,7 +28,7 @@ In `game_manager.lua` there is a game script for the starting location. it is se
 
 Make a map called `Map_2` as well.
 
-#####Inside Store
+##### Inside Store
 
 1. Copy the red mat floor room to `Map_1`.
 2. Copy the gray tiled floor room to `Map_2`.
@@ -37,11 +37,11 @@ You copy it by holding down the left mouse button and dragging or moving the mou
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/4_inside_store_L-click_drag_copy_map_1-2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/4_inside_store_L-click_drag_copy_map_1-2.png)
 
-#####Add Destination Entity
+##### Add Destination Entity
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/5_add_Destination_entity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/5_add_Destination_entity.png)
 
-#####Edit Destination Entitiy Options
+##### Edit Destination Entitiy Options
 
 Double click on te destination entity in order to bring up the edit menu.
 
@@ -57,13 +57,13 @@ Double click on te destination entity in order to bring up the edit menu.
 |Update Starting Location| You can set when the destination entity updates and it is only possible when the destination entity has a name. You can leave it default, "When the world changes," it is fine most of the time. "Never" works too, but for scripting reasons you might want to update the destination entity. <br><br>There are three options: <br><br>- When the world changes <br><br> - Always <br><br> - Never
 |Default| If there are more than one destination entity on the map, then the default one is where the player will begin at.
 
-###Teletransporter Entity
+### Teletransporter Entity
 
-#####Add Teletransporter
+##### Add Teletransporter
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/7_Teletransporter_add.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/7_Teletransporter_add.png)
 
-#####Edit Teletransporter Entity Options
+##### Edit Teletransporter Entity Options
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/8_teletransporter_name_pos_layer_size_sprite_play_fade_Desination.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/8_teletransporter_name_pos_layer_size_sprite_play_fade_Desination.png)
 
@@ -91,13 +91,13 @@ Double click on te destination entity in order to bring up the edit menu.
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/11_Teletransporter_map1_pick_map2_destination_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/11_Teletransporter_map1_pick_map2_destination_name.png)
 
-###Pickable Entity
+### Pickable Entity
 
-#####Add Pickable Entity
+##### Add Pickable Entity
 
 ![Chapter_13_images/2_pickable_entity/1_pickable_entity_add.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/2_pickable_entity/1_pickable_entity_add.png)
 
-#####Edit Pickable Entity Options
+##### Edit Pickable Entity Options
 
 ![Chapter_13_images/2_pickable_entity/2_double_click_gem.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/2_pickable_entity/2_double_click_gem.png)
 
@@ -110,12 +110,12 @@ Double click on te destination entity in order to bring up the edit menu.
 |Variant| A variant is the type. Most of the time the type is a different color and worth a higher value. For example, a blue gem for variant 2. <br><br> ![Chapter_13_images/2_pickable_entity/3_gem_variant_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/2_pickable_entity/3_gem_variant_2.png)
 |Save State| You can save whether the item has been picked up or not. Otherwise, it would appear again.
 
-#####Name Connection
+##### Name Connection
 The name of the animation is connected to the item connected to the name of the animation. In this case the name is `gem`.
 
 ![Chapter_13_images/2_pickable_entity/4_gem_variants.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/2_pickable_entity/4_gem_variants.png)
 
-#####Item Script
+##### Item Script
 
 Double click on the item gem and the script will appear in a tab.
 
@@ -148,18 +148,18 @@ Most of this I do not have to explain because it is obvious. I will explain it a
 `Brandish` is the sound that is normally made when opening a chest. For example, Da da ta daa! You know what I am talking about if you have played Zelda.
 
 
-###Destructible Entity
+### Destructible Entity
 
-#####Inside Store to Map
+##### Inside Store to Map
 Create a map called `Map_3` and copy this room from the inside store to the map.
 
 ![Chapter_13_images/3_Destructible/0_inside_store_to_map3.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/3_Destructible/0_inside_store_to_map3.png)
 
-#####Add Destructible Entity
+##### Add Destructible Entity
 
 ![Chapter_13_images/3_Destructible/1_Destructible_entity_add.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/3_Destructible/1_Destructible_entity_add.png)
 
-#####Edit Destructible Entity Options
+##### Edit Destructible Entity Options
 
 ![Chapter_13_images/3_Destructible/2_Double_click_destructible_entity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/3_Destructible/2_Double_click_destructible_entity.png)
 
@@ -180,19 +180,19 @@ Create a map called `Map_3` and copy this room from the inside store to the map.
 |Damage on enemies| Cause damage to enemies. Enter te damage amount.
 |Set a special ground| The destructible entity can become a special ground. For example, picking "prickles" will hurt the hero when bumping into the entity.
 
-#####Destructible Entity Sprite
+##### Destructible Entity Sprite
 
 You can pick up and throw the entity by just adding the sprite and not changing any options.
 
 ![Chapter_13_images/3_Destructible/3_stone.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/3_Destructible/3_stone.png)
 
-###Chest Entity
+### Chest Entity
 
-#####Add a Chest Entity
+##### Add a Chest Entity
 
 ![Chapter_13_images/4_Chest/1_add_chest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/4_Chest/1_add_chest.png)
 
-#####Edit Chest Entity Options
+##### Edit Chest Entity Options
 
 ![Chapter_13_images/4_Chest/2_edit_chest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/4_Chest/2_edit_chest.png)
 
@@ -209,20 +209,20 @@ You can pick up and throw the entity by just adding the sprite and not changing 
 |Reset/decrement| Decreases an item amount instead of increasing.
 |Show a dialog| Add a dialog for when the chest fails to open. For example, when you do not have the key.
 
-###Jumper Entity
+### Jumper Entity
 
-#####Add Jumper Entity
+##### Add Jumper Entity
 
 ![Chapter_13_images/5_Jumper/1_add_jumper.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/5_Jumper/1_add_jumper.png)
 
 
-#####Resize Jumper
+##### Resize Jumper
 
 Use the `r` key to resize the jumper.
 
 ![Chapter_13_images/5_Jumper/2_resize_jumper.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/5_Jumper/2_resize_jumper.png)
 
-#####Edit Jumper Entity Options
+##### Edit Jumper Entity Options
 
 ![Chapter_13_images/5_Jumper/3_edit_jumper.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/5_Jumper/3_edit_jumper.png)
 
@@ -235,28 +235,30 @@ Use the `r` key to resize the jumper.
 |Direction| As you can see in the image, the jumper can be set in many directions. <br><br>They are: <br><br>- Up <br><br>- Down <br><br>- Left <br><br>- Right <br><br>- Left-down <br><br>- Right-down <br><br>- Left-up <br><br>- Right-up
 |Jump length| This is how far the sprite can jump. A common mistake is that the player gets stuck in a wall when jumping. Most of the time the jump distance is not long enough in those cases.
 
-#####Jump Walls
+##### Jump Walls
 
 The player character now can jump over the wall at the four jumper entity locations.
 
 ![Chapter_13_images/5_Jumper/4_4_edges.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/5_Jumper/4_4_edges.png)
 
-#####Jump Preview
+##### Jump Preview
 
 ![Chapter_13_images/5_Jumper/5_jump.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/5_Jumper/5_jump.png)
 
 -
 
 
-###Enemy Entity
+### Enemy Entity
 
-#####Inside Store
+The [documentation](http://www.solarus-games.org/doc/latest/lua_api_enemy.html) for more entity functions.
+
+##### Inside Store
 
 First of all, copy the inside store room to a map name of your choosing. I named the map `map_4`. You will have to download or update your current inside store. You can find it in the directory `Lessons > Chapter_13_Entities > 1_inside_store_.zip`
 
 ![1_inside_store_to_Map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/1_inside_store_to_Map.png)
 
-#####Enemy Breed Script
+##### Enemy Breed Script
 
 Create a breed called `skeleton.` The name should be the same for the enemy sprite. One can make the description anything. I picked skeletor.
 
@@ -265,7 +267,7 @@ Create a breed called `skeleton.` The name should be the same for the enemy spri
 ![3_name_skeleton.pn](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/3_name_skeleton.png)
 
 
-#####Enemy Script Generated
+##### Enemy Script Generated
 
 Making this breed or any new breed generates a basic enemy script. The enemy does not change directions. For instance, it will face one way and not up, down, left, and right. This is useful for basic enemies, but it is simple to add a 4 way direction movement.
 
@@ -315,7 +317,7 @@ Everything is pretty simple and the documentation can be checked for more option
 
 `function enemy:on_restarted()` is basically a reset for the sprite. If the enemy is hit, then it will reset or restart to this.
 
-#####Enemy Four Way Direction
+##### Enemy Four Way Direction
 
 This can simply be added to the bottom of the script for the sprite to look in all four directions.
 
@@ -325,7 +327,7 @@ function enemy:on_movement_changed()
 end
 ```
 
-#####Enemy Animation
+##### Enemy Animation
 
 There are four basic animation for an enemy.
 
@@ -339,13 +341,13 @@ There are four basic animation for an enemy.
 
 ![4_sprite_enemy_add_skeleton_default_animations.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/4_sprite_enemy_add_skeleton_default_animations.png)
 
-#####Add Enemy
+##### Add Enemy
 
 Select the bomb entity icon and add it to the map.
 
 ![5_add_enemy.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/5_add_enemy.png)
 
-#####Edit Enemy
+##### Edit Enemy
 
 |Type|Option|
 |:---:|:---|
@@ -361,15 +363,15 @@ Select the bomb entity icon and add it to the map.
 
 ![6_edit_enemy.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/6_edit_enemy.png)
 
-###NPC Entity
+### NPC Entity
 
-#####Add NPC
+##### Add NPC
 
 Select the green upper body person icon entity to add a NPC. It is right next to the bomb enemy entity.
 
 ![1_add_NPC.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/1_add_NPC.png)
 
-#####Usual NPC
+##### Usual NPC
 
 |Type|Option|
 |:---:|:---|
@@ -385,17 +387,17 @@ A Usual NPC will automatically change direction depending on what angle one trie
 
 ![3_usual_NPC_any_direction_not_destructible.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/3_usual_NPC_any_direction_not_destructible.png)
 
-#####Set Up Dialog Box
+##### Set Up Dialog Box
 
 First off, you need to set up Christopho's Dialog box. Go to `chapter 7` if you forgot how to set it up. You can grab the sample to copy and paste that. 
 `Lessons > chapter_7_Dialog_Mouse_control_fix.zip`
 
-#####Sample
+##### Sample
 
 You can find the sample for this lesson in the following directory. 
 `Lessons > Chapter_13_Entities > C_Enemy_NPC_Block_updated.zip`
 
-#####Usual NPC Call Map Script
+##### Usual NPC Call Map Script
 
 The first thing that needs to be done is to name the NPC. A name is required for scripting. I named the NPC `big_boss.`
 
@@ -415,7 +417,7 @@ Open up the map script.
 Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/3_right_click_open_map_script.png)
 
 
-#####Showing NPC Script
+##### Showing NPC Script
 
 I like showing the full script before breaking it down. This script is an example of a basic quest conversation. The player character needs to find a hammer, but in this case there is no need to actually find the hammer. The `big_boss` gives the player a gem as a reward.
 
@@ -443,7 +445,7 @@ function big_boss:on_interaction()
 end
 ```
 
-#####Setting up a Simple NPC dialog
+##### Setting up a Simple NPC dialog
 The `hammer.hello` dialog states that big_boss needs help and he is offering a reward.
 
 ```
@@ -486,7 +488,7 @@ function big_boss:on_interaction()
 end
 ```
 
-#####NPC Dialog Yes_No
+##### NPC Dialog Yes_No
 
 Now we have to set up a simple dialog. 
 
@@ -515,19 +517,19 @@ Help me find it? I will give you a reward. (1) - line 2
      $? No(3)
 ```
 
-#####NPC Answer No
+##### NPC Answer No
 
 The dialog, "What will I do with this shiny reward now?" is shown when the player chooses `No`.
 
 ![6_no.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/6_no_fix.png)
 
-#####NPC Answer Yes
+##### NPC Answer Yes
 
 The dialog, "Took you long enough! Here is your reward." is shown when the player chooses `Yes`.
 
 ![7_yes.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/7_yes.png)
 
-#####NPC Treasure
+##### NPC Treasure
 
 The reward or treasure is a gem. In order to have the hero (player) receive a reward is by using the `hero:start_treasure("Treasure_name")` function. 
 
@@ -558,7 +560,7 @@ The dialog, "you got a gem!," will automatically display if you put the dialog i
 
 ![8_treasure.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/8_treasure.png)
 
-#####Prevent Repeating NPC Dialog With Boolean
+##### Prevent Repeating NPC Dialog With Boolean
 
 Now we do not want the NPC to say the same thing over and over again. This could result in the player getting lots of gems too fast.
 
@@ -590,7 +592,7 @@ function big_boss:on_interaction()
 end
 ```
 
-#####Prevent Repeating NPC Dialog With Get Value
+##### Prevent Repeating NPC Dialog With Get Value
 
 Now we do not want the NPC to say the same thing over and over again. This could result in the player getting lots of gems too fast.
 
@@ -621,7 +623,7 @@ end
 ```
 ![10_done.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/10_done.png)
 
-#####NPC Shortening the Script
+##### NPC Shortening the Script
 
 There is a way to shorten the script. A few lines of script can be combined. 
 
@@ -663,23 +665,23 @@ function big_boss:on_interaction()
 end
 ```
 
-#####NPC Wonderful Day
+##### NPC Wonderful Day
 
 As one can see below, the NPC says something right after you get your reward. This is the dialog `hammer.wonderful_day`. This is a temporary reply by the NPC. Any other time the `hammer.done` will show.
 
 ![9_wonderful_day.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/9_wonderful_day.png)
 
-#####NPC Dialogs
+##### NPC Dialogs
 
 One can check [Christopho's tutorial](https://www.youtube.com/watch?v=KyF4LB1YOSY&index=18&list=PLzJ4jb-Y0ufxwkj7IlfURcvCxaDCSecJY) for more ways of setting up dialog near the end of the video. I explained the less error prone method.
 
-#####Generalized NPC
+##### Generalized NPC
 
 A Generalized NPC can only be interacted based on its starting direction. Down is common for a Generalized NPC. An example of a Generalized NPC is a sign post. You would interact with it from the front, but one is able to pick up the sign by default and throw it from other directions. There is a special direction called,"any." This will allow the player character to interact from all four directions of the sign. Generalized NPC(s) are used normally for something and not somebody, but there are a few exceptions.
 
 ![2_generalized_NPC_pick_direction.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/2_generalized_NPC_pick_direction.png)
 
-#####Generalized NPC Desk Method
+##### Generalized NPC Desk Method
 
 Generalized NPC(s) are useful for not only signs or other objects. They can be used to talk to a person across a table.
 
@@ -691,7 +693,7 @@ Generalized NPC(s) are useful for not only signs or other objects. They can be u
 
 ![4_funny_chat.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/general_npc/4_funny_chat.png)
 
-Now this isn't in the sample, but what if both NPC(s) are not  a generalized NPC? If I talk to the magician from the right making him turn to the right and then interact with the desk, then the magician will still be facing the wrong direction. In this case we use a function called, "`NPC:get_sprite():set_direction(Number)`."
+Now this isn't in the sample, but what if both NPC(s) are not  a generalized NPC? If I talk to the magician from the right, then that makes him turn to the right. If the hero interact with the desk, then the magician will still be facing the wrong direction. In this case we use a function called, "`NPC:get_sprite():set_direction(Number)`."
 
 
 |Number| Direction|
@@ -710,15 +712,15 @@ magician:get_sprite():set_direction(3)
 The Magician will look  down(3) in this case.
 
 
-###Movable Block Entity
+### Movable Block Entity
 
-#####Add Block
+##### Add Block
 
 The block entity is right by the green NPC person entity. A block can be moved around.
 
 ![1_add_block.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/8_Block/1_add_block.png)
 
-#####Block Properties
+##### Block Properties
 
 |Type|Option|
 |:---:|:---|
@@ -735,15 +737,15 @@ The block entity is right by the green NPC person entity. A block can be moved a
 
 The block entity is that simple. There will be more customization for the block entity in Solarus 1.6 version.
 
-###Switch Entity
+### Switch Entity
 
-#####Add Switch
+##### Add Switch
 
 The switch is the button with the red dot next to the block entity. You can step on the switch to activate certain events and there are a few other ways to activate it.
 
 ![1_add%20switch.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/1_add%20switch.png)
 
-#####Switch Properties
+##### Switch Properties
 
 |Type|Option|
 |:---:|:---|
@@ -758,7 +760,7 @@ The switch is the button with the red dot next to the block entity. You can step
 
 ![2_Click_switch_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/2_Click_switch_properties.png)
 
-#####Walkable Switch Coding
+##### Walkable Switch Coding
 
 In order to code a script one much give it a name. I gave it the name `chest_button`. In the following example I use the `on_activated()` function. 
 
@@ -824,7 +826,7 @@ function chest_button:on_activated()
 end
 ```
 
-#####Block Switch Coding
+##### Block Switch Coding
 
 The block coding is almost exactly the same, so I will not be typing everything over again. I will cover the parts that are different.
 
@@ -963,29 +965,29 @@ function chest_button_2:on_inactivated()
 end
 ```
 
-#####Solid Switch Coding
+##### Solid Switch Coding
 
 The same as the walkable switch. Just set it to `solid` and press `c` to activate it. There will be an example in the dynamic Tile section.
 
 ![](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/3_solid_switch.png)
 
-###Dynamic Tile
+### Dynamic Tile
 
 Dynamic Tiles are not entities, but they can be manipulated like an entity once a name is given to them. You can script it and all that jazz. Tiles are originally static meaning they cannot be used with scripts until converted to Dynamic.
 
-#####Convert to Dynamic
+##### Convert to Dynamic
 
 Right click > Convert to dynamic tile
 
 ![1_convert_dynamic.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/1_convert_dynamic.png)
 
-#####Convert to Static
+##### Convert to Static
 
 Right click > Convert to static tile
 
 ![2_convert_static.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/2_convert_static.png)
 
-#####Dynamic Properties
+##### Dynamic Properties
 
 |Type|Option|
 |:---:|:---|
@@ -997,7 +999,7 @@ Right click > Convert to static tile
 
 ![3_Dynamic_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/10_dynamic_tile/3_Dynamic_properties.png)
 
-#####Dynamic Scripting
+##### Dynamic Scripting
 
 Dynamic scripting is not really different from scripting with entities.
 
@@ -1018,15 +1020,15 @@ function solid_switch:on_activated()
 end
 ```
 
-###Wall Entity
+### Wall Entity
 
-#####Add Wall Entity
+##### Add Wall Entity
 
 Click on the stop sign like image by the switch entity to add the wall entity. It can be stretched to fit a large area and blocks paths for certain obstacles.
 
 ![1_add_wall.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/11_Wall/1_add_wall.png)
 
-#####Wall Entity Properties
+##### Wall Entity Properties
 
 |Type|Option|
 |:---:|:---|
@@ -1038,7 +1040,7 @@ Click on the stop sign like image by the switch entity to add the wall entity. I
 
 ![2_wall_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/11_Wall/2_wall_properties.png)
 
-#####Wall Entity Scripting
+##### Wall Entity Scripting
 
 The scripting is no different from any other entity. There will be an example in the sensor section, but let me cover another function before that. 
 
@@ -1063,15 +1065,15 @@ The following script is a way to avoid the annoying message. Of course, there ar
     end
     ```
 
-###Sensor Entity
+### Sensor Entity
 
-#####Add Sensor Entity
+##### Add Sensor Entity
 
 The sensor entity is right next to the wall Entity. It is a green circle with a question mark on it. It can be stretched to fit a large area and can detect the hero when it gets into the boundary.
 
 ![1_add_sensor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/1_add_sensor.png)
 
-#####Sensor Properties
+##### Sensor Properties
 
 |Type|Option|
 |:---:|:---|
@@ -1082,7 +1084,7 @@ The sensor entity is right next to the wall Entity. It is a green circle with a 
 
 ![2_sensor_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/12_Sensor/2_sensor_properties.png)
 
-#####Sensor Scripting
+##### Sensor Scripting
 
 This is an example of wall and sensor scripting. First off, do not name your sensor entity the name `sensor`. You can, but it will interfere with a shortcut, at least when I tried it. Instead, we will be using the name `ground_sensor_`.
 
@@ -1172,7 +1174,7 @@ for sensor in map:get_entities("ground_sensor_") do
 end
 ```
 
-#####Sensor Get Position
+##### Sensor Get Position
 
 We covered the `set_position` function, but we can get the position of an entity as well. The function for getting an entity is `get_position()`.
 
@@ -1192,7 +1194,7 @@ function ground_sensor_2:on_activated()
 end
 ```
 
-#####Sensor Multiple Dynamic Tiles
+##### Sensor Multiple Dynamic Tiles
 
 This a shortcut for bulk numbers of dynamic tiles with the same name. The first thing we will do is add a sensor. I named it `ground_sensor_3`.
 
@@ -1334,15 +1336,15 @@ function ground_sensor_3:on_activated()
   end)
 end
 ```
-###Crystal Switch Entity
+### Crystal Switch Entity
 
-#####Add Crystal Switch
+##### Add Crystal Switch
 
 The crystal switch works with the crystal block. A crystal block rises or lowers when a crystal switch is hit with key `c`. For example, the block will lower if the initial state of the block is set to lowered.
 
 ![1_Add_crystal_switch.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/13_crystal_switch/1_Add_crystal_switch_fix.png)
 
-#####Crystal Switch Properties
+##### Crystal Switch Properties
 
 |Type|Option|
 |:---:|:---|
@@ -1352,21 +1354,21 @@ The crystal switch works with the crystal block. A crystal block rises or lowers
 
 ![2_crystal_switch_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/13_crystal_switch/2_crystal_switch_properties.png)
 
-#####Default Crystal Switch Graphic Names
+##### Default Crystal Switch Graphic Names
 
 As far as I know the animation keywords for switches are `blue_lowered` and `orange_lowered`. The default animation is the color that one wants to see first.
 
 ![3_default_entities_crystal.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/13_crystal_switch/3_default_entities_crystal.png)
 
-###Crystal Block Entities
+### Crystal Block Entities
 
 The crystal block works with the crystal switch. A crystal block rises or lowers when a crystal switch is hit with key `c`. For example, the block will lower if the initial state of the block is set to lowered.
 
-#####Add Crystal Block
+##### Add Crystal Block
 
 ![1_add_crystal_block_lowered_raised.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/14_crystal_block/1_add_crystal_block_lowered_raised_fix.png)
 
-#####Crystal Block Properties
+##### Crystal Block Properties
 
 |Type|Option|
 |:---:|:---|
@@ -1378,21 +1380,21 @@ The crystal block works with the crystal switch. A crystal block rises or lowers
 
 ![2_crystal_block_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/14_crystal_block/2_crystal_block_properties.png)
 
-#####Default Crystal Block Graphic Names
+##### Default Crystal Block Graphic Names
 
 As far as I know the keywords are `blue_lowered`, `blue_raised`, `orange_lowered`, and `orange_raised`. I tried different keywords for the animations, but the blocked failed to show up on the map when playtesting the game.
 
 ![3_block_set_up.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/14_crystal_block/3_block_set_up.png)
 
-###Stream Entity
+### Stream Entity
 
 The stream entity pushes the player or moves him/her/it in the desired direction. It can also be used to slow the player down. For instance, gravity, spinning wheel, and/or a sandstorm. A developer might want to have some force to slow down the player.
 
-#####Add Stream
+##### Add Stream
 
 ![16_stream/1_add_streamer.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/16_stream/1_add_streamer_fix.png)
 
-#####Stream Properties
+##### Stream Properties
 
 |Type|Option|
 |:---:|:---|
@@ -1409,13 +1411,13 @@ The stream entity pushes the player or moves him/her/it in the desired direction
 ![2_stream_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/16_stream/2_stream_properties.png)
 
 
-###HUD
+### HUD
 
 HUD stands for `heads up display`. It is the health bar, money counter, etc.
 
 There are many scripts from Christopho's games that can be used. You can check his [YouTube Tutorial](https://www.youtube.com/watch?v=RvV2rU75WmA) for that information. I will be covering the heart display and money counter.
 
-#####Setup HUD Scripts
+##### Setup HUD Scripts
 
 The 1st step will be to add the HUD scripts folder (Get them from sample > `E_Crystal_switch-Block_Shop_stream.zip`.) and remove the current HUD in the menu directory or rename the scrips to `.old`.
 
@@ -1446,7 +1448,7 @@ Add the `green_digits` and `white_digits` fonts to the font directory. Get them 
 
 ![5_fonts.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/18_hud/5_fonts.png)
 
-#####Hud Configurations `hud_config.lua`
+##### Hud Configurations `hud_config.lua`
 
 You can change the coordinates of the counter and heart health display from this script. Change the x,y coordinates until you like what you see.
 
@@ -1466,7 +1468,7 @@ You can change the coordinates of the counter and heart health display from this
   }
 ```
 
-#####Health Heart Display `hearts.lua`
+##### Health Heart Display `hearts.lua`
 
 Health is the life points the player has until he dies or faints. The way this script works is that it draws a surface of your heart image. The image will have full, half empty, and empty graphics. 
 
@@ -1651,7 +1653,7 @@ if life >= j then
 
 
 
-#####Money System Rupee Style
+##### Money System Rupee Style
 
 I will explain on how to adjust it to different size hearts and coordinate changes. You can change the counter's location from `hud_config.lua`.
 
@@ -1714,7 +1716,7 @@ function game_manager:start_game()
 
 ![3_white_not_full.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/3_white_not_full.png)
 
-###Money (Gem) Setup
+### Money (Gem) Setup
 
 The gem already exists for you. You can thank Diarandor for that, but I will explain how to set up the gem. This script is a little cleaner.
 
@@ -1905,15 +1907,15 @@ function item:on_obtaining(variant, savegame_variable)
 end
 ```
 
-###Shop Entity
+### Shop Entity
 
 The shop entity is a quick shop setup. The shop entity shows the price, an icon, and the treasure. It uses an image file called `rupee_icon.png`.
 
-#####Add Shop Entity
+##### Add Shop Entity
 
 ![1_Add_shop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/1_Add_shop_fix.png)
 
-#####Shop Entity Properties
+##### Shop Entity Properties
 
 |Type|Option|
 |:---:|:---|
@@ -1927,13 +1929,13 @@ The shop entity is a quick shop setup. The shop entity shows the price, an icon,
 
 ![2_shop_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/2_shop_properties.png)
 
-#####Shop Setup
+##### Shop Setup
 
 This is what the basic shop set up looks like.
 
 ![3_shop_set_up.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/3_shop_set_up.png)
 
-#####Shop Entity Dialogs
+##### Shop Entity Dialogs
 
 The shop requires some dialogs. 
 
@@ -1975,19 +1977,19 @@ Lastly, if you save the state of the treasure from the shop, then you will only 
 ![shop_dialog-save_state/3_save_shop_item_state.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/15_shop/shop_dialog-save_state/3_save_shop_item_state.png)
 
 
-###Door Entity
+### Door Entity
 
  The purpose of this is obviously for opening doors. 
  
  You can find the sample for this section in the directory `Lessons > Chapter_13_Entities > F_door_stairs_seperator_custom.zip`.
 
-#####Add Door
+##### Add Door
 
 The door entity is by the stream entity.
 
 ![1_add_door.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/1_add_door.png)
 
-#####Door Properties
+##### Door Properties
 
 |Type|Option|
 |:---:|:---|
@@ -2002,7 +2004,7 @@ The door entity is by the stream entity.
 
 ![2_door_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/2_door_properties.png)
 
-#####Door Graphic Setup
+##### Door Graphic Setup
 
 For a door to work 3 default animation keywords are needed.
 - closed - Door is closed. Not open.
@@ -2013,7 +2015,7 @@ The closing time determines whether the graphic shows or not. Give the door enti
 
 ![](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/3_door_closing_opening_closed.png)
 
-#####Door Script
+##### Door Script
 
 We are going to open two doors at the same time with a switch entity.
 
@@ -2021,7 +2023,7 @@ We are going to open two doors at the same time with a switch entity.
 
 ![1_door_switch.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/1_door_switch.png)
 
-2.Add a door entity.I named it `switch_door`. 
+2.Add a door entity. I named it `switch_door`. 
 3.You can save the state of the door.
 4.Select the opening mode `By script`. 
 5.You can add a dialog as well.
@@ -2044,7 +2046,7 @@ function door_trigger:on_activated()
   sol.audio.play_sound("door_open")
 end
 ```
-#####Opening Door With Key
+##### Opening Door With Key
 
 1.Create an item named `key`.
 
@@ -2064,7 +2066,7 @@ end
 
 5.Saving the item `key`. The item must be saved in order for it to work. Double click on the item `key` to open its item script. On creating the key use the function `self:set_savegame_variable("name_of_item")`.
 
-#####Door Key
+##### Door Key
 
 ```lua
 local item = ...
@@ -2077,25 +2079,25 @@ function item:on_created()
 end
 ```
 
-#####Door Opening By Hero
+##### Door Opening By Hero
 
 The hero is able to open the door.
 
 ![7_by_hero.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/7_by_hero.png)
 
 
-###Stairs Entity
+### Stairs Entity
 
  The purpose of the stair entity is to create stair walking animation.
 
-#####Add Stairs
+##### Add Stairs
 
 The stair entity is by the door entity.
 
 
 ![1_add_stairs.png)](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/21_stairs/1_add_stairs.png)
 
-#####Stairs Properties
+##### Stairs Properties
 
 |Type|Option|
 |:---:|:---|
@@ -2107,7 +2109,7 @@ The stair entity is by the door entity.
 
 ![2_stairs_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/21_stairs/2_stairs_properties.png)
 
-#####Stairs Setup
+##### Stairs Setup
 
 Set the destination and teletransporter onto the stair entity. The player will do a walking stair animation and teleport to the desired destination.
 
@@ -2115,17 +2117,17 @@ Set the destination and teletransporter onto the stair entity. The player will d
 
 ![stairs_setup/2_put_on_top.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/21_stairs/stairs_setup/2_put_on_top.png)
 
-###Separator Entity
+### Separator Entity
 
 The purpose of this is block the view of the player or enemy. For example, if you have many sections in a room and do not want to see the other sections, then use the separator to block the view. The blocking has to be reasonable though. The sections should all be even or the separator will not work properly.
 
-#####Add Separator
+##### Add Separator
 
 The separator entity is by the stair entity. It is the purple icon.
 
 ![1_add_seperator.png1_add_seperator.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/22_seperator/1_add_seperator.png)
 
-#####Separator Properties
+##### Separator Properties
 
 |Type|Option|
 |:---:|:---|
@@ -2136,7 +2138,7 @@ The separator entity is by the stair entity. It is the purple icon.
 
 ![2_seperator_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/22_seperator/2_seperator_properties.png)
 
-#####Separator viewpoint
+##### Separator viewpoint
 
 1.View without separator.
 
@@ -2150,17 +2152,17 @@ The separator entity is by the stair entity. It is the purple icon.
 
 ![3_with_seperator.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/22_seperator/Seperator_view_points/3_with_seperator.png)
  
-###Custom Entities
+### Custom Entities
 
 The custom entity is for custom scripts. 
 
-#####Add Custom Entity
+##### Add Custom Entity
 
 The custom entity is by the purple separator entity. It is the green puzzle piece icon.
 
 ![1_add_custom_entity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/23_custom/1_add_custom_entity.png)
 
-#####Custom Entity Properties
+##### Custom Entity Properties
 
 |Type|Option|
 |:---:|:---|
@@ -2174,7 +2176,7 @@ The custom entity is by the purple separator entity. It is the green puzzle piec
 
 ![2_custom_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/23_custom/2_custom_properties.png)
 
-#####Create Custom Entity Script
+##### Create Custom Entity Script
 
 Go to entities and right click to add an entity script.
 
@@ -2185,7 +2187,7 @@ You can pick an entity script from the custom entity.
 
 ![1_custom_entity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/23_custom/custom_entity_scripting/1_custom_entity.png)
 
-#####Trick Chest Entity Scripting
+##### Trick Chest Entity Scripting
 
 We are going to script a chest that hurts the player. 
 
@@ -2272,3 +2274,4 @@ function entity:on_interaction()
   entity:remove()
 end
 ```
+

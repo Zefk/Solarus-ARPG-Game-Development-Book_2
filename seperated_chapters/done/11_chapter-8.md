@@ -1,5 +1,5 @@
 
-##Chapter 8: Displaying an image, opacity, color fill, blend modes, and font display
+## Chapter 8: Displaying an image, opacity, color fill, blend modes, and font display
 
 **Preview:**
 
@@ -7,7 +7,7 @@ I would like to show a preview before starting the lesson. This is everything yo
 
 ![Chapter_8_sample_preview.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_8_sample_preview_blend_updated.png)
 
-#####Script For The Lesson:
+##### Script For The Lesson
 
 I wanted to show the script before breaking it down. This is file `display_sample.lua`. 
 
@@ -131,17 +131,17 @@ You can download the sample for this lesson in the lessons folder.
 
 `Lessons > Chapter_8_display_example.zip`
 
-###Breaking Down The Script:
+### Breaking Down The Script
 
-#####Explaing Surfaces:
+##### Explaining Surfaces
 
-First off, I would like to say that I will not repeadly break down the "same" parts of the script. I will only give examples of new material I introduce. Let us begin!
+First off, I would like to say that I will not repeatedly break down the "same" parts of the script. I will only give examples of new material I introduce. Let us begin!
 
 In order to pass the game parameter into the script, one needs to add `local game = ...` at the beginning of the script. You need this to use functions like `function game:on_paused()`.
 
 The next line that you may not understand is `local surface_img = sol.surface.create()`. In this line of code I create and assign a variable called `surface_img` to a newly created surface `sol.surface.create()`. This surface will make pixels fill the whole screen with a single RGB color value for `surface_img`. We will get to that later in the script.
 
-The next line of code `local button_img = sol.surface.create("button.png")` is the exactly the same as the pervious line I explained, but we create a surface for an image file. In this case a portable graphic image (.png) `button.png`. This image is located in the sprites directory. sprites > button.png
+The next line of code `local button_img = sol.surface.create("button.png")` is exactly the same as the pervious line I explained, but we create a surface for an image file. In this case a portable graphic image (.png) `button.png`. This image is located in the sprites directory. `sprites > button.png`
 
 The next line of code is making a surface for a `.ttf` font package or bitmap font like `alttp.png`. You cannot change colors for the bitmap font and there are a few other limitation with that font type. You can do everything with a `.ttf` font(TrueType Font). Solarus supports .ttf, .tcc and fon. The surface that is created for the font, uses a table in order to assign properties to it. You must never forget the comma at the end of each line.
 
@@ -174,7 +174,7 @@ line[3] = "sprite"
 
 3 .`font_size = 50,` This is..well, the size of your font. 
 
-4 .`horizontal_alignment = "center",` The horizonatal alignment. The default is default "left." I personally ignore the   alignments. I just remove them from the table.
+4 .`horizontal_alignment = "center",` The horizontal alignment. The default is default "left." I personally ignore the   alignments. I just remove them from the table.
 
 5 .`vertical_alignment = "bottom",` The vertical alignment. The default is "middle."
 
@@ -182,7 +182,7 @@ line[3] = "sprite"
 
 7 .`color = {0,0,0}` This is the RGB value for the font color. `{0.0.0}` is black. You can look at the RGB reference section in the book for more color values.
 
-#####Explaining Draw Function:
+##### Explaining Draw Function
 
 Now we are going to go over the `function sol.main:on_draw(screen)`. We need this function for showing images and text on the screen.
 
@@ -192,7 +192,7 @@ function sol.main:on_draw(screen)
 end
 ```
 
-#####Drawing an image, font, and a fill_color:
+##### Drawing an image, font, and a fill_color
 
 We need to add `:draw(screen,x,y)`on to a surface we created `test_img` and `button_img` or `surface_img` in order to draw a surface and set coordinates.
 
@@ -201,7 +201,7 @@ function sol.main:on_draw(screen)
   test_img:draw(screen,100,100)'
 end
 ```
-#####Filling a Color:
+##### Filling a Color
 
 On the surface `surface_img` that was created we need to add `fill_color({245,68,0})` on to `surface_img`. That will create an orange color.
 
@@ -211,7 +211,7 @@ function sol.main:on_draw(screen)
   surface_img:fill_color({245,68,0})
 end
 ```
-#####Opacity or Semi-transparency:
+##### Opacity or Semi-transparency
 
 We currently have a screen filled with orange color and now we cannot see anything. One will need to make it see through or semi-transparent. That is the opacity. You need to assign the surface `surface_img` to `set_opacity(number)`.
 
@@ -230,9 +230,9 @@ function sol.main:on_draw(screen)
   surface_img:set_opacity(50)
 end
 ```
-#####on_unpaused function & clear pixels:
+##### on_unpaused function & clear pixels
 
-I never explained the on_unpaused function fully before. I did mention it, but not in actual use. When the game it paused with the key `d` the orange semi-tranparent pixels are cleared. In order to clear pixels the `clear()` needs to be added onto the surface `surface_img`.
+I never explained the on_unpaused function fully before. I did mention it, but not in actual use. When the game it paused with the key `d` the orange semi-transparent pixels are cleared. In order to clear pixels the `clear()` needs to be added onto the surface `surface_img`.
 
 ```lua
     if clear_pixels == true then
@@ -256,7 +256,7 @@ function game:on_unpaused()
   clear_pixels = false
 end
 ```
-#####Blend Modes:
+##### Blend Modes
 
 ```lua
 surface:set_blend_mode(blend_mode)
@@ -265,7 +265,7 @@ surface:set_blend_mode(blend_mode)
 |     mode(blend_modes)      |  About            |
 |-----------|:------------|
 |"none"| No blending.
-| "blend"(default)|  The suface is alpha-blended
+| "blend"(default)|  The surface is alpha-blended
 | "add"|The surface is colored and lightened.
 | "multiply"|Darken the surface without degrading the image
 
@@ -296,7 +296,7 @@ surface:set_blend_mode(blend_mode)
     blend_blue_img:set_blend_mode("blend")
 ```
 
-#####Drawing to a Surface:
+##### Drawing to a Surface
 
 I am not going mention this in the sample, the same way, but one can draw images to a single surface and remove them all at the same time.
 
@@ -324,4 +324,5 @@ function sol.main:on_draw(screen)
 end
 ```
 
-The example shows that everything is being drawn on `blend_test_img` instead of the `screen`. All three of the images will vanish at the same when when `clear_pixels is true`.
+The example shows that everything is being drawn on `blend_test_img` instead of the `screen`. All three of the images will vanish at the same when `clear_pixels is true`.
+
