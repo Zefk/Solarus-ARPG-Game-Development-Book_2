@@ -8,7 +8,7 @@ The sample for this lesson is `G_Abilities_Quest-launcher_savegame.zip`. It can 
 Built-in ability levels indicate whether the hero can perform some built-in actions like attacking, swimming, and running.
 
 |Ability| Description|
-|-------||-----------|
+|-------|-----------|
 |sword| Ability to use the sword and with which sprite.
 |sword_knowledge| Ability to make the super spin-attack.
 |tunic| Tunic (determines the sprite used for the hero's body).
