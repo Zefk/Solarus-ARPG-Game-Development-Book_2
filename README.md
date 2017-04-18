@@ -50,8 +50,7 @@ This version would be for Solarus 1.6
 
 **Possible Additions:**
 - [Cinematic: Moving hero scene](https://www.youtube.com/watch?v=SkOMoj8YXV0&list=PLzJ4jb-Y0ufySXw9_E-hJzmzSh-PYCyG2&index=50)
-- [Followers](http://www.solarus-games.org/doc/latest/lua_api_path_finding_movement.html) [[1]](http://www.solarus-games.org/doc/latest/lua_api_entity.html#lua_api_entity_on_obstacle_reached) [[2]](http://www.solarus-games.org/doc/latest/lua_api_entity.html#lua_api_entity_overlaps_entity)
-(I am not going to go over bosses or other complex enemies because there are plenty of enemy scripts in the Solarus fan games and some in the sample quest.)
+(I am not going to go over bosses or other complex enemies because there are plenty of enemy scripts in the Solarus fan games and some in the sample quest to study.)
 - [Enemy sword block](https://www.youtube.com/watch?v=7yy7QWG7zrA&list=PLzJ4jb-Y0ufySXw9_E-hJzmzSh-PYCyG2&index=30)
 - [Enemy random movement](https://www.youtube.com/watch?v=WdMXsE3QIh0&index=31&list=PLzJ4jb-Y0ufySXw9_E-hJzmzSh-PYCyG2)
 - Inventory
