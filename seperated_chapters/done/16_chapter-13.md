@@ -7,6 +7,12 @@ The inside store contains pre-made maps. These can be selected, copied, and past
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png)
 
+###Entity Position & Name
+
+You can hover over entities to see their names and position.
+
+![Chapter_13_hover_entity_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/Chapter_13_hover_entity_name.png)
+
 ### Destination Entity
 
 ##### Setting up Maps and Starting Location
@@ -256,7 +262,7 @@ The [documentation](http://www.solarus-games.org/doc/latest/lua_api_enemy.html) 
 
 First of all, copy the inside store room to a map name of your choosing. I named the map `map_4`. You will have to download or update your current inside store. You can find it in the directory `Lessons > Chapter_13_Entities > 1_inside_store_.zip`
 
-![1_inside_store_to_Map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/1_inside_store_to_Map.png)
+![1_inside_store_to_Map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/1_inside_store_to_Map_2.png)
 
 ##### Enemy Breed Script
 
