@@ -500,5 +500,166 @@ You can check the documentation for more information on [save data](http://www.s
 
 ###Game Over
 
+In this section we will be covering gameover. I will be using a quick simple script I made for this purpose. You can check out [Christopho's gameover script](https://github.com/solarus-games/children-of-solarus/blob/master/data/menus/game_over.lua) for something more complex. He creates a hero sprite that he unpauses and sets an animation.
 
+Here is the script we will be covering.
+
+![Chapter_14_images/Game_over.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_images/Game_over.png)
+
+**game_over.lua**
+
+```lua
+
+local game_over_menu = {}
+
+--Function to go under game:start() in save_menu.lua
+function game_over_menu:start(game)
+
+local gameover = {
+
+  browse = 0,
+
+  yes_hover_img = sol.surface.create("game_over/yes_hover.png"),
+  no_hover_img = sol.surface.create("game_over/no_hover.png"),
+  idle_bg_img = sol.surface.create("game_over/idle_bg.png"),
+
+  yes_hover = true,
+  no_hover = false,
+	idle_bg = true,
+
+  up = true,
+  down = true,
+  
+  up_sound = "none",
+  down_sound = "none",
+
+}
+
+--Set up and down sound
+gameover.up_sound = "cursor"
+gameover.down_sound ="cursor"
+
+
+
+--The draw function for showing images
+function game_over_menu:on_draw(screen)
+
+--Show idle-bg-hover image when conditions are true
+   if gameover.idle_bg == true then
+     gameover.idle_bg_img:draw(screen)
+   end
+
+--Show yes-hover image when conditions are true
+   if gameover.yes_hover == true then
+     gameover.yes_hover_img:draw(screen)
+   end
+
+--Show no-hover image when conditions are true
+   if gameover.no_hover == true then
+     gameover.no_hover_img:draw(screen)
+   end
+
+end -- end draw function
+
+--key function for pressing buttons
+function game_over_menu:on_key_pressed(key)
+
+--Go down
+  if key == "down" and gameover.up == true then
+    sol.audio.play_sound(gameover.up_sound)
+    if gameover.browse < 1 then
+      gameover.browse = gameover.browse + 1
+    end
+  end
+
+--Go up
+  if key == "up" and gameover.down == true then
+    sol.audio.play_sound(gameover.down_sound)
+    if gameover.browse > 0 then
+      gameover.browse = gameover.browse - 1
+    end
+  end
+
+--Yes hover
+  if gameover.browse == 0 then
+    print("up")
+    gameover.yes_hover = true
+    gameover.no_hover = false
+
+    local map = game:get_map()
+
+    if key == "a" then
+
+	  game:set_starting_location(map:get_id()) -- Starting location.
+	  game:start()
+	  game:stop_game_over()
+	  sol.menu.stop(self, game_over_menu)
+    end
+  end
+
+--No hover
+  if gameover.browse == 1 then
+    print("down")
+    gameover.no_hover = true
+    gameover.yes_hover = false
+
+    if key == "a" then
+		  sol.main.reset()
+    end
+  end
+ end -- end key pressed function
+end -- end of function game_over_menu:start(game)
+
+
+return game_over_menu --return menu
+
+```
+
+The script is called from the `game_manger.lua`.
+
+```lua
+local game_over_menu = require("scripts/game_over.lua")
+
+game:register_event("on_started", function()
+
+   local hero = game:get_hero()
+
+  --Game over
+  print("life"..game:get_life())
+  
+     function game:on_game_over_started()
+        local life = game:get_life()
+        if life == 0 then
+          hero:set_animation("dead")
+          sol.audio.play_sound("hero_dying")
+          sol.menu.start(self, game_over_menu)
+        end
+     end
+  end) -- end of game:register_event
+```
+
+The game parameter is passed through the `save_menu.lua` after `game:start()` just like the `game_manger.lua`.
+
+```lua
+game:start()
+
+local game_manager = require("scripts/game_manager")
+local game_over_menu = require("scripts/game_over.lua")
+
+game_manager:manage(game)
+game_over_menu:start(game)
+```
+
+The important functions in this script are `game:stop_game_over()` and `function game:on_game_over_started()`.
+
+`game:stop_game_over()` stops the `function game:on_game_over_started()` function. By default, the game starts over and restores health, but `function game:on_game_over_started()` is needed to make a custom death. 
+
+I set an animation called `hero:set_animation("dead")` and the animation `dead` is only one frame. The reason for this is that the `game_over_started` function suspends the game and it will stop any complex animation before it finishes. That is why it is best to use a [sprite method](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_methods) because a sprite method can be [unpaused](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_set_paused). That is what Christopho does in his [script](https://github.com/solarus-games/children-of-solarus/blob/master/data/menus/game_over.lua).
+
+Okay, after starting the animation the death sound occurs and the `game_over.lua` menu is started. In the game over script you can start the game again `game:start()`.
+
+**Sample:**
+
+You can check out the sample in: 
+`Lessons > Chapter_13_14_custom_entity_game_over.zip`
 

@@ -2557,3 +2557,9 @@ function hero:on_state_changed(state)
   end
 end
 ```
+
+**Samples:**
+
+You can find samples of `custom switch` to `on hero state` in:
+
+`Lessons > Chapter_13_14_custom_entity_game_over.zip`
