@@ -793,7 +793,7 @@ Now this isn't in the sample, but what if both NPC(s) are not  a generalized NPC
 
 
 |Number| Direction|
-|:-----||:------:|
+|:-----|:------:|
 |Direction(0)| Right
 |Direction(1)| Up
 |Direction(2)| Left
