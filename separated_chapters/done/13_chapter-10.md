@@ -97,17 +97,17 @@ end -- end of key press function
 ### Timer
 
 ```lua
-sol.timer.start([context], delay, callback)
+sol.timer.start([context], delay (in milliseconds) , callback)
 ```
 
 ##### Timer Function Delay
 
-1.Timer will go off (as long as you are still on the same map) in 5 
-seconds.
+1.Timer will go off (as long as you are still on the same map) for 1 
+second in the example below.
  
-2.There are 5000 milliseconds in 5 seconds.
+2.There are 1000 milliseconds in 1 seconds.
 
-3.Timer will not go off if you go to another map before 5 seconds are reached.
+3.Timer will not go off if you go to another map before 1 second is reached.
 
 4.If the game is paused with "d", then the timer is paused as well.
 
