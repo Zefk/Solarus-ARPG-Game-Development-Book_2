@@ -3,7 +3,7 @@
 
 #### Very Basic Lua Scripting
 
-This link shows very basic programming knowledge. The files for the very basic programming knowledge are added the Github.
+The files for the very basic programming knowledge are added the Github.
 
 `Lessons > Chapter_6 > Chapter_6_Lua_Quick_Basics`
 
@@ -406,7 +406,7 @@ for rep = pie[4],pie[5] do
   print(pie[rep])
 end
 
---Making variables equal to a variable. You need this with calculations or you will get a "nil error", so make them zero at least. This is better than declaring a hundred to '0' one by one. That would be a pain!
+--Making variables equal to a variable. You need this with calculations or you will get a "nil error", so make them zero at least. This is better than declaring a hundred variables to '0' one by one. That would be a pain!
 for rep = 1, 10 do
   array[rep] = 0
   print("Array "..rep..":"..array[rep])
