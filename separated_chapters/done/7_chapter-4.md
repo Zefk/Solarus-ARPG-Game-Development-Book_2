@@ -262,6 +262,7 @@ animation{
     { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 32 },
   },
 }
+```
 
 #####Bounding box or Hitbox
 
