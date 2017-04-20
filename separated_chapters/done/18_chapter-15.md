@@ -9,6 +9,7 @@ Almost every game has a title screen. A place to start the game. The title scree
 
 ![Chapter_15_images/Title_screen.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_15_images/Title_screen.png)
 
+
 ```lua
 --Make a table for a menu
 local save_load_menu = {}
@@ -881,7 +882,7 @@ function map:on_started()
 Like a path movement, but with random steps.
 
 ```lua
---Random_Path
+ --Random_Path
  local random_path = sol.movement.create("random_path")
  random_path:start(elf)
  ```
@@ -893,8 +894,8 @@ Straight trajectory towards a possibly moving target.
 The default target is the hero. 
 
 ```lua
---Target
---Default target is hero
+ --Target
+ --Default target is hero
  local target = sol.movement.create("target")
  target:set_speed(32) -- set speed
  target:start(elf_4)
@@ -903,7 +904,7 @@ The default target is the hero.
 If one wants to target a different entity, then one has to use the function `:set_target(entity_name)`.
 
 ```lua
---Follow sprite "elf"
+ --Follow sprite "elf"
  local target2 = sol.movement.create("target")
 
  target2:set_speed(32)
@@ -916,7 +917,7 @@ If one wants to target a different entity, then one has to use the function `:se
 Like a path movement, but calculated to reach a possibly moving target.
 
 ```lua
---Path finding (Go around obstacles)
+ --Path finding (Go around obstacles)
  local path = sol.movement.create("path_finding")
 
  path:set_speed(69)
@@ -931,10 +932,10 @@ Like a path movement, but calculated to reach a possibly moving target.
 A straight movement whose direction changes randomly from time to time.
 
 ```lua
---Random
+ --Random
  local straight_random = sol.movement.create("random")
 
-straight_random:start(elf_7)
+ straight_random:start(elf_7)
 ```
 
 ##### Straight Movement
@@ -951,10 +952,10 @@ You can set the angle to the following values to get basic directions, but you c
 |South| 3 * math.pi / 2
 
 ```lua
---Straight
+ --Straight
  local straight = sol.movement.create("straight")
-straight:set_angle(3)
-straight:start(elf_3)
+ straight:set_angle(3)
+ straight:start(elf_3)
 ```
 
 ##### Path Movement
@@ -962,14 +963,14 @@ straight:start(elf_3)
 Predetermined path composed of steps in the 8 main directions.
 
 ```lua
---Path
+ --Path
  local path = sol.movement.create("path")
 
-path:set_path{3,0,3,0,3,0,3,0,3,0,3,0,3,0,3,0,3}
-path:set_speed(80)
-path:set_loop(true)
-path:set_ignore_obstacles(true)
-path:start(elf_8)
+ path:set_path{3,0,3,0,3,0,3,0,3,0,3,0,3,0,3,0,3}
+ path:set_speed(80)
+ path:set_loop(true)
+ path:set_ignore_obstacles(true)
+ path:start(elf_8)
 ```
 
 ##### Pixel Movement
@@ -977,13 +978,13 @@ path:start(elf_8)
 A trajectory described pixel by pixel.
 
 ```lua
---Pixel movement
+ --Pixel movement
  local pixel = sol.movement.create("pixel")
 
-pixel:set_trajectory{{5,-5},{0,-1}}
-pixel:set_loop(true)
-pixel:set_ignore_obstacles(true)
-pixel:start(elf_9)
+ pixel:set_trajectory{{5,-5},{0,-1}}
+ pixel:set_loop(true)
+ pixel:set_ignore_obstacles(true)
+ pixel:start(elf_9)
 ```
 
 ##### Circle Movement
@@ -991,19 +992,19 @@ pixel:start(elf_9)
 Circular trajectory around a possibly moving center.
 
 ```lua
---Circle movement
-local circle = sol.movement.create("circle")
-circle:set_center(test)
-circle:set_loop_delay(1000)
-circle:set_angle_speed(100)
-circle:set_duration(1000000)
-circle:set_max_rotations(100)
-circle:set_initial_angle(100)
-circle:set_clockwise(true)
-circle:set_radius(22)
-circle:set_radius_speed(1)
-circle:set_ignore_obstacles(false)
-circle:start(elf_10)
+ --Circle movement
+ local circle = sol.movement.create("circle")
+ circle:set_center(test)
+ circle:set_loop_delay(1000)
+ circle:set_angle_speed(100)
+ circle:set_duration(1000000)
+ circle:set_max_rotations(100)
+ circle:set_initial_angle(100)
+ circle:set_clockwise(true)
+ circle:set_radius(22)
+ circle:set_radius_speed(1)
+ circle:set_ignore_obstacles(false)
+ circle:start(elf_10)
 ```
 
 ##### Walk through Entity
@@ -1126,12 +1127,16 @@ local camera = map:get_camera()
 The camera size is what you can see on the screen. A size of (96,96) would be quite small compared to the default size of (320,240). The camera size function goes by 8 (8,16,24,32,40,48,56,64,72,80,88,96)
 
 ```lua
-        camera:set_size(96, 96)
+camera:set_size(96, 96)
  ```
  
- You could set your screen back to normal with `        camera:set_size(320, 240)
-`. That is the default quest screen size.
- 
+ You can set your screen back to normal with:
+
+```lua
+ --That is the default quest screen size.
+ camera:set_size(320, 240)
+```
+
 ##### Camera Tracking
 
 Changing the screen size can help with camera tracking when it comes to sprites.
