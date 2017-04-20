@@ -342,9 +342,6 @@ The player character now can jump over the wall at the four jumper entity locati
 
 ![Chapter_13_images/5_Jumper/5_jump.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/5_Jumper/5_jump.png)
 
--
-
-
 ### Enemy Entity
 
 The [documentation](http://www.solarus-games.org/doc/latest/lua_api_enemy.html) for more entity functions.
