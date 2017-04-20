@@ -54,6 +54,8 @@ You can select different grounds to fit your tile. For example, the tile would b
 
 A repeatable tile is normally a tile that looks the same while it is being duplicated or by being set right next to the same tile. Grass ground tiles normally look the same in games. They are repeated or duplicated over and over again.
 
+![Chapter_5_repeatable.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_repeatable.png)
+
 You can set a direction. For example, in the case that the tile only repeats in the horizontal direction.
 
 ![chapter_5_6_Tileset_Editor_selecting_5_repeatable.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_6_Tileset_Editor_selecting_5_repeatable.png)
