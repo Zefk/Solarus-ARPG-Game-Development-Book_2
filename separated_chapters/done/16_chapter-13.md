@@ -58,13 +58,13 @@ entity_name:get_sprite():set_animation("animation_name")
 ```
 
 
-###Entity Position & Name
+### Entity Position & Name
 
 You can hover over entities to see their names and position.
 
 ![Chapter_13_hover_entity_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/Chapter_13_hover_entity_name.png)
 
-###Types of entities
+### Types of entities
 
 Here are the existing types of entities.
 
