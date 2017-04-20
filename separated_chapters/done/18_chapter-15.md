@@ -770,34 +770,33 @@ local game_manager = {}
 -- initializing it if necessary.
 function game_manager:manage(game)
 
---Change hero sprite ID
-game:register_event("on_started", function()
+  --Change hero sprite ID
+  game:register_event("on_started", function()
 		
-local hero = game:get_hero()
-   hero:set_tunic_sprite_id("main_heroes/eldrina/eldrina")
-end)
+  local hero = game:get_hero()
+     hero:set_tunic_sprite_id("main_heroes/eldrina/eldrina")
+  end)
 
---This happens when the game is paused with the default pause key "D"
---Save the game
-function game:on_paused()
-	game:start_dialog("pause.save_question", function(answer)
-			if answer == 2 then
-				game:save()
-			end
-				game:set_paused(false)
-	end)
-end
+  --This happens when the game is paused with the default pause key "D"
+  --Save the game
+  function game:on_paused()
+   game:start_dialog("pause.save_question", function(answer)
+    if answer == 2 then
+       game:save()
+    end
+      game:set_paused(false)
+   end)
+  end
 
   function sol.main:on_key_pressed(key)
 
     if key == "l" then
-        sol.menu.start(self, save_load_menu)
-        game:set_suspended(true)
-
+       sol.menu.start(self, save_load_menu)
+       game:set_suspended(true)
     end
   end
-
 end
+
 return game_manager
 ```
 
