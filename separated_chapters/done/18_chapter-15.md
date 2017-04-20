@@ -232,7 +232,7 @@ function save_load_menu:on_started()
    save_menu.browse_newgame_continue = 0
    save_menu.browse_yes_no = 0
 
-   --Start hovering on slot 1
+    --Start hovering on slot 1
    if save_menu.browse_slot == 0 then
 	 save_menu.hover[0] = true
 	 save_menu.hover[1] = false
@@ -423,143 +423,143 @@ function save_load_menu:on_key_pressed(key)
   end
 
 --A function for resetting the menu back to slot selection
-		function reset()
+  function reset()
 
-			--Clear hover images
-			save_menu.continue_hover = false
-			save_menu.newgame_hover = false
+    --Clear hover images
+    save_menu.continue_hover = false
+    save_menu.newgame_hover = false
 
-			save_menu.yes_hover = false
-			save_menu.no_hover = false
+    save_menu.yes_hover = false
+    save_menu.no_hover = false
 
-			--Clear small background
-			save_menu.bg_small = false
+    --Clear small background
+    save_menu.bg_small = false
 
-			--Clear text
-			save_menu.idle_cont_ng = false
-			save_menu.new_game_question = false
+    --Clear text
+    save_menu.idle_cont_ng = false
+    save_menu.new_game_question = false
 
-			--Clear up down locks
-			save_menu.up_slot = true
-			save_menu.down_slot = true
+    --Clear up down locks
+    save_menu.up_slot = true
+    save_menu.down_slot = true
 
-			save_menu.up_yes_no = false
-			save_menu.down_yes_no = false
+    save_menu.up_yes_no = false
+    save_menu.down_yes_no = false
 
-			save_menu.up_newgame_continue = false
-			save_menu.down_newgame_continue = false
+    save_menu.up_newgame_continue = false
+    save_menu.down_newgame_continue = false
 
-			--Clear browse to default
-			save_menu.browse_newgame_continue = 0
-			save_menu.browse_yes_no = 0
+    --Clear browse to default
+    save_menu.browse_newgame_continue = 0
+    save_menu.browse_yes_no = 0
 
-      --Turn off newgame menu
-      save_menu.continue_newgame_on = false
+    --Turn off newgame menu
+    save_menu.continue_newgame_on = false
      
-      save_menu.slots_on = true
+    save_menu.slots_on = true
 
-      save_menu.yes_no_on = false 
-		end
+    save_menu.yes_no_on = false 
+  end
 
---Function for clearing the save game menu. Completly stops the menu.
-	  function clear()
+  --Function for clearing the save game menu. Completly stops the menu.
+  function clear()
 
-				--Clear hover images
-				save_menu.continue_hover = false
-				save_menu.newgame_hover = false
+    --Clear hover images
+    save_menu.continue_hover = false
+    save_menu.newgame_hover = false
 
-        save_menu.hover[0] = false
-        save_menu.hover[1] = false
-        save_menu.hover[2] = false
+    save_menu.hover[0] = false
+    save_menu.hover[1] = false
+    save_menu.hover[2] = false
 
-				save_menu.yes_hover = false
-				save_menu.no_hover = false
+    save_menu.yes_hover = false
+    save_menu.no_hover = false
 
-				--Clear backgrounds
-				save_menu.bg_small = false
-        save_menu.bg = false
-        save_menu.idle = false
+    --Clear backgrounds
+    save_menu.bg_small = false
+    save_menu.bg = false
+    save_menu.idle = false
 
-				--Clear text
-				save_menu.idle_cont_ng = false
-				save_menu.new_game_question = false
+    --Clear text
+    save_menu.idle_cont_ng = false
+    save_menu.new_game_question = false
 
-        --clear slots
-        save_menu.slot[0] = false
-        save_menu.slot[1] = false
-        save_menu.slot[2] = false
+    --clear slots
+    save_menu.slot[0] = false
+    save_menu.slot[1] = false
+    save_menu.slot[2] = false
 
-				--Clear up/down slot locks
-				save_menu.up_slot = false
-				save_menu.down_slot = false
+    --Clear up/down slot locks
+    save_menu.up_slot = false
+    save_menu.down_slot = false
 
-				--Clear up/down yes/no locks
-				save_menu.up_yes_no = false
-				save_menu.down_yes_no = false
+    --Clear up/down yes/no locks
+    save_menu.up_yes_no = false
+    save_menu.down_yes_no = false
 
-				--Clear up/down continue/newgame locks
-				save_menu.up_newgame_continue = false
-				save_menu.down_newgame_continue = false
+    --Clear up/down continue/newgame locks
+    save_menu.up_newgame_continue = false
+    save_menu.down_newgame_continue = false
 
-				--Clear browse to default
-				save_menu.browse_newgame_continue = 0
-				save_menu.browse_yes_no = 0
+    --Clear browse to default
+    save_menu.browse_newgame_continue = 0
+    save_menu.browse_yes_no = 0
 
-		    --Turn off newgame menu
-		    save_menu.continue_newgame_on = false
+    --Turn off newgame menu
+    save_menu.continue_newgame_on = false
 
-        --Turn of slot display
-        save_menu.slots_on = false
+    --Turn of slot display
+    save_menu.slots_on = false
 
-        --Turn off save_load
-        save_menu.save_load_off = true
+    --Turn off save_load
+    save_menu.save_load_off = true
 
-        --Turn off yes/no
-        save_menu.yes_no_on = false
-			end
+    --Turn off yes/no
+    save_menu.yes_no_on = false
+end
 
-			--Clear and stop the menu when playing the game.
-			if key == save_menu.in_game_clear_action then
-				sol.audio.play_sound(save_menu.in_game_clear_sound)
-				sol.menu.stop(self, save_load_menu)
-				clear()
-			end
+--Clear and stop the menu when playing the game.
+if key == save_menu.in_game_clear_action then
+  sol.audio.play_sound(save_menu.in_game_clear_sound)
+  sol.menu.stop(self, save_load_menu)
+  clear()
+end
 
 --This function activates the newgame/continue menu and disables the slot menu
-      function newgame_continue()
-		   --Activate small black background and idle newgame/continue text
-			 save_menu.bg_small = true
-			 save_menu.idle_cont_ng = true
-			 
-		   --Deactivate slot up/down keys
-			 save_menu.up_slot = false
-			 save_menu.down_slot = false
+   function newgame_continue()
+	--Activate small black background and idle newgame/continue text
+	save_menu.bg_small = true
+	save_menu.idle_cont_ng = true
+				 
+	--Deactivate slot up/down keys
+	save_menu.up_slot = false
+	save_menu.down_slot = false
 
-		   --Activate continue and newgame up/down keys 
-			 save_menu.up_newgame_continue = true
-			 save_menu.down_newgame_continue = true
-      end
+	--Activate continue and newgame up/down keys 
+	save_menu.up_newgame_continue = true
+	save_menu.down_newgame_continue = true
+   end
 
 --This function activates the yes/no/question menu and disables the continue/newgame menu.
-      function yes_no_question()
+   function yes_no_question()
 
-    		save_menu.idle_cont_ng = false
+	save_menu.idle_cont_ng = false
 
-				save_menu.up_newgame_continue = false
-				save_menu.down_newgame_continue = false
+	save_menu.up_newgame_continue = false
+	save_menu.down_newgame_continue = false
 
-				save_menu.continue_hover = false
-				save_menu.newgame_hover = false
+	save_menu.continue_hover = false
+	save_menu.newgame_hover = false
 
-				save_menu.up_yes_no = true
-				save_menu.down_yes_no = true
-				save_menu.new_game_question = true
+	save_menu.up_yes_no = true
+	save_menu.down_yes_no = true
+	save_menu.new_game_question = true
 
-        save_menu.yes_no_on = true
+	save_menu.yes_no_on = true
 
-        save_menu.continue_newgame_on = false
-        save_menu.slots_on = false
-      end
+	save_menu.continue_newgame_on = false
+	save_menu.slots_on = false
+  end
 
 --Allows/disallow save menu to function.
 if save_menu.save_load_off == false then
@@ -567,148 +567,147 @@ if save_menu.save_load_off == false then
 --An array for 3 slots and 3 saves
 for rep = 0, 2 do
 
-	--The following happens on the slot that is browsed
-	if save_menu.browse_slot == rep then
+   --The following happens on the slot that is browsed
+   if save_menu.browse_slot == rep then
+
+     --Show slot hover image
+     save_menu.hover[0 + rep] = true
+     save_menu.hover[1 - rep] = false
+     save_menu.hover[3 - rep] = false
+
+     --Show slot text
+     save_menu.slot[0 + rep] = true
+     save_menu.slot[1 - rep] = false
+     save_menu.slot[3 - rep] = false
 
 
-	  --Show slot hover image
-		save_menu.hover[0 + rep] = true
-		save_menu.hover[1 - rep] = false
-		save_menu.hover[3 - rep] = false
-
-	  --Show slot text
-		save_menu.slot[0 + rep] = true
-		save_menu.slot[1 - rep] = false
-		save_menu.slot[3 - rep] = false
-
-
-      --The following happens when yes and no is activated.
-			if save_menu.yes_no_on == true then
+     --The following happens when yes and no is activated.
+	if save_menu.yes_no_on == true then
 
         --0 = yes
         --Old save is deleted and a newgame is created. 
-				if save_menu.browse_yes_no == 0 then
-					save_menu.yes_hover = true
-					save_menu.no_hover = false
+	     if save_menu.browse_yes_no == 0 then
+		save_menu.yes_hover = true
+		ave_menu.no_hover = false
 
-					if key == save_menu.yes_action then
-            --Play action sound for yes
-            sol.audio.play_sound(save_menu.yes_sound)
+		if key == save_menu.yes_action then
+                  --Play action sound for yes
+                  sol.audio.play_sound(save_menu.yes_sound)
 
-            --Remove save file
-            sol.file.remove("save"..rep..".dat")
-						local exists = sol.game.exists("save"..rep..".dat")
-						local game = sol.game.load("save"..rep..".dat")
-						if not exists then
-							--Initialize a new savegame
+                  --Remove save file
+                  sol.file.remove("save"..rep..".dat")
+		  local exists = sol.game.exists("save"..rep..".dat")
+		  local game = sol.game.load("save"..rep..".dat")
+		  
+		  if not exists then
+			--Initialize a new savegame
+			
+			game:set_max_life(12)
+			game:set_life(game:get_max_life())
+			game:set_ability("lift", 2)
+			game:set_max_money(100)
+			game:set_ability("sword", 2)
+			game:set_ability("sword_knowledge", 1)
+			game:set_ability("shield", 1)
+			game:set_ability("swim", 1)
+			game:set_ability("jump_over_water", 1)
+			game:set_starting_location("Map_4", "starting_destination") -- Starting location.
+		  end
+		  game:start()
 
-							game:set_max_life(12)
-							game:set_life(game:get_max_life())
-							game:set_ability("lift", 2)
-							game:set_max_money(100)
-							game:set_ability("sword", 2)
-							game:set_ability("sword_knowledge", 1)
-							game:set_ability("shield", 1)
-							game:set_ability("swim", 1)
-							game:set_ability("jump_over_water", 1)
-							game:set_starting_location("Map_4", "starting_destination") -- Starting location.
-						end
-							game:start()
+                  local game_manager = require("scripts/game_manager")
 
-            local game_manager = require("scripts/game_manager")
+                  game_manager:manage(game)
 
-            game_manager:manage(game)
-
-            --Stop and clear the menu
-            sol.menu.stop(self, save_load_menu)
-						clear()
-					end
-				end
+                  --Stop and clear the menu
+                  sol.menu.stop(self, save_load_menu)
+		  clear()
+	       end
+	   end
 
         --1 = no
         --menu is reset back to slot selection
-				if save_menu.browse_yes_no == 1 then
+	 if save_menu.browse_yes_no == 1 then
 
-					save_menu.yes_hover = false
-					save_menu.no_hover = true
+	     save_menu.yes_hover = false
+	     save_menu.no_hover = true
 
-					if key == save_menu.no_action then
-            sol.audio.play_sound(save_menu.no_sound)
-						reset()
-					end
-				end
-			end
+	      if key == save_menu.no_action then
+                 sol.audio.play_sound(save_menu.no_sound)
+	         reset()
+	      end
+	  end
+       end
 
-			--Activate newgame/continue hover images
-			if save_menu.continue_newgame_on == true then
+	--Activate newgame/continue hover images
+	if save_menu.continue_newgame_on == true then
 
         --0 = continue
-				--Continue hover
-				if save_menu.browse_newgame_continue == 0 then
+	--Continue hover
+	    if save_menu.browse_newgame_continue == 0 then
 
-					save_menu.continue_hover = true
-					save_menu.newgame_hover = false 
-          --Continues on a save file.
-		      if key == save_menu.continue_action then
-            --Play action sound for continue
-            sol.audio.play_sound(save_menu.continue_sound)
-						local exists = sol.game.exists("save"..rep..".dat")
-						local game = sol.game.load("save"..rep..".dat")
-						if not exists then
-							--Initialize a new savegame
+		save_menu.continue_hover = true
+		save_menu.newgame_hover = false 
+                --Continues on a save file.
+		if key == save_menu.continue_action then
+                   --Play action sound for continue
+                   sol.audio.play_sound(save_menu.continue_sound)
+		   local exists = sol.game.exists("save"..rep..".dat")
+		   local game = sol.game.load("save"..rep..".dat")
+		   if not exists then
+		      --Initialize a new savegame
 
-							game:set_max_life(12)
-							game:set_life(game:get_max_life())
-							game:set_ability("lift", 2)
-							game:set_max_money(100)
-							game:set_ability("sword", 2)
-							game:set_ability("sword_knowledge", 1)
-							game:set_ability("shield", 1)
-							game:set_ability("swim", 1)
-							game:set_ability("jump_over_water", 1)
-							game:set_starting_location("Map_4", "starting_destination") -- Starting location.
-						end
-							game:start()
+		      game:set_max_life(12)
+		      game:set_life(game:get_max_life())
+		      game:set_ability("lift", 2)
+		      game:set_max_money(100)
+		      game:set_ability("sword", 2)
+		      game:set_ability("sword_knowledge", 1)
+		      game:set_ability("shield", 1)
+		      game:set_ability("swim", 1)
+		      game:set_ability("jump_over_water", 1)
+		      game:set_starting_location("Map_4", "starting_destination") -- Starting location.
+		   end
+		   game:start()
 
-             local game_manager = require("scripts/game_manager")
-             game_manager:manage(game)
+                   local game_manager = require("scripts/game_manager")
+                   game_manager:manage(game)
 
-            --Stop and clear the menu
-            sol.menu.stop(self, save_load_menu)
-            clear()
-		      end
-				end
+                   --Stop and clear the menu
+                   sol.menu.stop(self, save_load_menu)
+                   clear()
+		end
+	    end
 			
-        --1 = newgame
-				--Newgame hover and activates "are you sure you....yes/no"
-				if save_menu.browse_newgame_continue == 1 then
+            --1 = newgame
+	    --Newgame hover and activates "are you sure you....yes/no"
+	    if save_menu.browse_newgame_continue == 1 then
 
-					save_menu.continue_hover = false
-					save_menu.newgame_hover = true
+		save_menu.continue_hover = false
+		save_menu.newgame_hover = true
 
-		      if key == save_menu.newgame_action then
-            --Play this sound on "newgame"
-            sol.audio.play_sound(save_menu.newgame_sound)
-            yes_no_question()
-		      end
-				end
-			end
+		if key == save_menu.newgame_action then
+                   --Play this sound on "newgame"
+                   sol.audio.play_sound(save_menu.newgame_sound)
+                   yes_no_question()
+		end
+	    end
+	end
 
-		  --Activate continue/newgame menu and turn off slot up/down keys
-			if key == save_menu.slot_action and save_menu.slots_on == true then
-        sol.audio.play_sound(save_menu.slot_sound)
+	--Activate continue/newgame menu and turn off slot up/down keys
+	if key == save_menu.slot_action and save_menu.slots_on == true then
+          sol.audio.play_sound(save_menu.slot_sound)
+          newgame_continue()
 
-       newgame_continue()
-
-       --Turn on newgame menu
-       save_menu.continue_newgame_on = true
-			end
+          --Turn on newgame menu
+          save_menu.continue_newgame_on = true
+	end
 
 	--Reset to slot selection
-		if key == save_menu.reset_action then
-      sol.audio.play_sound(save_menu.reset_sound)
-      reset()
-		end
+	if key == save_menu.reset_action then
+          sol.audio.play_sound(save_menu.reset_sound)
+          reset()
+	end
   end -- slot 3 end
 end -- save_load_off end
 end -- end of loop
