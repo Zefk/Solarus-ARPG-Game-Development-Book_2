@@ -5,7 +5,7 @@ You may use the `inside_store.zip` file in the directory `Lessons > Chapter_13_E
 
 The inside store contains pre-made maps. These can be selected, copied, and pasted to your maps to help you do the entity chapter. Also, the inside store includes some graphics I made for the entities.
 
-![Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/1_Chapter_Entity_inside_store.png)
+![1_inside_store_to_Map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/1_inside_store_to_Map_2.png)
 
 ### get_sprite() & related
 
