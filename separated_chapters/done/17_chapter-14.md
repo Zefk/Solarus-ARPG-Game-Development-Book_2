@@ -85,7 +85,8 @@ There are some default names that will need to be known for setting up the hero.
 
 ![Chapter_14_images/Abilities/1_tunic.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_images/Abilities/1_tunic.png)
 
-**Example**
+**Example:**
+
 To make a second tunic all someone has to do is create an animation file called `tunic2`.
 
 ```lua
@@ -95,7 +96,7 @@ One can use a custom animation name and directory for the tunic as well.
 
 The function `hero:set_tunic_sprite_id("directory/animation_name")` can be used to change the hero sprite.
 
-**Example**
+**Example:**
 
 Diarandor uses the following line of code for his hero sprite Eldran.
 
