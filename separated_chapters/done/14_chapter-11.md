@@ -9,7 +9,7 @@ Right click the Map directory folder and give the map/description a name.
 
 ##### Map Properties
 
-By default, the map size is 0 x 0. Change that to 320 x 240 and change the layer amount to 3 or more if you desire. I will go over these options in more detail soon.
+By default, the map size is 320 x 240 and change the layer amount to 3 or more if you desire. I will go over these options in more detail soon.
 
 ![Chapter_11_images/Chapter-11_1_map_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_11_images/Chapter-11_1_map_properties.png)
 
