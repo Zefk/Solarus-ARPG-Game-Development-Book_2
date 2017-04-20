@@ -11,7 +11,7 @@ The inside store contains pre-made maps. These can be selected, copied, and past
 
 If you have not already noticed, then there are ways to get cetain functions in scripts. I will use the map script as an example, but you can do them in other scripts. 
 
-For a map script to use map functions it needs `local map = ...` and external scripts need `local game = ...`, but the map does not need `local game = ..` because it has `map:get_game()`.
+For a map script to use map functions it needs `local map = ...` and external scripts need `local game = ...`, but the map does not need `local game = ...` because it has `map:get_game()`.
 
 Some of these are:
 
