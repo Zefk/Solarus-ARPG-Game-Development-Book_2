@@ -181,13 +181,16 @@ In the text section:
 	       
 ![chapter_7_yes_no.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/chapter_7_yes_no.png)
 
-#####Dialog lines
+##### Dialog lines
 
 You must remember the line order for yes/no in order to correctly code it.
 
 `"Do you want to print yes?"` (line 1)
+
 `$?Yes` (line 2)
+
 `$?no` (line 3)
+
 
 
 ##### Adding on_paused
