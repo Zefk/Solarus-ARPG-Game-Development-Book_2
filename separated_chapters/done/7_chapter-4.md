@@ -249,7 +249,7 @@ Green_female.dat
 
 **Another Example:**
 
-It is useful for trading animation to another sprite. Some animations can take a lot of time to setup.
+Dat format is useful for trading animation to another sprite. Some animations can take a lot of time to setup.
 
 ```
 animation{
