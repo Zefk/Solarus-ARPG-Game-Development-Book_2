@@ -5,6 +5,8 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.
 
+- Rename `seperated_chapters` to `separated_chapters`
+
 - Chain Quest
 
 - Correct remaining errors and revamp book
