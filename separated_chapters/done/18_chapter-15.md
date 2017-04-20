@@ -13,8 +13,6 @@ Almost every game has a title screen. A place to start the game. The title scree
 --Make a table for a menu
 local save_load_menu = {}
 
-
-
 --Table for the variables
 local save_menu ={
 
@@ -92,11 +90,11 @@ local save_menu ={
    yes_no_on = false,
 
 --Sounds for action
-	 continue_sound = "none",
-	 newgame_sound = "none",
+   continue_sound = "none",
+   newgame_sound = "none",
 
-	 yes_sound = "none",
-	 no_sound = "none",
+   yes_sound = "none",
+   no_sound = "none",
 
    slot_sound = "none",
   
@@ -106,20 +104,20 @@ local save_menu ={
 
 --Sounds for up and down keys
    continue_up_sound = "none",
-	 newgame_down_sound = "none",
+   newgame_down_sound = "none",
 
-	 yes_up_sound = "none",
-	 no_down_sound = "none",
+   yes_up_sound = "none",
+   no_down_sound = "none",
 
    slot_up_sound = "none",
    slot_down_sound = "none",
 
 --keys for action
-	 continue_action = "none",
-	 newgame_action = "none",
+   continue_action = "none",
+   newgame_action = "none",
 
-	 yes_action = "none",
-	 no_action = "none",
+   yes_action = "none",
+   no_action = "none",
 
    slot_action = "none",
   
@@ -591,11 +589,11 @@ for rep = 0, 2 do
 		ave_menu.no_hover = false
 
 		if key == save_menu.yes_action then
-                  --Play action sound for yes
-                  sol.audio.play_sound(save_menu.yes_sound)
+          --Play action sound for yes
+          sol.audio.play_sound(save_menu.yes_sound)
 
-                  --Remove save file
-                  sol.file.remove("save"..rep..".dat")
+          --Remove save file
+          sol.file.remove("save"..rep..".dat")
 		  local exists = sol.game.exists("save"..rep..".dat")
 		  local game = sol.game.load("save"..rep..".dat")
 		  
@@ -615,19 +613,19 @@ for rep = 0, 2 do
 		  end
 		  game:start()
 
-                  local game_manager = require("scripts/game_manager")
+           local game_manager = require("scripts/game_manager")
 
-                  game_manager:manage(game)
+           game_manager:manage(game)
 
-                  --Stop and clear the menu
-                  sol.menu.stop(self, save_load_menu)
-		  clear()
-	       end
-	   end
+           --Stop and clear the menu
+           ol.menu.stop(self, save_load_menu)
+		   clear()
+	     end
+	  end
 
         --1 = no
         --menu is reset back to slot selection
-	 if save_menu.browse_yes_no == 1 then
+	   if save_menu.browse_yes_no == 1 then
 
 	     save_menu.yes_hover = false
 	     save_menu.no_hover = true
@@ -636,15 +634,15 @@ for rep = 0, 2 do
                  sol.audio.play_sound(save_menu.no_sound)
 	         reset()
 	      end
-	  end
-       end
+	   end
+     end
 
 	--Activate newgame/continue hover images
 	if save_menu.continue_newgame_on == true then
 
-        --0 = continue
+    --0 = continue
 	--Continue hover
-	    if save_menu.browse_newgame_continue == 0 then
+	if save_menu.browse_newgame_continue == 0 then
 
 		save_menu.continue_hover = true
 		save_menu.newgame_hover = false 
@@ -677,7 +675,7 @@ for rep = 0, 2 do
                    sol.menu.stop(self, save_load_menu)
                    clear()
 		end
-	    end
+	 end
 			
             --1 = newgame
 	    --Newgame hover and activates "are you sure you....yes/no"
@@ -686,32 +684,31 @@ for rep = 0, 2 do
 		save_menu.continue_hover = false
 		save_menu.newgame_hover = true
 
-		if key == save_menu.newgame_action then
-                   --Play this sound on "newgame"
-                   sol.audio.play_sound(save_menu.newgame_sound)
-                   yes_no_question()
-		end
+		  if key == save_menu.newgame_action then
+              --Play this sound on "newgame"
+              sol.audio.play_sound(save_menu.newgame_sound)
+              yes_no_question()
+		  end
 	    end
-	end
+	  end
 
-	--Activate continue/newgame menu and turn off slot up/down keys
-	if key == save_menu.slot_action and save_menu.slots_on == true then
-          sol.audio.play_sound(save_menu.slot_sound)
-          newgame_continue()
+	  --Activate continue/newgame menu and turn off slot up/down keys
+	  if key == save_menu.slot_action and save_menu.slots_on == true then
+         sol.audio.play_sound(save_menu.slot_sound)
+         newgame_continue()
 
-          --Turn on newgame menu
-          save_menu.continue_newgame_on = true
-	end
+         --Turn on newgame menu
+         save_menu.continue_newgame_on = true
+	  end
 
-	--Reset to slot selection
-	if key == save_menu.reset_action then
-          sol.audio.play_sound(save_menu.reset_sound)
-          reset()
-	end
-  end -- slot 3 end
-end -- save_load_off end
-end -- end of loop
-
+	  --Reset to slot selection
+	  if key == save_menu.reset_action then
+         sol.audio.play_sound(save_menu.reset_sound)
+         reset()
+	  end
+     end -- slot 3 end
+   end -- save_load_off end
+ end -- end of loop
 end
 
 return save_load_menu -- Return save menu
