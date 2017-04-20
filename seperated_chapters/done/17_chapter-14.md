@@ -656,7 +656,38 @@ The important functions in this script are `game:stop_game_over()` and `function
 
 I set an animation called `hero:set_animation("dead")` and the animation `dead` is only one frame. The reason for this is that the `game_over_started` function suspends the game and it will stop any complex animation before it finishes. That is why it is best to use a [sprite method](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_methods) because a sprite method can be [unpaused](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_set_paused). That is what Christopho does in his [script](https://github.com/solarus-games/children-of-solarus/blob/master/data/menus/game_over.lua).
 
+
+```lua
+     function game:on_game_over_started()
+        local life = game:get_life()
+        if life == 0 then
+          hero:set_animation("dead")
+          sol.audio.play_sound("hero_dying")
+          sol.menu.start(self, game_over_menu)
+        end
+     end
+     ```
+
 Okay, after starting the animation the death sound occurs and the `game_over.lua` menu is started. In the game over script you can start the game again `game:start()`.
+
+```lua
+--Yes hover
+  if gameover.browse == 0 then
+    print("up")
+    gameover.yes_hover = true
+    gameover.no_hover = false
+
+    local map = game:get_map()
+
+    if key == "a" then
+
+	  game:set_starting_location(map:get_id()) -- Starting location.
+	  game:start()
+	  game:stop_game_over()
+	  sol.menu.stop(self, game_over_menu)
+    end
+  end
+  ```
 
 **Sample:**
 
