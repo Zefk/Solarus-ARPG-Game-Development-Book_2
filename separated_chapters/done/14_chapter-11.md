@@ -23,7 +23,7 @@ You can open the map script by right clicking on the map name in the directory o
 
 1.One can change the description of the map. I changed it to `book map`.
 
-2.The `size` is how large the map will to be. By default it is 0 x 0.
+2.The `size` is how large the map will to be. By default it is 320 x 240.
 
 3.The `layers` in Solarus are super amazing. One is not limited to 2 or 3 layers, many layers can be added. I set it to 0 to 3 layers. 
 
