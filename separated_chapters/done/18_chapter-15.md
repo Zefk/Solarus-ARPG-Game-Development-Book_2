@@ -839,7 +839,7 @@ end)
 ![Chapter_15_images/Movements_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_15_images/Movements_1.png)
 
 |Movement          |               Description            |  String |
-|:----------------:| :-----------------------------------:|:-------:|
+|:----------------:| :-----------------------------------|:-------:|
 |Straight movement:| Straight trajectory in any direction.| "straight"
 |Random movement:| A straight movement whose direction changes randomly from time to time.|"random"
 |Target movement:| Straight trajectory towards a possibly moving target.|"target"
