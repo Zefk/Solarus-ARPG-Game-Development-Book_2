@@ -42,7 +42,7 @@ game:set_ability("sword", 0)
 
 In my opinion, I think it would be best to activate abilities in the game manager, with an NPC, and/or when obtaining an item.
 
-**Example**
+**Example:**
 
 ```lua
 function item:on_obtaining()
@@ -52,7 +52,7 @@ end
 
 One can deactivate an ability on different maps.
 
-**Example**
+**Example:**
 
 ```lua
 function map:on_started()
@@ -154,7 +154,8 @@ There are some default names that will need to be known for setting up the sword
 
 ![Chapter_14_images/Abilities/1_sword.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_images/Abilities/1_sword.png)
 
-**Example**
+**Example:**
+
 To make a second sword all someone has to do is create an animation file called `sword2`. The sword will take away 2 life points at level 2.
 
 ```lua
@@ -164,7 +165,7 @@ One can use a custom animation name and directory for the sword as well.
 
 The function `hero:set_sword_sprite_id("directory/animation_name")` can be used to change the sword sprite.
 
-**Example**
+**Example:**
 
 ```lua
     hero:set_sword_sprite_id("sword/red_sword")
@@ -210,7 +211,8 @@ There are some default names that will need to be known for setting up the shiel
 
 ![Chapter_14_images/Abilities/1_shield.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_images/Abilities/1_shield.png)
 
-**Example**
+**Example:**
+
 To make a second shield all someone has to do is create an animation file called `shield2`.
 
 ```lua
@@ -220,7 +222,7 @@ One can use a custom animation name and directory for the shield as well.
 
 The function `hero:set_shield_sprite_id("directory/animation_name")` can be used to change the shield sprite.
 
-**Example**
+**Example:**
 
 ```lua
     hero:set_shield_sprite_id("shield/red_shield")
@@ -390,7 +392,7 @@ if not exists then
 end
 ```
 
-**Example**
+**Example:**
 
 ```lua
  local exists = sol.game.exists("save1.dat")
@@ -485,7 +487,7 @@ You can find the save file in a folder called `.solarus` in your `users` directo
 
 `users/user_name/.solarus/sample_quest`
 
-**Example**
+**Example:**
 
 `users/zefk/.solarus/sample_quest`
 
