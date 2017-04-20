@@ -232,16 +232,16 @@ function save_load_menu:on_started()
    save_menu.browse_newgame_continue = 0
    save_menu.browse_yes_no = 0
 
-		--Start hovering on slot 1
-		if save_menu.browse_slot == 0 then
-			save_menu.hover[0] = true
-			save_menu.hover[1] = false
-			save_menu.hover[2] = false
+   --Start hovering on slot 1
+   if save_menu.browse_slot == 0 then
+	 save_menu.hover[0] = true
+	 save_menu.hover[1] = false
+	 save_menu.hover[2] = false
 		
-			save_menu.slot[0] = true
-			save_menu.slot[1] = false
-			save_menu.slot[2] = false
-		end
+	 save_menu.slot[0] = true
+	 save_menu.slot[1] = false
+	 save_menu.slot[2] = false
+   end
 
    save_menu.bg_small = false
 
