@@ -152,6 +152,23 @@ One way in door:
 
 ![map_design_donjon/map_examples/Game_Design_5_Chapter_map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/map_examples/Game_Design_5_Chapter_map.png)
 
+#### Dungeon Layout
+
+- In a dungeon you start by finding the key item.
+- Paths to the item are blocked by locked doors.
+- A hero diverts from the main path to get keys to those locked doors.
+- The hero will find obstacles that you cannot pass without the key item.
+- Once the hero gets the key items, the hero can get to the boss key and door.
+- Some dungeons have places where the hero can get multiple keys at one time or require two keys for a door.
+- Dungeon maps are found quite early.
+- Dungeons have large areas to explore in a maze like order.
+- Dungeons sometimes have optional rooms for other items.
+- All other dungeons follow this pattern and repeat this pattern for more complex dungeons.
+
+You can check the video series [Boss Keys](https://youtu.be/fqKGl6exyyY) for more information.
+
+![Game_Design_Chapter_images/dungeon%20layout.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/dungeon%20layout.png)
+
 #### Sidescroller: Some Information
 
 Sidescrollers or Platformers are normally constant action and almost no dialog. The movement normally never stops and the player stomps on or fights enemies all the way. This type differs from an ARPG in many ways. An ARPG is normally based on exploration with a top-down view (under a 3/4 perspective) and a platformer is just a straight line most of the time. Sidescroller graphics are always a side camera view. Sidescrollers can be anything someone wants them to be though. Some people mix ARPG and sidescroller or make the sidescroller a journey instead of constant action.
