@@ -37,6 +37,7 @@ A pattern id can be changed like this:
 A pattern ID is important because if you have two tilesets that are exactly the same except one is a different color, then you can simply give the same patterns to the other tileset and the map will be changed to that different color when you switch tilesets.
 
 **Example:**
+
 A forest can become an instant desert once tilesets are changed. The patterns must be the same or similar enough for a decent change without much editing. This could be useful for different dimensions or terrain changes due to some cause.
 
 You can use `map:set_tileset("tileset_name")` to change tilesets.
