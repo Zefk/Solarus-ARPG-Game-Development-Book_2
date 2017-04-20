@@ -1371,7 +1371,6 @@ print(a + b + c + d)
 ```
 
 #### Tutorial Point Lua PDF
--
 
 Read this book for more information and detail.
 
