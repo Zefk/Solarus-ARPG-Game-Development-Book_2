@@ -1,9 +1,9 @@
 
 ## Chapter 13: Entities
 
-You may use the `inside_store.zip` file in the directory `Lessons > Chapter_13_Entities > inside_store.zip` to help you do these lessons. A sample will be provided for each entity in the same directory.
+You may use the `inside_store` map in the samples (`Lessons > directory`) to help you with this learning process. 
 
-The inside store contains pre-made maps. These can be selected, copied, and pasted to your maps to help you do the entity chapter. Also, the inside store includes some graphics I made for the entities.
+The inside store contains pre-made maps. These can be selected, copied, and pasted to your maps to help you do the entity chapter. Also, there are graphics included in the samples.
 
 ![1_inside_store_to_Map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/1_inside_store_to_Map_2.png)
 
