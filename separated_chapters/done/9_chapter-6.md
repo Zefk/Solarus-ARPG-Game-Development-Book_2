@@ -159,9 +159,9 @@ print(type(type))                ---> function
 ##### Other Operators
 
 |Misc:|	About	|
-|
+|----| -------|
 |**..**	|Concatenates or combines text/string.	aa..5 = aa5
-|**#**	|Length of text/string. #"text" = 4
+|**#**	|Length of text/string. #text = 4 ("text" is equal to 4 letters.)
 
 ##### Escape Sequences
 
