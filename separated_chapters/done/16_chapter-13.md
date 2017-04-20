@@ -431,7 +431,7 @@ end
 There are four basic animation for an enemy.
 
 |Animation|Description|
-|:----------:|:-------------:|
+|:----------:|:-------------|
 |Hurt| The player will blink when hurt or any animation you want for damage.
 |Immobilized| The enemy will not be able to move for a few seconds.
 |Shaking| The enemy can be set up to do a shake effect, but another animation can be used.
