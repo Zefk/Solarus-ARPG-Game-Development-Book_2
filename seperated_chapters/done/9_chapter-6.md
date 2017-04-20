@@ -72,7 +72,7 @@ Unacceptable:
 ```
 1. Punctuation characters: @#$%
 
-2. Cannon start with a number
+2. Cannot start with a number
 
 3. No spaces between variables. EX: `local the variable` should be: `local the_variable`.
 ```
