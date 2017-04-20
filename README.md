@@ -11,8 +11,6 @@ Everything with a '*' next to it is being worked on.
 
 - Alpha 0.9 release and get the opinion of the Solarus community.
 
-- Add reasonable ideas and corrections mentioned by the Solarus community.
-
 - Release Beta 1.0
 
 ## Book Export Process:
@@ -53,33 +51,3 @@ This version would be for Solarus 1.6
 - Bow and arrows
 - Hookshot
 - Boomerang
-
-## Book v1.2
-
-This version of the book might never happen.
-
-**Possible Additions:**
-- Allied AI
-
-Bare basics needed for Allied AI:
-- [Follower](http://www.solarus-games.org/doc/latest/lua_api_path_finding_movement.html) script (follow hero)
-- [Distance](http://www.solarus-games.org/doc/latest/lua_api_entity.html#lua_api_entity_get_distance) detection script (For enemy and hero)
-- Allied AI moves toward enemy and enemy move toward allied AI based on distance. [Target](http://www.solarus-games.org/doc/latest/lua_api_target_movement.html) basically.
-- Ally projectiles
-- Melee attack animations and damage based on distance.
-- Border tests for when allies gets stuck. [Ignore obsticle](http://www.solarus-games.org/doc/latest/lua_api_movement.html#lua_api_movement_set_ignore_obstacles) and [path find](http://www.solarus-games.org/doc/latest/lua_api_path_finding_movement.html).
-- Hero walking through ally [Ignore obsticle](http://www.solarus-games.org/doc/latest/lua_api_movement.html#lua_api_movement_set_ignore_obstacles)
-- Targeting system. (The enemy and ally will continue to attack the current target. Do not want them to run off to random targets without defeating the first one.) [Conditional statement with a reset]
-
-Advanced:
-- Call command. (Protect hero or regroup. That way they will attack enemies close to the hero.)
-- Options for allied AI. (Dodge often, rapid melee attack, charged attacks, projectile attack, and balanced.)
-
-Possible errors include:
-- Walking over holes
-- Not able to go up ladders
-- No damage by prickles
-- No animation when walking on grass
-- Hookshot leaves allies behind
-- Teleporting NPC
-- NPC getting stuck on blocks
