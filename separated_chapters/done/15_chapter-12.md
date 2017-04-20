@@ -141,6 +141,12 @@ end
 return menu
 ```
 
+#### Menu function
+
+As you saw in the example above there is a function called `menu:button_menu(game)`. That function will be placed in the `game_manger.lua`. 
+
+You can name the function any way you want after "menu:" `menu:name_you_want(pass parameter)`.
+
 #### Menu: Starting and Stopping 
 
 ##### Starting Menu
