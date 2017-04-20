@@ -923,10 +923,7 @@ Like a path movement, but calculated to reach a possibly moving target.
  path:set_speed(69)
  path:start(elf_6)
  path:set_target(hero)
-
- 
  ```
-
 ##### Random Movement
 
 A straight movement whose direction changes randomly from time to time.
