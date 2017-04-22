@@ -40,14 +40,16 @@ I will only provide HTML, MD, and PDF for this book. Others are welcome to make 
 
 ## Book v1.1
 
-This version would be for Solarus 1.6
+This version would be for Solarus 1.6 or when I complete my ally AI script.
 
 **Possible Additions:**
 - [Cinematic: Moving hero scene](https://www.youtube.com/watch?v=SkOMoj8YXV0&list=PLzJ4jb-Y0ufySXw9_E-hJzmzSh-PYCyG2&index=50)
+
 (I am not going to go over bosses or other complex enemies because there are plenty of enemy scripts in the Solarus fan games and some in the sample quest to study.)
+
 - [Enemy sword block](https://www.youtube.com/watch?v=7yy7QWG7zrA&list=PLzJ4jb-Y0ufySXw9_E-hJzmzSh-PYCyG2&index=30)
 - [Enemy random movement](https://www.youtube.com/watch?v=WdMXsE3QIh0&index=31&list=PLzJ4jb-Y0ufySXw9_E-hJzmzSh-PYCyG2)
 - Inventory
-- Bow and arrows
+- Projectiles
 - Hookshot
 - Boomerang
