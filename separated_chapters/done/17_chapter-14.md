@@ -125,11 +125,11 @@ The tunic has the following default animations and probably more. They are neede
 - plunging_water
 - pulling
 - pushing
+- running
 - spin_attack
 - super_spin_attack
 - stopped
 - stopped_with_shield
-- super_spin_attack
 - swimming_fast
 - swimming_slow
 - swimming_stopped
