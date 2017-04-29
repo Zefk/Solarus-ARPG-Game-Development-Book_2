@@ -7,7 +7,7 @@ The inside store contains pre-made maps. These can be selected, copied, and past
 
 ![1_inside_store_to_Map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/1_inside_store_to_Map_2.png)
 
-### get_sprite() & related
+### get_() & related
 
 If you have not already noticed, then there are ways to get cetain functions in scripts.
 
