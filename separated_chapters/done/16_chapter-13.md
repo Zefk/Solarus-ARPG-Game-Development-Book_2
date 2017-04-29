@@ -9,11 +9,15 @@ The inside store contains pre-made maps. These can be selected, copied, and past
 
 ### get_sprite() & related
 
-If you have not already noticed, then there are ways to get cetain functions in scripts. I will use the map script as an example, but you can do them in other scripts. 
+If you have not already noticed, then there are ways to get cetain functions in scripts.
 
-For a map script to use map functions it needs `local map = ...` and external scripts need `local game = ...`, but the map does not need `local game = ...` because it has `map:get_game()`and for scripts outside the map `local map = game:get_map()`.
+For a map script to use map functions it needs `local map = ...` and the map can get game functions with `map:get_game()`.
 
-Some of these are:
+When simply loading external scripts one needs `local game = ...`to use game functions in it, but it is better to use `require()` for external scripts and pass the game through a function like `function game_over_menu:start(game)`. One can use  `local map = game:get_map()`to get the map functions in external scripts.
+
+I will use the map script as an example 
+
+**Some ways to get certain functions are:**
 
 ```lua
 get_map()
