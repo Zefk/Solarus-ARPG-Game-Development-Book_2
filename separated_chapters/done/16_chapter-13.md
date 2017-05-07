@@ -513,8 +513,7 @@ Next is to select, "`call the map script`"
 
 Open up the map script.
 
-![3_right_click_open_map_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-
-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/3_right_click_open_map_script.png)
+![3_right_click_open_map_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/usual_npc/3_right_click_open_map_script.png)
 
 
 ##### Showing NPC Script
