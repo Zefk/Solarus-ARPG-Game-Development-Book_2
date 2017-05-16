@@ -84,7 +84,7 @@ Here are the existing types of entities.
 |Destructible object| An entity that can be cut or lifted by hero, and that may hide a pickable treasure.
 |Carried object| A destructible object lifted and carried by the hero.
 |Chest| A chest that contains a treasure.
-|Shop treasure: A treasure that the hero can buy for a price.
+|Shop treasure| A treasure that the hero can buy for a price.
 |Enemy| A bad guy (possibly a boss) who may also drop a pickable treasure when killed.
 |Non-playing character (NPC)| Somebody or something the hero can interact with.
 |Block| An entity that the hero can push or pull.
