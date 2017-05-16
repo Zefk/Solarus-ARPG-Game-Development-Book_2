@@ -735,13 +735,13 @@ This line of code,
           game:get_value("hammer_quest_started", true)
 ```
 
-can be the follwowin line. The "1" is the variant. The quest will automatically return true.
+can be the following line. The "1" is the variant. The quest will automatically return true.
 
 ```lua
           hero:start_treasure("gem", 1, "hammer_quest_started",function()
 ```
 
-Bleow would result in our completed script.
+Below would result in our completed script.
 
 ```lua
 function big_boss:on_interaction()
