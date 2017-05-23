@@ -326,3 +326,79 @@ end
 
 The example shows that everything is being drawn on `blend_test_img` instead of the `screen`. All three of the images will vanish at the same when `clear_pixels is true`.
 
+### Drawing a Sprite
+
+You can draw more than just font, images, and color surfaces. Solarus has the ability to draw sprites and animate them.
+
+A common usage for sprite drawing is for scenes. For example, when an boss enemy or hero dies because the drawn sprite can be [unpaused when the game is paused](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_set_paused
+).
+
+#### Sample
+
+You can grab the sample in the directory `Lessons > Chapter_8_sprite_draw`.
+
+
+#### Script
+
+This script is in the `first_map.lua` in the sample.
+
+```lua
+local map = ...
+local game = map:get_game()
+
+local x_pos, y_pos = 100, 100 -- x,y coordinates
+local x,y -- drawing coordinates
+
+sol.timer.start(100, function() --Timer for checking. Normally not needed if you pause the game.
+  local camera_x, camera_y = map:get_camera():get_bounding_box()-- Get camera coordinates and bounding box or the player's hitbox.
+  y = y_pos - camera_y -- y_pos = y_pos - camera_y will constantly minus the camera coordinates, use variable "y" when drawing.
+  x = x_pos - camera_x
+  return true -- repeat timer
+end)
+
+local sprite = sol.sprite.create("main_heroes/eldran") -- sprite you want to draw.
+sprite:set_animation("dying") -- do not loop it in the sprite editor or it will keep doing the dying animation
+
+function sprite:on_animation_finished() --function for when the dying animation ends.
+  sprite:set_animation("dead")
+end
+
+function map:on_draw(screen) -- draw sprite
+  sprite:draw(screen, x, y)
+end
+```
+
+#### Breaking down the Script
+
+1. First, make the coordinates. We will not use the x_pos, y_pos variables for drawing. Instead, we will use x, y variables for checking reasons.
+```lua
+local x_pos, y_pos = 100, 100 -- x,y coordinates
+local x,y -- drawing coordinates
+```
+2. Second, make a timer for checking. Normally not needed if you pause the game. If your map size is beyond 320 x 240, then you must minus the camera to get proper drawing coordinates. I use the x, y variables because I do not want the x_pos, y_pos to be constantly subtracted from the coordinates, when checking with the timer.
+```lua
+sol.timer.start(100, function() --Timer for checking. Normally not needed if you pause the game.
+  local camera_x, camera_y = map:get_camera():get_bounding_box() -- Get camera coordinates and bounding box or the player's hitbox.
+  y = y_pos - camera_y -- y_pos = y_pos - camera_y will constantly minus the camera coordinates, use variable "y" when drawing.
+  x = x_pos - camera_x
+  return true -- repeat timer
+end)
+```
+3. Thirdly, create the sprite from the sprite directory and set a desired animation. Do not loop the animation in the sprite editor or it will repeat. Most likely one will want an end animation because one would want a finishing animation.
+```lua
+local sprite = sol.sprite.create("main_heroes/eldran") -- sprite you want to draw.
+sprite:set_animation("dying") -- do not loop it in the sprite editor or it will keep doing the dying animation
+```
+4. Use the function `on_animation_finished()` to set an end animation or you could use a timer, but that would be more effort.
+```lua
+function sprite:on_animation_finished() --function for when the dying animation ends.
+  sprite:set_animation("dead")
+end
+```
+5. Lastly, draw the sprite at the x, y coordinates.
+```lua
+function map:on_draw(screen) -- draw sprite
+  sprite:draw(screen, x, y)
+end
+```
+
