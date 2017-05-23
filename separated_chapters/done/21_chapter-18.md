@@ -1,5 +1,5 @@
 
-## Chapter 18: Upgrading and Export Project
+## Chapter 18: Upgrading, Export Project, and Library
 
 You can get the sample `Chapter_18_export_sample.zip` in the lesson directory.
 
