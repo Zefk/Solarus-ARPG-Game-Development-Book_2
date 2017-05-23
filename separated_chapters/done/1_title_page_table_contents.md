@@ -39,7 +39,7 @@
 
 [Chapter 17: Game Design Walkthrough](#chapter-17-game-design-walkthrough)
 
-**Chapter 18:** Upgrading and Export Project
+**Chapter 18:** Upgrading, Export Project, and Library
 
 [Chapter 19: Credits](#chapter-19-credits)
 
