@@ -1,5 +1,5 @@
 
-## Chapter 18: Upgrading, Export Project, and Library
+## Chapter 18: Upgrading, Export Project, and Making Libraries
 
 You can get the sample `Chapter_18_export_sample.zip` in the lesson directory.
 
@@ -182,4 +182,477 @@ You can always compile your script from `Build > Compile`.
 Your installer will show up in a folder called `output`.
 
 ![Chapter_18_images/inno_setup_16.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/inno_setup_16.png)
+
+### Making Libraries
+
+The main purpose of a library is to make functions to accomplish a task and/or to shorten code.
+
+#### Sample
+
+You can grab the sample in `Lessons > Chapter_18_library_sample.zip`. All the files you need are in it.
+
+#### Documentation
+
+Documentation can help people understand what the functions in your library do and how to use them. Markdown is a format that is becoming very popular and it can help you make documentation. I recommend a markdown reader/writer like [Haroopad](http://pad.haroopress.com/user.html#download).
+
+You can get the entity lib sample documentation in the data folder of the sample `Chapter_18_library_sample > data > entity_lib_documentation.md`.
+
+### Basic Markdown Formatting
+
+You can manually type the format or you can insert it with Haroopad's insert menu.
+
+**Images:**
+```
+![text to show if image is no longer exists online](URL or link to the image)
+
+EX:
+![Fairyolica World Progress](http://s33.postimg.org/5vwatpy6n/Fairyolica_World_tiles.png)
+```
+
+**Bold:**
+```
+You put a double Asterisk** around the text.
+
+EX:
+**License:** 
+```
+
+**Headers:**
+```
+Large Title Header text:
+You put the Octothorp(#) or more commonly know as a hashtag(#) before the text.
+
+EX:
+#Outside/Exterior
+
+You can have different sized headers too. Just got to add more hashtags. 
+
+EX:
+###Outside/Exterior
+```
+
+**Table of Contents:**
+```
+
+You can just insert with haroopad. Insert > bottom of the list > table of contents
+
+```
+
+**Embed Links:**
+
+```
+[Go to Google](https://www.google.com)
+```
+**Bullets:**
+
+```
+Dash + space
+
+-[space here][text]
+
+EX:
+- This is a bullet
+```
+
+**Table & Nextline:**
+
+```
+You can make a table with the vertical line "|" character. It is located by the brackets. Press shift when pressing the slash key.
+
+1.The first part of making a table it to set a title or category.
+
+|Category|
+
+2. The second part is the spacing. This requires some colons and minus signs / dashes.
+
+Centered
+|:---:|
+
+Left
+|:---|
+
+Right
+|---:|
+
+3. The last set is to add a section.
+
+|Section|
+
+4.  Next line in a table. It can make a messy situation look nice. Use <br> for a next line.
+
+Line_1: <br> Line_2: <br> Line_3:
+
+EX:
+
+|Category_1|Category_2|
+|:---:|:---|
+|Section| Line_1: <br> Line_2: <br> Line_3:
+
+```
+
+**Task List:**
+
+dash + brackets + item
+
+An "x" in the brackets will check the item.
+
+```
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+```
+#### Types of Libraries
+
+Solarus has certain name types for different parts. You could mix different name types in a single Lua file.
+
+Names of Solarus userdata Lua types. These are used with the function:
+
+```lua
+sol.main.get_metatable("type_name")
+```
+
+|type_name (string)|
+|:-----------------|
+|"game"|
+|"map"|
+|"item"|
+|"surface"|
+|"text_surface"|
+|"sprite"|
+|"timer"|
+|"movement"|
+|"straight_movement"|
+|"target_movement"|
+|"random_movement"|
+|"path_movement"|
+|"random_path_movement"|
+|"path_finding_movement"|
+|"circle_movement"|
+|"jump_movement"|
+|"pixel_movement"|
+|"hero"|
+|"dynamic_tile"|
+|"teletransporter"|
+|"destination"|
+|"pickable"|
+|"destructible"|
+|"carried_object"|
+|"chest"|
+|"shop_treasure"|
+|"enemy"|
+|"npc"|
+|"block"|
+|"jumper"|
+|"switch"|
+|"sensor"|
+|"separator"|
+|"wall"|
+|"crystal"|
+|"crystal_block"|
+|"stream"|
+|"door"|
+|"stairs"|
+|"bomb"|
+|"explosion"|
+|"fire"|
+|"arrow"|
+|"hookshot"|
+|"boomerang"|
+|"camera"|
+|"custom_entity"|
+
+**Example:**
+
+In a Lua file, declare the userdata type. I will use `custom_entity` in this example.
+```lua
+local metatable_entity = sol.main.get_metatable("custom_entity")
+```
+
+Make a function in that file and require this Lua file in `main.lua`.
+
+```lua
+function metatable_entity:right()
+--code here
+end
+```
+
+You can declare this function in a custom entity script like this:
+
+```lua
+entity:right()
+```
+
+I will go over this in more detail in the entity library section.
+
+
+#### Entity Library Sample
+
+The entity lib sample has movements related to custom entities. Adding the lib is quite simple. All one has to do is put the following line at the top of `main.lua` and place it in the script directory in a folder called lib to be organized.
+
+```lua
+require("scripts/lib/entity_lib.lua")
+```
+
+Here is the sample that I will explain.
+
+```lua
+--This is a library for custom entity shortcuts
+
+local metatable_entity = sol.main.get_metatable("custom_entity")
+
+------------------
+--Straight Method
+------------------
+local move_straight = sol.movement.create("straight")
+
+--Right
+function metatable_entity:right()
+  move_straight:set_angle(0)
+  move_straight:start(self)
+  self:set_direction(0)
+  self:get_sprite():set_animation("walking")
+end
+
+--Up
+function metatable_entity:up()
+  move_straight:set_angle(math.pi / 2)
+  move_straight:start(self)
+  self:set_direction(1)
+  self:get_sprite():set_animation("walking")
+end
+
+--Left
+function metatable_entity:left()
+  move_straight:set_angle(math.pi)
+  move_straight:start(self)
+  self:set_direction(2)
+  self:get_sprite():set_animation("walking")
+end
+ 
+--Down
+function metatable_entity:down()
+  move_straight:set_angle(3 * math.pi / 2)
+  move_straight:start(self)
+  self:set_direction(3)
+  self:get_sprite():set_animation("walking")
+end
+
+--Stop
+function metatable_entity:stop()
+  move_straight:stop()
+  self:get_sprite():set_animation("stopped")
+end
+
+--Speed
+function metatable_entity:speed(value)
+  move_straight:set_speed(value)
+end
+```
+
+#### Library Setup
+
+This library is related to the custom entity, so the metatable variable is assigned to it. This variable will be added to functions that are used in the library.
+
+```lua
+local metatable_entity = sol.main.get_metatable("custom_entity")
+```
+
+Adding the metatable to a function called `right()` will look like this:
+
+```lua
+--Right
+function metatable_entity:right()
+end
+```
+
+Calling the function is very easy after requiring it from `main.lua`.
+
+**Example:**
+```lua
+require("scripts/lib/entity_lib.lua")
+```
+
+#### Self Function
+
+A common function that is used when making libraries is `self` or at least I use it a lot. This refers to the entity itself.
+
+```lua
+local move_straight = sol.movement.create("straight")
+
+--Right
+function metatable_entity:right()
+  move_straight:set_angle(0)
+  move_straight:start(self)
+  self:set_direction(0)
+  self:get_sprite():set_animation("walking")
+end
+```
+
+The fucntion `entity:right()` would normally be called with another function or a timer in the custom entity script. For example,
+
+```lua
+function entity:on_created()
+  entity:right()
+end
+```
+
+or
+
+```lua
+function sol.main:on_key_pressed(key)
+  if key == "l" and menu == false then
+    entity:right()
+  end
+end
+```
+
+#### Special Entity
+
+Other times one might want to refer to a certain or special entity name instead of `self`. One simply needs to get the entity from the map like this:
+
+```lua
+local player2 = map:get_entity("player2")
+```
+
+**Example:**
+
+```lua
+local move_straight = sol.movement.create("straight")
+
+function metatable_entity:right()
+
+local map = self:get_map()
+local player2 = map:get_entity("player2")
+
+  move_straight:set_angle(0)
+  move_straight:start(player2)
+  player2:set_direction(0)
+  player2:get_sprite():set_animation("walking")
+end
+```
+
+#### Function Arguments
+
+One can have arguments in the function too. In the example below the argument `value` is put in the function parenthesis or parameter.
+
+```lua
+--Speed
+function metatable_entity:speed(value)
+  move_straight:set_speed(value)
+end
+```
+
+It would be called like this:
+
+```lua
+function entity:on_created()
+  entity:speed(80)
+end
+```
+
+Remember the arguments do not only have to be a number value. They can be a string, table, boolean(true/false), etc.
+
+### Player 2 Movement
+
+This script uses the keys i, l, j, & k to make an entity walk around. It is a very simple script using the functions in the library sample. The script is in an entity model called player 2 and the entity name is player2. 
+
+If have forgotten how to setup custom entities, then I have added instructions after the script below.
+
+```lua
+local entity = ...
+local game = entity:get_game()
+local map = entity:get_map()
+local hero = map:get_hero()
+local sprite
+menu = false
+
+local camera = map:get_camera()
+camera:start_tracking(entity)
+ 
+---Create sprite
+function entity:on_created()
+  sprite = entity:create_sprite("hero/tunic1"):set_animation("stopped")
+  entity:set_can_traverse("hero", false)
+  entity:speed(80)
+end
+ 
+--Key press function
+function sol.main:on_key_pressed(key)
+ 
+--right
+  if key == "l" and menu == false then
+    entity:right()
+  end
+ 
+--up
+  if key == "i" and menu == false then
+    entity:up()
+  end
+ 
+--left
+  if key == "j" and menu == false then
+    entity:left()
+  end
+ 
+--down
+  if key == "k" and menu == false then
+    entity:down()
+  end
+end
+ 
+function sol.main:on_key_released(key)
+   --right
+   if key == "l" then
+       entity:stop()
+   end
+ 
+   --up
+   if key == "i" then
+       entity:stop()
+   end
+ 
+   --left
+   if key == "j" then
+       entity:stop()
+   end
+ 
+   --down
+   if key == "k" then
+       entity:stop()
+   end
+end
+```
+
+**Add entity:**
+
+![Chapter_18_images/0_add_custom_entity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/0_add_custom_entity.png)
+
+**Create entity Model:**
+
+![Chapter_18_images/1_create_custom_entity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/1_create_custom_entity.png)
+
+**Name Model:**
+
+![Chapter_18_images/2_name_entity_model.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/2_name_entity_model.png)
+
+**Add entity script and name entity:**
+
+The entity name must be `player2` because of the example in the library sample.
+
+![Chapter_18_images/3_model%20and%20name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/3_model%20and%20name.png)
+
+**Open Script**
+
+![4_open_entity_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/4_open_entity_script.png)
+
+**Paste player 2 script:**
+
+There is no real reason to break down this script because it is very simple.
+
+![Chapter_18_images/5_paste_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/5_paste_script.png)
 
