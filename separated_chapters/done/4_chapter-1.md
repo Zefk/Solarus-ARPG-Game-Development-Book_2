@@ -73,9 +73,112 @@ Scroll down to the bottom and choose the version that fits your OS. Ubuntu, Arch
 |Show/hide Separator| CTRL + E, CTRL + A
 |Show/hide Custom Entity| CTRL + E, CTRL + Y
 
-#### Documentation
+### Documentation Reading
+
+This section is an attempt to help basic understanding of the documentation.
 
 You will be looking at the documentation a lot.
 
 You can download at the [Solarus website](http://www.solarus-games.org/development/documentation/). I will provide a PDF version in this Github too.
+
+#### Normal Functions
+
+Normal functions are related to `sol`. Most of the time, a variable can be assigned to the `sol` functions.
+
+**Example:**
+
+```lua
+local map_metatable = sol.main.get_metatable("map")
+```
+
+#### Method Functions
+
+Method functions are attachment functions. They attach to an entity name or other functions. For example, the variable name assigned, like the movement example below.
+
+**Movement:**
+
+```lua
+local move_straight = sol.movement.create("straight")
+
+move_straight:set_ignore_obstacles(true)
+```
+
+**Hero:**
+
+Hero methods would logically use the name "hero". If no name can be given to the entity, then most likely you will just get and use the variable name you want.
+
+```lua
+local game = map:get_game()
+local hero = map:get_hero()
+
+hero:freeze()
+```
+
+**Camera:**
+
+Camera methods would logically use the name "camera". If no name can be given to the entity, then most likely you will just get and use the variable name you want.
+
+```lua
+local camera = map:get_camera()
+camera:start_tracking(entity)
+```
+
+**Enemy:**
+
+Enemy functions use the name "enemy", but one can get the name of the entity from the map and use it.
+
+```lua
+local map = enemy:get_map()
+enemy:get_life()
+```
+or
+
+```lua
+local map = enemy:get_map()
+local name = map:get_entity("name")
+
+name:get_life()
+```
+
+![Lesson_images/Chapter_1_enemy_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_enemy_name.png)
+
+**Custom Entity:**
+
+Custom entity functions use the name "entity", but one can get the name of the entity from the map and use it.
+
+```lua
+local game = entity:get_game()
+local map = entity:get_map()
+entity:remove()
+```
+
+```lua
+local name = map:get_entity("name")
+
+name:remove()
+```
+
+![Lesson_images/Chapter_1_custom_entity_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_custom_entity_name.png)
+
+**Other Entties:**
+
+Entities like NPC will just use the name you give it.
+
+```lua
+name:remove()
+```
+
+![Lesson_images/Chapter_1_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_name.png)
+
+#### Event Functions
+
+Event functions are setup up by putting the name `function` in front of them and having an `end` after it.
+
+The function event `custom_entity:on_update()` would be setup like this:
+
+```lua
+function entity:on_update()
+ --code here
+end
+```
 
