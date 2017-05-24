@@ -656,3 +656,148 @@ There is no real reason to break down this script because it is very simple.
 
 ![Chapter_18_images/5_paste_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/5_paste_script.png)
 
+#### Debugging
+
+Lua has functions for debugging. Solarus takes care of error reports. Solarus will let you know where and what the problem is, but it does not allow you to make your own reports or warnings.
+
+The following function uses the debug library in Lua.
+
+```lua
+local metatable_entity = sol.main.get_metatable("custom_entity")
+ 
+function Error()
+    local level_1 = debug.getinfo(1) --Error() is level 1
+    local level_2 = debug.getinfo(2) --Name of function being called from is level 2
+    local level_3 = debug.getinfo(3) -- Return from where ever the function was declared is level 3
+    print ("-----------------------------------------------------------------------------------------------------------")
+    print(level_3.short_src.." => "..level_1.name.. " was called by function [".. level_2.name.. "] at line " .. level_3.currentline)
+    print ("-----------------------------------------------------------------------------------------------------------")
+end
+```
+
+It can be declared where you want the error warning to occure like this:
+
+```lua
+function metatable_entity:example()
+  Error()
+end
+```
+
+Let us say you declare this function in an entity script called `follower.lua` at line 1.
+
+```lua
+entity:example()
+```
+
+The output would be:
+
+```
+-----------------------------------------------------------------------------------------------------------
+[string "entities/follower.lua"] => Error was called by function [example] at line 1
+-----------------------------------------------------------------------------------------------------------
+```
+
+I will explain this in more detail in the sections below.
+
+##### Debug Levels
+
+There are different function levels that `debug.getinfo` can detect. One should have at least 3 levels for debugging for libraries.
+
+**Level 1:**
+
+`Debug.getinfo(1)` is the the fucntion that the debug script is in. In this case it is in a function called `Error()`. 
+
+```lua
+    local level_1 = debug.getinfo(1) --Error() is level 1
+    ```
+**Level 2:**
+
+`debug.getinfo(2)` is the function that `Error()` is declared in. It was called in a function named `example()` or `function metatable_entity:example()`.
+
+```lua
+    local level_2 = debug.getinfo(2) --Name of function being called from is level 2
+    ```
+
+**Level 3:**
+
+`debug.getinfo(3)` is where the `example()` function was declared at. In this case it was in `follower.lua`.
+
+```lua
+    local level_3 = debug.getinfo(3) -- Return from where ever the function was
+```
+
+##### Lua Debug Library function
+
+I will not go over all the debug library functions, but will go over the ones I use. You can check this [link](http://www.lua.org/pil/23.1.html) for a list of all the functions.
+
+|Debug Fucntions|Description|
+|:-------------|:------------|
+|short_src| A short version of source for up to 60 characters, it can be useful for error messages.
+|name| A name for the function.
+|currentline| The line where the function was declared at.
+
+
+I mentioned the levels above, so let me explain how to use the debug function with the levels.
+
+`level_3.short_src` will give you `[string "entities/follower.lua"]`. The location where the function was declared. 
+
+`level_1.name` will give you the name of the function where the debug code is in and that is `Error()`. "`Error` was called by......".
+
+`level_2.name` will be the function name `example()`, "was called by function [`example`] at".
+
+level_3.currentline is the line number where the function example was declared at.  In this case it was declared at `line 1`.
+
+```lua
+    print(level_3.short_src.." => "..level_1.name.. " was called by function [".. level_2.name.. "] at line " .. level_3.currentline)
+```
+
+```
+[string "entities/follower.lua"] => Error was called by function [example] at line 1
+```
+
+##### Debug Traceback
+
+The function `debug.traceback()` returns a string of information.
+
+```lua
+function metatable_entity:right()
+print(debug.traceback())
+
+local map = self:get_map()
+local player2 = map:get_entity("player2")
+  move_straight:set_angle(0)
+  move_straight:start(player2)
+  player2:set_direction(0)
+  player2:get_sprite():set_animation("walking")
+end
+```
+
+```
+stack traceback:
+[string "scripts/lib/entity_lib.lua"]:18: in function 'right'
+[string "entities/player2.lua"]:35: in function <[string "entities/player2.lua"]:31>
+```
+
+
+##### Pcall
+
+The pcall function gives you an error if the function fails.
+
+```lua
+function testfunction()
+   t = t/nil
+end
+ 
+if pcall(testfunction) then
+   print("Success")
+else
+   print("Fail")
+end
+```
+
+```
+Fail
+```
+
+There is another function call xpcall that I will not cover and you can get information about it at [tutorial point](https://www.tutorialspoint.com/lua/lua_error_handling.htm).
+
