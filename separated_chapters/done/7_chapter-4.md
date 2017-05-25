@@ -239,11 +239,11 @@ A few good notepad editors.
 **Example:**
 
 Blue_female.dat
-````
+```
   src_image = "Erbarlow/Bard/Female/Blue_female.png",
-````
+```
 Green_female.dat
-````
+```
   src_image = "Erbarlow/Bard/Female/green_female.png",
 ```
 
@@ -264,8 +264,182 @@ animation{
 }
 ```
 
-#####Bounding box or Hitbox
+##### Bounding box or Hitbox
 
 The default size value is 16x16 pixels. This is the effective size used to detect obstacles when moving, but the sprite(s) of the custom entity and enemy may be bigger than 16x16.
 
 The functions `custom_entity:set_size(width, height)` for the custom entity and `enemy:set_size(width, height)` can be used for enemies.
+
+### Basic Sprite Information
+
+Solarus has a sprite editor to setup animations and you can make as many as you want. You can activate your custom animations for the hero with `hero:set_animation("name_of_animation")` and entities with `entity:get_sprite():set_animation("name_of_animation")`.
+
+Solarus goes by 8x8 formatting and it would be best to make a grid for proper positioning. The sprite can be any size, but only the bounding box size can be changed for the entities "enemy" and "custom entity."  The other entities bounding box is 16x16. The hero, NPC, etc.
+
+You can make more animations and code them using the sprite drawable functions, but I will cover most of the default animations built into the engine. You can make any sword attack for the hero. As far as I know. 
+
+#### Sword
+
+You will need to create a file called "`sword1`" and it can contain the following animations.
+
+|Animations|
+|:---------|
+|spin_attack|
+|super_spin_attack|
+|sword|
+|sword_loading_stopped|
+|sword_loading_walking|
+|sword_running|
+|sword_tapping|
+|victory|
+
+#### Shield
+
+It is the similar for the file "`shield1`".
+
+|Animations|
+|:---------|
+|stopped|
+|walking|
+|sword|
+|sword_loading_stopped|
+|sword_loading_walking|
+|sword_running|
+|sword_tapping|
+
+#### NPC
+
+A NPC needs two animations:
+
+|Animations|
+|:---------|
+|stopped|
+|walking|
+
+#### Enemy
+
+You honestly only need animations "hurt" and "walking".
+
+|Animations|
+|:---------|
+|hurt|
+|walking|
+|immobilized|
+|shaking|
+
+#### Hero
+
+The hero file is called, "`tunic1`".
+
+This is a list of most default hero animations, but there are more. You do not need them all. For example, the hero can still work without swimming, the spin attack can be disabled with code, and so on. 
+
+|Animations|
+|:---------|
+|boomerang1|
+|boomerang2|
+|bow|
+|carrying_stopped|
+|carrying_walking|
+|falling|
+|grabbing|
+|hookshot|
+|hurt|
+|jumping|
+|lifting|
+|plunging_water|
+|pulling|
+|pushing|
+|running|
+|spin_attack|
+|super_spin_attack|
+|stopped|
+|swimming_fast|
+|swimming_slow|
+|swimming_stopped|
+|sword|
+|sword_loading_stopped|
+|sword_loading_walking|
+|sword_tapping|
+|throw|
+|walking|
+|walking_with_shield|
+
+#### Destructible
+
+|Animations|
+|:---------|
+|destroy|
+|on_ground|
+|stopped|
+|walking|
+
+#### bomb
+
+|Animations|
+|:---------|
+|stopped|
+|stopped_explosion_soon|
+|walking|
+|walking_explosion_soon|
+
+#### block
+
+|Animation|
+|:---------|
+|block|
+
+#### chest
+
+|Animations|
+|:---------|
+|closed|
+|open|
+
+#### explosion
+
+|Animation|
+|:---------|
+|explosion|
+
+#### shadow
+
+|Animations|
+|:---------|
+|big|
+|small|
+
+#### crystal_block
+
+|Animations|
+|:---------|
+|blue_lowered|
+|blue_raised|
+|orange_lowered|
+|orange_raised|
+
+#### crystal
+
+|Animations|
+|:---------|
+|blue_lowered|
+|orange_lowered|
+
+#### switch
+
+|Animations|
+|:---------|
+|activated|
+|inactivated|
+
+#### arrow
+
+|Animations|
+|:---------|
+|flying|
+|reached_obstacle|
+
+#### star
+
+|Animation| Description|
+|:---------|:---------|
+|normal| stars or other animation for spin attack|
