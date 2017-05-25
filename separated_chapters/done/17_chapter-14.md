@@ -106,6 +106,12 @@ Diarandor uses the following line of code for his hero sprite Eldran.
 
 ![Chapter_14_images/Abilities/2_tunic.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_images/Abilities/2_tunic.png)
 
+**Tip:**
+
+By default, the "walking" animation will disable any animation. To change the default walking one could use `hero:set_tunic_sprite_id(sprite_id)` and have the animation for "walking" be "stopped." That way the hero will walk around using the "stopped" animation. Another way to do this is with the drawable sprite functions.
+
+**Tunic Animation List:**
+
 The tunic has the following default animations and probably more. They are needed for the hero abilities.
 
 - boomerang1
