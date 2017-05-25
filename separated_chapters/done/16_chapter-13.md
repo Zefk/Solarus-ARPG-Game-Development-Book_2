@@ -2564,3 +2564,153 @@ end
 You can find samples of `custom switch` to `on hero state` in:
 
 `Lessons > Chapter_13_14_custom_entity_game_over.zip`
+
+### Hero Entity
+
+This sections is about "some" hero methods examples and you can check the documentation for them all. I have already demonstrated some throughout the book and will not repeat those. You can check chapter 14 section "abilities" for more and everything is in the [Solarus documentation](http://www.solarus-games.org/doc/latest/lua_api_hero.html#lua_api_hero_methods).
+
+
+#### Hero Teleport
+
+Teleports the hero to a destination with a transition.
+
+`hero:teleport(map_id, [destination_name, [transition_style]])`
+
+```lua
+local map = ...
+local game = map:get_game()
+local hero = map:get_hero()
+
+function map:on_started()
+  hero:teleport("first_map", "first_location", "fade")
+end
+```
+
+![24_hero/1_hero_entity_teleport.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/24_hero/1_hero_entity_teleport.png)
+
+|transition_style|
+|:---------------|
+|"immediate"| No transition effect.| 
+|"fade"| fade-out and fade-in effect.| 
+|"scrolling"| It scrolls.
+
+
+
+#### Hero Get Animation
+
+Gets the animation the hero is currently doing.
+
+`hero:get_animation()`
+
+**Example:**
+```lua
+local map = ...
+local game = map:get_game()
+local hero = map:get_hero()
+
+-- Call a function every second.
+sol.timer.start(1000, function()
+    if hero:get_animation() == "walking" then
+      print("walking")
+    end
+  return true  -- To call the timer again (with the same delay).
+end)
+```
+#### Hero Set Animation
+
+Sets the animation you made for the hero in the sprite editor.
+
+`hero:set_animation(animation, [callback])`
+
+
+**Example:**
+```lua
+local map = ...
+local game = map:get_game()
+local hero = map:get_hero()
+
+-- Call a function every second.
+sol.timer.start(1000, function()
+    if hero:get_animation() == "walking" then
+      hero:set_animation("stopped")
+    else
+      hero:set_animation("walking")
+    end
+  return true  -- To call the timer again (with the same delay).
+end)
+```
+
+
+#### Set Sword Sound
+
+The sound the sword makes. By default the sound is `sword1`.
+
+`hero:set_sword_sound_id(sound_id)`
+
+```lua
+local map = ...
+local game = map:get_game()
+local hero = map:get_hero()
+
+function map:on_started()
+  hero:set_sword_sound_id("bomb")
+end
+```
+
+#### Hero Walk
+
+The hero walk function moves the hero along a path. It can loop or ignore obstacles.
+
+`hero:walk(path, loop, ignore_obstacles)`
+
+**Example:**
+
+```lua
+local map = ...
+local game = map:get_game()
+local hero = map:get_hero()
+
+function map:on_started()
+  hero:walk("6446600222",false,true)
+end
+```
+
+|Number|Direction|
+|:-----:|:---------:|
+|0      |  right
+|1      | up right 
+|2      |  up
+|3      |  up left
+|4      | left
+|5      | down left 
+|6      | down
+|7      | down right
+
+#### Hero Jump
+
+Makes the hero jump in a direction.
+
+`hero:start_jumping(direction8, distance, [ignore_obstacles])`
+
+**Example:**
+
+```lua
+local map = ...
+local game = map:get_game()
+local hero = map:get_hero()
+
+function map:on_started()
+  hero:start_jumping(2, 100, false)
+end
+```
+
+|Number|Direction8|
+|:-----:|:---------:|
+|0      |  right
+|1      | up right 
+|2      |  up
+|3      |  up left
+|4      | left
+|5      | down left 
+|6      | down
+|7      | down right
