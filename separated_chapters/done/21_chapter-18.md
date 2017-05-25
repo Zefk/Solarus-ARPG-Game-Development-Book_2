@@ -557,6 +557,29 @@ end
 
 Remember the arguments do not only have to be a number value. They can be a string, table, boolean(true/false), etc.
 
+#### Function Tables
+
+If your function has a lot of options or you just want to make things clearer, then the use of tables for your functions might be a better setup for your library. You can change the order of the items in the table and use a name to assign them. Also, you can leave off items if you do not want to use them. Thank llamazing on the Solarus forum for this example.
+
+```lua
+function test(info)
+    if info.a == 5 then
+        print("Letter A is",info.a)
+    end
+
+    if info.b == "hey" then
+      print ("Solarus welcomes you.")
+    end
+
+    if info.c == true then
+      local test = 50
+      print(test + 10)
+    end
+end
+ 
+test{b="hey", a=5, c=true}
+```
+
 ### Player 2 Movement
 
 This script uses the keys i, l, j, & k to make an entity walk around. It is a very simple script using the functions in the library sample. The script is in an entity model called player 2 and the entity name is player2. 
