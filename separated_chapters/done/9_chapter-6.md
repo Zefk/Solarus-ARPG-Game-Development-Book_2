@@ -1237,10 +1237,6 @@ Result:
 Dot: 3
 Dot: 4
 ```
-
-**Tip:**
-The examples of [chapter 16](http://www.lua.org/pil/16.html) in free book, "Programming in Lua", are very useful.
-
 -----------------------------------------------------------------------
 
 ##### pairs() and ipairs()
@@ -1419,8 +1415,173 @@ Dot self: table: 0x06a57fb8
 Dot self: 3
 ```
 
-**Tip:**
-The examples of [chapter 16](http://www.lua.org/pil/16.html) in free book, "Programming in Lua", are very useful.
+#### Function Objects
+
+|An object has:|
+|:-----------|
+|state| Being in a form for growth or development.
+|independent value identity| A self.
+|independent life cycle| Does not matter what created them or where they were created.
+|assignablity| Receive operation.
+
+
+##### Almost Method
+
+A table in Lua is basically a object. However, this function will work only for this object.
+
+```lua
+--almost method
+MoneyBag = {amount = 0}
+function MoneyBag.add(value)
+  MoneyBag.amount = MoneyBag.amount + value
+end
+
+MoneyBag.add(200)
+
+print("You have the total amount of "..MoneyBag.amount.." in your bag.")
+```
+
+Result:
+
+```
+You have the total amount of 200 in your bag.
+
+```
+
+You can change the name of MoneyBag.
+
+```lua
+bag = MoneyBag
+
+bag.add(50)
+
+print("You have the total amount of "..MoneyBag.amount.." in your bag.")
+
+or
+
+print("You have the total amount of "..bag.amount.." in your bag.")
+```
+
+Result:
+
+```
+You have the total amount of 250 in your bag.
+```
+
+The reason this is almost a method is because if we do the following we get an error.
+
+```lua
+MoneyBag = nil
+
+bag.add(50)
+
+print("You have the total amount of "..bag.amount.." in your bag.")
+```
+
+Result:
+
+```
+Error: attempt to index global 'MoneyBag' (a nil value)
+```
+
+##### Method
+
+This function will work only for more than one object. `Self` refers to itself.
+
+```lua
+MoneyBag = {amount = 0}
+function MoneyBag.add(self, value)
+  self.amount = self.amount + value
+end
+
+MoneyBag.add(MoneyBag, 200) 
+
+bag = MoneyBag
+
+MoneyBag = nil
+
+bag.add(bag,50)
+
+print("You have the total amount of "..bag.amount.." in your bag.")
+```
+
+Result:
+
+```
+You have the total amount of 250 in your bag.
+```
+
+
+##### Method With Colon
+
+You can shorten the method with a Colon. This will pass `self` for you.
+
+```lua
+MoneyBag = {amount = 0}
+function MoneyBag:add(value)
+  self.amount = self.amount + value
+end
+
+MoneyBag:add(200) 
+
+bag = MoneyBag
+
+MoneyBag = nil
+
+bag:add(50)
+
+print("You have the total amount of "..bag.amount.." in your bag.")
+```
+
+Result:
+
+```
+You have the total amount of 250 in your bag.
+```
+
+##### Colon Hidden Parameter
+The colon passes a hidden parameter by assigning the function to a variable called `add` in this case. 
+
+That means the colon is doing the following:
+
+```lua
+    MoneyBag = { amount = 0,
+                --Assign variable to dot function
+                add = function (self, value)
+                             self.amount = self.amount + value
+                           end
+              }
+
+
+MoneyBag:add(400)
+
+print("You have the total amount of "..MoneyBag.amount.." in your bag.")
+```
+
+Result:
+
+```
+You have the total amount of 400 in your bag.
+```
+
+I prefer using a colon though. It is cleaner and easier to organize.
+
+```lua
+MoneyBag = {amount = 0}
+function MoneyBag:add(value)
+  self.amount = self.amount + value
+end
+
+MoneyBag:add(400)
+
+print("You have the total amount of "..MoneyBag.amount.." in your bag.")
+```
+
+Result:
+
+```
+You have the total amount of 400 in your bag.
+```
 
 #### Tutorial Point Lua PDF
 
