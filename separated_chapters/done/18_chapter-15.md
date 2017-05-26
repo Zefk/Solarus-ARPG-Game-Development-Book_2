@@ -1120,6 +1120,47 @@ You can also get the music you set for the map. This is useful for when playing 
 sol.audio.play_music(map:get_music())
 ```
 
+#### Making a Map Entity
+
+It is quite easy to make map entities with script. This can be useful for when spawing projectiles.
+
+**Example:**
+
+The following script is placed in a custom entity. If an entity named `enemy` overlaps it, then an custom entity arrow will spawn or appear.
+
+```lua
+local entity = ...
+local game = entity:get_game()
+local map = entity:get_map()
+local enemy = map:get_entity("enemy")
+
+--Create on_activated
+sol.timer.start(500, function()
+  if entity.on_activated ~= nil then
+    entity:on_activated()
+ return true 
+  end
+end)
+
+function entity:on_activated()
+   local x,y = entity:get_position()
+   
+   if entity:overlaps(enemy)then
+     print("overlap")
+     map:create_custom_entity({
+       name = "arrow",
+       direction = 2,
+       layer = 0,
+       width = 16,
+       height = 16,
+       x = x,
+       y = y,
+       sprite = "entities/arrow",
+       })
+   end
+end
+```
+
 ### Camera Entity
 
 The cameria is an entity like a NPC. You can check the Documentation for the functions for all entity types. You need to get the camera before you can use it.
