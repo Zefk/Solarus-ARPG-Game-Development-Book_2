@@ -1238,6 +1238,9 @@ Dot: 3
 Dot: 4
 ```
 
+**Tip:**
+The examples of [chapter 16](http://www.lua.org/pil/16.html) in free book, "Programming in Lua", are very useful.
+
 -----------------------------------------------------------------------
 
 ##### pairs() and ipairs()
@@ -1415,6 +1418,9 @@ Colon: 3
 Dot self: table: 0x06a57fb8
 Dot self: 3
 ```
+
+**Tip:**
+The examples of [chapter 16](http://www.lua.org/pil/16.html) in free book, "Programming in Lua", are very useful.
 
 #### Tutorial Point Lua PDF
 
