@@ -974,6 +974,15 @@ Predetermined path composed of steps in the 8 main directions.
 
 A trajectory described pixel by pixel.
 
+Pixel Movement needs a transition array.
+
+**Transition Example:**
+```
+For 1 translation: table1 = {{244,270}}
+For 2 translations: table1 = {{244,270}, {244,270}}
+```
+
+**Pixel Movement Example:**
 ```lua
  --Pixel movement
  local pixel = sol.movement.create("pixel")
