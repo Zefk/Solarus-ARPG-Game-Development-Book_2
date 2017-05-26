@@ -1189,11 +1189,13 @@ print("")
 
 ##### Defining a function
 
+The `local` scope, aruguments, and return are optional for functions. 
+
 ```lua
 --[[
 scope_optional function name( arg1, arg2, arg3....., arg[num])
       function_body
-return result_params_comma_separated
+return something
 end
 --]]
  
@@ -1219,6 +1221,21 @@ function thetruth()
 end
 
 print(thetruth())
+```
+
+Functions can be declared in a straignt line, in a table, and assigned to variables.
+
+```lua
+x = {pos_x = function(x,y) return x end, pos_y = function(x,y) return y end, }
+
+print("Dot: ",x.pos_x(3,4))
+print("Dot: ",x.pos_y(3,4))
+```
+Result:
+
+```
+Dot: 3
+Dot: 4
 ```
 
 -----------------------------------------------------------------------
@@ -1368,6 +1385,35 @@ print(c)
 print(d)
 
 print(a + b + c + d)
+```
+
+##### Dot vs Colon
+
+The colon `:` is for implementing methods that pass self as the first parameter and the dot `.` does not unless you pass it into itself.
+
+```lua
+x = {pos_x = function(x,y) return x end, pos_y = function(x,y) return y end, }
+
+print("Dot: ",x.pos_x(3,4))
+print("Dot: ",x.pos_y(3,4))
+
+print("Colon: ",x:pos_x(3,4))
+print("Colon: ",x:pos_y(3,4))
+
+--Same as Colon.
+print("Dot self: ",x.pos_x(x,3,4))
+print("Dot self: ",x.pos_y(x,3,4))
+```
+
+Result:
+
+```
+Dot: 3
+Dot: 4
+Colon: table: 0x06a57fb8
+Colon: 3
+Dot self: table: 0x06a57fb8
+Dot self: 3
 ```
 
 #### Tutorial Point Lua PDF
