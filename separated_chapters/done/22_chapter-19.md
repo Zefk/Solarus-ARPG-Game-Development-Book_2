@@ -5,27 +5,29 @@ Credits so far...
 
 ##### Graphics:
 - Diarandor (Most of his art is in the images and sounds in the samples.) You can find a license in the sample quest. Most or all of his work is under CC-BY-SA 4.0
+- Zane Kukta (My work seperate from the forest and dessert tileset is CC0) See sample quest license or refer to this [issue](https://github.com/solarus-games/solarus-sample-quest/issues/11) if the license file has not been updated yet.
 
 ##### Sounds:
 - Diarandor (Most of his art is in the images and sounds in the samples.) CC-BY-SA 4.0
+- Zane Kukta (Any sound I added is CC0 or the license I stated in the sound directory)
 
 ##### Scripting Credits:
-- Christopho (All of his scripts and making the Solarus Game Engine) GPLv3
+- Christopho (All of his scripts, sample quest, and making the Solarus Game Engine) GPLv3
 - Zane Kukta (Most sample scripts)
+- Diarandor (Some script snippets from his assistance on the forum and sample quest)
+- llamazing (Some script snippets from his assistance on the forum)
 
 ##### Writing Credits:
-- Christopho
+- Christopho (Solarus documentation edited snippets)
 - Zefk (Zane Kukta) CC-BY-SA 3.0
 - Loren J. Miller [The 36 Plots](https://www.rpglibrary.org/articles/storytelling/36plots.php) CC-BY-SA 3.0
 - Logan M: [Differences-between-visual-novel-eroge-gal-game-and-a-dating-sim](http://anime.stackexchange.com/questions/4926/what-are-the-differences-between-visual-novel-eroge-gal-game-and-a-dating-sim) (CC-BY-SA 3.0)
 - Wikipedia [List_of_genres,](https://en.wikipedia.org/wiki/List_of_genres) [video_gaming,](https://en.wikipedia.org/wiki/Quest_(video_gaming)) [Puzzle](https://en.wikipedia.org/wiki/Puzzle)[Retrogaming](https://en.wikipedia.org/wiki/Glossary_of_video_game_terms#Retrogaming), [Mode_7](https://en.wikipedia.org/wiki/Mode_7), [Sprite](https://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29),
 [Pixel](https://en.wikipedia.org/wiki/Pixel), [Artificial_intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence_(video_games)), [Beat_em_up](https://en.wikipedia.org/wiki/Beat_%27em_up), [CPU](https://en.wikipedia.org/wiki/Central_processing_unit), [Spawning](https://en.wikipedia.org/wiki/Spawning_%28video_gaming%29), CC-BY-SA 3.0
 
-
-
 ### Fairyolica World Credits:
 
-I use the Fariryolica world tileset is under CC-BY-SA 3.0.
+I used the Fariryolica world tileset image as a preview. It is under CC-BY-SA 3.0.
 
 #### About:
 
@@ -41,7 +43,7 @@ I use the Fariryolica world tileset is under CC-BY-SA 3.0.
 
 and you must credit everyone if you use the Fariyolica.png. That means the CC0 people too.
 
-6. I refined this list a little. 11-14-16 [November 14th, 2016]
+6.I refined this list a little. 11-14-16 [November 14th, 2016]
 
 #### Credit
 
@@ -84,7 +86,7 @@ Copyright/Attribution Notice:
 
 - Albert Manhattan - A redrawing of Surt's Classical Ruin Tiles (http://opengameart.org/content/classical-ruin-tiles) at higher resolution.
 
-- Ivan Voirol - butterflies are CC0 and CC-BY
+- Ivan Voirol
 
 - credit me as Buch (Michele Bucelli) and link back to my OGA profile page. <http://opengameart.org/users/buch>
 
@@ -93,7 +95,6 @@ Copyright/Attribution Notice:
 - Credit Buch for the original version of this set and link to his profile page. The portcullis are based on the iron bars in http://opengameart.org/content/lpc-dungeon-elements, by Sharm as contributed by William.Thompsonj.
 
 - Animated Castle Doors by Tuomo Untinen
-
 
 #### [CC-BY-SA 3.0 Credit by their terms and share artwork under the same terms]
 
