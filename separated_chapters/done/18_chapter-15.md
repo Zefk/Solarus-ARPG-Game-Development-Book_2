@@ -1022,6 +1022,192 @@ elf_4:set_traversable(true)
 elf_6:set_traversable(true)
 ```
 
+### Moving Image
+
+Moving an image is almost the same as moving an entity. Let us use a 320x240 Solarus logo. 
+
+You can find everything in the sample in the following directory. 
+
+`Samples > Chapter_15_Movements_on_image.zip`
+
+![Chapter_15_images/solarus_logo.png](https://raw.githubusercontent.com/Zefk/Solarus-ARPG-Game-Development-Book_2/24d7491aceab7cd220d95e85fd00057568cc1f92/Lesson_images/Chapter_15_images/solarus_logo.png)
+
+**Tip:**
+The Solarus screen zooms to 640x480, so the logo will enlarge.
+
+**Make Menu**
+
+An easy way to set this up is with a menu.
+
+```lua
+local solarus_logo_menu = {}
+
+return solarus_logo_menu
+```
+
+**Setup Image & Make Movement:**
+
+Next we need to load/create the image and movement. We apply a movement to an image by starting the movement on the created surface variable.
+
+```lua
+  movement:start(logo_img)
+```
+
+```lua
+local solarus_logo_menu = {}
+
+local logo_img = sol.surface.create("menus/solarus_logo.png")
+
+function solarus_logo_menu:on_started()
+  local movement = sol.movement.create("straight")
+  movement:start(logo_img)
+end
+
+function solarus_logo_menu:on_draw(screen)
+  logo_img:draw(screen)
+end
+
+return solarus_logo_menu
+```
+**Movement properties:**
+
+We want: 
+
+- The image to move at a decent speed.
+
+```lua
+  movement:set_speed(128)
+```
+
+- The image angle to go south. South is `3 * math.pi / 2`.
+
+|4 Directions|Description|
+|:-|:-|
+|East| 0|
+|North| math.pi / 2 |
+|West| math.pi|
+|South| 3 * math.pi / 2|
+
+```lua
+  movement:set_angle(3 * math.pi / 2)
+```
+
+- The image to not run off the screen, so we set the max distance.
+
+```lua
+  movement:set_max_distance(240)
+```
+
+- To draw the image off screen because it is an easy way to calculate max distance. We change the image's y coordinates to -240 because we set the max distance to go down by 240. The image is 320x240.
+
+```lua
+  logo_img:draw(screen, 0, -240)
+```
+
+```lua
+local solarus_logo_menu = {}
+
+local logo_img = sol.surface.create("menus/solarus_logo.png")
+
+function solarus_logo_menu:on_started()
+
+  local movement = sol.movement.create("straight")
+  movement:set_speed(128)
+  movement:set_angle(3 * math.pi / 2)
+  movement:set_max_distance(240)
+  movement:start(logo_img)
+end
+
+function solarus_logo_menu:on_draw(screen)
+  logo_img:draw(screen, 0, -240)
+end
+
+return solarus_logo_menu
+```
+
+**Stop Menu On Key Press**
+
+- Setup a key press function with the key being `space` and stop the menu inside.
+- Return true to activate function or you could change the order of your function. 
+- Return false to not activate the key press function for other keys, but not really needed.
+- Return false and true are not really needed, but it is good practice programming wise.
+
+```lua
+function solarus_logo_menu:on_key_pressed(key)
+  if key == "space" then
+    sol.menu.stop(solarus_logo_menu)
+    return true
+  end
+  return false
+end
+```
+
+Now the menu will move down and pressing the `space` key will stop it.
+
+```lua
+local solarus_logo_menu = {}
+
+local logo_img = sol.surface.create("menus/solarus_logo.png")
+
+function solarus_logo_menu:on_started()
+
+  local movement = sol.movement.create("straight")
+  movement:set_speed(128)
+  movement:set_angle(3 * math.pi / 2)
+  movement:set_max_distance(240)
+  movement:start(logo_img)
+end
+
+function solarus_logo_menu:on_draw(screen)
+  logo_img:draw(screen, 0, -240)
+end
+
+function solarus_logo_menu:on_key_pressed(key)
+  if key == "space" then
+    sol.menu.stop(solarus_logo_menu)
+  end
+end
+
+return solarus_logo_menu
+```
+
+**Callback Instead of Key Press:**
+
+One can remove the key press function and use a callback to stop the menu if you want the game to just start after the logo finishes.
+
+```
+ movement:start(logo_img, callback())
+ ```
+
+```lua
+  movement:start(logo_img, function()
+    sol.menu.stop(solarus_logo_menu)
+  end)
+```
+
+```lua
+local solarus_logo_menu = {}
+
+local logo_img = sol.surface.create("menus/solarus_logo.png")
+
+function solarus_logo_menu:on_started()
+
+  local movement = sol.movement.create("straight")
+  movement:set_speed(128)
+  movement:set_angle(3 * math.pi / 2)
+  movement:set_max_distance(240)
+  movement:start(logo_img, function()
+    sol.menu.stop(solarus_logo_menu)
+  end)
+end
+
+function solarus_logo_menu:on_draw(screen)
+  logo_img:draw(screen, 0, -240)
+end
+
+return solarus_logo_menu
+```
+
 ### Map Types
 
 I have covered a few map types already, but here are some more useful ones that I did not cover.
