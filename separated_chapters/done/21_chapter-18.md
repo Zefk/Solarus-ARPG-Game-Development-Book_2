@@ -64,11 +64,11 @@ The inside of your folder should look like this now.
 
 You can leave your `data` folder out like that or you can zip it `data.zip`. Do not encrypt it because it will not work when activating the `solarus-run.exe`. You can rename the zip to `data.solarus`.
 
-If you use the Linux operating system, then there might be an issue when zipping the file. The game will not play and you will get an error.txt. 
+If you use a Linux operating system, then there might be an issue when zipping the file. The game will not play and you will get an error.txt. 
 
-The reason is that Linux creates certain attributes to files when they are created. I even tried using Microsoft Windows programs (7Zip) with Wine. 
+The reason is that Linux creates certain attributes to files when they are created. I even tried using Microsoft Windows programs (7Zip) with Wine and it did not work.
 
-I zipped it and renamed it in Windows and everything worked fine. It even worked in Linux using Wine!
+I zipped it and renamed it in Windows 7 and everything worked fine. It even worked in Linux using Wine!
 
 **Packaging or Distributing**
 
