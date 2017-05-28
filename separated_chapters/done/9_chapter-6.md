@@ -1385,6 +1385,443 @@ print(d)
 
 print(a + b + c + d)
 ```
+#### Coroutine
+
+A coroutine can stop (yield) and restart (resume) a task.
+
+##### Make a Coroutine
+
+It is quite simple to create a coroutine.
+
+```lua
+variable = coroutine.create(function()
+--code here
+end))
+```
+
+##### Coroutine Yield
+
+The `coroutine.yield()` function stops the coroutine.
+
+```lua
+co = coroutine.create(function()
+     for i = 1, 5 do
+       print(i)
+       coroutine.yield()
+     end
+end)
+```
+
+##### Coroutine Resume
+
+The function `coroutine.resume()` needs to be called to start a coroutine.
+
+
+```lua
+co = coroutine.create(function()
+     for i = 1, 5 do
+       print(i)
+       coroutine.yield()
+     end
+end)
+
+coroutine.resume(co)
+coroutine.resume(co)
+```
+
+Result:
+
+```
+1
+2
+```
+
+#####Tasks Between Resume
+
+One can do other things between `coroutine.resume()`.
+
+```lua
+--[[
+co = coroutine.create(function()
+     for i = 1, 5 do
+       print(i)
+       coroutine.yield()
+     end
+end)
+
+coroutine.resume(co)
+print("do something")
+coroutine.resume(co)
+print("do something")
+coroutine.resume(co)
+print("do something")
+```
+
+Result:
+
+```
+1
+do something
+2
+do something
+3
+do something
+```
+
+##### Coroutine Status
+
+The function `coroutine.status()` tells you if the coroutine is dead, running, and suspended. A coroutine dies if it exceeds the limit. In this case, the limit is 5 times according to the for loop.
+
+```lua
+co = coroutine.create(function()
+     for i = 1, 5 do
+       print(i)
+       coroutine.yield()
+       print(coroutine.resume(co)) -- Resume in a function
+       print(coroutine.status(co))
+     end
+end)
+
+coroutine.resume(co)
+print("do something")
+coroutine.resume(co)
+print("do something")
+coroutine.resume(co)
+print("do something")
+print(coroutine.resume(co))
+print(coroutine.status(co))
+coroutine.resume(co)
+coroutine.resume(co)
+print(coroutine.resume(co))
+print(coroutine.status(co))
+```
+
+
+Result:
+
+```
+1
+do something
+false cannot resume running coroutine
+running
+2
+do something
+false cannot resume running coroutine
+running
+3
+do something
+false cannot resume running coroutine
+running
+4
+true
+suspended
+false cannot resume running coroutine
+running
+5
+false cannot resume running coroutine
+running
+false cannot resume dead coroutine
+dead
+```
+
+**Another example:**
+
+Above I showed the output if `print(coroutine.resume(co))` was in the function. I will demonstrate the result of it not being there.
+
+```lua
+co = coroutine.create(function()
+     for i = 1, 5 do
+       print(i)
+       coroutine.yield()
+       print(coroutine.status(co))
+     end
+end)
+
+coroutine.resume(co)
+print("do something")
+coroutine.resume(co)
+print("do something")
+coroutine.resume(co)
+print("do something")
+print(coroutine.resume(co))
+print(coroutine.status(co))
+coroutine.resume(co)
+coroutine.resume(co)
+print(coroutine.resume(co))
+print(coroutine.status(co))
+```
+Result:
+
+```
+1
+do something
+running
+2
+do something
+running
+3
+do something
+running
+4
+true
+suspended
+running
+5
+running
+false cannot resume dead coroutine
+dead
+```
+
+##### Coroutine Callback
+
+Calls can be added to `coroutine.resume()`.
+
+```
+coroutine.resume(co, call, call)
+```
+
+```lua
+co = coroutine.create(function()
+     for i = 1, 5 do
+       print(coroutine.yield(i)) -- true or flase
+     end
+end)
+
+local three = 3
+print(coroutine.resume(co))
+print(coroutine.resume(co, three, 4))
+print(coroutine.resume(co, 5, 6))
+print(coroutine.resume(co, 7, 8))
+print(coroutine.resume(co, 9, 10))
+print(coroutine.resume(co, 11, 12))
+print(coroutine.resume(co, 13, 14))
+print(coroutine.resume(co, 15, 16))
+```
+
+Result:
+
+```
+true
+1
+3 4
+true 2
+5 6
+true 3
+7 8
+true 4
+9 10
+true 5
+11 12
+true
+false cannot resume dead coroutine
+false cannot resume dead coroutine
+```
+
+##### Coroutine Wrap Shortcut
+
+One can use the function `coroutine.wrap` to shorten the coroutine process.
+
+```lua
+c = coroutine.wrap(function()
+    for i = 1,5 do
+      print(i)
+      coroutine.yield()
+    end
+end)
+
+c()
+c()
+```
+
+Result:
+
+```
+1
+2
+```
+
+#### Module
+
+Fist off, make a Lua file called `Module_1.lua` or any name you want to be honest, but it will be that name in this example. Put it in the scripts directory of the project data folder.
+
+##### Make a table
+
+The first task is to make a table. It is better to keep your table local, but it will be global to show you why it should be local later.
+
+```lua
+--[[
+m = {} -- make local
+
+return m
+--]]
+```
+
+##### Add Tasks
+
+You will need to add `m.` before any table item like normal.
+
+```lua
+m.printHello = function()
+  print("hello")
+end
+
+m.pi = 3.1415
+
+m.t = {1, 2, 3}
+
+m.number = function(number)
+  print("Number is: "..number)
+end
+```
+
+##### Require Module
+
+If you plan to use this module all of your scripts, then it would be best to require it at the top of `main.lua`.
+
+In this case I will use a map script because it will be discarded when leaving the map.
+
+In `first_map.lua` require the module and activate the tasks. One will have to assign a variable to the required script to use it.
+
+```lua
+c = require("scripts/module_1")
+
+--print hello
+c.printHello()
+
+--print pi
+print(c.pi)
+
+--print all values in table
+for _, v in pairs(c.t) do
+   print(v)
+end
+
+--number is:
+c.number(400)
+```
+
+Result:
+
+```
+hello
+3.1415
+1
+2
+3
+Number is: 400
+```
+
+##### Global Module Table Issue
+
+Making the table in the module `global` is not a good idea because at some point there might be mix ups with code in the module.
+
+Let me show you what I mean.
+
+```lua
+c = require("scripts/module_1")
+
+c.printHello()
+m.printHello()
+```
+
+Result:
+
+```
+hello
+hello
+```
+
+As you can see “hello” printed twice because there is no local restriction in the module for `m.printHello()`. This might become a problem at some point. An easy fix is to make the table in the module local.
+
+```lua
+local m = {} -- make local
+
+m.printHello = function()
+  print("hello")
+end
+
+m.pi = 3.1415
+
+m.t = {1, 2, 3}
+
+m.number = function(number)
+  print("Number is: "..number)
+end
+
+return m
+```
+
+Now if you try it an error will occur with `m.printHello()`.
+
+```
+Error: In maps/first_map: [string "maps/first_map.lua"]:21: attempt to index global 'm' (a nil value)
+```
+
+##### Module Shortcut
+
+Instead of writing `m.` over and over again, one can set a metatable and point the table to `_ENV` (Environment).
+
+```lua
+local m = {}
+setmetatable(m, {__index = _G}) -- index items in table to be global (_G)
+_ENV = m -- use this to remove "m." in code.
+
+printHello = function()
+  print("hello")
+end
+
+pi = 3.1415
+
+t = {1, 2, 3}
+
+number = function(number)
+  print("Number is: "..number)
+end
+
+return m
+```
+
+##### Assign New Variable
+
+One can assign a new variable to require and use it.
+
+```lua
+c = require("scripts/module_1")
+
+c.printHello()
+print(c.pi)
+
+for _, v in pairs(c.t) do
+   print(v)
+end
+
+c.number(400)
+
+value = require("scripts/module_1")
+
+value.number(700)
+c.number(500)
+
+maths = c
+
+maths.number(2000)
+
+```
+
+Result:
+
+```
+hello
+3.1415
+1
+2
+3
+Number is: 400
+Number is: 700
+Number is: 500
+Number is: 2000
+```
+
 
 ##### Dot vs Colon
 
