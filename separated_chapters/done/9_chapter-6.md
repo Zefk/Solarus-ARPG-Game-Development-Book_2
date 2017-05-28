@@ -1679,3 +1679,222 @@ Playtest the game with F5 and the script will run. Sometimes the console will op
 
 I added a test file in the Github repository. `Lessons folder > Chapter_6_sol_main_load.zip`
 
+### Grab Numbers & Letters
+
+Grabbing letters and numbers can make some interesting puzzles or scripts. 
+
+I made a very bulky [Menu Dialog Display Script](http://forum.solarus-games.org/index.php/topic,809.0.html) using letter grabs and I used digit grabs in my [ADVANCED DIGIT DISPLAY SCRIPT](http://forum.solarus-games.org/index.php/topic,803.0.html). I made those scripts as I was first learning Lua.
+#### Grab Numbers
+
+**Script 1:**
+
+This script converts the number value into a string, splits it up, and converts it back into a number.
+
+```lua
+local value = 25436 -- value
+local value_string = string.format("%04d", value) --value_string = "25436" (make value a string)
+-- sting format: "%d"
+-- Add zeros: "%04d" (if below 4 digits)
+
+local lenth = value_string:len() --Grabs lenth of string for soda array
+
+local value_split = {}
+for i = 0,lenth do
+        local index = value_string:len()-i --decrease by i
+        local num = tonumber(value_string:sub(index,index)) -- convert string to number and decrease string by i
+        table.insert(value_split, num) --insert letter into table value_split
+end
+
+print("value "..value_split[1])
+print("value "..value_split[2])
+print("value "..value_split[3])
+print("value "..value_split[4])
+print("value "..value_split[5])
+```
+
+Result:
+
+```
+value 6
+value 3
+value 4
+value 5
+value 2
+```
+
+**Script 2:**
+
+This script inserts each digit into a table.
+
+```lua
+local value = 25436 
+local value_split = {}
+ 
+for digit in string.gmatch( tostring(value), "%d" ) do
+  table.insert(value_split, digit)
+end
+
+print("value "..value_split[1])
+print("value "..value_split[2])
+print("value "..value_split[3])
+print("value "..value_split[4])
+print("value "..value_split[5])
+```
+
+Result:
+
+```
+value 2
+value 5
+value 4
+value 3
+value 6
+```
+
+**Script 3:**
+
+This script uses a somewhat classic calculation in an advanced way.
+
+```lua
+local value = 25436 
+local value_split = {}
+ 
+local num = value
+if num == 0 then value_split = {0} end
+while num > 0 do
+  local digit = num % 10
+  num = math.floor(num / 10)
+  table.insert(value_split, digit)
+end
+
+print("value "..value_split[1])
+print("value "..value_split[2])
+print("value "..value_split[3])
+print("value "..value_split[4])
+print("value "..value_split[5])
+```
+
+Result:
+
+```
+value 6
+value 3
+value 4
+value 5
+value 2
+```
+
+The script above takes the remainder of the value and decreases the place value.
+
+```lua
+local value = 25436 
+ 
+local num = value
+
+local digit = num % 10
+num = math.floor(num / 10)
+
+print(num) -- 2543
+print(digit) -- 6
+
+--Takes the remainder
+digit = num % 1 -- remainder of the 1st place is 0 ( No remainder)
+digit = num % 10 -- remainder of the 10th place is 6
+digit = num % 100 -- Remainder of the 100th place is 36
+digit = num % 1000 -- Remainder of the 1000th place is 436
+digit = num % 10000 -- Remainder of the 10000th place is 5436
+digit = num % 100000 -- Remainder of the 100000th place is 25436
+
+--Decreases the value place
+num = math.floor(num / 1) -- 25436
+num = math.floor(num / 10) -- 2543
+num = math.floor(num / 100) -- 254
+num = math.floor(num / 1000) -- 25
+num = math.floor(num / 10000) -- 2
+```
+
+#### Grab Letter
+
+**Script 1:**
+
+This script uses the alphabet pattern `"%w"` to get letters and inserts them into a table.
+
+```lua
+local string = "test" 
+local string_split = {}
+ 
+for char in string.gmatch(string, "%w") do
+  table.insert(string_split, char)
+end
+
+print("letter "..string_split[1])
+print("letter "..string_split[2])
+print("letter "..string_split[3])
+print("letter "..string_split[4])
+```
+
+Result:
+
+```
+letter t
+letter e
+letter s
+letter t
+```
+
+ **Script 2:**
+ 
+ This one shows how one can reverse the string with `string.reverse()`.
+
+```lua
+string_split = {}
+local text = "test"
+local length = text:len()
+local reverse = false
+
+if reverse == true then
+   for msg = 0, length do
+     index = text:len()-msg
+     letter = text:sub(index,index) 
+     table.insert(string_split, letter)
+   end
+else
+   for msg = 0, length do
+     index = string.reverse(text):len()-msg
+     letter = string.reverse(text):sub(index,index) 
+     table.insert(string_split,letter)
+   end
+end
+
+print("letter "..string_split[1])
+print("letter "..string_split[2])
+print("letter "..string_split[3])
+print("letter "..string_split[4])
+```
+
+Result:
+
+```lua
+reverse = false
+```
+
+```
+letter t
+letter e
+letter s
+letter t
+```
+
+
+Result:
+```lua
+reverse = true
+```
+
+```
+letter t
+letter s
+letter e
+letter t
+```
+
