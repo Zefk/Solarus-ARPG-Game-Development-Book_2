@@ -15,7 +15,7 @@ You need to copy the Solarus Engine into a folder of your choosing, copy your qu
 
 **Deleting Files**
 
-Not all the  `.dll` files are needed when exporting your game. You can delete the Solarus editor files because some of them are quite large, but you might need them for the quest launcher or if for possible memory leaks happen.
+Not all the  `.dll` files are needed when exporting your game. You can delete the Solarus editor files because some of them are quite large, but you might need them for the quest launcher or if possible memory leaks happen.
 
 |Delete Files & Folders| File Size|
 |:---------------------|:---------|
