@@ -5,7 +5,7 @@
 
 I would like to show a preview before starting the lesson. This is everything you will be learning in this lesson.
 
-![Chapter_8_sample_preview.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_8_sample_preview_blend_updated.png)
+![Chapter_8_sample_preview.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_8_images/Chapter_8_sample_preview_blend_updated.png)
 
 ##### Script For The Lesson
 
