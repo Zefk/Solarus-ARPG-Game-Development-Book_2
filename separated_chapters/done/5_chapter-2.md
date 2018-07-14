@@ -19,8 +19,6 @@ https://github.com/solarus-games/children-of-solarus
 
 This is an outside world tileset I put together with opensource art. I did make a few things, but that does not really matter.
 
-The full pack has the tileset and a lot of my free audio files. Make sure to download the repo instead of the release because I cleaned up the credit file. 
-
 https://github.com/Zefk/Fairyolica-World
 https://github.com/Zefk/Fairyolica-World/releases
 

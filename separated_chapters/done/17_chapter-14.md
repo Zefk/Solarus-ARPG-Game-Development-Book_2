@@ -385,7 +385,7 @@ The Solarus GUI will automatically choose the best size.
 
 ### Save Game
 
-Saving the game is quite simple. There are two functions that need to be known. They are `sol.game.exists(file_name)` and `sol.game.load(file_name)`. One checks if the save file exists and the other loads the save file. The best place to put the save script is in the `game_manager.lua`.
+Saving the game is quite simple. The game saves at the destination entity on the maps. There are two functions that need to be known. They are `sol.game.exists(file_name)` and `sol.game.load(file_name)`. One checks if the save file exists and the other loads the save file. The best place to put the save script is in the `game_manager.lua`.
 
 ```lua
 local exists = sol.game.exists(file_name)

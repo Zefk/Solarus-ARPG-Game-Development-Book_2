@@ -72,7 +72,7 @@ The tilesets in Solarus follow an 8 x 8 pattern per block. That means you will h
 
 For example, if you overlay Fairyolica World tileset with an 8x8 grid, then you will see that mostly everything fits a 8x8 pattern.
 
-![Chapter_5_images/Fairyolica%20World.tiles.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Fairyolica%20World.tiles.png)
+![Chapter_5_images/Fairyolica%20World.tiles.png](https://github.com/Zefk/Fairyolica-World/raw/master/SOGP-Fairyolica%20World/data/tilesets/Fairyolica%20World.tiles.png)
 
 To make a pattern you just click and drag to make a box. 
 
