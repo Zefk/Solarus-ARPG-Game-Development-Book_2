@@ -324,37 +324,37 @@ The quest launcher is a place where all Solarus games can be played from.
 
 Activating the quest launcher.
 
-![chapter_14_quest_launcher_images/1_solarus_exe.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/1_solarus_exe.png)
+![chapter_14_quest_launcher_images/1_solarus_exe.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/1_solarus_exe.png)
 
 **Preview**
 
-![chapter_14_quest_launcher_images/2_quest_launcher.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/2_quest_launcher.png)
+![chapter_14_quest_launcher_images/2_quest_launcher.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/2_quest_launcher.png)
 
 ##### Play Game
 
-![chapter_14_quest_launcher_images/3_play_quest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/3_play_quest.png)
+![chapter_14_quest_launcher_images/3_play_quest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/3_play_quest.png)
 
 ##### Game - Add & Remove
 
-![chapter_14_quest_launcher_images/4_add_remove_quest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/4_add_remove_quest.png)
+![chapter_14_quest_launcher_images/4_add_remove_quest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/4_add_remove_quest.png)
 
 ##### Video > Fullscreen, 2D Acceleration, Window Size, & Zoom
 
-![chapter_14_quest_launcher_images/6_full_acceleration_window-size.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/6_full_acceleration_window-size.png)
+![chapter_14_quest_launcher_images/6_full_acceleration_window-size.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/6_full_acceleration_window-size.png)
 
 ##### Quest Launcher > File > Add, Remove, & Exit
 
-![chapter_14_quest_launcher_images/7_file_add_remove_quit.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/7_file_add_remove_quit.png)
+![chapter_14_quest_launcher_images/7_file_add_remove_quit.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/7_file_add_remove_quit.png)
 
 ##### Game - Play & Stop
 
-![chapter_14_quest_launcher_images/8_Quest_play_stop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/8_Quest_play_stop.png)
+![chapter_14_quest_launcher_images/8_Quest_play_stop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/8_Quest_play_stop.png)
 
 ##### Help > About
 
-![chapter_14_quest_launcher_images/9_about.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/9_about.png)
+![chapter_14_quest_launcher_images/9_about.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/9_about.png)
 
-![chapter_14_quest_launcher_images/10_about_info.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/10_about_info.png)
+![chapter_14_quest_launcher_images/10_about_info.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/10_about_info.png)
 
 ### About Logo & Icons:
 
@@ -379,7 +379,7 @@ An icon can also represent your game or quest. The icon is optional as well. Man
 "logos/icon_512.png",
 "logos/icon_1024.png".
 
-![chapter_14_quest_launcher_images/11_logo_images.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/chapter_14_quest_launcher_images/11_logo_images.png)
+![chapter_14_quest_launcher_images/11_logo_images.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_14_quest_launcher_images/11_logo_images.png)
 
 The Solarus GUI will automatically choose the best size.
 
