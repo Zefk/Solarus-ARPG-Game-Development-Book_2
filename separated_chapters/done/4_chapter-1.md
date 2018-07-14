@@ -18,7 +18,7 @@ http://www.solarus-games.org/engine/download/
 
 Scroll down to the bottom and choose the version that fits your OS. Ubuntu, Archlinux, Gentoo, OpenBSD / FreeBSD, OpenSUSE, Mac OS X, Microsoft Windows, and ReactOS Windows.
 
-![Chapter_1_download.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_download.png)
+![Chapter_1_download.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_images/Chapter_1_download.png)
 
 #### Shortcuts
 
@@ -140,7 +140,7 @@ local name = map:get_entity("name")
 name:get_life()
 ```
 
-![Lesson_images/Chapter_1_enemy_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_enemy_name.png)
+![Lesson_images/Chapter_1_enemy_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_images/Chapter_1_enemy_name.png)
 
 **Custom Entity:**
 
@@ -158,7 +158,7 @@ local name = map:get_entity("name")
 name:remove()
 ```
 
-![Lesson_images/Chapter_1_custom_entity_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_custom_entity_name.png)
+![Lesson_images/Chapter_1_custom_entity_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_images/Chapter_1_custom_entity_name.png)
 
 **Other Entties:**
 
@@ -168,7 +168,7 @@ Entities like NPC will just use the name you give it.
 name:remove()
 ```
 
-![Lesson_images/Chapter_1_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_name.png)
+![Lesson_images/Chapter_1_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_1_images/Chapter_1_name.png)
 
 #### Event Functions
 
