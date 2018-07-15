@@ -322,7 +322,7 @@ Moving an image is almost the same as moving an entity. Let us use a 320x240 Sol
 
 You can find everything in the sample in the following directory. 
 
-`Samples > Chapter_15_Movements_on_image.zip`
+`Lessons > Chapter_15 > Chapter_15_Movements_on_image.zip`
 
 ![Chapter_15_images/solarus_logo.png](https://raw.githubusercontent.com/Zefk/Solarus-ARPG-Game-Development-Book_2/24d7491aceab7cd220d95e85fd00057568cc1f92/Lesson_images/Chapter_15_images/solarus_logo.png)
 
