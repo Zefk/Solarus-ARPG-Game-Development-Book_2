@@ -3,7 +3,7 @@
 
 **Preview:**
 
-`Lessons > Chapter_12_menu_preview.gif`
+`Lessons > Chapter_12 > Chapter_12_menu_preview.gif`
 
 #### Window Options
 
@@ -344,5 +344,5 @@ return menu
 Check the [documentation](http://www.solarus-games.org/doc/latest/) for more information on menus.
 
 **Menu Project Sample:**
-`Lessons > Chapter_12_menu.zip`
+`Lessons > Chapter_12 > Chapter_12_menu.zip`
 
