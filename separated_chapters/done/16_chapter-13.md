@@ -1,7 +1,7 @@
 
 ## Chapter 13: Entities
 
-You may use the `inside_store` map in the samples (`Lessons > directory`) to help you with this learning process. 
+You may use the `inside_store` map in the samples (`Lessons > Chapter_13_Entities > inside_store.zip`) to help you with this learning process. 
 
 The inside store contains pre-made maps. These can be selected, copied, and pasted to your maps to help you do the entity chapter. Also, there are graphics included in the samples.
 
@@ -352,7 +352,7 @@ The [documentation](http://www.solarus-games.org/doc/latest/lua_api_enemy.html) 
 
 ##### Inside Store
 
-First of all, copy the inside store room to a map name of your choosing. I named the map `map_4`. You will have to download or update your current inside store. You can find it in the directory `Lessons > Chapter_13_Entities > 1_inside_store_.zip`
+First of all, copy the inside store room to a map name of your choosing. I named the map `map_4`. You will have to download or update your current inside store. You can find it in the directory `Lessons > Chapter_13_Entities > inside_store.zip`
 
 ![1_inside_store_to_Map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/6_Enemy/1_inside_store_to_Map_2.png)
 
@@ -1162,7 +1162,7 @@ The following script is a way to avoid the annoying message. Of course, there ar
     else
       enemy_wall:remove()
     end
-    ```
+```
 
 ### Sensor Entity
 
