@@ -3,7 +3,7 @@
 
 **Preview:**
 
-`Lessons > Chapter_10_Click_drag_mouse_preview.ogv.zip`
+`Lessons > Chapter_10 > Chapter_10_Click_drag_mouse_preview.ogv.zip`
 
 ### Basic Timer Map Script Example
 
@@ -560,7 +560,7 @@ Check the [documentation](http://www.solarus-games.org/doc/latest/) for more inf
 
 **Timer Project Sample(s)**
 
-`Lessons > Chapter_10_Timer.zip`
+`Lessons > Chapter_10 > Chapter_10_Timer.zip`
 
-`Lessons > Chapter_10_Click_drag_mouse.zip`
+`Lessons > Chapter_10 > Chapter_10_Click_drag_mouse.zip`
 
