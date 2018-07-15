@@ -129,7 +129,7 @@ end
 
 You can download the sample for this lesson in the lessons folder.
 
-`Lessons > Chapter_8_display_example.zip`
+`Lessons > Chapter_8 > Chapter_8_display_example_added_blend.zip`
 
 ### Breaking Down The Script
 
@@ -335,7 +335,7 @@ A common usage for sprite drawing is for scenes. For example, when an boss enemy
 
 #### Sample
 
-You can grab the sample in the directory `Lessons > Chapter_8_sprite_draw`.
+You can grab the sample in the directory `Lessons > Chapter_8 > Chapter_8_sprite_draw.zip`.
 
 
 #### Script
