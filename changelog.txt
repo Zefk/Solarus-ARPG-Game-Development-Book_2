@@ -24,3 +24,4 @@ Changelog: 7-14-18_7:24PM
 +Reduced: Lesson sizes : 126.3 MB to 31.3 MB
 +Reduced: The Lesson_images .png images sizes were reduced by over half. 11.2 MB ---> 4.8 MB by using Pngyu's pngquant as a compression engine.
 +Reduced: Book_Cover.png from 730KB to 262KB by using Pngyu's pngquant as a compression engine.
++Reduced: PDF sizes by using ps2pdf from ghostscript
