@@ -1,7 +1,7 @@
 
 ## Chapter 15: Title Screen, Save menu, Movements, Map Types, Cameria, I/O
 
-This chapter is mostly about the remaining basics that need to be covered. You can get the sample `Chapter_15_Sample.zip` in the `Lessons >` directory.
+This chapter is mostly about the remaining basics that need to be covered. You can get the sample `Chapter_15_Sample.zip` in the `Lessons > Chapter_15` directory.
 
 ### Title Screen
 
