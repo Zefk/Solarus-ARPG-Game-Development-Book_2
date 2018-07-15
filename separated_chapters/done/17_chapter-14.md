@@ -1,7 +1,9 @@
 
 ## Chapter 14: Abilities, Save Game, Quest Launcher, and Game Over
 
-The sample for this lesson is `G_Abilities_Quest-launcher_savegame.zip`. It can be found in the lesson directory.
+The sample for this lesson is in the following directory:
+
+`Lessons > Chapter_14_Abilities_Quest-launcher_savegame`
 
 ### Abilities: swim, lift, sword, run, etc
 
