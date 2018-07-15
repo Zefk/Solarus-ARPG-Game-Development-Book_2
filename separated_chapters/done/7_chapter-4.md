@@ -118,7 +118,7 @@ EX: A tree. No one wants to bump into a tree 4 steps before it is reached.
 
 **Switch Origin**
 
-The origin is different for switches and some other sprites. The origin needs to be centered to the upper left corner for a switch. You check the sample in chapter 15 because I know for a fact that there are switches in that sample. The samples are in the directory `Lessons > Chapter_15_Sample.zip.`
+The origin is different for switches and some other sprites. The origin needs to be centered to the upper left corner for a switch. You check the sample in chapter 15. The samples are in the directory `Lessons/Chapter_15/Chapter_15_Sample.zip.`
 
 ![Chapter_4_images/Chapter_4_18_switch_centered_upper_left%20corner.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_18_switch_centered_upper_left%20corner.png)
 
