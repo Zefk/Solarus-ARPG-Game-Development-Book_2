@@ -11,7 +11,6 @@ Credits so far...
 - Vlag - His adapted work on the hud.
 - Andrew Tyler - The minecraftia font.
 - Bertram - for his adapted work.
-- Olivier Cléro
 - Yusuke Kamiyamane - For the Solarus editor icons. Yusuke Kamiyamane: http://p.yusukekamiyamane.com/
 - gwes - The key, heart, and skull shield.
 - Reemax (Tuomo Untinen) - His skeleton scale to 32x32 and walking animation of Artisticdude's sprite.
