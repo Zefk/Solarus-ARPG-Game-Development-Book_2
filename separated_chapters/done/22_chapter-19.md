@@ -6,13 +6,13 @@ Credits so far...
 ##### Graphics:
 - Diarandor (Most of his art is the sample quest) You can find a license in the sample quest. Most or all of his work is under CC-BY-SA 4.0
 - Zane Kukta (My work seperate from the forest and dessert tileset is CC0) See sample quest license or refer to this [issue](https://github.com/solarus-games/solarus-sample-quest/issues/11) if the license file has not been updated yet.
-- Christopho - His work in the sample quest.
+- Christopho - His work in the sample quest and adapted work.
 - Neovyse - The Solarus logo.
-- Vlag - His work on the hud.
+- Vlag - His adapted work on the hud.
 - Andrew Tyler - The minecraftia font.
-- Bertram
+- Bertram - for his adapted work.
 - Olivier Cléro
-- Yusuke Kamiyamane
+- Yusuke Kamiyamane - For the Solarus editor icons. Yusuke Kamiyamane: http://p.yusukekamiyamane.com/
 - gwes - The key, heart, and skull shield.
 - Reemax (Tuomo Untinen) - His skeleton scale to 32x32 and walking animation of Artisticdude's sprite.
 - Artisticdude - His skeleton sprite
