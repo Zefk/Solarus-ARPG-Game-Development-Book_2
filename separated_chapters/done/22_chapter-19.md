@@ -17,7 +17,7 @@ Credits so far...
 - Artisticdude - His skeleton sprite
 - interdimensional_ <http://interdimensional.space/> - His beast sprite for the orc.
 - titi_son - For the mountain background image
-- Maxs
+- Maxs - Animated Solarus logo
 
 ##### Audio:
 - Diarandor (Most of the sounds and music in the sample quest.) CC-BY-SA 4.0
