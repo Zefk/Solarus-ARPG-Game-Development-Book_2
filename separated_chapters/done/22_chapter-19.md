@@ -18,6 +18,25 @@ Credits so far...
 - interdimensional_ <http://interdimensional.space/> - His beast sprite for the orc.
 - titi_son - For the mountain background image
 - Maxs - Animated Solarus logo
+- Blarumyrran - 32x32 treasure chests
+- Daniel Cook - Chest by Daniel Cook (Lostgarden.com)
+- Benjamin Pickhardt - Daniel Cook chest modification of Benjamin Pickhardt (hackcraft.de)
+- Hyptosis
+- Zabin 
+- arikel 
+- Viktor Hahn (Viktor.Hahn@web.de)
+- AlexCons
+- Calciumtrice - Farming Tool Icons by Calciumtrice
+- Stephen Challener (Redshrike) - Stephen Challener (Redshrike). Commissioned by OpenGameArt.org (http://opengameart.org)
+- Casper Nilsson
+- Daniel Eddeland 
+- Johann CHARLOT
+- Skyler Robert Colladay
+- Lanea Zimmerman (AKA Sharm)
+- Stephen Challener (AKA Redshrike)
+- Charles Sanchez (AKA CharlesGabriel)
+- Manuel Riecke (AKA MrBeast)
+- Daniel Armstrong (AKA HughSpectrum)
 
 ##### Audio:
 - Diarandor (Most of the sounds and music in the sample quest.) CC-BY-SA 4.0
