@@ -443,3 +443,28 @@ This is a list of most default hero animations, but there are more. You do not n
 |Animation| Description|
 |:---------|:---------|
 |normal| stars or other animation for spin attack|
+
+#### ground1
+
+|Animation|
+|:---------|
+|Stopped|
+|walking|
+
+|Sound|
+|:---------|
+|walk_on_grass.ogg|
+
+![Chapter_4_images/Chapter_4_22_ground1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_22_ground1.png)
+
+#### ground2
+
+|Animation|
+|:---------|
+|Stopped|
+
+|Sound|
+|:---------|
+|walk_on_water.ogg|
+
+![Chapter_4_images/Chapter_4_23_ground2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_23_ground2.png)
