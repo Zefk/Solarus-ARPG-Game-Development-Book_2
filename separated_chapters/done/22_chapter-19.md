@@ -4,18 +4,42 @@
 Credits so far...
 
 ##### Graphics:
-- Diarandor (Most of his art is in the images and sounds in the samples.) You can find a license in the sample quest. Most or all of his work is under CC-BY-SA 4.0
+- Diarandor (Most of his art is the sample quest) You can find a license in the sample quest. Most or all of his work is under CC-BY-SA 4.0
 - Zane Kukta (My work seperate from the forest and dessert tileset is CC0) See sample quest license or refer to this [issue](https://github.com/solarus-games/solarus-sample-quest/issues/11) if the license file has not been updated yet.
+- Christopho - His work in the sample quest.
+- Neovyse - The Solarus logo.
+- Vlag - His work on the hud.
+- Andrew Tyler - The minecraftia font.
+- Bertram
+- Olivier Cléro
+- Yusuke Kamiyamane
+- gwes - The key, heart, and skull shield.
+- Reemax (Tuomo Untinen) - His skeleton scale to 32x32 and walking animation of Artisticdude's sprite.
+- Artisticdude - His skeleton sprite
+- interdimensional_ <http://interdimensional.space/> - His beast sprite for the orc.
+- titi_son - For the mountain background image
+- Maxs
 
-##### Sounds:
-- Diarandor (Most of his art is in the images and sounds in the samples.) CC-BY-SA 4.0
-- Zane Kukta (Any sound I added is CC0 or the license I stated in the sound directory)
+##### Audio:
+- Diarandor (Most of the sounds and music in the sample quest.) CC-BY-SA 4.0
+- Zane Kukta (Any sound I added is CC0 like the timer sounds or the license I stated in the sound directory)
+- Eduardo Dueñas for his music pieces musics/village.ogg and sounds/secret.ogg
+- Eric Matyas, his music from soundimage was very useful in the creation of the chain quest.
+"Closing In On the Loot_Looping"
+"Hypnotic Orient_Looping"
+"Magical Getaway_Looping"
+"Pride_v002"
+"The 8 Bit Digger"
+"Young Heroes"
+by Eric Matyas
+www.soundimage.org
 
 ##### Scripting Credits:
 - Christopho (All of his scripts, sample quest, and making the Solarus Game Engine) GPLv3
 - Zane Kukta (Most sample scripts)
 - Diarandor (Some script snippets from his assistance on the forum and sample quest)
 - llamazing (Some script snippets from his assistance on the forum)
+- Max (Some script snippets from his assistance on the forum)
 
 ##### Writing Credits:
 - Christopho (Solarus documentation edited snippets)
@@ -24,6 +48,23 @@ Credits so far...
 - Logan M: [Differences-between-visual-novel-eroge-gal-game-and-a-dating-sim](http://anime.stackexchange.com/questions/4926/what-are-the-differences-between-visual-novel-eroge-gal-game-and-a-dating-sim) (CC-BY-SA 3.0)
 - Wikipedia [List_of_genres,](https://en.wikipedia.org/wiki/List_of_genres) [video_gaming,](https://en.wikipedia.org/wiki/Quest_(video_gaming)) [Puzzle](https://en.wikipedia.org/wiki/Puzzle)[Retrogaming](https://en.wikipedia.org/wiki/Glossary_of_video_game_terms#Retrogaming), [Mode_7](https://en.wikipedia.org/wiki/Mode_7), [Sprite](https://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29),
 [Pixel](https://en.wikipedia.org/wiki/Pixel), [Artificial_intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence_(video_games)), [Beat_em_up](https://en.wikipedia.org/wiki/Beat_%27em_up), [CPU](https://en.wikipedia.org/wiki/Central_processing_unit), [Spawning](https://en.wikipedia.org/wiki/Spawning_%28video_gaming%29), CC-BY-SA 3.0
+
+##### Solarus Team
+- Christopho
+- Neovyse
+- Diarandor
+- Maxs
+- Newlink
+- Renku
+- std::gregwar
+- Binbin
+
+##### Special Thanks:
+- wrightmat, I learned a lot from your scripts.
+- MetalZelda, your coding suggestions were very helpful.
+- llamazing, your assistance on the forum really helped make this book.
+- Max, thanks your help on the fourm.
+- Claire Moore (nate-devv), thanks for the Linux version of Solarus!
 
 ### Fairyolica World Credits:
 
