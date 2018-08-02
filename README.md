@@ -5,8 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.`
 
-- Chain Quest*
-
 - Correct remaining errors and revamp book*
 
 - Alpha 0.9 release and get the opinion of the Solarus community.
