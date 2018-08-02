@@ -17,25 +17,25 @@ One can download the completed lesson.
 
 I would like to show the script before beginning the lesson and how to use it. 
 
-1.The script can be activated with the 'a' key. 
+1. The script can be activated with the 'a' key. 
 
 ![Chapter_9_images/Chapter_9_2_Key_a.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_9_images/Chapter_9_2_Key_a.png)
 
-2.The green image will fade out when 'o' is pressed. 
+2. The green image will fade out when 'o' is pressed. 
 
-3.The green image will fade in when 'i' is pressed. 
+3. The green image will fade in when 'i' is pressed. 
 
 ![Chapter_9_images/Chapter_9_5_Fade_Out_Vanish_Function.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_9_images/Chapter_9_5_Fade_Out_Vanish_Function.png)
 
-4.The volume will go up by 5 if the 'u' key is pressed. 
+4. The volume will go up by 5 if the 'u' key is pressed. 
 
-5.The volume will go down by 5 if the 'y' key is pressed. 
+5. The volume will go down by 5 if the 'y' key is pressed. 
 
-6.The blue block will move up, down, left, and right by 3. Only if the up, down, left, right keys are pressed. One will notice it moved a little.
+6. The blue block will move up, down, left, and right by three (3). Only if the up, down, left, right keys are pressed. One will notice it moved a little.
 
 ![Chapter_9_images/Chapter_9_4_Arrow_keys_blue_block.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_9_images/Chapter_9_4_Arrow_keys_blue_block.png)
 
-7.Right clicking the mouse "on" the red block will make it vanish and left clicking will make it appear again.
+7. Right clicking the mouse "on" the red block will make it vanish and left clicking will make it appear again.
 
 ![Chapter_9_3_Vanish_Right_Click.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_9_images/Chapter_9_3_Vanish_Right_Click.png)
 
@@ -310,7 +310,7 @@ end
 
 #### Set Pause
 
-By default the game pauses with the key 'd', but that is not the only way to pause the game. One can use `game:set_pause` to pause and unpause the game.
+By default, the game pauses with the key 'd', but that is not the only way to pause the game. One can use `game:set_pause` to pause and unpause the game.
 
 **EX:**
 
@@ -434,4 +434,3 @@ function sol.main:on_mouse_pressed(button,x,y)
   end -- end of right button
 end -- end of mouse press function
 ```
-
