@@ -1,5 +1,5 @@
 
-## Chapter 9: Key press, Mouse press, Image fade, and playing audio
+## Chapter 9: Key press, Mouse press, Image fade, and Playing Audio
 
 **Lesson Preview:**
 
