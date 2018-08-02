@@ -102,14 +102,14 @@ sol.timer.start([context], delay (in milliseconds) , callback)
 
 ##### Timer Function Delay
 
-1.Timer will go off (as long as you are still on the same map) for 1 
+1. Timer will go off (as long as you are still on the same map) for 1 
 second in the example below.
  
-2.There are 1000 milliseconds in 1 seconds.
+2. There are 1000 milliseconds in 1 seconds.
 
-3.Timer will not go off if you go to another map before 1 second is reached.
+3. Timer will not go off if you go to another map before 1 second is reached.
 
-4.If the game is paused with "d", then the timer is paused as well.
+4. If the game is paused with "d", then the timer is paused as well.
 
 ```lua
 -- Play sound "secret" in one second.
@@ -124,14 +124,14 @@ sol.timer.start(1000, play_secret_sound)
 
 This is a shorter form of the example before.
 
-1.Timer will go off (as long as you are still on the same map) in 5 
+1. Timer will go off (as long as you are still on the same map) in 5 
 seconds.
  
-2.There are 5000 milliseconds in 5 seconds.
+2. There are 5000 milliseconds in 5 seconds.
 
-3.Timer will not go off if you go to another map before 5 seconds are reached.
+3. Timer will not go off if you go to another map before 5 seconds are reached.
 
-4.If the game is paused with "d", then the timer is paused as well.
+4. If the game is paused with "d", then the timer is paused as well.
 
 
 ```lua
@@ -196,9 +196,9 @@ end)
 
 ##### Context Timer
 
-1.Using the "game" context or parameter will make the timer go off even though you leave the map.
+1. Using the "game" context or parameter will make the timer go off even though you leave the map.
 
-2.Context (map, game, item, map entity, menu or sol.main; optional)
+2. Context (map, game, item, map entity, menu or sol.main; optional)
 
 ```lua
 sol.timer.start(game, 5000, function()
@@ -360,7 +360,7 @@ end --end of draw function
 
 Stopping a timer is simple.
 
-1.Assign a variable to the timer.  "local timer" in this case.
+1. Assign a variable to the timer.  "local timer" in this case.
 
 ```lua
 local timer = sol.timer.start(game, 5000, function()
@@ -368,7 +368,7 @@ local timer = sol.timer.start(game, 5000, function()
 end)
 ```
 
-2.variable:stop(). "timer" is the variable.
+2. variable:stop(). "timer" is the variable.
 
 ```lua
 timer:stop()
@@ -376,7 +376,7 @@ timer:stop()
 
 ##### Stop all Context Timers
 
-1.Context (map, game, item, map entity, menu or sol.main; optional)
+1. Context (map, game, item, map entity, menu or sol.main; optional)
 
 
 ```lua
@@ -439,11 +439,11 @@ end --end of draw function
 Variable:set_with_sound(true/false)
 ```
 
-This uses built in sound names:
+These uses built in sound names:
 
-1.timer_hurry
+1. timer_hurry
 
-2.timer
+2. timer
 
 The sound will go slower the more seconds. It will go faster with only a few milliseconds.
 
@@ -563,4 +563,3 @@ Check the [documentation](http://www.solarus-games.org/doc/latest/) for more inf
 `Lessons > Chapter_10 > Chapter_10_Timer.zip`
 
 `Lessons > Chapter_10 > Chapter_10_Click_drag_mouse.zip`
-
