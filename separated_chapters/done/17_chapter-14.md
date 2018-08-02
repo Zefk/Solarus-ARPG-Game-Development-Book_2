@@ -5,7 +5,7 @@ The sample for this lesson is in the following directory:
 
 `Lessons > Chapter_14_Abilities_Quest-launcher_savegame`
 
-### Abilities: swim, lift, sword, run, etc
+### Abilities: Swim, Lift, Sword, Run, etc
 
 Built-in ability levels indicate whether the hero can perform some built-in actions like attacking, swimming, and running.
 
@@ -149,9 +149,7 @@ The tunic has the following default animations and probably more. They are neede
 - walking_diagonal
 - walking_with_shield
 
-
-
-##### Sword Ability Setup 
+##### Sword Ability Setup
 
 An ability needs to be set or activated before it can work.
 ```lua
@@ -206,7 +204,6 @@ game:set_ability("sword_knowledge", 1)
 The `sword_knowledge` ability allows the player to do a super spin attack.
 
 An animation called `super_spin_attack` is needed in `tunic1` and `sword1` for this to work.
-
 
 ##### Shield Ability Setup
 
@@ -369,7 +366,7 @@ Christopho says, "The logo of your quest should be a PNG image of size 200x140 c
 
 ##### Quest Icons
 
-An icon can also represent your game or quest. The icon is optional as well. Many icon sizes are allowed  and every icon needs to be on a separate png. Icon sizes 16  x 16 to 1024x1024 pixels are allowed.
+An icon can also represent your game or quest. The icon is optional as well. Many icon sizes are allowed and every icon needs to be on a separate png. Icon sizes 16  x 16 to 1024x1024 pixels are allowed.
 
 "logos/icon_16.png",
 "logos/icon_24.png",
@@ -704,4 +701,3 @@ Okay, after starting the animation the death sound occurs and the `game_over.lua
 
 You can check out the sample in: 
 `Lessons > Chapter_13_14_custom_entity_game_over.zip`
-
