@@ -199,8 +199,6 @@ There are many entities for the map.
 
 ![Chapter_3_24_Solarus_Editor_resource_file_manager_map_editor_entities.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_24_Solarus_Editor_resource_file_manager_map_editor_entities.png)
 
-TIP: NPC stats for non-player character.
-
 |Entity      |              Description                   |
 |------------|:------------------------------------------|
 |Destination|        The starting point.
