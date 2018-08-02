@@ -5,15 +5,17 @@
 
 ##### Sample Quest
 
-Inside the Solarus Engine Download contains many free graphics, scripts, and audio. You can thank Diarandor for that because he is constantly adding resources to the sample quest.
+Inside the Solarus Engine `Download` contains many free graphics, scripts, and audio in the sample quest. You can thank Diarandor for that because he is constantly adding resources to the sample quest.
 
-https://github.com/solarus-games/solarus-sample-quest
+https://gitlab.com/solarus-games/solarus-sample-quest
+
+https://gitlab.com/solarus-games/diarandor-art
 
 ##### Children of Solarus
 
 This opensource project contains opensource graphics.
 
-https://github.com/solarus-games/children-of-solarus
+https://gitlab.com/solarus-games/children-of-solarus
 
 ##### Faryolica World
 
@@ -26,7 +28,7 @@ https://github.com/Zefk/Fairyolica-World/releases
 
 #####Solarus Fan Games
 
-You can a lot of free enemy scripts and more.
+You can get a lot of free enemy scripts and more.
 
 http://www.solarus-games.org/games/solarus-team/
 
