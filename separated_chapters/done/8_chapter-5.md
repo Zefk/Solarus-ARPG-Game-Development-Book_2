@@ -30,7 +30,7 @@ Properties appear in the `selection properties section` when one selects a patte
 
 ##### Rename ID
 
-A pattern id can be changed like this:
+A pattern id can be changed by clicking the pencil icon:
 
 ![chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png)
 
@@ -41,8 +41,6 @@ A pattern ID is important because if you have two tilesets that are exactly the 
 A forest can become an instant desert once tilesets are changed. The patterns must be the same or similar enough for a decent change without much editing. This could be useful for different dimensions or terrain changes due to some cause.
 
 You can use `map:set_tileset("tileset_name")` to change tilesets.
-
-
 
 ##### Ground
 
