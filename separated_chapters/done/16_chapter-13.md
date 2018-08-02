@@ -9,13 +9,13 @@ The inside store contains pre-made maps. These can be selected, copied, and past
 
 ### get_() & related
 
-If you have not already noticed, then there are ways to get cetain functions in scripts.
+If you have not already noticed, then there are ways to get certain functions in scripts.
 
 For a map script to use map functions it needs `local map = ...` and the map can get game functions with `map:get_game()`.
 
 When simply loading external scripts one needs `local game = ...`to use game functions in it, but it is better to use `require()` for external scripts and pass the game through a function like `function game_over_menu:start(game)`. One can use  `local map = game:get_map()`to get the map functions in external scripts.
 
-I will use the map script as an example 
+I will use the map script as an example .
 
 **Some ways to get certain functions are:**
 
@@ -28,7 +28,7 @@ get_hero()
 
 #### map:get_game()
 
-If you wanted to use game functions on a map, then you use use the following line of code.
+If you wanted to use game functions on a map, then you use the following line of code.
 
 ```lua
 local game = map:get_game()
@@ -42,7 +42,7 @@ game:set_starting_location("Map_4", "starting_destination") -- Starting location
 
 #### map:get_hero()
 
-If you wanted to use hero functions on a map, then you use use the following line of code.
+If you wanted to use hero functions on a map, then you use the following line of code.
 
 ```lua
 local hero = map:get_hero()
@@ -112,7 +112,7 @@ Here are the existing types of entities.
 
 ##### Setting up Maps and Starting Location
 
-In `game_manager.lua` there is a game script for the starting location. it is set to `Map_1`.
+In `game_manager.lua` there is a game script for the starting location. It is set to `Map_1`.
 
 ```lua
     game:set_starting_location("Map_1") -- Starting location.
@@ -142,9 +142,9 @@ You copy it by holding down the left mouse button and dragging or moving the mou
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/5_add_Destination_entity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/5_add_Destination_entity.png)
 
-##### Edit Destination Entitiy Options
+##### Edit Destination Entity Options
 
-Double click on te destination entity in order to bring up the edit menu.
+Double click on the destination entity in order to bring up the edit menu.
 
 ![Chapter_13_images/1_Destination_Teletransporter%20entities/6_double_click_name_layer_pos_direction_update_default.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/1_Destination_Teletransporter%20entities/6_double_click_name_layer_pos_direction_update_default.png)
 
@@ -153,7 +153,7 @@ Double click on te destination entity in order to bring up the edit menu.
 |Name| A name is needed for scripting reasons and for Teletransporters.
 |Layer| The layer you want the entity on.
 |Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
-|Direction| The Direction is important because it tells Solarus which way you want the player character to face when teletransporting to a new map. <br><br>The options are: <br><br>- Up <br><br>- Down <br><br> - Left <br><br> - Right
+|Direction| The direction is important because it tells Solarus which way you want the player character to face when teletransporting to a new map. <br><br>The options are: <br><br>- Up <br><br>- Down <br><br> - Left <br><br> - Right
 |Sprite| You can pick a sprite for the Destination Entity.
 |Update Starting Location| You can set when the destination entity updates and it is only possible when the destination entity has a name. You can leave it default, "When the world changes," it is fine most of the time. "Never" works too, but for scripting reasons you might want to update the destination entity. <br><br>There are three options: <br><br>- When the world changes <br><br> - Always <br><br> - Never
 |Default| If there are more than one destination entity on the map, then the default one is where the player will begin at.
@@ -332,7 +332,7 @@ Use the `r` key to resize the jumper.
 |Name| A name is needed for scripting reasons. You can leave it blank.
 |Layer| The layer you want the entity on.
 |Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
-|Size| The jumper Entity can be resized with the `r` key or manully from the edit menu.
+|Size| The jumper Entity can be resized with the `r` key or manually from the edit menu.
 |Direction| As you can see in the image, the jumper can be set in many directions. <br><br>They are: <br><br>- Up <br><br>- Down <br><br>- Left <br><br>- Right <br><br>- Left-down <br><br>- Right-down <br><br>- Left-up <br><br>- Right-up
 |Jump length| This is how far the sprite can jump. A common mistake is that the player gets stuck in a wall when jumping. Most of the time the jump distance is not long enough in those cases.
 
@@ -545,7 +545,7 @@ end
 ```
 
 ##### Setting up a Simple NPC dialog
-The `hammer.hello` dialog states that big_boss needs help and he is offering a reward.
+The `hammer.hello` dialog states that big_boss needs help, and he is offering a reward.
 
 ```
 I lost my hammer!
@@ -792,7 +792,7 @@ Generalized NPC(s) are useful for not only signs or other objects. They can be u
 
 ![4_funny_chat.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/7_NPC/general_npc/4_funny_chat.png)
 
-Now this isn't in the sample, but what if both NPC(s) are not  a generalized NPC? If I talk to the magician from the right, then that makes him turn to the right. If the hero interact with the desk, then the magician will still be facing the wrong direction. In this case we use a function called, "`NPC:get_sprite():set_direction(Number)`."
+Now this isn't in the sample, but what if both NPC(s) are not a generalized NPC? If I talk to the magician from the right, then that makes him turn to the right. If the hero interact with the desk, then the magician will still be facing the wrong direction. In this case we use a function called, "`NPC:get_sprite():set_direction(Number)`."
 
 
 |Number| Direction|
@@ -852,7 +852,7 @@ The switch is the button with the red dot next to the block entity. You can step
 |Layer| The layer you want the entity on.
 |Position| The coordinates the entity is at. You can manually change them or move the entity with the cursor.
 |Sprite| Pick the sprite image for the switch.
-|Subtype| **Walkable:** Ability to walk on the switch. <br><br> **Solid:** You can hit the switch with the 'c' key to activate it. Normally that is a weapon like a sword. <br><br> **Arrow Target:** You can shoot an arrow at it. There is a built in bow and arrow.
+|Subtype| **Walkable:** Ability to walk on the switch. <br><br> **Solid:** You can hit the switch with the 'c' key to activate it. Usually, that is a weapon like a sword. <br><br> **Arrow Target:** You can shoot an arrow at it. There is a built in bow and arrow.
 |Play Sound| Pick a sound that you want played when the switch activates.
 |Activation| You can require a block to be on the switch for it to be activated.
 |Leaving switch| The switch can be deactivated if this option is checked.
@@ -883,7 +883,7 @@ I named the chest the name `chest`. The function `Set_enabled(true/false` is use
 
 ![1_chest_name.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/1_chest_name.png)
 
-The first thing that needs to be done is that the chest needs a save value because we will be using this to see if the chest has been opened. I used the save value name `Map_4_gem_treasure`.
+The first thing that needs to be carried out is that the chest needs a save value because we will be using this to see if the chest has been opened. I used the save value name `Map_4_gem_treasure`.
 
 ```lua
   if game:get_value("Map_4_gem_treasure") then
@@ -891,7 +891,7 @@ The first thing that needs to be done is that the chest needs a save value becau
 
 ![1_chest_name_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/9_switch/1_chest_name_2.png)
 
-Next we want to show the button as activated and not deactivated. The `set_activated(true/false)` function is used in order to accomplish this.
+Next we want to show the button as activated and not deactivated. The `set_activated(true/false)` function is used in order to achieve this.
 
 ```lua
     chest_button:set_activated(true)
@@ -963,7 +963,7 @@ end
 
 Now we want the chest to vanish when the block leaves the button. We want this to happen only when the chest is not opened. 
 
-We need to check when the button is inactivated. We will use the function `on_inactivated()`.
+We need to check when the button is inactivated and will use the function `on_inactivated()` for this.
 
 ```lua
 function chest_button_2:on_inactivated()
@@ -1072,7 +1072,7 @@ The same as the walkable switch. Just set it to `solid` and press `c` to activat
 
 ### Dynamic Tile
 
-Dynamic Tiles are entities and they can be manipulated like an entity once a name is given to them. You can script it and all that jazz. Tiles are originally static meaning they cannot be used with scripts until converted to Dynamic.
+Dynamic tiles are entities, and they can be manipulated like an entity once a name is given to them. You can script it and all that jazz. Tiles are originally static meaning they cannot be used with scripts until converted to Dynamic.
 
 ##### Convert to Dynamic
 
@@ -1238,7 +1238,7 @@ end
 Tip: There is a shortcut for `hero:save_solid_ground()`. Instead of typing `hero:save_solid_ground()` over and over again for each new sensor, you could use the following script.
 
 ```lua
---Do not name your sensor, "sensor." Do not give it the same name. use a unique name like "ground_sensor."
+--Do not name your sensor, "sensor." Do not give it the same name. Use a unique name like "ground_sensor."
 for sensor in map:get_entities("ground_sensor_") do
 
    function sensor:on_activated()
@@ -1247,7 +1247,7 @@ for sensor in map:get_entities("ground_sensor_") do
 end
 ```
 
-The "for sensor" part refers to the sensors on the map. The `get_entities()` function refers to the names of the sensors. The names are all `ground_sensor_` with some number index. For example, `ground_sensor_1`. The `get_entities()` functions grabs or gets the sensors with the same name, but with a number difference (number index).
+To start, the "for sensor" part refers to the sensors on the map. The `get_entities()` function refers to the names of the sensors. The names are all `ground_sensor_` with some number index. For example, `ground_sensor_1`. The `get_entities()` functions grabs or gets the sensors with the same name, but with a number difference (number index).
 
 ```lua
 for sensor in map:get_entities("ground_sensor_") do
@@ -1264,7 +1264,7 @@ Now we will make a function for the sensors on the map. We will `save_solid_grou
 The resulting script.
 
 ```lua
---Do not name your sensor, "sensor." Do not give it the same name. use a unique name like "ground_sensor."
+--Do not name your sensor, "sensor." Do not give it the same name. Use a unique name like "ground_sensor."
 for sensor in map:get_entities("ground_sensor_") do
 
    function sensor:on_activated()
@@ -1325,7 +1325,7 @@ Now let us set up the `previous_tile` variable.
 local previous_tile =
 ```
 
-We will assign it to a function called `map:get_entity`. We will use this to get the times of all the dynamic tiles we want. We want the names of all the `tile_` dynamic tiles with some number index. For example, `tile_1`.
+We will assign it to a function called `map:get_entity`. We will use this to get the times of all the dynamic tiles we want. One wants the names of all the `tile_` dynamic tiles with some number index. For example, `tile_1`.
 
 ```lua
 local previous_tile = map:get_entity("tile_"
@@ -1487,7 +1487,7 @@ As far as I know the keywords are `blue_lowered`, `blue_raised`, `orange_lowered
 
 ### Stream Entity
 
-The stream entity pushes the player or moves him/her/it in the desired direction. It can also be used to slow the player down. For instance, gravity, spinning wheel, and/or a sandstorm. A developer might want to have some force to slow down the player.
+The stream entity pushes the player or moves him/her/it in the desired direction. It can also be used to slow the player down. For example, gravity, spinning wheel, and/or a sandstorm. A developer might want to have some force to slow down the player.
 
 ##### Add Stream
 
@@ -1819,17 +1819,17 @@ function game_manager:start_game()
 
 The gem already exists for you. You can thank Diarandor for that, but I will explain how to set up the gem. This script is a little cleaner.
 
-1.Make an item script called `gem`. You probably want to delete the old one first or use the name `gem2`.
+1. Make an item script called `gem`. You probably want to delete the old one first or use the name `gem2`.
 
 ![1_Create_gem_item.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/1_Create_gem_item.png)
 
-2.Go to `sprites > entities > items`. The item script name must match, the item animation game.
+2. Go to `sprites > entities > items`. The item script name must match, the item animation game.
 
 ![2_entities_items.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/2_entities_items.png)
 
 ![3_animation_variants_in_items.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/3_animation_variants_in_items.png)
 
-3.By default, a script template is made when making an item.
+3. By default, a script template is made when making an item.
 
 ```lua
 -- Lua script of item gem.
@@ -1869,7 +1869,7 @@ function item:on_pickable_created(pickable)
 end
 ```
 
-4.`function item:on_using()` will not be used because you buy things with money (gems), but if you plan to attack with gems, then you would use this function. That means you can delete this part.
+4. The function`function item:on_using()` will not be used because you buy things with money (gems), but if you plan to attack with gems, then you would use this function. That means you can delete this part.
 
 ```lua
 -- Event called when the hero is using this item.
@@ -1881,7 +1881,7 @@ function item:on_using()
 end
 ```
 
-5.`function item:on_pickable_created(pickable)` is used for when an item is created on a map. The movement animation can be changed. For example, have it spin differently (default one works fine in my opinion) or have the gem move slowly away from the player. That means you can delete this part of the script as well.
+5. The function`function item:on_pickable_created(pickable)` is used for when an item is created on a map. The movement animation can be changed. For example, have it spin differently (default one works fine in my opinion) or have the gem move slowly away from the player. That means you can delete this part of the script as well.
 
 ```lua
 -- Event called when a pickable treasure representing this item
@@ -1892,7 +1892,7 @@ function item:on_pickable_created(pickable)
 end
 ```
 
-6.We are left with one function `function item:on_started()`. This function is used to set up the properties for your item. For example, shadow size, and sound when picked up. There are a lot of functions that can be used and I will cover the basic ones.
+6. We are left with one function `function item:on_started()`. This function is used to set up the properties for your item. For example, shadow size, and sound when picked up. There are a lot of functions that can be used and I will cover the basic ones.
 
 ```lua
 local item = ...
@@ -1907,7 +1907,7 @@ function item:on_started()
 end
 ```
 
-7.Set the shadow size with the function `self:set_shadow("animation_name")`.
+7. Set the shadow size with the function `self:set_shadow("animation_name")`.
 
 ![Rupee_scripting/4_big_small_shadow.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/4_big_small_shadow.png)
 
@@ -1919,7 +1919,7 @@ function item:on_created()
 end
 ```
 
-8.Set whether it can disappear or not with the function `self:set_can_disappear(true/false)`.
+8. Set whether it can disappear or not with the function `self:set_can_disappear(true/false)`.
 
 ```lua
 function item:on_created()
@@ -1929,7 +1929,7 @@ function item:on_created()
 end
 ```
 
-9.Set the "ta da da daa" brandish sound when picking up the item. This will be false because it would be strange for this to happen on a simple gem. Normally, this happens when a chest is open. The function for that is `self:set_brandish_when_picked(false/true)`.
+9. Set the "ta da da daa" brandish sound when picking up the item. This will be false because it would be strange for this to happen on a simple gem. Normally, this happens when a chest is open. The function for that is `self:set_brandish_when_picked(false/true)`.
 
 ```lua
 function item:on_created()
@@ -1939,7 +1939,7 @@ function item:on_created()
 end
 ```
 
-10.Set the sound for when the item is picked up with function `self:set_sound_when_picked("name_of_sound")`.
+10. Set the sound for when the item is picked up with function `self:set_sound_when_picked("name_of_sound")`.
 
 ```lua
 function item:on_created()
@@ -1965,7 +1965,7 @@ end
 
 The last function will be for setting up the value for all the variants and so that money can be added to the counter. We do this with the function `function item:on_obtaining(variant, savegame_variable)`.
 
-1.It is best to start this with a table. The table will hole the money amount for 3 variants. For example, value 2 = variant 1, value 10 = variant 3, etc.
+1. It is best to start this with a table. The table will hole the money amount for 3 variants. For example, value 2 = variant 1, value 10 = variant 3, etc.
 
 ```lua
 function item:on_obtaining(variant, savegame_variable)
@@ -1974,7 +1974,7 @@ function item:on_obtaining(variant, savegame_variable)
 end
 ```
 
-2.Next we will use the function `game:add_money()`. This is used to add value to the money counter. We will use the variable `amounts` and `variant` from the function item:on_obtaining(`variant`, savegame_variable) to add values for the gem `amounts[variant]`.
+2. Next we will use the function `game:add_money()`. This is used to add value to the money counter. We will use the variable `amounts` and `variant` from the function item:on_obtaining(`variant`, savegame_variable) to add values for the gem `amounts[variant]`.
 
 ```lua
 function item:on_obtaining(variant, savegame_variable)
@@ -2078,9 +2078,9 @@ Lastly, if you save the state of the treasure from the shop, then you will only 
 
 ### Door Entity
 
- The purpose of this is obviously for opening doors. 
+The purpose of this entity is for opening doors. 
  
- You can find the sample for this section in the directory `Lessons > Chapter_13_Entities > F_door_stairs_seperator_custom.zip`.
+You can find the sample for this section in the directory `Lessons > Chapter_13_Entities > F_door_stairs_seperator_custom.zip`.
 
 ##### Add Door
 
@@ -2118,23 +2118,23 @@ The closing time determines whether the graphic shows or not. Give the door enti
 
 We are going to open two doors at the same time with a switch entity.
 
-1.Add a switch entity. I named the switch `door_trigger`.
+1. Add a switch entity. I named the switch `door_trigger`.
 
 ![1_door_switch.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/1_door_switch.png)
 
-2.Add a door entity. I named it `switch_door`. 
-3.You can save the state of the door.
-4.Select the opening mode `By script`. 
-5.You can add a dialog as well.
+2. Add a door entity. I named it `switch_door`. 
+3. You can save the state of the door.
+4. Select the opening mode `By script`. 
+5. You can add a dialog as well.
 
 ![2_door_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/2_door_script.png)
 
-6.Copy the door entity you just made and set it somewhere. Do not rename it because the number index at the end is needed to open both doors at the same time.
+6. Copy the door entity you just made and set it somewhere. Do not rename it because the number index at the end is needed to open both doors at the same time.
 
 ![door_scripting/3_name_index.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/3_name_index.png)
 
 
-7.The function `map:open_doors("name_without_number_index")` will open both doors at the same time.
+7. The function `map:open_doors("name_without_number_index")` will open both doors at the same time.
 
 ```lua
 local map = ...
@@ -2147,23 +2147,23 @@ end
 ```
 ##### Opening Door With Key
 
-1.Create an item named `key`.
+1. Create an item named `key`.
 
 ![5_key_must_exist.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/5_key_must_exist.png)
 
-2.Make an animation for the key in `sprites > entities > items`.
+2. Make an animation for the key in `sprites > entities > items`.
 
 ![6_key_entities_items.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/6_key_entities_items.png)
 
-3.Setup the door and require the key.
+3. Setup the door and require the key.
 
 ![door_scripting/4_door_key.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/4_door_key.png)
 
-4.Make sure to create a dialog for the item `key`.
+4. Make sure to create a dialog for the item `key`.
 
 ![8_item_dialog_variant.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_scripting/8_item_dialog_variant.png)
 
-5.Saving the item `key`. The item must be saved in order for it to work. Double click on the item `key` to open its item script. On creating the key use the function `self:set_savegame_variable("name_of_item")`.
+5. Saving the item `key`. The item must be saved in order for it to work. Double click on the item `key` to open its item script. On creating the key use the function `self:set_savegame_variable("name_of_item")`.
 
 ##### Door Key
 
@@ -2187,7 +2187,7 @@ The hero is able to open the door.
 
 ### Stairs Entity
 
- The purpose of the stair entity is to create stair walking animation.
+The purpose of the stair entity is to create stair walking animation.
 
 ##### Add Stairs
 
@@ -2239,15 +2239,15 @@ The separator entity is by the stair entity. It is the purple icon.
 
 ##### Separator viewpoint
 
-1.View without separator.
+1. View without separator.
 
 ![Seperator_view_points/1_with_out_seperator.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/22_seperator/Seperator_view_points/1_with_out_seperator.png)
 
-2.Adding separator.
+2. Adding separator.
 
 ![Seperator_view_points/2_place_seperator.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/22_seperator/Seperator_view_points/2_place_seperator.png)
 
-3.View with separator.
+3. View with separator.
 
 ![3_with_seperator.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/22_seperator/Seperator_view_points/3_with_seperator.png)
  
@@ -2279,7 +2279,6 @@ The custom entity is by the purple separator entity. It is the green puzzle piec
 
 Go to entities and right click to add an entity script.
 
-
 ![3_make_custom_entity_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/23_custom/3_make_custom_entity_script.png)
 
 You can pick an entity script from the custom entity.
@@ -2290,13 +2289,13 @@ You can pick an entity script from the custom entity.
 
 We are going to script a chest that hurts the player. 
 
-1.Double click on the `trick_chest` entity.
+1. Double click on the `trick_chest` entity.
 
-2.Erase everything, but the `function entity:on_created()` and the entity signifier `local entity = ...`. By signifier, I mean it just tells that its entity related.
+2. Erase everything, but the `function entity:on_created()` and the entity signifier `local entity = ...`. By signifier, I mean it just tells that its entity related.
 
-3.Setup the entity, so it works on the map. `local map = entity:get_map()`.
+3. Setup the entity, so it works on the map. `local map = entity:get_map()`.
 
-4.Setup the entity, so it affects the hero `local hero = map:get_hero()`.
+4. Setup the entity, so it affects the hero `local hero = map:get_hero()`.
 
 ```lua
 local entity = ...
@@ -2304,9 +2303,9 @@ local map = entity:get_map()
 local hero = map:get_hero()
 ```
 
-5.Okay, we got the basics set up. Now we can give the entity `trick_chest` properties when it is created `function entity:on_created()`. These properties are not really needed if you set it up in the editor. 
+5. Okay, we got the basics set up. Now we can give the entity `trick_chest` properties when it is created `function entity:on_created()`. These properties are not really needed if you set it up in the editor. 
 
-6.The only function that is truly needed is `self:set_traversable_by(true/false)`. You will not go through the entity if the is set to false. Furthermore, I demonstrated how to set the size and origin, but, you can do this in the editor.
+6. The only function that is truly needed is `self:set_traversable_by(true/false)`. You will not go through the entity if the is set to false. Furthermore, I demonstrated how to set the size and origin, but, you can do this in the editor.
 
 ```lua
 function entity:on_created()
@@ -2316,7 +2315,7 @@ function entity:on_created()
 end
 ```
 
-7.Now we get to find out why we needed to `local hero = map:get_hero()`. We needed to get the hero in order to cause damage using the function `on_interaction()`. There are a few ways to cause damage. 
+7. Now we get to find out why we needed to `local hero = map:get_hero()`. We needed to get the hero in order to cause damage using the function `on_interaction()`. There are a few ways to cause damage. 
 
 One can use game function `game:remove_life(total_life - damage_amount)`. That would require one to get the game `local game = entity:get_game()`, but there is not indication that damage was caused.
 
@@ -2353,7 +2352,7 @@ function entity:on_interaction()
 end
 ```
 
-8.Lastly, you can remove the entity if you want after it causes damage. I mentioned the `remove()` before.
+8. Lastly, you can remove the entity if you want after it causes damage. I mentioned the `remove()` before.
 
 ```lua
 local entity = ...
@@ -2440,7 +2439,7 @@ entity:get_sprite():set_animation("sword_swing")
 
 You must make the `sword_swing` animation in the sprite editor.
 
-For the hero you will not have to `get_sprite()` because the function exists for the hero and it does not have to be retrieve from the sprites methods, so it would be like the following line of code.
+For the hero you will not have to `get_sprite()` because the function exists for the hero and it does not have to be retrieved from the sprites methods, so it would be like the following line of code.
 
 ```lua
 hero:set_animation("dead")
@@ -2516,7 +2515,7 @@ end
 
 #### On Hero State
 
-The hero has many build in states.
+The hero has many built in states.
 
 |States|
 |:------|
@@ -2567,7 +2566,7 @@ You can find samples of `custom switch` to `on hero state` in:
 
 ### Hero Entity
 
-This sections is about "some" hero methods examples and you can check the documentation for them all. I have already demonstrated some throughout the book and will not repeat those. You can check chapter 14 section "abilities" for more and everything is in the [Solarus documentation](http://www.solarus-games.org/doc/latest/lua_api_hero.html#lua_api_hero_methods).
+This section is about "some" hero methods examples and you can check the documentation for them all. I have already demonstrated some throughout the book and will not repeat those. You can check chapter 14 section "abilities" for more and everything is in the [Solarus documentation](http://www.solarus-games.org/doc/latest/lua_api_hero.html#lua_api_hero_methods).
 
 
 #### Hero Teleport
@@ -2643,7 +2642,7 @@ end)
 
 #### Set Sword Sound
 
-The sound the sword makes. By default the sound is `sword1`.
+The sound the sword makes. By default, the sound is `sword1`.
 
 `hero:set_sword_sound_id(sound_id)`
 
