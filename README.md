@@ -17,7 +17,7 @@ Everything with a '*' next to it is being worked on.`
 
 This book is being worked on in seperate markdown (.md) files on Linux using [Haroopad v0.13.1.](http://pad.haroopress.com/user.html)
 
-I will only provide HTML, MD, and PDF for this book. Others are welcome to make epubs, mobi, azw, lit, etc.
+I will only provide HTML and PDF for this book. Others are welcome to make epubs, mobi, azw, lit, etc.
 
 **Putting the .md files together:**
 
