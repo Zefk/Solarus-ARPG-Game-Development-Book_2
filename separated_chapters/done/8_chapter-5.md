@@ -34,7 +34,7 @@ A pattern id can be changed by clicking the pencil icon:
 
 ![chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_4_Tileset_Editor_selecting_3_pattern_id.png)
 
-A pattern ID is important because if you have two tilesets that are exactly the same except one is a different color, then you can simply give the same patterns to the other tileset and the map will be changed to that different color when you switch tilesets.
+A pattern ID is important because if you have two tilesets that are exactly the same except one is a different color, then you can simply give the same patterns to the other tileset and the map will be changed to that different color when you switch tilesets. Also, it is good with tasks that need certain tiles. For example, a shovel to only work on specific dirt tile.
 
 **Example:**
 
