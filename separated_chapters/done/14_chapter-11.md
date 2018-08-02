@@ -21,21 +21,21 @@ You can open the map script by right clicking on the map name in the directory o
 
 ##### Map Property Features
 
-1.One can change the description of the map. I changed it to `book map`.
+1. One can change the description of the map. I changed it to `book map`.
 
-2.The `size` is how large the map will to be. By default it is 320 x 240.
+2. The `size` is how large the map will to be. By default it is 320 x 240.
 
-3.The `layers` in Solarus are super amazing. One is not limited to 2 or 3 layers, many layers can be added. I set it to 0 to 3 layers. 
+3. The `layers` in Solarus are super amazing. One is not limited to 2 or 3 layers, many layers can be added. I set it to 0 to 3 layers. 
 
-4.One can `set a world`. Your maps are organized under the world name.
+4. One can `set a world`. Your maps are organized under the world name.
 
-5.The `floors` are as the name suggests. They are the floors on your map 
+5. The `floors` are as the name suggests. They are the floors on your map 
 
-6.The location is the coordinates where your map is located in the world.
+6. The location is the coordinates where your map is located in the world.
 
-7.One can pick the tileset to use from the `tileset` option.
+7. One can pick the tileset to use from the `tileset` option.
 
-8.The `music` section is where one can set default music for the map.
+8. The `music` section is where one can set default music for the map.
 
 ![Chapter_11_images/Chapter-11_3_map_features.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_11_images/Chapter-11_3_map_features.png)
 
@@ -143,4 +143,3 @@ One can select the remove traversable grass icon on the icon bar to make travers
 One can select the remove layer number icon on the icon bar to make layer numbers vanish. Everything, but the table in the images vanishes because I selected layer 0. The table is on layer 1.
 
 ![Chapter_11_images/Chapter-11_19_show_hide_layers.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_11_images/Chapter-11_19_show_hide_layers.png)
-
