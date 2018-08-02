@@ -76,7 +76,7 @@ To make a pattern you just click and drag to make a box.
 
 ![chapter_5_8_Tileset_Editor_selecting_7_making_tiles.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_8_Tileset_Editor_selecting_7_making_tiles.png)
 
-You can also select the type for the tile.
+You can also select the pattern option for the tile.
 
 ![chapter_5_9_Tileset_Editor_selecting_7_making_new_type_tile.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/chapter_5_9_Tileset_Editor_selecting_7_making_new_type_tile.png)
 
