@@ -36,15 +36,15 @@ There are many options when it comes to the animation properties.
 
 ![Chapter_4_images/Chapter_4_3_Sprite_editor_sprite_animation_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_3_Sprite_editor_sprite_animation_properties.png)
 
-1.Setting an animation as default
+1. Setting an animation as default
 
-2.Selecting a source image
+2. Selecting a source image
 
 ![Chapter_4_16_Sprite_editor_sprite_direction_animation_selection_preview_image.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_16_Sprite_editor_sprite_direction_animation_selection_preview_image.png)
 
-3.Frame delay
+3. Frame delay
 
-4.Loop on a certain frame number. Ex: Loop on frame 0
+4. Loop on a certain frame number. Ex: Loop on frame 0
 
 It can be used for the preview if checked. Also, if this is checks on the walking animation for a sprite, then the sprite will walk in place. It will not move.
 
@@ -68,19 +68,19 @@ The `direction properties` contains dimension options that allows one to easily 
 
 ![Chapter_4_4_Sprite_editor_sprite_direction_properties.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_4_Sprite_editor_sprite_direction_properties.png)
 
-1.Size
+1. Size
 
-2.Position
+2. Position
 
-3.Origin
+3. Origin
 
-4.Number of frames
+4. Number of frames
 
-5.Number of columns
+5. Number of columns
 
 ##### Size
 
-This is what it looks like when the size is changed. I Changed the size from 24 x 24 to 12 x 12.
+This is what it looks like when the size is changed. I changed the size from 24 x 24 to 12 x 12.
 
 ![Chapter_4_5_Sprite_editor_sprite_direction_properties_size_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_5_Sprite_editor_sprite_direction_properties_size_1.png)
 
@@ -272,9 +272,9 @@ The functions `custom_entity:set_size(width, height)` for the custom entity and 
 
 ### Basic Sprite Information
 
-Solarus has a sprite editor to setup animations and you can make as many as you want. You can activate your custom animations for the hero with `hero:set_animation("name_of_animation")` and entities with `entity:get_sprite():set_animation("name_of_animation")`.
+Solarus has a sprite editor to set up animations and you can make as many as you want. You can activate your custom animations for the hero with `hero:set_animation("name_of_animation")` and entities with `entity:get_sprite():set_animation("name_of_animation")`.
 
-Solarus goes by 8x8 formatting and it would be best to make a grid for proper positioning. The sprite can be any size, but only the bounding box size can be changed for the entities "enemy" and "custom entity."  The other entities bounding box is 16x16. The hero, NPC, etc.
+Solarus goes by 8x8 formatting and it would be best to make a grid for proper positioning. The sprite can be any size, but only the bounding box size can be changed for the entities "enemy" and "custom entity."  The other entities bounding box is 16x16. A hero, NPC, etc.
 
 You can make more animations and code them using the sprite drawable functions, but I will cover most of the default animations built into the engine. You can make any sword attack for the hero. As far as I know. 
 
