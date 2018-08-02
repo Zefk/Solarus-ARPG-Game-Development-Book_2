@@ -141,7 +141,7 @@ In order to pass the game parameter into the script, one needs to add `local gam
 
 The next line that you may not understand is `local surface_img = sol.surface.create()`. In this line of code I create and assign a variable called `surface_img` to a newly created surface `sol.surface.create()`. This surface will make pixels fill the whole screen with a single RGB color value for `surface_img`. We will get to that later in the script.
 
-The next line of code `local button_img = sol.surface.create("button.png")` is exactly the same as the pervious line I explained, but we create a surface for an image file. In this case a portable graphic image (.png) `button.png`. This image is located in the sprites directory. `sprites > button.png`
+The next line of code `local button_img = sol.surface.create("button.png")` is exactly the same as the pervious line I explained, but we create a surface for an image file. In this case a portable graphic image (.png) `button.png`. This image is located in the sprites' directory. `sprites > button.png`
 
 The next line of code is making a surface for a `.ttf` font package or bitmap font like `alttp.png`. You cannot change colors for the bitmap font and there are a few other limitation with that font type. You can do everything with a `.ttf` font(TrueType Font). Solarus supports .ttf, .tcc and fon. The surface that is created for the font, uses a table in order to assign properties to it. You must never forget the comma at the end of each line.
 
@@ -401,4 +401,3 @@ function map:on_draw(screen) -- draw sprite
   sprite:draw(screen, x, y)
 end
 ```
-
