@@ -30,7 +30,6 @@ In the editor in the font section. Make sure to add the alttp.png.
 
 ##### Using the Dialog box
 
-
 Go to the dialog section of the editor. Languages > en > double click
 
 ![Chapter_7_open_Dialog_GUI.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_open_Dialog_GUI.png)
@@ -48,8 +47,6 @@ Double click on `test`, go to dialog properties and down to the first rectangle 
 Type any text you want in that box. For example, "This is a test dialog."
 
 ![Chapter_7_add_dialog.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_add_dialog.png)
-
-
 
 ##### Mouse Control Fix
 
@@ -111,7 +108,6 @@ Save the project and playtest with F5. You should see a dialog box appear after 
 ![Chapter_7_NPC_Playtest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_NPC_Playtest.png)
 
 ##### Passing a value and string into the dialog
-
 
 Now what if you wanted to pass a name or number value into the dialog?
 
@@ -191,8 +187,6 @@ You must remember the line order for yes/no in order to correctly code it.
 
 `$?no` (line 3)
 
-
-
 ##### Adding on_paused
 
 In the `game_manager.lua` put the following code above `game:start()`
@@ -217,7 +211,6 @@ Playtest with `F5` and press the key `d` and press the `space bar` to choose yes
 ![Chapter_7_yes_no_playtest.png)](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_7_images/Chapter_7_yes_no_playtest.png)
 
 **Dialog Lesson Sample:**
-
 
 The lesson file is located in the folder:
 
