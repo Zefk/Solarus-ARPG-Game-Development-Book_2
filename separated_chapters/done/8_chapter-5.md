@@ -82,16 +82,16 @@ You can also select the pattern option for the tile.
 
 ##### 8x8 Formatting
 
-I will use gimp as an example for 8x8 formatting. In `edit > preferences` menu go down to grid.
+I will use Gimp as an example for 8x8 formatting. In `edit > preferences` menu go down to grid.
 
 ![Chapter_5_12_Gimp_preferences_8x8.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_12_Gimp_preferences_8x8.png)
 
-Now you may have to restart gimp after saving your new grid preferences.
+Now you may have to restart Gimp after saving your new grid preferences.
 
-Now after going to `view > show grid` you will notice black lined boxes. Each box is an 8x8 block as you can see in the image below. In this example image each tile is in an 8x8 block.
+Afterward, go to `view > show grid`, you will notice black lined boxes. Each box is an 8x8 block as you can see in the image below. In this example image each tile is in an 8x8 block.
 
 ![Chapter_5_13_Gimp_grid_8x8_block.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_13_Gimp_grid_8x8_block.png)
 
-Your graphics do not have to be in a single 8x8 block, but they will have to be in the same range. Like the whirlpool and larger sand tile below. They are 16 x 16 blocks.
+Your graphics do not have to be in a single 8x8 block, but they will have to be in the same range. For example, the whirlpool and larger sand tile below. They are 16 x 16 blocks.
 
 ![Chapter_5_14_Gimp_grid_8x8_block_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_14_Gimp_grid_8x8_block_2.png)
