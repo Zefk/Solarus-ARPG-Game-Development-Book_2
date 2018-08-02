@@ -177,7 +177,7 @@ When a sound is selected from the sound folder and the right mouse button is cli
 
 ##### Resource Manager List > Text Editor
 
-When a script is selected from the script folder and the right mouse button is clicked, the script editor will show or if the left mouse button is double clicked on the script, the script editor will appear.
+A script editing window will open if one were to right click on a script and open it. Also, one can rename the script from that window as well. Also, if the left mouse button is double clicked on the script, then script editor will appear.
 
 ![Chapter_3_21_Solarus_Editor_resource_file_manager_text_editor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_21_Solarus_Editor_resource_file_manager_text_editor.png)
 
