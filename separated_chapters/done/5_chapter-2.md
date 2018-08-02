@@ -24,6 +24,12 @@ This is an outside world tileset I put together with opensource art. I did make 
 https://github.com/Zefk/Fairyolica-World
 https://github.com/Zefk/Fairyolica-World/releases
 
+##### OpenGameArt
+
+OpenGameArt has a ton of free graphics and sounds.
+
+https://opengameart.org/
+
 ### Scripts
 
 #####Solarus Fan Games
