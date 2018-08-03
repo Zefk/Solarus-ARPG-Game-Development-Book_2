@@ -5,7 +5,7 @@ This chapter is mostly about the remaining basics that need to be covered. You c
 
 ### Title Screen
 
-Almost every game has a title screen. A place to start the game. The title screen I scripted for the section is fairly simple. The script can be found in the sample mentioned above.
+Almost every game has a title screen. A place to start the game. The title screen I scripted for the section is fairly simple. The script can be found in the sample mentioned above because it is too long for the book.
 
 ![Chapter_15_images/Title_screen.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_15_images/Title_screen.png)
 
