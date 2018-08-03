@@ -95,13 +95,13 @@ end
 return game_manager
 ```
 
-2.I suggest making a menu with the default `d` pause key. The menu would be where the player would load and save the game. At the moment the `d` key saves the game in the sample.
+2. I suggest making a menu with the default `d` pause key. The menu would be where the player would load and save the game. At the moment the `d` key saves the game in the sample.
 
 **Usage Instructions:**
 
-1.Use the up and down keys
-2.Change the action key to what you desire in the change area. By default, it is key `a`, reset with `s`, and in game clear with `q`.
-3.Key `L` activates the save menu in game and key `q` can clear it. 
+1. Use the up and down keys
+2. Change the action key to what you desire in the change area. By default, it is key `a`, reset with `s`, and in game clear with `q`.
+3. Key `L` activates the save menu in game and key `q` can clear it. 
 
 **Breaking Down The Script:**
 
