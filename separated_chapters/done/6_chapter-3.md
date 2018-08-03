@@ -181,6 +181,8 @@ A script editing window will open if one were to right click on a script and ope
 
 ![Chapter_3_21_Solarus_Editor_resource_file_manager_text_editor.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_21_Solarus_Editor_resource_file_manager_text_editor.png)
 
+![Chapter_3_27_open_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_27_open_script.png)
+
 ##### Resource Manager List > Music Player
 
 When a music is selected from the music folder and the right mouse button is clicked, the option to play audio appears.
