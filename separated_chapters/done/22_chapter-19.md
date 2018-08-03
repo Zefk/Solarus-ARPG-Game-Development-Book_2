@@ -3,7 +3,7 @@
 
 Credits so far...
 
-##### Graphics:
+##### Graphics
 - Diarandor (Most of his art is the sample quest) You can find a license in the sample quest. Most or all of his work is under CC-BY-SA 4.0
 - Zane Kukta (My work seperate from the forest and dessert tileset is CC0) See sample quest license or refer to this [issue](https://github.com/solarus-games/solarus-sample-quest/issues/11) if the license file has not been updated yet.
 - Christopho - His work in the sample quest and adapted work.
@@ -38,7 +38,7 @@ Credits so far...
 - Manuel Riecke (AKA MrBeast)
 - Daniel Armstrong (AKA HughSpectrum)
 
-##### Audio:
+##### Audio
 - Diarandor (Most of the sounds and music in the sample quest.) CC-BY-SA 4.0
 - Zane Kukta (Any sound I added is CC0 like the timer sounds or the license I stated in the sound directory)
 - Eduardo Dueñas for his music pieces musics/village.ogg and sounds/secret.ogg
@@ -52,14 +52,14 @@ Credits so far...
 by Eric Matyas
 www.soundimage.org
 
-##### Scripting Credits:
+##### Scripting Credits
 - Christopho (All of his scripts, sample quest, and making the Solarus Game Engine) GPLv3
 - Zane Kukta (Most sample scripts)
 - Diarandor (Some script snippets from his assistance on the forum and sample quest)
 - llamazing (Some script snippets from his assistance on the forum)
 - Max (Some script snippets from his assistance on the forum)
 
-##### Writing Credits:
+##### Writing Credits
 - Christopho (Solarus documentation edited snippets)
 - Zefk (Zane Kukta) CC-BY-SA 3.0
 - Loren J. Miller [The 36 Plots](https://www.rpglibrary.org/articles/storytelling/36plots.php) CC-BY-SA 3.0
@@ -77,18 +77,18 @@ www.soundimage.org
 - std::gregwar
 - Binbin
 
-##### Special Thanks:
+##### Special Thanks
 - wrightmat, I learned a lot from your scripts.
 - MetalZelda, your coding suggestions were very helpful.
 - llamazing, your assistance on the forum really helped make this book.
 - Max, thanks your help on the fourm.
 - Claire Moore (nate-devv), thanks for the Linux version of Solarus!
 
-### Fairyolica World Credits:
+### Fairyolica World Credits
 
 I used the Fariryolica world tileset image as a preview. It is under CC-BY-SA 3.0.
 
-#### About:
+##### About:
 
 1.The bullet "•" means it is a person and the way they want to be credited. 
 
@@ -104,11 +104,11 @@ and you must credit everyone if you use the Fariyolica.png. That means the CC0 p
 
 6.I refined this list a little. 11-14-16 [November 14th, 2016]
 
-#### Credit
+### Credit
 
 Copyright/Attribution Notice: 
 
-#### [CC0 Public Domain]
+##### [CC0 Public Domain]
 
 - Jetrel <http://www.frogatto.com/>
 
@@ -129,7 +129,7 @@ Copyright/Attribution Notice:
 - "Russpuppy http://russpuppy.com" [would love to hear about your game]
 
 
-#### [CC-BY 3.0 Credit by their terms]
+##### [CC-BY 3.0 Credit by their terms]
 
 - Stephen Challener and the Open Surge team ( http://opensnc.sourceforge.net), hosted by OpenGameArt.org
 
@@ -155,7 +155,7 @@ Copyright/Attribution Notice:
 
 - Animated Castle Doors by Tuomo Untinen
 
-#### [CC-BY-SA 3.0 Credit by their terms and share artwork under the same terms]
+##### [CC-BY-SA 3.0 Credit by their terms and share artwork under the same terms]
 
 - interdimensional_ <http://interdimensional.space/>
 

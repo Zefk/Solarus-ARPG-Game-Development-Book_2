@@ -1,13 +1,13 @@
 
-## Chapter 3: Moving around the Solarus Editor
+## Chapter 3: Moving Around The Solarus Editor
 
-#### First Appearance
+### First Appearance
 
 The Solarus editor looks like this when one first opens it. This is before any quests are loaded or made.
 
 ![Chapter_3_1_Solarus_Editor_plain.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_1_Solarus_Editor_plain.png)
 
-#### File
+### File
 
 You will notice `file` at the upper left corner of the Solarus Editor. This is where one would make a new quest, load a quest,  close a quest, check recently loaded quests, close tabs, save game, and check the quest properties.
 
@@ -25,31 +25,31 @@ The quest properties is about the quest information. The name of the save direct
 
 ![Chapter_3_-1_Solarus_Editor_quest_properties_size.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_-1_Solarus_Editor_quest_properties_size.png)
 
-#### Edit Menu
+### Edit Menu
 
 One can undo, redo, copy, paste, cut, select all, deselect all, and find text (In the Solarus text editor). The `edit` menu is located at the upper left corner next to `file`.
 
 ![Chapter_3_3_Solarus_Editor_edit.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_3_Solarus_Editor_edit.png)
 
-#### View Menu
+### View Menu
 
 One can zoom, show grid, show console, show/hide layers, show/hide entities, and show/hide entity types in the `view` menu next to `edit.`
 
 ![Chapter_3_4_Solarus_Editor_view.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_4_Solarus_Editor_view.png)
 
-#### Run Menu
+### Run Menu
 
 One can run the game from the `run` menu or press F5. This menu is right next to the `view` menu.
 
 ![Chapter_3_5_Solarus_Editor_run.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_5_Solarus_Editor_run.png)
 
-#### Audio Menu
+### Audio Menu
 
 One can play selected audio files from this menu. This menu is right next to the `run` menu.
 
 ![hapter_3_6_Solarus_Editor_audio.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_6_Solarus_Editor_audio.png)
 
-#### Tools Menu
+### Tools Menu
 
 This menu is a bit more complex than all the others. The `tools` menu has a lot of options that makes the Solarus experience even better.
 
@@ -132,13 +132,13 @@ The `sprite editor` has almost the same options as the `map editor` and `sprite 
 
 ![Chapter_3_12_Solarus_Editor_tileset_editor_options.bm](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_12_Solarus_Editor_tileset_editor_options.png)
 
-#### Help Menu
+### Help Menu
 
 The help menu links one to the Solarus Website or the Solarus Documentation Website.
 
 ![Chapter_3_13_Solarus_Editor_options_help.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_13_Solarus_Editor_options_help.png)
 
-#### Icon Shortcut Bar
+### Icon Shortcut Bar
 
 The `icon bar` has a bunch of shortcuts. This is how it looks when a quest is not loaded.
 
@@ -149,7 +149,7 @@ The main difference for the `icon bar` from not having a quest open is color and
 ![Chapter_3_15_Solarus_Editor_options_bar_icons_color_fixed.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_3_%20images/Chapter_3_15_Solarus_Editor_options_bar_icons_color_fixed.png)
 
 
-#### Resource Manager List
+### Resource Manager List
 
 The resource list appears at the left side of the editor when a quest is loaded from `file > load quest`.
 

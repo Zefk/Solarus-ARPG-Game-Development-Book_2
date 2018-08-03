@@ -3,11 +3,11 @@
 
 You can get the sample `Chapter_18_export_sample.zip` in the lesson directory.
 
-#### Upgrading:
+##### Upgrading:
 
 One must follow the Solarus [migration guide](http://wiki.solarus-games.org/doku.php?id=migration_guide) to learn how to upgrade to a new version of Solarus. This book is for Solarus 1.5.x. It is possible that this book will be forked for 1.6+
 
-#### Export Project:
+##### Export Project:
 
 Remember to make a backup of your game before exporting.
 
@@ -187,17 +187,17 @@ Your installer will show up in a folder called `output`.
 
 The main purpose of a library is to make functions to achieve a task and/or to shorten code.
 
-#### Sample
+##### Sample
 
 You can grab the sample in `Lessons > Chapter_18_library_sample.zip`. All the files you need are in it.
 
-#### Documentation
+##### Documentation
 
 Documentation can help people understand what the functions in your library do and how to use them. Markdown is a format that is becoming very popular and it can help you make documentation. I recommend a markdown reader/writer like [Haroopad](http://pad.haroopress.com/user.html#download).
 
 You can get the entity lib sample documentation in the data folder of the sample `Chapter_18_library_sample > data > entity_lib_documentation.md`.
 
-### Basic Markdown Formatting
+##### Basic Markdown Formatting
 
 You can manually type the format or you can insert it with Haroopad's insert menu.
 
@@ -390,7 +390,7 @@ entity:right()
 I will go over this in more detail in the entity library section.
 
 
-#### Entity Library Sample
+##### Entity Library Sample
 
 The entity lib sample has movements related to custom entities. Adding the lib is quite simple. All one has to do is put the following line at the top of `main.lua` and place it in the script directory in a folder called lib to be organized.
 
@@ -454,7 +454,7 @@ function metatable_entity:speed(value)
 end
 ```
 
-#### Library Setup
+##### Library Setup
 
 This library is related to the custom entity, so the metatable variable is assigned to it. This variable will be added to functions that are used in the library.
 
@@ -477,7 +477,7 @@ Calling the function is very easy after requiring it from `main.lua`.
 require("scripts/lib/entity_lib.lua")
 ```
 
-#### Self Function
+##### Self Function
 
 A common function that is used when making libraries is `self` or at least I use it a lot. This refers to the entity itself.
 
@@ -511,7 +511,7 @@ function sol.main:on_key_pressed(key)
 end
 ```
 
-#### Special Entity
+##### Special Entity
 
 Other times one might want to refer to a certain or special entity name instead of `self`. One simply needs to get the entity from the map like this:
 
@@ -536,7 +536,7 @@ local player2 = map:get_entity("player2")
 end
 ```
 
-#### Function Arguments
+##### Function Arguments
 
 One can have arguments in the function too. In the example below the argument `value` is put in the function parenthesis or parameter.
 
@@ -557,7 +557,7 @@ end
 
 Remember the arguments do not only have to be a number value. They can be a string, table, boolean(true/false), etc.
 
-#### Function Tables
+##### Function Tables
 
 If your function has a lot of options or you just want to make things clearer, then the use of tables for your functions might be a better setup for your library. You can change the order of the items in the table and use a name to assign them. Also, you can leave off items if you do not want to use them. Thank llamazing on the Solarus forum for this example.
 
@@ -580,7 +580,7 @@ end
 test{b="hey", a=5, c=true}
 ```
 
-### Player 2 Movement
+##### Player 2 Movement
 
 This script uses the keys i, l, j, & k to make an entity walk around. It is a very simple script using the functions in the library sample. The script is in an entity model called player 2 and the entity name is player2. 
 
@@ -679,7 +679,7 @@ There is no real reason to break down this script because it is very simple.
 
 ![Chapter_18_images/5_paste_script.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_18_images/5_paste_script.png)
 
-#### Debugging
+### Debugging
 
 Lua has functions for debugging. Solarus takes care of error reports. Solarus will let you know where and what the problem is, but it does not allow you to make your own reports or warnings.
 

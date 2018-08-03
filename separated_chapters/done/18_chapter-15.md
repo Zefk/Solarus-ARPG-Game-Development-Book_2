@@ -144,7 +144,7 @@ end)
 |Jump movement:| An illusion of jump above a baseline.|"jump"
 |Pixel movement:| A trajectory described pixel by pixel.|"pixel"
 
-#### Create Movement
+##### Create Movement
 
 This is the basic structure for creating a movement.
 
@@ -600,7 +600,7 @@ You can also get the music you set for the map. This is useful for when playing 
 sol.audio.play_music(map:get_music())
 ```
 
-#### Making a Map Entity
+##### Making a Map Entity
 
 It is quite easy to make map entities with script. This can be useful for when spawing projectiles.
 
@@ -783,7 +783,7 @@ However, you can write to files in other ways. You can use the function:
 |"w+"| update mode, all previous data is erased
 |"a+"| append update mode, previous data is preserved writing is only allowed at the end of file.
 
-**Opening, writing, and closing file**
+##### Opening, writing, and closing file
 
 Writing by default creates the file. You must always remember to close a file with the function `file_variable_name:close()` or you risk memory leaks. You use the mode `"w"` to write and the function `file_variable_name:write("text to show or", variable_value_to_show)`. 
 
@@ -805,7 +805,7 @@ file_write:write("x:",coordinate_x, "y:", coordinate_y)
 file_write:close()
 ```
 
-**Reading, searching, and outputting**
+##### Reading, searching, and outputting
 
 You can use the mode `"r"` to read a file and the function `string.find(file_variable_name, "string_to_look_for")` to check if the string exists in the file.
 
@@ -820,7 +820,7 @@ print(line)
 file_read:close()
 ```
 
-**Making New Lines**
+##### Making New Lines
 
 You can use sequences when writing to a file.
 
@@ -861,7 +861,7 @@ file_read_all:close()
 ```
 
 
-**File Seek: Grab a Variable**
+##### File Seek: Grab a Variable
 
 You can use `file:seek` to grab a variable or string, but this is not really the best way to do it. It is probably the easiest way without custom functions.
 
@@ -890,7 +890,7 @@ print("The variable is:"..value + 5)
 file_seek:close()
 ```
 
-**Read & Write Functions Script**
+##### Read & Write Functions Script
 
 This script will be very useful for managing read/write,  but the easiest way to do this is to just use the engine's functions `game:get_value` and `game:set_value`.
 

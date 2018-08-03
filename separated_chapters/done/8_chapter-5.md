@@ -1,7 +1,7 @@
 
-## Chapter 5: Using the Tileset Editor
+## Chapter 5: Using The Tileset Editor
 
-#### Resource Manager > Tileset > Tileset Editor
+### Resource Manager > Tileset > Tileset Editor
 
 You can add a tileset by putting an image with the following extension `file_name.tiles.png` and making a `file_name.dat` in the tileset directory and add it by right clicking. 
 

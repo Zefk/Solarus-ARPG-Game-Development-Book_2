@@ -13,7 +13,7 @@ One can download the completed lesson.
 
 `Lessons > Chapter_9 > Chapter_9_key_mouse_fade.zip`
 
-#### Lesson Script
+### Lesson Script
 
 I would like to show the script before beginning the lesson and how to use it. 
 
@@ -281,7 +281,7 @@ end
 
 I will not mention anything related to how to use the draw function because that was explained last chapter.
 
-#### Key Pressed
+##### Key Pressed
 
 The key press function is very easy to use.
 
@@ -308,7 +308,7 @@ function sol.main:on_key_pressed(key)
 end
    ```
 
-#### Set Pause
+##### Set Pause
 
 By default, the game pauses with the key 'd', but that is not the only way to pause the game. One can use `game:set_pause` to pause and unpause the game.
 
@@ -321,7 +321,7 @@ game:set_paused(true)
 --unpause the game
 game:set_paused(false)
 ```
-#### Changing Volume
+##### Changing Volume
 
 Changing the volume is very easy. All one has to do is type `sol.audio.set_music/sound_volume(number or variable from 1 - 100)`.
 
@@ -338,7 +338,7 @@ Changing the volume is very easy. All one has to do is type `sol.audio.set_music
        sol.audio.set_sound_volume(volume)
 ```
 
-#### Playing Music & Sound
+##### Playing Music & Sound
 
 Play music/sound is as easy as changing the volume. All one has to do is type `sol.audio.play_music/sound("the name of the audio")`.
 
@@ -351,7 +351,7 @@ Play music/sound is as easy as changing the volume. All one has to do is type `s
 ```
 
 
-#### Making Your Own Function
+##### Making Your Own Function
 
 I mentioned functions in chapter 6, but here is a review.
 
@@ -376,7 +376,7 @@ end
 fade_img:fade_in(100,stop_draw())
 ```
 
-#### Fade In and Out
+##### Fade In and Out
 
 I would have covered fading in/out during the last chapter, but the key pressed was needed for a decent example. One takes the surface `fade_img` and adds `fade_in/out(delay time in milliseconds, A function)`.
 
@@ -394,7 +394,7 @@ I would have covered fading in/out during the last chapter, but the key pressed 
    end
 ```
 
-#### Mouse Pressed
+##### Mouse Pressed
 
 The hardest part about the mouse press function is getting the coordinates. I use a program on the Linux operating system called KolourPaint, but you can do this in most paint programs.
 

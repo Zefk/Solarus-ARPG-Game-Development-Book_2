@@ -7,7 +7,7 @@ I would like to show a preview before starting the lesson. This is everything yo
 
 ![Chapter_8_sample_preview.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_8_images/Chapter_8_sample_preview_blend_updated.png)
 
-##### Script For The Lesson
+### Script For The Lesson
 
 I wanted to show the script before breaking it down. This is file `display_sample.lua`. 
 
@@ -333,12 +333,12 @@ You can draw more than just font, images, and color surfaces. Solarus has the ab
 A common usage for sprite drawing is for scenes. For example, when an boss enemy or hero dies because the drawn sprite can be [unpaused when the game is paused](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_set_paused
 ).
 
-#### Sample
+##### Sample
 
 You can grab the sample in the directory `Lessons > Chapter_8 > Chapter_8_sprite_draw.zip`.
 
 
-#### Script
+##### Script
 
 This script is in the `first_map.lua` in the sample.
 
@@ -368,7 +368,7 @@ function map:on_draw(screen) -- draw sprite
 end
 ```
 
-#### Breaking down the Script
+##### Breaking down the Script
 
 1. First, make the coordinates. We will not use the x_pos, y_pos variables for drawing. Instead, we will use x, y variables for checking reasons.
 ```lua

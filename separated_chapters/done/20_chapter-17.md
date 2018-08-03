@@ -1,7 +1,7 @@
 
 ## Chapter 17: Game Design Walkthrough
 
-#### Enemy Types:
+##### Enemy Types
 
 |Enemy_Types|Description|
 |--------|:---------------------------------------------------------------|
@@ -9,7 +9,7 @@
 |Miniboss| They are basically weak bosses. They are strong, but not really unbeatable. It is common to gain a weapon by defeating them and that allows the player to defeat the boss in that location.
 |Enemy | Simple to defeat. Should not take more that a few projectiles or sword hits to take down.
 
-#### Enemy Attack Patterns:
+##### Enemy Attack Patterns
 
 These attack patterns are normally used by all enemies. Some foes are only one of these types, but minibosses and bosses normally have more than one type.
 
@@ -48,7 +48,7 @@ Check the following link for examples of bosses:
 
 http://zelda.wikia.com/wiki/Boss
 
-#### Puzzles:
+##### Puzzles
 
 Everyone knows that puzzles are very important in any RPG. The wonder of knowing what will happen when solving them or just the wanting to defeat the annoying bugger. 
 
@@ -68,7 +68,7 @@ Everyone knows that puzzles are very important in any RPG. The wonder of knowing
 |Location Change Puzzle:|Locations can be used as puzzles. For example, the location might look exactly the same, no matter where the player goes. The player is not "always" teleporting to the same spot, but is going to a similar location. The Lost Woods in Zelda is a good example. Also, areas or dungeon rooms can switch in a different order. This might not always be a puzzle because it could be completely random. Another example, time can be used to follow a character in a location and if the player gets too far behind, then the player will not be able to pass the puzzle for getting to the next location.
 |Source:| https://en.wikipedia.org/wiki/Puzzle
 
-#### Quest Types
+##### Quest Types
 
 One must think of quest types in order to make a proper story. Meeting characters can involve rescue quests, etc. Also, do not think that quests types will make your game unique every time because many characters have something unique about them. It can be a weird personality flaw, a way of living or something different about their body, but we will get more into that later. Let us start with quest types!
 
@@ -84,7 +84,7 @@ One must think of quest types in order to make a proper story. Meeting character
 |Quest chains|A quest chain is a group of quests that are completed in sequence they are also known as quest lines. Completion of each quest is a prerequisite to beginning the next quest in the chain. Quests usually heighten in toughness as a character goes further along the chain. The quests normally shows a single plotline in an order that explains the reason for the quests. Quest chains can also start with the opening or breadcrumb quests, in order to encourage characters to journey to a new area, where further elements of the quest chain are revealed. Through mechanisms like these, the setting of a particular location is explained to the player, with the plot or storyline being unveiled as the character progresses.
 |Source:| https://en.wikipedia.org/wiki/Quest_(video_gaming)
 
-#### Map Design
+##### Map Design
 
 Map design can take up a lot of time. It is best to get quick ideas from generators. [Donjon Dungeon Generator](http://donjon.bin.sh/fantasy/dungeon/wallpaper.cgi)
 
@@ -105,7 +105,7 @@ Telling you how to design your map is almost impossible because there is no righ
 |Challenging| Getting through a map too easily can be a drag! Make it at least a little tough or have some locations that can be seen, so the player will not want to leave the map as soon as possible.
 |Heal Spots|Having spots to rest and people there to give one information is good way to not make a player mad while playing the game.
 
-#### Map Examples Legend:
+##### Map Examples Legend
 
 Border:
 
@@ -152,7 +152,7 @@ One way in door:
 
 ![map_design_donjon/map_examples/Game_Design_5_Chapter_map.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/map_design_donjon/map_examples/Game_Design_5_Chapter_map.png)
 
-#### Dungeon Layout
+##### Dungeon Layout
 
 - In a dungeon you start by finding the key item.
 - Paths to the item are blocked by locked doors.
@@ -169,7 +169,7 @@ You can check the video series [Boss Keys](https://youtu.be/fqKGl6exyyY) for mor
 
 ![Game_Design_Chapter_images/dungeon%20layout.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/dungeon%20layout.png)
 
-#### Sidescroller: Some Information
+##### Sidescroller: Some Information
 
 Sidescrollers or Platformers are normally constant action and almost no dialog. The movement normally never stops and the player stomps on or fights enemies all the way. This type differs from an ARPG in many ways. An ARPG is normally based on exploration with a top-down view (under a 3/4 perspective) and a platformer is just a straight line most of the time. Sidescroller graphics are always a side camera view. Sidescrollers can be anything someone wants them to be though. Some people mix ARPG and sidescroller or make the sidescroller a journey instead of constant action.
 
@@ -246,7 +246,7 @@ Sidescrollers or Platformers are normally constant action and almost no dialog. 
 |Multi-jump Switch| A switch that has to be jumped or slammed on multiple times in order for it to activate.
 |Stomp Enemies| An enemy that dies when stomped or jumped on.
 
-#### Basic Story Making\Genre:
+##### Basic Story Making\Genre
 
 Genre is the term for any category of entertainment. Pick the genre you like most. I will only being adding genre I like to the book, so check Wiki for more and greater detail into ones I listed. I will add this to the github. https://en.wikipedia.org/wiki/List_of_genres
 
@@ -258,7 +258,7 @@ Genre is the term for any category of entertainment. Pick the genre you like mos
 |Mystery|  A mystery story is normally about someone attempting to solve a puzzle. 
 |Science fiction|  Centered around technology (computers and machines), universes space/time travel, aliens, and genetic manipulation. EX: Steampunk, cyberpunk, and clockpunk. Science fiction is mixed a lot in future eras and time travel.
 
-#### The Plot:
+##### The Plot
 
 One has to know what the genre will be and what their hero or villain does. The hero does not always have to be the good guy and can do good or bad deeds in a story. 
 
@@ -312,7 +312,7 @@ The table of plots below has 36 rows, one for each of Polti's canonical plots, a
 |36    |Loss of a Loved One|a.Kinsman Slain b.Kinsman Witness c.Executioner|Nyoquilat has taken a vow of chastity, and one day he comes home to the horrible sight of his family being slaughtered like sheep by horned raiders. He runs in to try and save them, and is beaten and left for dead, yet he lives. Now he asks for aid from any who would give it.
 |**Source:**|[https://www.rpglibrary.org/](https://www.rpglibrary.org/articles/storytelling/36plots.php)|The 36 Plots by Loren J. Miller|  **CC-BY-SA 3.0**
 
-#### Title:
+##### Title
 
 The title should be made around the time of the plot. Most of the time it describes the story in few words. It should be something related to the genre in order to help people know what the story is about. I will take my quick plot from before and make a title.
 
@@ -324,7 +324,7 @@ The title should be made around the time of the plot. Most of the time it descri
 |:-----|
 |Froyotay's Space War: The Battle for Rebirth
 
-#### Characters:
+##### Characters
 
 Describe the hero, allies, and enemies.
 
@@ -365,7 +365,7 @@ Describe the hero, allies, and enemies.
 |Personality:|
 |Associations:|
 
-#### Goals:
+##### Goals
 
 What are the characters trying to do? 
 
@@ -388,7 +388,7 @@ What are the characters trying to do?
 9. Create a dimensional parallel world machine to escape your doomed dimension?
 
 
-#### Story Flow & Outline:
+##### Story Flow & Outline
 
 List the events that happen.
 
@@ -400,7 +400,7 @@ Jetarf family was eaten -----> he kills one of the aliens ---------> gets the al
 
 Outlining is a big part of game development. The second would be dialogue, but a lot of time the main character normally does not talk. The main difference between story writing and game writing is outline. What do I mean? The only thing needed to start the creation of a game is an outline and then simple dialogue or almost none at all. (Story writing is way more descriptive.) For example, an outline is needed to know how to make the artwork and what lands or kingdoms to set up. Also, names of the characters are needed and how they will look or what appeal type (Medieval or futuristic clothing?) they need. The type of outline depends on you.
 
-#### Mind Mapping Software:
+##### Mind Mapping Software
 Bubble outlining is kinda like mind mapping I would normally do this on paper, but maybe others prefer differently. - Give thanks to Renkineko for mentioning mind mapping.
 
 [Wisemapping](https://wisemapping.atlassian.net/wiki/display/WS/Download)
@@ -409,7 +409,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 
 [MindMaple](http://www.mindmaple.com/Default.aspx)
 
-#### Common Outline Styles:
+##### Common Outline Styles
 
 - Bubble outline
 
@@ -427,7 +427,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 
 ![Chapter_16_images/Chapter_16_common_bullet_outlining.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Game_Design_Chapter_images/Chapter_16_images/Chapter_16_common_bullet_outlining.png)
 
-#### Names:
+##### Names
 
 |To Name:| 
 |:---|
@@ -441,7 +441,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |Main Quests |
 |Optional quests|
 
-#### Some Fictional Beings:
+##### Some Fictional Beings
 
 |Being|Description|
 |:-----------------|:----|
@@ -457,9 +457,9 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |Giants| Super tall beings that can squish a human like a bug, but they are not all that tall. They are taller than the tallest human though. Some are elemental humanoids. Rock giant, ice giant, lava giant, ect.
 |Werewolves| Half man and wolf. Turns into a wolfman at a full moon, but some can change at will.
 
-### Personality List:
+### Personality List
 
-#### Positive Traits
+##### Positive Traits
 
 |Personality Traits:|
 |:----|
@@ -742,7 +742,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |High­spirited|
 |Helpful|
 
-#### Negative Traits
+##### Negative Traits
 
 |Negative Traits:|
 |:--------------|
@@ -975,7 +975,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |Miserable|
 |Unrealistic|
 
-#### Hobbies
+##### Hobbies
 
 |Hobbies:|
 |:-----|
@@ -1229,7 +1229,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |Seaglass collecting|
 |Stamp collecting|
 
-#### Habits
+##### Habits
 
 |Habits:|
 |:-----|
@@ -1289,9 +1289,9 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |Nervous cough|
 |Burping|
 
-### Main Fantasy Character Classes:
+### Main Fantasy Character Classes
 
-#### Fighter Class
+##### Fighter Class
 
 |Fighter Class| Description|
 |:------------:|:----------|
@@ -1306,7 +1306,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |Warlord:| (Also known as a General, Marshal, Commander, and Tactician) Tactical master. He can hold his own in frontline combat and gives allies around him bonuses for their stats.
 |Hero:| (Also known as a Lord or Protagonist) Good all around. They gain magic and unique skills. They always use a sword and a shield. It is possible that they will have no magic or shield, but that makes a really boring hero.
 
-#### Magician Class
+##### Magician Class
 
 |Magician Class| Description|
 |:------------:|:----------|
@@ -1325,7 +1325,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |The Shamanic Magician:| Summons and makes deals with spirits.
 |The Elemental Magician:| They can control the elements. Plants, water, ice, fire, etc. Can be born with their power or a pack with a spirit or demon.
 
-#### Rogue Class
+##### Rogue Class
 
 |Rogue Class| Description|
 |:------------:|:----------|
@@ -1338,7 +1338,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |The Pirate:| A rogue that can switch from sword and pistol. They are not normally strong, but captains normally are very good at sword play, stealing, and tricks or riddles. For example, hiding their treasure, making traps, and anything to protect their belongings. They are not always at sea, but normally have some kind of transportation. Sky pirates, water pirates, sand boat pirates, etc.
 |The Scout:| They move from place to place quickly with superior sensory and information gathering skills. They are normally not noticed and if they are then they are killed. Not many scouts are good at combat.
 
-#### Cleric Class
+##### Cleric Class
 
 |Cleric Class| Description|
 |:------------:|:----------|
@@ -1349,7 +1349,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |The Templar:| They are a jack of all trades, but weaker than most classes and normally handle the church dirty work. Covering things up.
 |The Caster:| This character is usually female and the heroine. They will be in the party because no one else can use magic. They are normally weak all around, but progress overtime. 
 
-#### Ranger Class
+##### Ranger Class
 
 |Ranger Class| Description|
 |:------------:|:----------|
@@ -1361,7 +1361,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |The Trapper Ranger:| Good at laying various traps and making it so the enemies can easily be ambushed.
 |The Magical Ranger:|  Uses enchanted arrows. They can freeze the enemy, slow them down, or trap them in a net. Almost any kind of element.
 
-#### Rarer Class
+##### Rarer Class
 
 |Rarer Class| Description|
 |:------------:|:----------|

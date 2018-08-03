@@ -5,7 +5,7 @@
 
 `Lessons > Chapter_12 > Chapter_12_menu_preview.gif`
 
-#### Window Options
+### Window Options
 
 The window is related to video. Not playing a video clip, but the window.
 
@@ -141,13 +141,13 @@ end
 return menu
 ```
 
-#### Menu function
+### Menu function
 
 As you saw in the example above there is a function called `menu:button_menu(game)`. That function will be placed in the `game_manger.lua`. 
 
 You can name the function any way you want after "menu:" `menu:name_you_want(pass parameter)`.
 
-#### Menu: Starting and Stopping 
+### Menu: Starting and Stopping 
 
 ##### Starting Menu
 
@@ -197,7 +197,7 @@ end
 end
 ```
 
-#### Menu Script Example
+##### Menu Script Example
 
 `Game_manager.lua`
 

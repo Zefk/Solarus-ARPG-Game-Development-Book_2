@@ -1,5 +1,5 @@
 
-## Chapter 4: Using the Sprite editor
+## Chapter 4: Using The Sprite Editor
 
 ### Resource Manager > Sprites > Sprite Editor
 
@@ -278,7 +278,7 @@ Solarus goes by 8x8 formatting and it would be best to make a grid for proper po
 
 You can make more animations and code them using the sprite drawable functions, but I will cover most of the default animations built into the engine. You can make any sword attack for the hero. As far as I know. 
 
-#### Sword
+##### Sword
 
 You will need to create a file called "`sword1`" and it can contain the following animations.
 
@@ -293,7 +293,7 @@ You will need to create a file called "`sword1`" and it can contain the followin
 |sword_tapping|
 |victory|
 
-#### Shield
+##### Shield
 
 It is the similar for the file "`shield1`".
 
@@ -307,7 +307,7 @@ It is the similar for the file "`shield1`".
 |sword_running|
 |sword_tapping|
 
-#### NPC
+##### NPC
 
 A NPC needs two animations:
 
@@ -316,7 +316,7 @@ A NPC needs two animations:
 |stopped|
 |walking|
 
-#### Enemy
+##### Enemy
 
 You honestly only need animations "hurt" and "walking".
 
@@ -327,7 +327,7 @@ You honestly only need animations "hurt" and "walking".
 |immobilized|
 |shaking|
 
-#### Hero
+##### Hero
 
 The hero file is called, "`tunic1`".
 
@@ -364,7 +364,7 @@ This is a list of most default hero animations, but there are more. You do not n
 |walking|
 |walking_with_shield|
 
-#### Destructible
+##### Destructible
 
 |Animations|
 |:---------|
@@ -373,7 +373,7 @@ This is a list of most default hero animations, but there are more. You do not n
 |stopped|
 |walking|
 
-#### bomb
+##### bomb
 
 |Animations|
 |:---------|
@@ -382,33 +382,33 @@ This is a list of most default hero animations, but there are more. You do not n
 |walking|
 |walking_explosion_soon|
 
-#### block
+##### block
 
 |Animation|
 |:---------|
 |block|
 
-#### chest
+##### chest
 
 |Animations|
 |:---------|
 |closed|
 |open|
 
-#### explosion
+##### explosion
 
 |Animation|
 |:---------|
 |explosion|
 
-#### shadow
+##### shadow
 
 |Animations|
 |:---------|
 |big|
 |small|
 
-#### crystal_block
+##### crystal_block
 
 |Animations|
 |:---------|
@@ -417,34 +417,34 @@ This is a list of most default hero animations, but there are more. You do not n
 |orange_lowered|
 |orange_raised|
 
-#### crystal
+##### crystal
 
 |Animations|
 |:---------|
 |blue_lowered|
 |orange_lowered|
 
-#### switch
+##### switch
 
 |Animations|
 |:---------|
 |activated|
 |inactivated|
 
-#### arrow
+##### arrow
 
 |Animations|
 |:---------|
 |flying|
 |reached_obstacle|
 
-#### star
+##### star
 
 |Animation| Description|
 |:---------|:---------|
 |normal| stars or other animation for spin attack|
 
-#### ground1
+##### ground1
 
 |Animation|
 |:---------|
@@ -457,7 +457,7 @@ This is a list of most default hero animations, but there are more. You do not n
 
 ![Chapter_4_images/Chapter_4_22_ground1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_22_ground1.png)
 
-#### ground2
+##### ground2
 
 |Animation|
 |:---------|

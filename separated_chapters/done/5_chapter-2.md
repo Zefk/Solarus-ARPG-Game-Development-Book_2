@@ -1,5 +1,5 @@
 
-## Chapter 2: Free Graphics, audio, scripts, and Basic Free License Information
+## Chapter 2: Free Graphics, Audio, Scripts, and Basic Free License Information
 
 ### Free Graphics & Audio
 

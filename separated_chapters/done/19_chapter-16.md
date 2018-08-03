@@ -5,11 +5,11 @@
 
 The chain quest is putting together what you have learned, some new functions, and scripts are introduced. It is more like a demo than anything else.
 
-#### Sola House
+### Sola House
 
 Sola house is the starting point of the game. Sola has woken in a world with no memories of her past and sets out on a journey to figure out who she is.
 
-#### Sola House > F1
+### Sola House > F1
 
 On the first floor there are some blockades that must be passed to exit the house. Also, an optional quest with the female armor. You will be able to perform spin attacks and have extra speed when the spirit gem is obtained.
 
@@ -238,7 +238,7 @@ function map:on_activated()
 end -- end of on_activated
 ```
 
-#### Sola House > F2
+### Sola House > F2
 
 ![1_chapter_16_sola_house_f2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/2_chapter_16_sola_house_f2.png)
 
@@ -267,7 +267,7 @@ Sets npc dialog "wall_switch_2" disabled and removed the blockages on the first 
 end
 ```
 
-#### Soulia Forest > Part 1
+### Soulia Forest > Part 1
 
 ![3_chapter_16_soulia_forest_part_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/3_chapter_16_soulia_forest_part_1.png)
 
@@ -402,7 +402,7 @@ function entity:on_interaction()
 end
 ```
 
-#### Soulia Forest > Part 2
+### Soulia Forest > Part 2
 
 ![4_chapter_16_soulia_forest_part_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/4_chapter_16_soulia_forest_part_2.png)
 
@@ -455,7 +455,7 @@ This is simply moving a block on a switch. Nothing special. Remember to check th
   end
 ```
 
-#### Chain Village
+### Chain Village
 
 Chain village is where almost all of its people have fallen to death due to a strange power coming over the mountains. The heroine must get a heart shield to show the mage that she is worthy of entering Zark house. The reason is that there is a slime enemy in there. Afterwards, thee heroine finds the water shield after defeating the slime and is able to cross the lake to the Water house and get the spirit shield to enter Elfa House. This is where the mini dungeon resides.
 
@@ -543,13 +543,13 @@ sol.timer.start(100, function()
 end)
 ```
 
-#### Chain Village > Shop
+### Chain Village > Shop
 
 The shop is the only place where the heroine can obtain the heart shield. It costs 20 gems.
 
 ![6_chapter_16_chain_village_shop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/6_chapter_16_chain_village_shop.png)
 
-#### Chain Village > Zark House
+### Chain Village > Zark House
 
 ![7_chapter_16_chain_village_zark_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/7_chapter_16_chain_village_zark_house.png)
 
@@ -604,7 +604,7 @@ This is to just check to make sure the bookcase and sline do not return.
   end
 ```
 
-#### Chain Village > Water House
+### Chain Village > Water House
 
 ![8_chapter_16_chain_village_water_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/8_chapter_16_chain_village_water_house.png)
 
@@ -675,7 +675,7 @@ A series of switches and checks to make sure the chest appears to obtain the spi
   end
 ```
 
-#### Chain Village > Elfa House
+### Chain Village > Elfa House
 
 ![9_chapter_16_chain_village_elfa_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/9_chapter_16_chain_village_elfa_house.png)
 
@@ -751,7 +751,7 @@ The hero must find a secret passage to enter the dungeon and it is heavely hinte
 end
 ```
 
-#### Chain Village > Underground
+### Chain Village > Underground
 
 ![10_chapter_16_chain_village_underground.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/10_chapter_16_chain_village_underground.png)
 
@@ -919,7 +919,7 @@ sol.timer.start(1000, function()
 end)
 ```
 
-#### Chain Village > Underground Boss
+### Chain Village > Underground Boss
 
 The underground boss was originally supposed to be the mini boss, but I decided to make it the boss because the orcs were hard enough. The script uses the `map:get_entities()` function to grab all the solid switches on the map. Thanks to Max on the Solarus forum. The skeleton boss is immortal and can only be hurt when all switches are active. The hero has 5 seconds to damage the skeleton before he reverts to being immortal.
 

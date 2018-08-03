@@ -1,7 +1,7 @@
 
 ## Chapter 6: Very Basic Lua Scripting, Tutorial Point Lua PDF, ways to load script, and Lua console
 
-#### Very Basic Lua Scripting
+### Very Basic Lua Scripting
 
 The files for the very basic programming knowledge are added the Github.
 
@@ -206,7 +206,7 @@ print(type(type))                ---> function
 |**%x**|  hexadecimal digits
 |**%z**|  the character with representation 0
 
-#### Common Variable Naming Rules
+### Common Variable Naming Rules
 
 This is not a Lua naming rule and one can completely ignore this 
 because everyone can program the way they want, but this 
@@ -243,7 +243,8 @@ Lowercase variables are mostly normal variables.
 local color = "yellow"
 color = "green"
 ```
-#### Lua Programming
+
+### Lua Programming
 
 ##### Comments
 
@@ -2020,13 +2021,13 @@ Result:
 You have the total amount of 400 in your bag.
 ```
 
-#### Tutorial Point Lua PDF
+### Tutorial Point Lua PDF
 
 Read this book for more information and detail.
 
 https://www.tutorialspoint.com/lua/lua_tutorial.pdf
 
-#### Ways To Load Script In Solarus Part 1
+### Ways To Load Script In Solarus Part 1
 
 ##### Require()
 
@@ -2121,7 +2122,8 @@ I added a test file in the Github repository. `Lessons folder > Chapter_6_sol_ma
 Grabbing letters and numbers can make some interesting puzzles or scripts. 
 
 I made a very bulky [Menu Dialog Display Script](http://forum.solarus-games.org/index.php/topic,809.0.html) using letter grabs and I used digit grabs in my [ADVANCED DIGIT DISPLAY SCRIPT](http://forum.solarus-games.org/index.php/topic,803.0.html). I made those scripts as I was first learning Lua.
-#### Grab Numbers
+
+##### Grab Numbers
 
 **Script 1:**
 
@@ -2250,7 +2252,7 @@ num = math.floor(num / 1000) -- 25
 num = math.floor(num / 10000) -- 2
 ```
 
-#### Grab Letter
+##### Grab Letter
 
 **Script 1:**
 

@@ -26,7 +26,7 @@ get_game()
 get_hero()
 ```
 
-#### map:get_game()
+##### map:get_game()
 
 If you wanted to use game functions on a map, then you use the following line of code.
 
@@ -40,7 +40,7 @@ You can then use a function like:
 game:set_starting_location("Map_4", "starting_destination") -- Starting location.`
 ```
 
-#### map:get_hero()
+##### map:get_hero()
 
 If you wanted to use hero functions on a map, then you use the following line of code.
 
@@ -54,7 +54,7 @@ You can then use a function like:
 hero:set_animation("dead") -- calls an animation you made for the hero.
 ```
 
-#### entity:get_sprite()
+##### entity:get_sprite()
 
 `entity:get_sprite()` is a little different. You mostly use it when using [sprites methods](http://www.solarus-games.org/doc/latest/lua_api_sprite.html#lua_api_sprite_methods).
 
