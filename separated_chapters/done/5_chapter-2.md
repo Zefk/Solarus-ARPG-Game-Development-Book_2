@@ -38,6 +38,12 @@ You can get a lot of free enemy scripts and more.
 
 http://www.solarus-games.org/games/solarus-team/
 
+##### Solarus Forum
+
+[Script Section](http://forum.solarus-games.org/index.php/board,9.0.html)
+
+[Script Post](http://forum.solarus-games.org/index.php/topic,856.0.html)
+
 ##### Solarus Forum Script section
 
 You can find many free scripts in the script section of the Solarus Forum.
