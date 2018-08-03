@@ -72,7 +72,7 @@ I zipped it and renamed it in Windows 7 and everything worked fine. It even work
 
 **Packaging or Distributing**
 
-You can zip the folder you made or use [Inno Setup](http://www.jrsoftware.org/isinfo.php). You must provide a link to the [Solarus Engine Source code](https://github.com/solarus-games/solarus) and your game code because any code made with GPL code becomes GPL. You might want to link to the [Solarus Website](http://www.solarus-games.org/) as well.
+You can zip the folder you made or use [Inno Setup](http://www.jrsoftware.org/isinfo.php). You must provide a link to the [Solarus Engine Source code](https://github.com/solarus-games/solarus) and your game code because any code made with GPL code becomes GPL. One might want to link to the [Solarus Website](http://www.solarus-games.org/) as well.
 
 **Inno Setup**
 
@@ -185,7 +185,7 @@ Your installer will show up in a folder called `output`.
 
 ### Making Libraries
 
-The main purpose of a library is to make functions to accomplish a task and/or to shorten code.
+The main purpose of a library is to make functions to achieve a task and/or to shorten code.
 
 #### Sample
 
@@ -823,4 +823,3 @@ Fail
 ```
 
 There is another function call xpcall that I will not cover and you can get information about it at [tutorial point](https://www.tutorialspoint.com/lua/lua_error_handling.htm).
-
