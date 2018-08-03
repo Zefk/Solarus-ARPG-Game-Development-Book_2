@@ -44,11 +44,11 @@ http://www.solarus-games.org/games/solarus-team/
 
 [Script Post](http://forum.solarus-games.org/index.php/topic,856.0.html)
 
-##### Solarus Help Guide
+### Solarus Help Guide
 
-I found a lot of free scripts around the forum. I moved the scripts I found to the script section of the forum. 
+The Solarus Help Guide is just a big chunk of useful information that I have gathered. It is on a post in the Solarus forum.
 
-http://forum.solarus-games.org/index.php/topic,856.0.html
+http://forum.solarus-games.org/index.php/topic,611.0.html
 
 ### Basic Free License Information
 
