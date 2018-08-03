@@ -21,7 +21,7 @@ This is a three (3) slot load save menu script. The player can make newgames and
 
 **Install Instructions: Part 1**
 
-1. Put the `save_menu.lua` script in the directory `scripts/`
+1. Put the `save_menu.lua` script in the directory `scripts/` (get it from the chapter 15 sample).
 2. Go to `main.lua` and add the following under the title screen `on_finished` function.
 
 
@@ -109,7 +109,7 @@ The comments in the script cover everything in the script. There are a few funct
 
 The function `sol.file.remove("file_name.dat")` removes a file in the write directory. For this lesson the write directory is `.users/your_name/solarus/sample_quest/`. I used this function to remove the save file for a new game.
 
-The function `sol.game.exists("file_name.dat")` check if a file exists in the write directory. This is normally used to check if a save files exits and if not, then set default hero settings. For example, the hero's health, item, abilities, and etc.
+The function `sol.game.exists("file_name.dat")` checks if a file exists in the write directory. This is normally used to check if a save files exits and if not, then set default hero settings. For example, the hero's health, item, abilities, and etc.
 
 
 The function `sol.game.load("file_name.dat")` loads a saved file or creates one if none exist. It will not save it.
