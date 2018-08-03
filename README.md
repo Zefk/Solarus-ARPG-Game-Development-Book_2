@@ -5,8 +5,6 @@ This is a book to help with some Solarus basics. I do not plan on completing it 
 
 Everything with a '*' next to it is being worked on.`
 
-- Correct roughdraft errors and revamp book*
-
 - Alpha 0.9 release and get the opinion of the Solarus community.
 
 - Release Beta 1.0
@@ -27,7 +25,7 @@ I will only provide HTML and PDF for this book. Others are welcome to make epubs
 
 `cd 'directory'`
 
-`cat *.txt > Solarus-ARPG-Game-Development-Book_2`
+`cat *.txt > Solarus-ARPG-Game-Development-Book_2.md`
 
 3.The Solarus-ARPG-Game-Development-Book_2.txt is renamed to Solarus-ARPG-Game-Development-Book_2.md
 
