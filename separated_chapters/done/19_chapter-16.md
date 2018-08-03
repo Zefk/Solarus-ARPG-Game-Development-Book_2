@@ -681,7 +681,11 @@ A series of switches and checks to make sure the chest appears to obtain the spi
 
 ##### Cutscene
 
-A cut scene is just a series of movements and dialogs. Commonly, the player cannot move during these events and pictures scenes are displayed. 
+A cut scene is just a series of movements and dialogs. Commonly, the player cannot move during these events and pictures scenes are displayed.
+
+![9-1_chapter_16_chain_village_elfa_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/9-1_chapter_16_chain_village_elfa_house.png)
+
+![9-2_chapter_16_chain_village_elfa_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/9-2_chapter_16_chain_village_elfa_house.png)
 
 In this case a NPC named Elfa runs toward the hero. At the same time the hero runs toward Elfa. The `hero:walk` method freezes the hero until the movement is over. Once the `hero:walk` function is finished the hero can move again, so we must freeze her with the method `hero:freeze()`. Usually, one would not want the HUD to show when the image appears during a cut scene. In that case, we would set our HUD to false and we are using christopho's hud, so it would be `game:set_hud_enabled(false)`. It will not be found in the documentation. Once the cut scene is over we want to unfreeze the hero using the method `hero:unfreeze()` and set a save variable because we do not want the cut scene to repeat.
 
