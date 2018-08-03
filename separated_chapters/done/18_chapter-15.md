@@ -1,5 +1,5 @@
 
-## Chapter 15: Title Screen, Save menu, Movements, Map Types, Cameria, I/O
+## Chapter 15: Title Screen, Save menu, Movements, Map Types, Camera, I/O
 
 This chapter is mostly about the remaining basics that need to be covered. You can get the sample `Chapter_15_Sample.zip` in the `Lessons > Chapter_15` directory.
 
@@ -15,14 +15,14 @@ This is a three (3) slot load save menu script. The player can make newgames and
 
 **Features:**
 
-1.Change the action keys, music, and sounds in the change area(s)
-2.Load saved game
-3.Makes newgames
+1. Change the action keys, music, and sounds in the change area(s)
+2. Load saved game
+3. Makes newgames
 
 **Install Instructions: Part 1**
 
-1.Put the `save_menu.lua` script in the directory `scripts/`
-2.Go to `main.lua` and add the following under the title screen `on_finished` function.
+1. Put the `save_menu.lua` script in the directory `scripts/`
+2. Go to `main.lua` and add the following under the title screen `on_finished` function.
 
 
 **Example**
@@ -44,12 +44,12 @@ This is a three (3) slot load save menu script. The player can make newgames and
   end
   ```
 
-3.Put the folder "save_menu" that contains images for the menu in the directory `sprites/`
+3. Put the folder "save_menu" that contains images for the menu in the directory `sprites/`
 
 **Install Instructions: Part 2**
 
 
-1.Add the following in the game manager. 
+1. Add the following in the game manager. 
 
 **Example:**
 
@@ -643,7 +643,7 @@ end
 
 ### Camera Entity
 
-The cameria is an entity like a NPC. You can check the Documentation for the functions for all entity types. You need to get the camera before you can use it.
+The camera is an entity like a NPC. You can check the Documentation for the functions for all entity types. You need to get the camera before you can use it.
 
 ```lua
 local camera = map:get_camera()
@@ -668,7 +668,7 @@ camera:set_size(96, 96)
 
 Changing the screen size can help with camera tracking when it comes to sprites.
 
-The function `camera:start_tracking(entity_name)` is used for camera tracking. By default the camera tracks where the hero goes.
+The function `camera:start_tracking(entity_name)` is used for camera tracking. By default, the camera tracks where the hero goes.
 
 ```lua
         camera:set_size(96, 96)
@@ -677,7 +677,7 @@ The function `camera:start_tracking(entity_name)` is used for camera tracking. B
 
 ##### Camera Position
 
-Normally the camera position is centered at `(0,0)`. You can change the position of the screen with the function `camera:set_position_on_screen(x,y)`.
+Normally, the camera position is centered at `(0,0)`. You can change the position of the screen with the function `camera:set_position_on_screen(x,y)`.
 
 **Example:**
 ```lua
@@ -977,4 +977,3 @@ local tLines = readLines("test.txt") -- Read this file
 --Print line 3. Line 4 will not be 50 because we removed line 2. That means line 3 will be 50.
 print("Line 4 value is: "..tLines[3])
 ```
-
