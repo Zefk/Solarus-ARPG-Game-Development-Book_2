@@ -199,7 +199,7 @@ end -- end of map on started
 
 ```
 
-**Skeleton.lua**
+##### Skeleton.lua
 
 ```lua
 function enemy:on_dead()
@@ -295,6 +295,7 @@ The switch is hidden under the trees with a flower on top to give a hint to its 
 The bomb is assigned to the `x` command slot by default in this script `game:set_item_assigned(1, self)`. Although, one could just assign it to a key press function `game:on_key_pressed(key, modifiers)`. The following script is simple and it creates a bomb at the player's location for the hero's facing direction.
 
 **items > bomb.lua**
+
 ![3-2_chapter_16_soulia_forest_bomb_chest.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/3-2_chapter_16_soulia_forest_bomb_chest.png)
 
 ```lua
@@ -748,7 +749,7 @@ end
 
 ![10_chapter_16_chain_village_underground.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/10_chapter_16_chain_village_underground.png)
 
-**Green Orc Soldier**
+##### Green Orc Soldier
 
 First off, I would like to explain the orc soldier on this map because he is a little unique. The soldier consists of two sprites. The orc and the sword to be precise. The orc is invincible and can only be disabled by hitting his sword. I set it up so when the first orc is tapped 3 times, then the bookcase vanishes.
 
@@ -780,7 +781,7 @@ function enemy:on_custom_attack_received(attack, sprite)
 end
 ```
 
-**green_orc_soldier.lua**
+##### green_orc_soldier.lua
 
 ```lua
 local enemy = ...
@@ -872,7 +873,7 @@ function enemy:on_movement_changed()
   sword_sprite:set_direction(movement:get_direction4())
 end
 ```
-**underground map**
+##### Underground Map
 
 I do not present anything new with this map, so nothing to explain. The only difference was with `green_orc_soldier.lua` because when it is tapped three times a save variable is set when the sword it hit three times.
 
@@ -948,6 +949,7 @@ end
 ```
 
 **Sample:**
+
 Lessons > Chapter_16 > Chapter_16_Chain_Quest.zip
 
 ### Bow
@@ -1063,4 +1065,5 @@ A key press function can be used to activate the hookshot. In the sample, I put 
 ```
 
 **Sample:**
+
 Lessons > Chapter_16 > chapter_16_bow_hookshot_boomerang.zip
