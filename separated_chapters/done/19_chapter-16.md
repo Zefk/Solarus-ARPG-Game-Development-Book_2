@@ -1,18 +1,19 @@
-##Chapter 16: Make a Chain Quest, Bow, Boomerang, and Hookshot
+
+## Chapter 16: Make a Chain Quest, Bow, Boomerang, and Hookshot
 
 The chain quest is putting together what you have learned, some new functions, and scripts are introduced. It is more like a demo than anything else.
 
-###Sola House
+### Sola House
 
 Sola house is the starting point of the game. Sola has woken in a world with no memories of her past and sets out on a journey to figure out who she is.
 
-####Sola House > F1
+#### Sola House > F1
 
 On the first floor there are some blockades that must be passed to exit the house. Also, an optional quest with the female armor. You will be able to perform spin attacks and have extra speed when the spirit gem is obtained.
 
 ![1_chapter_16_sola_house_f1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/1_chapter_16_sola_house_f1.png)
 
-#####Disabling Spin Attack
+##### Disabling Spin Attack
 
 There are no function or method as of Solarus 1.5.3 that disables the spin attack, but there is a quick hack for it that I learned from MetalZelda.
 
@@ -235,7 +236,7 @@ function map:on_activated()
 end -- end of on_activated
 ```
 
-####Sola House > F2
+#### Sola House > F2
 
 ![1_chapter_16_sola_house_f2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/2_chapter_16_sola_house_f2.png)
 
@@ -264,11 +265,11 @@ Sets npc dialog "wall_switch_2" disabled and removed the blockages on the first 
 end
 ```
 
-####Soulia Forest > Part 1
+#### Soulia Forest > Part 1
 
 ![3_chapter_16_soulia_forest_part_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/3_chapter_16_soulia_forest_part_1.png)
 
-#####Hidden Switch
+##### Hidden Switch
 
 The switch is hidden under the trees with a flower on top to give a hint to its location. A sound is played when the switch is activated and the stump vanishes. Also, the check makes sure the switch cannot be activated again and to insure the stump does not respawn.
 
@@ -289,7 +290,7 @@ The switch is hidden under the trees with a flower on top to give a hint to its 
   end
 ```
 
-#####Bomb Stump
+##### Bomb Stump
 
 The bomb is assigned to the `x` command slot by default in this script `game:set_item_assigned(1, self)`. Although, one could just assign it to a key press function `game:on_key_pressed(key, modifiers)`. The following script is simple and it creates a bomb at the player's location for the hero's facing direction.
 
@@ -374,7 +375,7 @@ Furthermore, it is good to check if the`bomb_stump`or any other entity still exi
      end
 ```
 
-#####Trick Chest
+##### Trick Chest
 
 I previously presented the trick chest script in a previous chapter, but it is a pain to get the coordinates the previous way. This time I use the`hero:start_hurt([source_entity, damage)`method. All one has to do is get the entity from the map with its name`map:get_entity("trick_chest")`.
 
@@ -398,11 +399,11 @@ function entity:on_interaction()
 end
 ```
 
-####Soulia Forest > Part 2
+#### Soulia Forest > Part 2
 
 ![4_chapter_16_soulia_forest_part_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/4_chapter_16_soulia_forest_part_2.png)
 
-#####Key Stump
+##### Key Stump
 
 Since, making a door entity for a dynamic tile would be a total pain. I simply used a NPC to check if the chest that contain the key is open. Remember to set a save variable for the chest.
 
@@ -429,7 +430,7 @@ Since, making a door entity for a dynamic tile would be a total pain. I simply u
   end
 ```
 
-#####Block Switch
+##### Block Switch
 
 This is simply moving a block on a switch. Nothing special. Remember to check the block's coordinates when returning to the map.
 
@@ -451,7 +452,7 @@ This is simply moving a block on a switch. Nothing special. Remember to check th
   end
 ```
 
-####Chain Village
+#### Chain Village
 
 Chain village is where almost all of its people have fallen to death due to a strange power coming over the mountains. The heroine must get a heart shield to show the mage that she is worthy of entering Zark house. The reason is that there is a slime enemy in there. Afterwards, thee heroine finds the water shield after defeating the slime and is able to cross the lake to the Water house and get the spirit shield to enter Elfa House. This is where the mini dungeon resides.
 
@@ -539,13 +540,13 @@ sol.timer.start(100, function()
 end)
 ```
 
-####Chain Village > Shop
+#### Chain Village > Shop
 
 The shop is the only place where the heroine can obtain the heart shield. It costs 20 gems.
 
 ![6_chapter_16_chain_village_shop.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/6_chapter_16_chain_village_shop.png)
 
-####Chain Village > Zark House
+#### Chain Village > Zark House
 
 ![7_chapter_16_chain_village_zark_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/7_chapter_16_chain_village_zark_house.png)
 
@@ -600,7 +601,7 @@ This is to just check to make sure the bookcase and sline do not return.
   end
 ```
 
-####Chain Village > Water House
+#### Chain Village > Water House
 
 ![8_chapter_16_chain_village_water_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/8_chapter_16_chain_village_water_house.png)
 
@@ -671,11 +672,11 @@ A series of switches and checks to make sure the chest appears to obtain the spi
   end
 ```
 
-####Chain Village > Elfa House
+#### Chain Village > Elfa House
 
 ![9_chapter_16_chain_village_elfa_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/9_chapter_16_chain_village_elfa_house.png)
 
-#####Cutscene
+##### Cutscene
 
 A cut scene is just a series of movements and dialogs. Commonly, the player cannot move during these events and pictures scenes are displayed. 
 
@@ -743,7 +744,7 @@ The hero must find a secret passage to enter the dungeon and it is heavely hinte
 end
 ```
 
-####Chain Village > Underground
+#### Chain Village > Underground
 
 ![10_chapter_16_chain_village_underground.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/10_chapter_16_chain_village_underground.png)
 
@@ -873,7 +874,7 @@ end
 ```
 **underground map**
 
-I  do not present anything new with this map, so nothing to explain. The only difference was with `green_orc_soldier.lua` because when it is tapped three times a save variable is set when the sword it hit three times.
+I do not present anything new with this map, so nothing to explain. The only difference was with `green_orc_soldier.lua` because when it is tapped three times a save variable is set when the sword it hit three times.
 
 ```lua
 local map = ...
@@ -911,7 +912,7 @@ sol.timer.start(1000, function()
 end)
 ```
 
-####Chain Village > Underground Boss
+#### Chain Village > Underground Boss
 
 The underground boss was originally supposed to be the mini boss, but I decided to make it the boss because the orcs were hard enough. The script uses the `map:get_entities()` function to grab all the solid switches on the map. Thanks to Max on the Solarus forum. The skeleton boss is immortal and can only be hurt when all switches are active. The hero has 5 seconds to damage the skeleton before he reverts to being immortal.
 
@@ -949,7 +950,7 @@ end
 **Sample:**
 Lessons > Chapter_16 > Chapter_16_Chain_Quest.zip
 
-###Bow
+### Bow
 
 The method`hero:start_bow()`activates the bow and shoots an arrow. The `bow` animation is needed for your hero and the sounds `bow.ogg` and `arrow_hit.ogg`.
 
@@ -978,7 +979,7 @@ A key press function can be used to activate the bow. In the sample, I put it in
  end
 ```
 
-###Boomerang
+### Boomerang
 
 The boomerang has more detail than the bow. The boomerang will return to the hero or chase the hero if moving away from the boomerang.
 `hero:start_boomerang(max_distance, speed, tunic_preparing_animation, sprite_name)`
@@ -1029,7 +1030,7 @@ A key press function can be used to activate the boomerang. In the sample, I put
  end
 ```
 
-###Hookshot
+### Hookshot
 
 The method `hero:start_hookshot()` can be used to activate the hookshot.
 
