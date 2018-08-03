@@ -19,9 +19,9 @@ I will only provide HTML and PDF for this book. Others are welcome to make epubs
 
 **Putting the .md files together:**
 
-1. The `.md` files extension are renamed to .txt using a bulk rename software. 
+1. The `.md` file extensions are renamed to `.txt` using a bulk rename software. 
 
-2. The 'cat' command is used in the Linux terminal to combine the .txt files.
+2. The 'cat' command is used in the Linux terminal to combine the `.txt` files.
 
 `cd 'directory'`
 
