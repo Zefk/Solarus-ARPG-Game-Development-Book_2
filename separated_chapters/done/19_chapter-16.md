@@ -1,9 +1,11 @@
 
 ## Chapter 16: Make a Chain Quest, Bow, Boomerang, and Hookshot
 
+### Chain Quest
+
 The chain quest is putting together what you have learned, some new functions, and scripts are introduced. It is more like a demo than anything else.
 
-### Sola House
+#### Sola House
 
 Sola house is the starting point of the game. Sola has woken in a world with no memories of her past and sets out on a journey to figure out who she is.
 
