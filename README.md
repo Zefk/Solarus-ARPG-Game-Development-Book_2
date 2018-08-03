@@ -1,5 +1,5 @@
 # Solarus-ARPG-Game-Development-Book
-This is a book to help with some Solarus basics. I do not plan on completing it alone, but will add to it when I can.
+This is a book to help with some Solarus basics. I will add to it when I can.
 
 **Coming Next in a random order:**
 
