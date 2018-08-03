@@ -369,23 +369,23 @@ Describe the hero, allies, and enemies.
 
 What are the characters trying to do? 
 
-1.Save a princess? 
+1. Save a princess? 
 
-2.Get revenge on the creatures that ate her family? 
+2. Get revenge on the creatures that ate her family? 
 
-3.Take over the world/universe/galaxy?
+3. Take over the world/universe/galaxy?
 
-4.Make the most powerful AI in the known existence?
+4. Make the most powerful AI in the known existence?
 
-5.Create the strongest genetically modified solder?
+5. Create the strongest genetically modified solder?
 
-6.Save a race of aliens on a planet from a cyborg invasion?
+6. Save a race of aliens on a planet from a cyborg invasion?
 
-7.Protect your kingdom from an invasion of spore monsters?
+7. Protect your kingdom from an invasion of spore monsters?
 
-8.Be the greatest magic swords master that will ever live?
+8. Be the greatest magic swords master that will ever live?
 
-9.Create a dimensional parallel world machine to escape your doomed dimension?
+9. Create a dimensional parallel world machine to escape your doomed dimension?
 
 
 #### Story Flow & Outline:
@@ -445,7 +445,7 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 
 |Being|Description|
 |:-----------------|:----|
-|Dwarves| Short humanoid people. Normally strong and good at crafting weapons of any kind.
+|Dwarves| Short humanoid people. Usually, strong and good at crafting weapons of any kind.
 |Elves| A humanoid race with long ears. They live for 1000s of ears, are good archers, and are skilled with magic.
 |Goblins| Known as short greedy ugly creatures. Many countries have conflicting information about them. Some smart, dumb, magic, etc.
 |Fairy| Small humanoid creatures that use magic and are very smart.
@@ -1374,4 +1374,3 @@ Bubble outlining is kinda like mind mapping I would normally do this on paper, b
 |The Alchemist:| Chemist. An Alchemist combines items, magic, and science to make bombs, potions, and sometimes changing the structure of objects or creature around them. They often they use their own body in experiments.
 |The Psychic:| (Known ad Psion and Mentalist) Psychics use telepathy and psychokinesis to attack the enemies mind or to deal damage to his body. It differs from magic because it is done with the mind or brain. Magic just comes out of no where. Poof! Magic.
 |The Gunslinger:| They use a variety of guns most of the time. They normally just involve guns to be honest. Most of the time very skilled at them compared to engineers.
-
