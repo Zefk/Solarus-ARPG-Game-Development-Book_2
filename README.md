@@ -27,8 +27,4 @@ I will only provide HTML and PDF for this book. Others are welcome to make epubs
 
 `cat *.txt > Solarus-ARPG-Game-Development-Book_2.md`
 
-3. The Solarus-ARPG-Game-Development-Book_2.txt is renamed to Solarus-ARPG-Game-Development-Book_2.md
-
-4. A table of contents is added with Haroopad and the URLs are changed to folder directories.
-
-5. The .md file is exported as an HTML file and printed with Chrome. The table of contents, images, code syntax, style/theme, and everything still works in the pdf exported from Chrome.
+3 . The .md file is exported as an HTML file and printed with Chrome. The table of contents, images, code syntax, style/theme, and everything still works in the pdf exported from Chrome.
