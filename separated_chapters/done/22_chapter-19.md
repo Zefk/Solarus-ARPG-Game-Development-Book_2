@@ -104,7 +104,7 @@ and you must credit everyone if you use the Fariyolica.png. That means the CC0 p
 
 6.I refined this list a little. 11-14-16 [November 14th, 2016]
 
-### Credit
+##### Credits
 
 Copyright/Attribution Notice: 
 
