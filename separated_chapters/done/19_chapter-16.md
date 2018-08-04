@@ -1050,7 +1050,7 @@ The hookshot requires a sprite in the sprites entities section. The sprite name 
 
 **Sounds:**
 
-The hookshot reqiures the sounds `hookshot.ogg` and `sword_tapping.ogg`.
+The hookshot requires the sounds `hookshot.ogg` and `sword_tapping.ogg`.
 
 The `hookshot.ogg` sound repeats when it is activates and the `sword_tapping.ogg` actives when encountering something.
 
