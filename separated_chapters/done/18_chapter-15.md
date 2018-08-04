@@ -755,7 +755,7 @@ end
 The I/O is writing and reading text from a file. The easiest way to do this is to just use the engine's functions `game:get_value` and `game:set_value`.
 
 ```lua
-game:set_value("variable_name", value/string)
+game:set_value("variable_name", value/string/boolean)
 ```
 
 **Example:**
@@ -768,6 +768,10 @@ print("Coordinate Z is: "..game:get_value("coordinate_z"))
 --String
 game:set_value("coordinate_question", "what")
 print("Coordinate Question is: "..game:get_value("coordinate_question"))
+
+--boolean
+game:set_value("killed", true)
+print("True or false? Was he killed:", game:get_value("killed"))
 ```
 
 However, you can write to files in other ways. You can use the function:
