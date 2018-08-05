@@ -30,6 +30,12 @@ OpenGameArt has a ton of free graphics and sounds.
 
 https://opengameart.org/
 
+##### Soundimage
+
+This project was started by Eric Matyas. The site contains over 1500 tracks of his original music and sound effects.
+
+http://soundimage.org/
+
 ### Scripts
 
 ##### Solarus Fan Games
