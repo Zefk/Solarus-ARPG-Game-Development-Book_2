@@ -134,6 +134,8 @@ function woman_armor:on_interaction()
 end
 
 ```
+##### Spriti Gem Speed Bonus
+
 The spirit gem was hidden in a pot by a demon. I use a npc entity above the pot tile and use on_interaction, then start_treasure. I set the save variable, so the hero can only get the treasure once. Very basic.
 
 ```lua
@@ -146,8 +148,33 @@ function pot:on_interaction()
 end
 
 ```
-I use a save variable again here, but with string instead of a true/false boolean.
-block_pot is the NPC and flower wall is the dynamic tile. I set the skeleton disabled because I do not want the enemy to come back or respawn.
+
+The item gives the hero a speed bonus when leaving the map that it was obtained on. The function used is `item:on_map_changed(map)`. This allows me to get the map in an item script.
+
+```lua
+local item = ...
+local map = item:get_map()
+local game = item:get_game()
+
+function item:on_created()
+  self:set_savegame_variable("sola_house_spirit_gem")
+end
+
+function item:on_obtained()
+  game:set_value("skill_spin_attack",true)
+end
+
+function item:on_map_changed(map)
+  if game:get_value("sola_house_spirit_gem") then
+    local hero = map:get_hero()
+    hero:set_walking_speed(130)
+  end
+end
+```
+
+##### Pot Blocking Path
+
+The pot blocks the way out of the house. I use a save variable again here, but with string instead of a true/false boolean. `block_pot` is the NPC and `flower_wall` is the dynamic tile. I set the skeleton disabled because I do not want the enemy to come back or respawn. I explain the enemy below.
 
 ```lua
 
@@ -162,6 +189,9 @@ sol.timer.start(1000, function()
 end)
 
 ```
+
+##### Skeleton Enemy
+
 The enemy called skeleton will be disabled until the switch on the second floor is activated.
 
 ```lua
@@ -243,6 +273,8 @@ end -- end of on_activated
 ![1_chapter_16_sola_house_f2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/2_chapter_16_sola_house_f2.png)
 
 ![2-1_chapter_16_sola_house_f2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/2-1_chapter_16_sola_house_f2.png)
+
+##### Wall Switch
 
 Sets npc dialog "wall_switch_2" disabled and makes the wall switch active on return to the map because you do not want the player to activate it again.
 
@@ -552,6 +584,8 @@ The shop is the only place where the heroine can obtain the heart shield. It cos
 ### Chain Village > Zark House
 
 ![7_chapter_16_chain_village_zark_house.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/7_chapter_16_chain_village_zark_house.png)
+
+##### entity:on_removed()
 
 Okay, I menttioned above in soulia forest that I would explain more about the function`entity:on_removed()`. One must check if it is nil or exists if an entity is placed in the function`entity:on_removed()`.
 ```lua
