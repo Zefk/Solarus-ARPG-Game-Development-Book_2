@@ -1,7 +1,7 @@
 # Solarus-ARPG-Game-Development-Book
 This is a book to help with some Solarus basics. I will add to it when I can.
 
-**Coming Next in a random order:**
+**Coming Next:**
 
 Everything with a '*' next to it is being worked on.`
 
