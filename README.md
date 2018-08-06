@@ -5,7 +5,7 @@ This is a book to help with some Solarus basics. I will add to it when I can.
 
 Everything with a '*' next to it is being worked on.`
 
-- Alpha 0.9 release and get the opinion of the Solarus community.
+- Alpha 0.9+ releases and get the opinion of the Solarus community.
 
 - Release Beta 1.0
 
