@@ -364,6 +364,10 @@ This is a list of most default hero animations, but there are more. You do not n
 |walking|
 |walking_with_shield|
 
+##### Entity Directory
+
+Most of the following should be placed in the entites directory by default.
+
 ##### Destructible
 
 |Animations|
@@ -375,6 +379,8 @@ This is a list of most default hero animations, but there are more. You do not n
 
 ##### bomb
 
+It should be placed in the entities directory and named `bomb` by default.
+
 |Animations|
 |:---------|
 |stopped|
@@ -384,11 +390,15 @@ This is a list of most default hero animations, but there are more. You do not n
 
 ##### block
 
+It should be placed in the entities directory and named `block` by default.
+
 |Animation|
 |:---------|
 |block|
 
 ##### chest
+
+It should be placed in the entities directory and named `chest` by default, but it can be changed in the entity options.
 
 |Animations|
 |:---------|
@@ -397,11 +407,15 @@ This is a list of most default hero animations, but there are more. You do not n
 
 ##### explosion
 
+It should be placed in the entities directory and named `explosion` by default.
+
 |Animation|
 |:---------|
 |explosion|
 
 ##### shadow
+
+It should be placed in the entities directory and named `shadow` by default.
 
 |Animations|
 |:---------|
@@ -409,6 +423,8 @@ This is a list of most default hero animations, but there are more. You do not n
 |small|
 
 ##### crystal_block
+
+It should be placed in the entities directory and named `crystal_block` by default.
 
 |Animations|
 |:---------|
@@ -419,12 +435,16 @@ This is a list of most default hero animations, but there are more. You do not n
 
 ##### crystal
 
+It should be placed in the entities directory and named `crystal` by default.
+
 |Animations|
 |:---------|
 |blue_lowered|
 |orange_lowered|
 
 ##### switch
+
+It should be placed in the entities directory and named `switch` by default, but it can be changed in the entity options.
 
 |Animations|
 |:---------|
@@ -433,6 +453,8 @@ This is a list of most default hero animations, but there are more. You do not n
 
 ##### arrow
 
+It should be placed in the entities directory and named `arrow` by default.
+
 |Animations|
 |:---------|
 |flying|
@@ -440,11 +462,15 @@ This is a list of most default hero animations, but there are more. You do not n
 
 ##### star
 
+It should be placed in the entities directory and named `star` by default.
+
 |Animation| Description|
 |:---------|:---------|
 |normal| stars or other animation for spin attack|
 
 ##### ground1
+
+It should be placed in the hero directory and named `ground1` by default.
 
 |Animation|
 |:---------|
@@ -458,6 +484,8 @@ This is a list of most default hero animations, but there are more. You do not n
 ![Chapter_4_images/Chapter_4_22_ground1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_22_ground1.png)
 
 ##### ground2
+
+It should be placed in the hero directory and named `ground2` by default.
 
 |Animation|
 |:---------|
