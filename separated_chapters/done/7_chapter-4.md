@@ -276,11 +276,11 @@ Solarus has a sprite editor to set up animations and you can make as many as you
 
 Solarus goes by 8x8 formatting and it would be best to make a grid for proper positioning. The sprite can be any size, but only the bounding box size can be changed for the entities "enemy" and "custom entity."  The other entities bounding box is 16x16. A hero, NPC, etc.
 
-You can make more animations and code them using the sprite drawable functions, but I will cover most of the default animations built into the engine. You can make any sword attack for the hero. As far as I know. 
+You can make more animations and code them using the sprite drawable functions, but I will cover most of the default animations built into the engine. You can make any sword attack for the hero.
 
 ##### Sword
 
-You will need to create a file called "`sword1`" and it can contain the following animations.
+You will need to create a file called "`sword1`" and it can contain the following animations. It should be placed in the `hero/` directory by default, but it can be changed with the method `hero:set_sword_sprite_id("directory/directory")`.
 
 |Animations|
 |:---------|
@@ -295,7 +295,7 @@ You will need to create a file called "`sword1`" and it can contain the followin
 
 ##### Shield
 
-It is the similar for the file "`shield1`".
+It is the similar for the file "`shield1`". It should be placed in the `hero/` directory by default, but it can be changed with the method `hero:set_shield_sprite_id("directory/directory")`.
 
 |Animations|
 |:---------|
