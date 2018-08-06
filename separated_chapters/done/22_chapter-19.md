@@ -81,7 +81,7 @@ www.soundimage.org
 - wrightmat, I learned a lot from your scripts.
 - MetalZelda, your coding suggestions were very helpful.
 - llamazing, your assistance on the forum really helped make this book.
-- Max, thanks your help on the fourm.
+- Max, thanks for your help on the fourm.
 - Claire Moore (nate-devv), thanks for the Linux version of Solarus!
 
 ### Fairyolica World Credits
