@@ -1,5 +1,5 @@
 
-### Chapter 18:Sprite Artist Guide
+### Chapter 18: Sprite Artist Guide
 
 This guide is just a few basic tips and tricks. The guide goes off of one already knowing about pixels and have made at least a simple front view of a sprite.
 
