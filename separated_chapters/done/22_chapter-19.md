@@ -164,6 +164,10 @@ There are plenty of ways to shade. Shading is the process of lighting and darken
 
 ![Chapter_19_images/chapter_19_37_shading.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_19_images/chapter_19_37_shading.png)
 
+Also, shading can be used to simulate walking. You can see the shade differences between frame 2 and 4. The legs are shaded differently according to light to give a walking simulation.
+
+![Chapter_19_images/chapter_19_39_shade_walking.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_19_images/chapter_19_39_shade_walking.png)
+
 ### Selective Outlining
 
 Selective outlining is used to show borders in a way independently of the
