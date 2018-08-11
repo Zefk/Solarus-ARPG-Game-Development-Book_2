@@ -1121,7 +1121,9 @@ Some quick details. I did not list everything. For example, switches work.
 |Features| Description|
 |---------|
 |Water| Dynamic tiles named "water" will make the hero swim. If the tile does not have a traversable attribute, then the hero will be able to move the block over the water instead of the block falling with gravity. Basically, if the tile has the deep water attribute, then the hero can pull/push the block over water.
-|Bow| The hero can shoot enemies with a bow.
+|Bow| The hero can shoot enemies with a bow with key "b".
+|Hookshot| The hero shoots a hookshot and can move if it hits entities like destructible or chest with key "h".
+|Boomerang| Throws a boomerang with key "a".
 |Carrying| The hero can carry destructible objects up ladders and instantly throws them in dynamic water tiles.
 |Sword| The hero can use the key "c" to attack enemies with a sword.
 |Run| The hero runs if the key "space" is pressed.
@@ -1150,10 +1152,6 @@ The bow can be shot on ladders and used to kill enemies.
 Wrightmat has a little gravity feature for entities. Name them "g" and they will fall.
 
 ![Chapter_16_sidescroller_setup/s4_chapter_16_sidescroller_Gravity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/Chapter_16_sidescroller_setup/s4_chapter_16_sidescroller_Gravity.png)
-
-##### Script
-
-At the moment it probably does not work with the boomerang or hookshot because I have not patched the script for those features.
 
 ##### Fake Death
 There is a bug where the hero jumps faster after every death, so a fake death needs to be used for now. The save variables probably are not needed, but one has to check for every map.
