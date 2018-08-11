@@ -496,3 +496,24 @@ It should be placed in the hero directory and named `ground2` by default.
 |walk_on_water.ogg|
 
 ![Chapter_4_images/Chapter_4_23_ground2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_4_images/Chapter_4_23_ground2.png)
+
+### Hardcoded Mandatory Data
+
+List of mandatory data files whose name is currently hardcoded in the engine.
+
+|List|
+|----|
+|project_db.dat| Holds all the id data.
+|quest.dat| Holds quest information. Can be accessed by clicking on the title of the resource tree in the editor.
+|enemies/|
+|items/|
+|maps/|
+|tilesets/|
+|musics/|
+|languages/| <br>languages.dat<br>XX/<br>text/<br>strings.dat<br>dialogs.dat|
+|images/|
+|sounds/|  <br> - arrow_hit.ogg<br> - boomerang.ogg<br> - boss_hurt.ogg<br> - boss_killed.ogg<br> - bow.ogg<br> - cane.ogg<br> - chest_open.ogg<br> - door_closed.ogg<br> - door_open.ogg<br> - door_unlocked.ogg<br> - enemy_hurt.ogg<br> - enemy_killed.ogg<br> - explosion.ogg<br> - hero_falls.ogg<br> - hero_hurt.ogg<br> - hero_lands.ogg<br> - hero_pushes.ogg<br> - hookshot.ogg<br> - jump.ogg<br> - lift.ogg<br> - message_end.ogg<br> - monster_hurt.ogg<br> - picked_item.ogg<br> - running.ogg<br> - running_obstacle.ogg<br> - shield.ogg<br> - splash.ogg<br> - stairs_down_start.ogg<br> - stairs_down_end.ogg<br> - stairs_up_start.ogg<br> - stairs_up_end.ogg<br> - stone.ogg<br> - swim.ogg<br> - sword1.ogg<br> - sword_spin_attack_load.ogg<br> - sword_spin_attack_release.ogg<br> - sword_tapping.ogg<br> - sword_tapping_weak_wall.ogg<br> - throw.ogg<br> - timer.ogg<br> - timer_hurry.ogg<br> - treasure.ogg<br> - victory.ogg<br> - walk_on_grass.ogg<br> - walk_on_water.ogg<br> - wrong.ogg |
+|sprites/| <br>entities/<br> - arrow.dat<br> - block.dat<br> - bomb.dat<br> - chest.dat<br> - crystal.dat<br> - crystal_block.dat<br> - explosion.dat<br> - fire.dat<br> - hookshot.dat<br> - items.dat<br> - miscellaneous.png<br> - rupee_icon.dat<br> - shadow.dat<br> - star.dat
+|hero/|<br> - tunic1.dat<br> - sword1.dat<br> - sword_stars1.dat<br> - shield1.dat<br> - ground1.dat<br> - ground2.dat<br> - trail.dat
+|enemies/| enemy_killed.dat
+
