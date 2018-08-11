@@ -1107,3 +1107,113 @@ A key press function can be used to activate the hookshot. In the sample, I put 
 **Sample:**
 
 Lessons > Chapter_16 > chapter_16_bow_hookshot_boomerang.zip
+
+### Side-Scrolling Setup
+
+Solarus can now make platformer or side-scrolling games thanks to wrightmat's script and my patches. I will admit the script is not perfect, but it can be used to make these types of games. The scripting is no different that the chain quest in this book.
+
+![Chapter_16_sidescroller_setup/s1_chapter_16_sidescroller_setup_preview.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/Chapter_16_sidescroller_setup/s1_chapter_16_sidescroller_setup_preview.png)
+
+##### Features
+
+Some quick details. I did not list everything. For example, switches work.
+
+|Features| Description|
+|---------|
+|Water| Dynamic tiles named "water" will make the hero swim. If the tile does not have a traversable attribute, then the hero will be able to move the block over the water instead of the block falling with gravity. Basically, if the tile has the deep water attribute, then the hero can pull/push the block over water.
+|Bow| The hero can shoot enemies with a bow.
+|Carrying| The hero can carry destructible objects up ladders and instantly throws them in dynamic water tiles.
+|Sword| The hero can use the key "c" to attack enemies with a sword.
+|Run| The hero runs if the key "space" is pressed.
+|Lift| The hero can life destructible entities.
+|Swim| Water tiles need to be dynamic and be named water. Blocks can be pulled/pushed over deep water, but not traversable tiles.
+|Tapping| The hero can face down and tap things.
+|Shield| A animation problem when key "c" and key "space" fast. Although, I think that is just a shield graphic problem on my part.
+|Block| Do not have deep water and a block on the same map because the hero can push/pull it over the deep water. A dynamic traversable would work with gravity. Name the block "g".
+|Chests| Can be opened when climbing a ladder, but it cannot be opened from the back or sides. A custom chest is needed for that.
+|Gravity| Wrightmat has a little gravity feature for entities. Name them "g" and they will fall.
+
+##### Chest Ladder
+
+Chests can be accessed by using a ladder because chest entities can only be opened from the front.
+
+![Chapter_16_sidescroller_setup/s2_chapter_16_sidescroller_chest_ladder.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/Chapter_16_sidescroller_setup/s2_chapter_16_sidescroller_chest_ladder.png)
+
+##### Bow
+
+The bow can be shot on ladders and used to kill enemies.
+
+![Chapter_16_sidescroller_setup/s3_chapter_16_sidescroller_bow.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/Chapter_16_sidescroller_setup/s3_chapter_16_sidescroller_bow.png)
+
+##### Gravity
+
+Wrightmat has a little gravity feature for entities. Name them "g" and they will fall.
+
+![Chapter_16_sidescroller_setup/s4_chapter_16_sidescroller_Gravity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/Chapter_16_sidescroller_setup/s4_chapter_16_sidescroller_Gravity.png)
+
+##### Script
+
+At the moment it probably does not work with the boomerang or hookshot because I have not patched the script for those features.
+
+##### Fake Death
+There is a bug where the hero jumps faster after every death, so a fake death needs to be used for now. The save variables probably are not needed, but one has to check for every map.
+
+```lua
+        --Fake death patch
+        local map = game:get_map()
+        --map1
+        if game:get_value("map1") == true and map:get_id() == "first_map" then
+          if game:get_life() == 1 then
+            hero:teleport("first_map", "map1", "fade")
+            game:set_life(game:get_max_life())
+          end
+         --map2
+         elseif game:get_value("map2") == true and map:get_id() == "map_leave_test" then
+          if game:get_life() == 1 then
+            hero:teleport("map_leave_test", "map2", "fade")
+            game:set_life(game:get_max_life())
+          end
+        end
+```
+
+##### Enemy Script
+
+The slime enemy has a seperate gravity due to name "g" slowing down the enemy. It is just a dirty edit of the hero's gravity. It will check the enemy movement with `   enemy:go_back()`. It can be edited for other animation features.
+
+```lua
+---Gravity patch
+local gravity = 5 
+local jump_height = 40
+
+    sol.timer.start(gravity, function()
+      if enemy:get_map() ~= nil then
+        -- Gravity: move entities down one pixel on every update if there's no collision.
+        --   (like with the ground or a platform) and hero not jumping or on a ladder.
+   
+        local x, y, l = enemy:get_position()
+
+        if state ~= "jumping" and enemy:get_map():get_ground(enemy:get_position()) ~= "ladder" then
+          if not enemy:test_obstacles(0, 1) then 
+            enemy:set_position(x, (y + 1), l) 
+            enemy:go_back()
+          end
+        elseif state == "jumping" then
+          for i = 1, jump_height do
+            if not enemy:test_obstacles(0, -1) then 
+              enemy:set_position(x, (y - 1), l) 
+              enemy:go_back()
+            end
+          end
+        end
+       end
+       return true
+     end)
+```
+
+##### Full Script
+
+The script can be found in the sample in `game_manager.lua`. The sample can be used as a template.
+
+##### Sample
+
+Lessons > Chapter_16 > chapter_16_sidescroller_setup.zip
