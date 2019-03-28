@@ -11,7 +11,7 @@ Almost every game has a title screen. A place to start the game. The title scree
 
 **About Script:**
 
-This is a three (3) slot load save menu script. The player can make newgames and select the save slot they wish.
+This is a three (3) save_menu script. The player can make newgames and select the save slot they wish to load. It does not actully save the game. You should set that up with the 'd' key or something with a dialog.
 
 **Features:**
 
@@ -95,28 +95,51 @@ end
 return game_manager
 ```
 
-2. I suggest making a menu with the default `d` pause key. The menu would be where the player would load and save the game. At the moment the `d` key saves the game in the sample.
+2. I suggest making a menu with the default `d` pause key. The menu would be where the player would save the game. At the moment the `d` key saves the game in the sample.
 
-**Usage Instructions:**
+##### Usage Instructions:
 
 1. Use the up and down keys
 2. Change the action key to what you desire in the change area. By default, it is key `a`, reset with `s`, and in game clear with `q`.
 3. Key `L` activates the save menu in game and key `q` can clear it. 
 
-**Breaking Down The Script:**
+##### Breaking Down The Script:s
 
-The comments in the script cover everything in the script. There are a few functions I will go over.
+This save menu script is image based and the comments in the script cover everything in the sample. There are a few functions I will go over.
+
+##### Remove
 
 The function `sol.file.remove("file_name.dat")` removes a file in the write directory. For this lesson the write directory is `.users/your_name/solarus/sample_quest/`. I used this function to remove the save file for a new game.
 
-The function `sol.game.exists("file_name.dat")` checks if a file exists in the write directory. This is normally used to check if a save files exits and if not, then set default hero settings. For example, the hero's health, item, abilities, and etc.
+##### Exists
 
+The function `sol.game.exists("file_name.dat")` checks if a file exists in the write directory. This is used to check if a save files exits and if not, then set default hero settings. For example, the hero's health, item, abilities, and etc.
+
+##### Load
 
 The function `sol.game.load("file_name.dat")` loads a saved file or creates one if none exist. It will not save it.
 
+##### Start
 
 The function `game:start()` runs the game. Only one game can run at a time.
 
+##### Destination
+
+There is an option at the top of the script to change to new game start point and to change the starting point for testing.
+
+```lua
+--Map and destination
+local new_game_map = "Sola_house/F1"
+local new_game_start_destination = "starting_destination"
+local game_map = "Sola_house/F1"
+local start_destination = "starting_destination"
+```
+
+##### Change Area
+
+You can use change area 1 and 2 in order to change the keys or the sounds. The code is image based, so just change the images to what you want.
+
+##### Register Tunic
 
 I do not know if I covered this, but let us say your hero dies. He will by default use the tunic animation instead of the `tunic_sprite_id` you set. You can use the function `game:register_event("on_started", function()` after starting the game to prevent this from ever happening.
 

@@ -95,3 +95,25 @@ Afterward, go to `view > show grid`, you will notice black lined boxes. Each box
 Your graphics do not have to be in a single 8x8 block, but they will have to be in the same range. For example, the whirlpool and larger sand tile below. They are 16 x 16 blocks.
 
 ![Chapter_5_14_Gimp_grid_8x8_block_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_14_Gimp_grid_8x8_block_2.png)
+
+##### Entities Tileset
+
+Certain functions of Solarus needs entities on a different tileset.
+
+A few are:
+- blocks
+- destructible entities
+- ground1
+- ground2
+
+![chapter_5_entities_tileset_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_16_entities_tileset_2.png)
+
+**Example:**
+
+For `kenney_sidescroller.tiles.png` a tileset called `kenney_sidescroller.entities.png` is needed.
+
+![chapter_5_entities_tileset_3.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_17_entities_tileset_3.png)
+
+Tileset needs to be selected for the entities mentioned above.
+
+![chapter_5_entities_tileset_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_5_images/Chapter_5_15_entities_tileset_1.png)

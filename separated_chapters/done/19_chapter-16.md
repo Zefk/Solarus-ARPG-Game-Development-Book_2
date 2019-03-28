@@ -988,6 +988,35 @@ end
 end
 ```
 
+### Scrolling Credits
+
+The scrolling credits script is pretty simple. All it does is manpulate the position of font `y = y * space + y_axis`. The script comments explain almost everything and how to change it. I will cover some formatting though.
+
+##### Underline
+
+You can use dashes `-` or underscores (_) to underline.
+
+```lua
+name_list.line_text[0] = "Audio"
+name_list.line_text[1] = "------"
+```
+
+##### Quote
+
+Quotes require \" to add a quote.
+
+```lua
+name_list.line_text[5] = "\"Closing In On the Loot_Looping\""
+```
+
+##### Space
+
+Leave quotes empty to add a space.
+
+```lua
+name_list.line_text[13] = ""
+```
+
 **Sample:**
 
 Lessons > Chapter_16 > Chapter_16_Chain_Quest.zip
@@ -1134,6 +1163,7 @@ Some quick details. I did not list everything. For example, switches work.
 |Block| Do not have deep water and a block on the same map because the hero can push/pull it over the deep water. A dynamic traversable would work with gravity. Name the block "g".
 |Chests| Can be opened when climbing a ladder, but it cannot be opened from the back or sides. A custom chest is needed for that.
 |Gravity| Wrightmat has a little gravity feature for entities. Name them "g" and they will fall.
+|Fake Death| This is in order to prevent a crazy jump bug when calling game:start() again. Use the name of your map for the destination entity. (map:get_id()) A health script would have to be adjusted as well. It checks if the health is less than or equal to three. game:get_life() <= 3
 
 ##### Chest Ladder
 
@@ -1154,7 +1184,7 @@ Wrightmat has a little gravity feature for entities. Name them "g" and they will
 ![Chapter_16_sidescroller_setup/s4_chapter_16_sidescroller_Gravity.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_16_images/Chapter_16_sidescroller_setup/s4_chapter_16_sidescroller_Gravity.png)
 
 ##### Fake Death
-There is a bug where the hero jumps faster after every death, so a fake death needs to be used for now. The save variables probably are not needed, but one has to check for every map.
+There is a bug where the hero jumps faster after every death. The save variables probably are not needed unless there is some kind of check point, but one has to check for every map that way.
 
 ```lua
         --Fake death patch
@@ -1171,6 +1201,17 @@ There is a bug where the hero jumps faster after every death, so a fake death ne
             hero:teleport("map_leave_test", "map2", "fade")
             game:set_life(game:get_max_life())
           end
+        end
+```
+
+I think it would be better to use the name of the map id for the map and destination entity.
+
+```lua
+        --Fake death patch
+        local map = game:get_map()
+        if game:get_life() <= 3 then
+          hero:teleport(map:get_id(), map:get_id(), "fade")
+          game:set_life(game:get_max_life())
         end
 ```
 

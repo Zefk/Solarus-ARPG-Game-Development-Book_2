@@ -1567,6 +1567,71 @@ You can change the coordinates of the counter and heart health display from this
   }
 ```
 
+##### Setup a HUD Element
+
+Setting up your own hud element is very easy. The reason one should use the HUD element is because one can use functions like `game:set_hud_enabled(true)` or `game:is_hud_enabled()`. The script `hud.lua` contains these functions and they are not in the documentation. 
+
+The first step is to declare your script in `hud_config.lua`. In this case, I am simply going to display a star, so I going to add it to the list.
+
+```lua
+local hud_config = {
+
+  -- Star.
+  {
+    menu_script = "scripts/hud/star",
+    x = 171,
+    y = 10,
+  },
+}
+
+return hud_config
+```
+
+Each HUD element needs a method called `new()`.
+
+```lua
+function star_builder:new(game, config)
+```
+
+Also, one will need to grab the coordinated from `hud_config.lua`.
+
+```lua
+  local dst_x, dst_y = config.x, config.y
+```
+
+That is pretty much all one needs to know for the hud element. Here is the full script and one can find everything in the sample.
+
+
+```lua
+-- The star shown on the game screen.
+
+local star_builder = {}
+
+local star_icon_img = sol.surface.create("hud/star_icon.png")
+
+function star_builder:new(game, config)
+
+  local star = {}
+
+  local dst_x, dst_y = config.x, config.y
+
+  function star:on_draw(dst_surface)
+    local x, y = dst_x, dst_y
+
+    star_icon_img:draw(dst_surface, x, y)
+  end
+
+  return star
+end
+
+return star_builder
+```
+
+**Sample:**
+
+Lessons > chapter_13_hud_element
+
+
 ##### Health Heart Display `hearts.lua`
 
 Health is the life points the player has until he dies or faints. The way this script works is that it draws a surface of your heart image. The image will have full, half empty, and empty graphics. 
@@ -1651,27 +1716,23 @@ The script is currently set up for 8x8 hearts, but mine is 16x16 hearts. You wil
       end
 ```
 
-In order to fix this I have to adjust `draw_region` functions. Draw_region draws certain locations on a surface.
+In order to fix this I have to adjust `draw_region` function. Draw_region draws certain locations on a surface.
 
 Note: You can set up your graphics in the sprite editor to get coordinates easier.
 
-Location 1 is at `(0, 0, 16, 16,)`. The 2 zeros are the positions. The y position does not change (px,`py`,sx,sy,) and the next 2 spots `16,16` are the sprite dimensions.
-
-px,py = position
-
-sx,sy = sprite dimensions
+Heart location 1 is at `(0, 0, 16, 16,)`. The 2 zeros are the positions. The next 2 spots `16,16` are the sprite dimensions. The y position does not change (position_x, `position_y`,dimension_x, dimension_y,).
 
 ```lua
 hearts_img:draw_region(0, 0, 16, 16, hearts.surface, x, y)
 ```
 
-Location 2 is at `(16, 0, 16, 16,)`.
+Heart location 2 is at `(16, 0, 16, 16,)`.
 
 ```lua
 hearts_img:draw_region(16, 0, 16, 16, hearts.surface, x, y)
 ```
 
-Location 3 is at `(32, 0, 16, 16,)`.
+Heart location 3 is at `(32, 0, 16, 16,)`.
 
 ```lua
 hearts_img:draw_region(32, 0, 16, 16, hearts.surface, x, y)
@@ -1750,6 +1811,39 @@ if life >= j then
     end
 ```
 
+##### Health Replenish
+
+The function `game:set_max_life()` to set the max health for the hero.
+
+```lua
+--max possible health is 12
+game:set_max_life(12)
+```
+
+A function called `game:set_life()` sets a certain amount of life.
+
+```lua
+--Set life at 6
+game:set_life(6)
+```
+
+Another function named `game:get_max_life()` gets the max life of the hero.
+
+```lua
+--set max life
+game:set_life(game:get_max_life())
+```
+
+There is some other functon identified as `game:get_life()`. It gets the current health of the hero.
+
+```lua
+--print health
+print("The health is "..game:get_life())
+
+if game:get_life() == 5 then
+  print("The health is 5.")
+end
+```
 
 
 ##### Money System Rupee Style
@@ -1817,19 +1911,37 @@ function game_manager:start_game()
 
 ### Money (Gem) Setup
 
+#####Item Setup
+
+It takes a few steps to set up an item.
+
+1.Declare it in the items entity.
+
+![chapter_13_items_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/25_item_setup/chapter_13_item_setup_1.png)
+
+2.Add the item.
+
+![chapter_13_items_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/25_item_setup/chapter_13_item_setup_2.png)
+
+3.Add item treasure dialog.
+
+![chapter_13_items_3.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/25_item_setup/chapter_13_item_setup_3.png)
+
+##### Gem Script
+
 The gem already exists for you. You can thank Diarandor for that, but I will explain how to set up the gem. This script is a little cleaner.
 
-1. Make an item script called `gem`. You probably want to delete the old one first or use the name `gem2`.
+1.Make an item script called `gem`. You probably want to delete the old one first or use the name `gem2`.
 
 ![1_Create_gem_item.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/1_Create_gem_item.png)
 
-2. Go to `sprites > entities > items`. The item script name must match, the item animation game.
+2.Go to `sprites > entities > items`. The item script name must match, the item animation game.
 
 ![2_entities_items.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/2_entities_items.png)
 
 ![3_animation_variants_in_items.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/3_animation_variants_in_items.png)
 
-3. By default, a script template is made when making an item.
+3.By default, a script template is made when making an item.
 
 ```lua
 -- Lua script of item gem.
@@ -1869,7 +1981,7 @@ function item:on_pickable_created(pickable)
 end
 ```
 
-4. The function`function item:on_using()` will not be used because you buy things with money (gems), but if you plan to attack with gems, then you would use this function. That means you can delete this part.
+4.The function`function item:on_using()` will not be used because you buy things with money (gems), but if you plan to attack with gems, then you would use this function. That means you can delete this part.
 
 ```lua
 -- Event called when the hero is using this item.
@@ -1881,7 +1993,7 @@ function item:on_using()
 end
 ```
 
-5. The function`function item:on_pickable_created(pickable)` is used for when an item is created on a map. The movement animation can be changed. For example, have it spin differently (default one works fine in my opinion) or have the gem move slowly away from the player. That means you can delete this part of the script as well.
+5.The function`function item:on_pickable_created(pickable)` is used for when an item is created on a map. The movement animation can be changed. For example, have it spin differently (default one works fine in my opinion) or have the gem move slowly away from the player. That means you can delete this part of the script as well.
 
 ```lua
 -- Event called when a pickable treasure representing this item
@@ -1892,7 +2004,7 @@ function item:on_pickable_created(pickable)
 end
 ```
 
-6. We are left with one function `function item:on_started()`. This function is used to set up the properties for your item. For example, shadow size, and sound when picked up. There are a lot of functions that can be used and I will cover the basic ones.
+6.We are left with one function `function item:on_started()`. This function is used to set up the properties for your item. For example, shadow size, and sound when picked up. There are a lot of functions that can be used and I will cover the basic ones.
 
 ```lua
 local item = ...
@@ -1907,7 +2019,7 @@ function item:on_started()
 end
 ```
 
-7. Set the shadow size with the function `self:set_shadow("animation_name")`.
+7.Set the shadow size with the function `self:set_shadow("animation_name")`.
 
 ![Rupee_scripting/4_big_small_shadow.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/19_rupee/Rupee_scripting/4_big_small_shadow.png)
 
@@ -1919,7 +2031,7 @@ function item:on_created()
 end
 ```
 
-8. Set whether it can disappear or not with the function `self:set_can_disappear(true/false)`.
+8.Set whether it can disappear or not with the function `self:set_can_disappear(true/false)`.
 
 ```lua
 function item:on_created()
@@ -1929,7 +2041,7 @@ function item:on_created()
 end
 ```
 
-9. Set the "ta da da daa" brandish sound when picking up the item. This will be false because it would be strange for this to happen on a simple gem. Normally, this happens when a chest is open. The function for that is `self:set_brandish_when_picked(false/true)`.
+9.Set the "ta da da daa" brandish sound when picking up the item. This will be false because it would be strange for this to happen on a simple gem. Normally, this happens when a chest is open. The function for that is `self:set_brandish_when_picked(false/true)`.
 
 ```lua
 function item:on_created()
@@ -1939,7 +2051,7 @@ function item:on_created()
 end
 ```
 
-10. Set the sound for when the item is picked up with function `self:set_sound_when_picked("name_of_sound")`.
+10.Set the sound for when the item is picked up with function `self:set_sound_when_picked("name_of_sound")`.
 
 ```lua
 function item:on_created()
@@ -1965,7 +2077,7 @@ end
 
 The last function will be for setting up the value for all the variants and so that money can be added to the counter. We do this with the function `function item:on_obtaining(variant, savegame_variable)`.
 
-1. It is best to start this with a table. The table will hole the money amount for 3 variants. For example, value 2 = variant 1, value 10 = variant 3, etc.
+1.It is best to start this with a table. The table will hole the money amount for 3 variants. For example, value 2 = variant 1, value 10 = variant 3, etc.
 
 ```lua
 function item:on_obtaining(variant, savegame_variable)
@@ -1974,7 +2086,7 @@ function item:on_obtaining(variant, savegame_variable)
 end
 ```
 
-2. Next we will use the function `game:add_money()`. This is used to add value to the money counter. We will use the variable `amounts` and `variant` from the function item:on_obtaining(`variant`, savegame_variable) to add values for the gem `amounts[variant]`.
+2.Next we will use the function `game:add_money()`. This is used to add value to the money counter. We will use the variable `amounts` and `variant` from the function item:on_obtaining(`variant`, savegame_variable) to add values for the gem `amounts[variant]`.
 
 ```lua
 function item:on_obtaining(variant, savegame_variable)
@@ -2105,14 +2217,17 @@ The door entity is by the stream entity.
 
 ##### Door Graphic Setup
 
-For a door to work 3 default animation keywords are needed.
+For a door to work 4 default animation keywords are needed or methods will not work correctly.
 - closed - Door is closed. Not open.
-- closing - Door is opening or closing
-- opening - Door is open.
+- closing - Door is opening or closing.
+- open - Door is open.
+- opening - Door is opening or closing.
 
-The closing time determines whether the graphic shows or not. Give the door entity a frame delay of `0 ms` for animation `closed` if you do not want the door graphic to vanish when playtesting.
+![chapter_13_door_1.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_graphic_setup/chapter_13_door_setup_1.png)
 
-![](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/3_door_closing_opening_closed.png)
+You will need to make an open door tile for behind the door. Remember to add some frame rates or it will be stuck on a loop.
+
+![chapter_13_door_2.png](https://github.com/Zefk/Solarus-ARPG-Game-Development-Book_2/raw/master/Lesson_images/Chapter_13_images/20_door/door_graphic_setup/chapter_13_door_setup_2.png)
 
 ##### Door Script
 
