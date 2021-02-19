@@ -171,7 +171,7 @@ Copyright/Attribution Notice:
 
 - "Crawl Tiles" from Dungeon Crawl Stone Soup (https://code.google.com/p/crawl-tiles/)
 
-- Zefk (Zane Kukta) <http://zelzec-entertainment.weebly.com/>
+- Zefk (Zane Kukta) <https://zefk-design.weebly.com/>
 
 - Lanea Zimmerman (AKA Sharm)
 
